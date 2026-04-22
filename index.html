@@ -292,6 +292,12 @@
       margin-bottom: 2px;
     }
 
+    .chart-wrap-tall {
+      position: relative;
+      height: 175px;
+      margin-bottom: 2px;
+    }
+
     /* ── RATIO BAR ── */
     .ratio-wrap { margin-bottom: 2px; }
 
@@ -738,9 +744,11 @@
   let legendCtrl = null;
   let tipChart   = null;
   let m2Chart    = null;
+  let evolChart  = null;
   let curVar     = 'mediana_precio_ars';
   let compA      = null;
   let compB      = null;
+  let serieLookup = {}; // norm(barrio) → array of period rows, sorted by periodo
 
   // ─────────────────────────────────────────────
   //  FORMATTERS
@@ -768,6 +776,14 @@
       .trim();
   }
 
+  const MONTH_LABELS = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+
+  function fmtPeriodo(p) {
+    // "2025-08" → "Ago 25"
+    const [yr, mo] = p.split('-');
+    return MONTH_LABELS[+mo - 1] + ' ' + yr.slice(2);
+  }
+
   // ─────────────────────────────────────────────
   //  INIT
   // ─────────────────────────────────────────────
@@ -778,6 +794,18 @@
       if (!dash || !geoData) throw new Error('data.js no cargó correctamente');
 
       for (const b of dash.barrios) lookup[norm(b.barrio)] = b;
+
+      // Build serie_temporal lookup: norm(barrio) → rows sorted by periodo
+      if (dash.serie_temporal) {
+        for (const row of dash.serie_temporal) {
+          const key = norm(row.barrio);
+          if (!serieLookup[key]) serieLookup[key] = [];
+          serieLookup[key].push(row);
+        }
+        for (const key of Object.keys(serieLookup)) {
+          serieLookup[key].sort((a, b) => a.periodo.localeCompare(b.periodo));
+        }
+      }
 
       buildKPIs();
       buildMap();
@@ -981,12 +1009,16 @@
         <div class="stat-box"><div class="stat-label">Costo total mediano</div><div class="stat-value c-mint">${fmtARS(b.mediana_costo_total)}</div></div>
       </div>
 
+      <!-- EVOLUCIÓN TEMPORAL -->
+      <div class="section-label">Evolución mensual de precios</div>
+      <div class="chart-wrap-tall"><canvas id="evolChart"></canvas></div>
+
       <!-- PRECIO POR TIPOLOGÍA -->
       <div class="section-label">Precio mediano por tipología</div>
       <div class="chart-wrap"><canvas id="tipChart"></canvas></div>
 
       <!-- PRECIO/M² POR TIPOLOGÍA -->
-      <div class="section-label">Precio / m² por tipología</div>
+      <div class="section-label">Precio / m² por tipología (ARS)</div>
       <div class="chart-wrap"><canvas id="m2Chart"></canvas></div>
 
       <!-- RATIO M² -->
@@ -1044,6 +1076,121 @@
         <div class="stat-box"><div class="stat-label">2 ambientes</div><div class="stat-value">${b.n_2amb != null ? fmtNum(b.n_2amb) : 'N/D'}</div></div>
       </div>
     `;
+
+    // ── CHART EVOLUCIÓN TEMPORAL ──
+    if (evolChart) { evolChart.destroy(); evolChart = null; }
+    const serie = serieLookup[norm(b.barrio)] || [];
+    if (serie.length > 0) {
+      const labels    = serie.map(r => fmtPeriodo(r.periodo));
+      const precios   = serie.map(r => r.mediana_precio_ars);
+      const preciosM2 = serie.map(r => r.mediana_precio_m2);
+
+      evolChart = new Chart(document.getElementById('evolChart').getContext('2d'), {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [
+            {
+              label: 'Precio mediano',
+              data: precios,
+              borderColor: C.coral,
+              backgroundColor: C.coral + '18',
+              borderWidth: 2.5,
+              pointRadius: 4,
+              pointHoverRadius: 6,
+              pointBackgroundColor: C.coral,
+              pointBorderColor: '#fff',
+              pointBorderWidth: 1.5,
+              yAxisID: 'y',
+              tension: 0.3,
+              fill: true,
+            },
+            {
+              label: 'Precio / m²',
+              data: preciosM2,
+              borderColor: C.sky,
+              backgroundColor: 'transparent',
+              borderWidth: 2.5,
+              pointRadius: 4,
+              pointHoverRadius: 6,
+              pointBackgroundColor: C.sky,
+              pointBorderColor: '#fff',
+              pointBorderWidth: 1.5,
+              yAxisID: 'y2',
+              tension: 0.3,
+              fill: false,
+            },
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: {
+              display: true,
+              position: 'top',
+              align: 'end',
+              labels: {
+                usePointStyle: true,
+                pointStyle: 'circle',
+                boxWidth: 7,
+                boxHeight: 7,
+                padding: 12,
+                font: { family: 'DM Sans', size: 11 },
+                color: '#2D2D2D',
+              }
+            },
+            tooltip: {
+              backgroundColor: '#fff',
+              borderColor: '#E0DDD8',
+              borderWidth: 1,
+              titleColor: '#2D2D2D',
+              bodyColor: '#2D2D2D',
+              titleFont: { family: 'Syne', size: 12, weight: '700' },
+              bodyFont: { family: 'DM Sans', size: 12 },
+              padding: 10,
+              callbacks: {
+                label: ctx => {
+                  const v = ctx.raw;
+                  if (v == null) return null;
+                  return ctx.datasetIndex === 0
+                    ? '  Precio: ' + fmtARS(v)
+                    : '  Precio/m²: ' + fmtARS(v);
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { color: '#EEEBE6' },
+              border: { display: false },
+              ticks: { font: { family: 'DM Sans', size: 10 }, color: '#7A7A7A' }
+            },
+            y: {
+              position: 'left',
+              grid: { color: '#EEEBE6' },
+              border: { display: false },
+              ticks: {
+                font: { family: 'DM Sans', size: 10 },
+                color: C.coral,
+                callback: v => v >= 1e6 ? (v/1e6).toFixed(1)+'M' : v >= 1e3 ? (v/1e3).toFixed(0)+'K' : v
+              }
+            },
+            y2: {
+              position: 'right',
+              grid: { drawOnChartArea: false },
+              border: { display: false },
+              ticks: {
+                font: { family: 'DM Sans', size: 10 },
+                color: C.sky,
+                callback: v => v >= 1e3 ? (v/1e3).toFixed(0)+'K' : v
+              }
+            }
+          }
+        }
+      });
+    }
 
     // ── CHART 1: Precio por tipología ──
     if (tipChart) { tipChart.destroy(); tipChart = null; }
