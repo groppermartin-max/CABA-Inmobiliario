@@ -285,6 +285,26 @@
     .c-amber  { color: var(--amber); }
     .c-lav    { color: var(--lav); }
 
+    /* ── MAP CONTROLS ── */
+    .map-controls {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .periodo-note {
+      display: none;
+      flex-shrink: 0;
+      padding: 5px 14px;
+      font-size: 11px;
+      color: #a07200;
+      background: rgba(240,165,0,0.09);
+      border-bottom: 1px solid rgba(240,165,0,0.22);
+      text-align: center;
+      font-style: italic;
+    }
+
     /* ── CHARTS ── */
     .chart-wrap {
       position: relative;
@@ -599,7 +619,7 @@
     <h1>Mercado de Alquileres <span class="dot">·</span> CABA</h1>
     <div class="header-source">
       Fuentes: ZonaProp &amp; Airbnb &mdash; Límites geográficos: Gobierno CABA<br>
-      Datos: 2024
+      <span id="headerPeriodo">Cargando&hellip;</span>
     </div>
   </header>
 
@@ -613,16 +633,20 @@
     <div class="panel">
       <div class="panel-head">
         <span class="panel-title">Mapa por barrio</span>
-        <select id="mapVarSelect">
-          <option value="mediana_precio_ars">Precio mediano</option>
-          <option value="mediana_precio_m2">Precio / m²</option>
-          <option value="n_publicaciones">Publicaciones</option>
-          <option value="n_airbnb">Cantidad Airbnb</option>
-          <option value="ratio_airbnb_zonaprop">Ratio Airbnb / Zonaprop</option>
-          <option value="ratio_m2_chico_vs_grande">Sobreprecio m² chico vs grande</option>
-          <option value="esfuerzo_alquiler_pct">Esfuerzo de alquiler (%)</option>
-        </select>
+        <div class="map-controls">
+          <select id="mapVarSelect">
+            <option value="mediana_precio_ars">Precio mediano</option>
+            <option value="mediana_precio_m2">Precio / m²</option>
+            <option value="n_publicaciones">Publicaciones</option>
+            <option value="n_airbnb">Cantidad Airbnb</option>
+            <option value="ratio_airbnb_zonaprop">Ratio Airbnb / Zonaprop</option>
+            <option value="ratio_m2_chico_vs_grande">Sobreprecio m² chico vs grande</option>
+            <option value="esfuerzo_alquiler_pct">Esfuerzo de alquiler (%)</option>
+          </select>
+          <select id="periodoSelect"></select>
+        </div>
       </div>
+      <div id="periodoNote" class="periodo-note">Este indicador no varía por período</div>
       <div id="map"></div>
     </div>
 
@@ -742,13 +766,18 @@
   let lmap       = null;
   let geoLayer   = null;
   let legendCtrl = null;
-  let tipChart   = null;
-  let m2Chart    = null;
-  let evolChart  = null;
-  let curVar     = 'mediana_precio_ars';
-  let compA      = null;
-  let compB      = null;
-  let serieLookup = {}; // norm(barrio) → array of period rows, sorted by periodo
+  let tipChart      = null;
+  let m2Chart       = null;
+  let evolChart     = null;
+  let curVar        = 'mediana_precio_ars';
+  let curPeriodo    = null;   // selected period for map choropleth
+  let compA         = null;
+  let compB         = null;
+  let serieLookup   = {};    // norm(barrio) → sorted array of period rows
+  let serieByPeriodo = {};   // periodo → norm(barrio) → row
+
+  // Variables available in serie_temporal (subset of all map vars)
+  const SERIE_VARS = new Set(['mediana_precio_ars', 'mediana_precio_m2', 'mediana_costo_total', 'n_publicaciones']);
 
   // ─────────────────────────────────────────────
   //  FORMATTERS
@@ -776,12 +805,19 @@
       .trim();
   }
 
-  const MONTH_LABELS = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+  const MONTH_SHORT = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+  const MONTH_FULL  = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 
   function fmtPeriodo(p) {
     // "2025-08" → "Ago 25"
     const [yr, mo] = p.split('-');
-    return MONTH_LABELS[+mo - 1] + ' ' + yr.slice(2);
+    return MONTH_SHORT[+mo - 1] + ' ' + yr.slice(2);
+  }
+
+  function fmtPeriodoFull(p) {
+    // "2026-04" → "Abril 2026"
+    const [yr, mo] = p.split('-');
+    return MONTH_FULL[+mo - 1] + ' ' + yr;
   }
 
   // ─────────────────────────────────────────────
@@ -795,17 +831,27 @@
 
       for (const b of dash.barrios) lookup[norm(b.barrio)] = b;
 
-      // Build serie_temporal lookup: norm(barrio) → rows sorted by periodo
+      // Build serie_temporal lookups
       if (dash.serie_temporal) {
         for (const row of dash.serie_temporal) {
           const key = norm(row.barrio);
+          // serieLookup: barrio → sorted array (for evolution chart)
           if (!serieLookup[key]) serieLookup[key] = [];
           serieLookup[key].push(row);
+          // serieByPeriodo: periodo → barrio → row (for map choropleth)
+          if (!serieByPeriodo[row.periodo]) serieByPeriodo[row.periodo] = {};
+          serieByPeriodo[row.periodo][key] = row;
         }
         for (const key of Object.keys(serieLookup)) {
           serieLookup[key].sort((a, b) => a.periodo.localeCompare(b.periodo));
         }
       }
+      curPeriodo = dash.kpis.ultimo_periodo;
+
+      // Dynamic header text
+      const up = dash.kpis.ultimo_periodo;
+      const headerEl = document.getElementById('headerPeriodo');
+      if (headerEl && up) headerEl.textContent = 'Últimos datos: ' + fmtPeriodoFull(up);
 
       buildKPIs();
       buildMap();
@@ -846,12 +892,25 @@
   // ─────────────────────────────────────────────
   //  MAP
   // ─────────────────────────────────────────────
+  function buildPeriodoSelect() {
+    const sel     = document.getElementById('periodoSelect');
+    const periods = (dash.kpis.periodos_disponibles || []).slice().reverse(); // latest first
+    sel.innerHTML = periods.map(p =>
+      `<option value="${p}" ${p === curPeriodo ? 'selected' : ''}>${fmtPeriodo(p)}</option>`
+    ).join('');
+    sel.addEventListener('change', e => {
+      curPeriodo = e.target.value;
+      drawChoropleth();
+    });
+  }
+
   function buildMap() {
     lmap = L.map('map', { zoomControl: true, attributionControl: false });
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', { maxZoom: 18 }).addTo(lmap);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 18, pane: 'shadowPane' }).addTo(lmap);
 
+    buildPeriodoSelect();
     drawChoropleth();
 
     document.getElementById('mapVarSelect').addEventListener('change', e => {
@@ -860,7 +919,19 @@
     });
   }
 
+  // Returns the data source row for a barrio/var: period-filtered when applicable
+  function getPeriodRow(normName) {
+    if (SERIE_VARS.has(curVar) && curPeriodo && serieByPeriodo[curPeriodo]) {
+      return serieByPeriodo[curPeriodo][normName] || null;
+    }
+    return lookup[normName] || null;
+  }
+
   function varRange(key) {
+    if (SERIE_VARS.has(key) && curPeriodo && serieByPeriodo[curPeriodo]) {
+      const vals = Object.values(serieByPeriodo[curPeriodo]).map(r => r[key]).filter(v => v != null);
+      if (vals.length > 0) return [Math.min(...vals), Math.max(...vals)];
+    }
     const vals = dash.barrios.map(b => b[key]).filter(v => v != null);
     return [Math.min(...vals), Math.max(...vals)];
   }
@@ -868,29 +939,38 @@
   function drawChoropleth() {
     if (geoLayer) geoLayer.remove();
 
-    const cfg      = VAR_CONFIG[curVar];
-    const [mn, mx] = varRange(curVar);
+    const cfg        = VAR_CONFIG[curVar];
+    const [mn, mx]   = varRange(curVar);
+    const usePeriodo = SERIE_VARS.has(curVar);
+    const periodoLabel = usePeriodo && curPeriodo ? ' (' + fmtPeriodo(curPeriodo) + ')' : '';
+
+    // Show/hide "no varía por período" note
+    const note = document.getElementById('periodoNote');
+    if (note) note.style.display = usePeriodo ? 'none' : 'block';
 
     geoLayer = L.geoJSON(geoData, {
       style: f => {
-        const d   = lookup[norm(f.properties.nombre || '')];
-        const val = d ? d[curVar] : null;
+        const row = getPeriodRow(norm(f.properties.nombre || ''));
+        const val = row ? row[curVar] : null;
         const fc  = cfg.colorFn ? cfg.colorFn(val) : choroplethColor(val, mn, mx, cfg.color);
         return { fillColor: fc, fillOpacity: 0.87, color: '#FFFFFF', weight: 1.5 };
       },
       onEachFeature: (f, layer) => {
         const name   = f.properties.nombre || 'Desconocido';
-        const d      = lookup[norm(name)];
-        const val    = d ? d[curVar] : null;
+        const normN  = norm(name);
+        const row    = getPeriodRow(normN);
+        const val    = row ? row[curVar] : null;
         const valStr = cfg.fmt(val);
 
         layer.bindTooltip(
-          `<strong>${name}</strong><br>${cfg.label}: <strong>${valStr}</strong>`,
+          `<strong>${name}</strong><br>${cfg.label}${periodoLabel}: <strong>${valStr}</strong>`,
           { sticky: true }
         );
 
+        // Click always selects from barrios (latest period detail panel)
         layer.on('click', () => {
-          if (d) { selectBarrio(d); document.getElementById('barrioSelect').value = norm(d.barrio); }
+          const d = lookup[normN];
+          if (d) { selectBarrio(d); document.getElementById('barrioSelect').value = normN; }
         });
 
         layer.on('mouseover', function() { this.setStyle({ weight: 2.5, color: '#2D2D2D' }); this.bringToFront(); });
