@@ -32,7 +32,12 @@
       "mediana_precio_noche_usd": 310,
       "pct_superhost": 46.3,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 68.8
+      "ratio_airbnb_zonaprop": 68.8,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 50.8,
+      "esfuerzo_1amb_pct": 47.5
     },
     {
       "barrio": "Almagro",
@@ -57,7 +62,12 @@
       "mediana_precio_noche_usd": 318,
       "pct_superhost": 54.2,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 15.3
+      "ratio_airbnb_zonaprop": 15.3,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 75,
+      "esfuerzo_1amb_pct": 66.5
     },
     {
       "barrio": "Balvanera",
@@ -82,7 +92,12 @@
       "mediana_precio_noche_usd": 540,
       "pct_superhost": 33.9,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 17.4
+      "ratio_airbnb_zonaprop": 17.4,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 72,
+      "esfuerzo_1amb_pct": 59.5
     },
     {
       "barrio": "Barracas",
@@ -107,7 +122,12 @@
       "mediana_precio_noche_usd": 369,
       "pct_superhost": 58.2,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 34.4
+      "ratio_airbnb_zonaprop": 34.4,
+      "zona_etoi": 3,
+      "zona_nombre": "Sur",
+      "ingreso_mediano_zona": 800000,
+      "esfuerzo_alquiler_pct": 104.6,
+      "esfuerzo_1amb_pct": 87.5
     },
     {
       "barrio": "Belgrano",
@@ -132,7 +152,12 @@
       "mediana_precio_noche_usd": 744,
       "pct_superhost": 46.7,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 6
+      "ratio_airbnb_zonaprop": 6,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 83.1,
+      "esfuerzo_1amb_pct": 61.5
     },
     {
       "barrio": "Boedo",
@@ -157,7 +182,12 @@
       "mediana_precio_noche_usd": 286,
       "pct_superhost": 44.9,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 27
+      "ratio_airbnb_zonaprop": 27,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 72,
+      "esfuerzo_1amb_pct": 63.5
     },
     {
       "barrio": "Caballito",
@@ -182,7 +212,12 @@
       "mediana_precio_noche_usd": 314,
       "pct_superhost": 46.8,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 4.4
+      "ratio_airbnb_zonaprop": 4.4,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 83.1,
+      "esfuerzo_1amb_pct": 65
     },
     {
       "barrio": "Chacarita",
@@ -207,7 +242,12 @@
       "mediana_precio_noche_usd": 294,
       "pct_superhost": 56.6,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 52.1
+      "ratio_airbnb_zonaprop": 52.1,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 63.8,
+      "esfuerzo_1amb_pct": 57.2
     },
     {
       "barrio": "Coghlan",
@@ -232,7 +272,12 @@
       "mediana_precio_noche_usd": 299,
       "pct_superhost": 35.6,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 40.2
+      "ratio_airbnb_zonaprop": 40.2,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 66.9,
+      "esfuerzo_1amb_pct": 57.7
     },
     {
       "barrio": "Colegiales",
@@ -257,7 +302,12 @@
       "mediana_precio_noche_usd": 664,
       "pct_superhost": 47.8,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 48.5
+      "ratio_airbnb_zonaprop": 48.5,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 73.8,
+      "esfuerzo_1amb_pct": 59.6
     },
     {
       "barrio": "Constitucion",
@@ -282,7 +332,12 @@
       "mediana_precio_noche_usd": 297,
       "pct_superhost": 47.1,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 89.9
+      "ratio_airbnb_zonaprop": 89.9,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 62.4,
+      "esfuerzo_1amb_pct": 57.6
     },
     {
       "barrio": "Flores",
@@ -307,7 +362,12 @@
       "mediana_precio_noche_usd": 269,
       "pct_superhost": 34.3,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 5.2
+      "ratio_airbnb_zonaprop": 5.2,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 76,
+      "esfuerzo_1amb_pct": 63.8
     },
     {
       "barrio": "Floresta",
@@ -332,7 +392,12 @@
       "mediana_precio_noche_usd": 330,
       "pct_superhost": 16,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 6.6
+      "ratio_airbnb_zonaprop": 6.6,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 71,
+      "esfuerzo_1amb_pct": 59
     },
     {
       "barrio": "La Boca",
@@ -357,7 +422,12 @@
       "mediana_precio_noche_usd": 291,
       "pct_superhost": 38.1,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 60.2
+      "ratio_airbnb_zonaprop": 60.2,
+      "zona_etoi": 3,
+      "zona_nombre": "Sur",
+      "ingreso_mediano_zona": 800000,
+      "esfuerzo_alquiler_pct": 91.2,
+      "esfuerzo_1amb_pct": 72.8
     },
     {
       "barrio": "Liniers",
@@ -382,7 +452,12 @@
       "mediana_precio_noche_usd": 302,
       "pct_superhost": 30.6,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 9.1
+      "ratio_airbnb_zonaprop": 9.1,
+      "zona_etoi": 3,
+      "zona_nombre": "Sur",
+      "ingreso_mediano_zona": 800000,
+      "esfuerzo_alquiler_pct": 81.2,
+      "esfuerzo_1amb_pct": 68.8
     },
     {
       "barrio": "Mataderos",
@@ -407,7 +482,12 @@
       "mediana_precio_noche_usd": 258,
       "pct_superhost": 69.2,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 14
+      "ratio_airbnb_zonaprop": 14,
+      "zona_etoi": 3,
+      "zona_nombre": "Sur",
+      "ingreso_mediano_zona": 800000,
+      "esfuerzo_alquiler_pct": 92.5,
+      "esfuerzo_1amb_pct": 72.5
     },
     {
       "barrio": "Monserrat",
@@ -432,7 +512,12 @@
       "mediana_precio_noche_usd": 520,
       "pct_superhost": 47.7,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 42.6
+      "ratio_airbnb_zonaprop": 42.6,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 75,
+      "esfuerzo_1amb_pct": 64
     },
     {
       "barrio": "Monte Castro",
@@ -457,7 +542,12 @@
       "mediana_precio_noche_usd": 364,
       "pct_superhost": 37.5,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 10.1
+      "ratio_airbnb_zonaprop": 10.1,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 71.9,
+      "esfuerzo_1amb_pct": 62
     },
     {
       "barrio": "Nueva Pompeya",
@@ -482,7 +572,12 @@
       "mediana_precio_noche_usd": 284,
       "pct_superhost": 50,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 27.1
+      "ratio_airbnb_zonaprop": 27.1,
+      "zona_etoi": 3,
+      "zona_nombre": "Sur",
+      "ingreso_mediano_zona": 800000,
+      "esfuerzo_alquiler_pct": 72.5,
+      "esfuerzo_1amb_pct": 50.6
     },
     {
       "barrio": "Nuñez",
@@ -507,7 +602,12 @@
       "mediana_precio_noche_usd": 503,
       "pct_superhost": 43.1,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 13
+      "ratio_airbnb_zonaprop": 13,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 83.8,
+      "esfuerzo_1amb_pct": 66.4
     },
     {
       "barrio": "Palermo",
@@ -532,7 +632,12 @@
       "mediana_precio_noche_usd": 838,
       "pct_superhost": 77,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 5.3
+      "ratio_airbnb_zonaprop": 5.3,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 84.6,
+      "esfuerzo_1amb_pct": 65.2
     },
     {
       "barrio": "Parque Avellaneda",
@@ -557,7 +662,12 @@
       "mediana_precio_noche_usd": 345,
       "pct_superhost": 34.8,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 14
+      "ratio_airbnb_zonaprop": 14,
+      "zona_etoi": 3,
+      "zona_nombre": "Sur",
+      "ingreso_mediano_zona": 800000,
+      "esfuerzo_alquiler_pct": 90.4,
+      "esfuerzo_1amb_pct": 71.2
     },
     {
       "barrio": "Parque Chacabuco",
@@ -582,7 +692,12 @@
       "mediana_precio_noche_usd": 320,
       "pct_superhost": 31.7,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 16.5
+      "ratio_airbnb_zonaprop": 16.5,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 77.3,
+      "esfuerzo_1amb_pct": 64.6
     },
     {
       "barrio": "Parque Chas",
@@ -607,7 +722,12 @@
       "mediana_precio_noche_usd": 283,
       "pct_superhost": 39.1,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 36.2
+      "ratio_airbnb_zonaprop": 36.2,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 73.6,
+      "esfuerzo_1amb_pct": 67.5
     },
     {
       "barrio": "Parque Patricios",
@@ -632,7 +752,12 @@
       "mediana_precio_noche_usd": 314,
       "pct_superhost": 36.2,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 21
+      "ratio_airbnb_zonaprop": 21,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 72,
+      "esfuerzo_1amb_pct": 62
     },
     {
       "barrio": "Paternal",
@@ -657,7 +782,12 @@
       "mediana_precio_noche_usd": 249,
       "pct_superhost": 15.5,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 16.2
+      "ratio_airbnb_zonaprop": 16.2,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 55.4,
+      "esfuerzo_1amb_pct": 47.8
     },
     {
       "barrio": "Puerto Madero",
@@ -682,7 +812,12 @@
       "mediana_precio_noche_usd": 813,
       "pct_superhost": 60.3,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 15.3
+      "ratio_airbnb_zonaprop": 15.3,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": null,
+      "esfuerzo_1amb_pct": null
     },
     {
       "barrio": "Recoleta",
@@ -707,7 +842,12 @@
       "mediana_precio_noche_usd": 784,
       "pct_superhost": 60.5,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 5.8
+      "ratio_airbnb_zonaprop": 5.8,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 77,
+      "esfuerzo_1amb_pct": 55.6
     },
     {
       "barrio": "Retiro",
@@ -732,7 +872,12 @@
       "mediana_precio_noche_usd": 510,
       "pct_superhost": 47.7,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 26.3
+      "ratio_airbnb_zonaprop": 26.3,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 109.9,
+      "esfuerzo_1amb_pct": 81
     },
     {
       "barrio": "Saavedra",
@@ -757,7 +902,12 @@
       "mediana_precio_noche_usd": 364,
       "pct_superhost": 43,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 17.8
+      "ratio_airbnb_zonaprop": 17.8,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 68.3,
+      "esfuerzo_1amb_pct": 60.8
     },
     {
       "barrio": "San Cristobal",
@@ -782,7 +932,12 @@
       "mediana_precio_noche_usd": 277,
       "pct_superhost": 36.2,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 20.6
+      "ratio_airbnb_zonaprop": 20.6,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 69,
+      "esfuerzo_1amb_pct": 62
     },
     {
       "barrio": "San Nicolas",
@@ -807,7 +962,12 @@
       "mediana_precio_noche_usd": 571,
       "pct_superhost": 50.7,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 26.4
+      "ratio_airbnb_zonaprop": 26.4,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 72.5,
+      "esfuerzo_1amb_pct": 60
     },
     {
       "barrio": "San Telmo",
@@ -832,7 +992,12 @@
       "mediana_precio_noche_usd": 421,
       "pct_superhost": 45.2,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 23.1
+      "ratio_airbnb_zonaprop": 23.1,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 81.8,
+      "esfuerzo_1amb_pct": 70
     },
     {
       "barrio": "Velez Sarsfield",
@@ -857,7 +1022,12 @@
       "mediana_precio_noche_usd": 274,
       "pct_superhost": 5,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 31.7
+      "ratio_airbnb_zonaprop": 31.7,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 67.1,
+      "esfuerzo_1amb_pct": 60.3
     },
     {
       "barrio": "Versalles",
@@ -882,7 +1052,12 @@
       "mediana_precio_noche_usd": null,
       "pct_superhost": null,
       "pct_guest_favorite": null,
-      "ratio_airbnb_zonaprop": null
+      "ratio_airbnb_zonaprop": null,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 85.4,
+      "esfuerzo_1amb_pct": 53
     },
     {
       "barrio": "Villa Crespo",
@@ -907,7 +1082,12 @@
       "mediana_precio_noche_usd": 511,
       "pct_superhost": 60.2,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 12.7
+      "ratio_airbnb_zonaprop": 12.7,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 62.9,
+      "esfuerzo_1amb_pct": 55.3
     },
     {
       "barrio": "Villa Del Parque",
@@ -932,7 +1112,12 @@
       "mediana_precio_noche_usd": 282,
       "pct_superhost": 21.1,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 9.5
+      "ratio_airbnb_zonaprop": 9.5,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 56.2,
+      "esfuerzo_1amb_pct": 47.7
     },
     {
       "barrio": "Villa Devoto",
@@ -957,7 +1142,12 @@
       "mediana_precio_noche_usd": 548,
       "pct_superhost": 40.2,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 15.9
+      "ratio_airbnb_zonaprop": 15.9,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 63.8,
+      "esfuerzo_1amb_pct": 52.3
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -982,7 +1172,12 @@
       "mediana_precio_noche_usd": 286,
       "pct_superhost": 20,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 24.1
+      "ratio_airbnb_zonaprop": 24.1,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 53.8,
+      "esfuerzo_1amb_pct": 48.5
     },
     {
       "barrio": "Villa Lugano",
@@ -1007,7 +1202,12 @@
       "mediana_precio_noche_usd": 335,
       "pct_superhost": 0,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 4.4
+      "ratio_airbnb_zonaprop": 4.4,
+      "zona_etoi": 3,
+      "zona_nombre": "Sur",
+      "ingreso_mediano_zona": 800000,
+      "esfuerzo_alquiler_pct": 82.5,
+      "esfuerzo_1amb_pct": 68.1
     },
     {
       "barrio": "Villa Luro",
@@ -1032,7 +1232,12 @@
       "mediana_precio_noche_usd": 343,
       "pct_superhost": 49,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 8.7
+      "ratio_airbnb_zonaprop": 8.7,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 76,
+      "esfuerzo_1amb_pct": 60
     },
     {
       "barrio": "Villa Ortuzar",
@@ -1057,7 +1262,12 @@
       "mediana_precio_noche_usd": 320,
       "pct_superhost": 43.6,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 39.2
+      "ratio_airbnb_zonaprop": 39.2,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 61.5,
+      "esfuerzo_1amb_pct": 52.5
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -1082,7 +1292,12 @@
       "mediana_precio_noche_usd": 284,
       "pct_superhost": 33.3,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 10
+      "ratio_airbnb_zonaprop": 10,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 56.9,
+      "esfuerzo_1amb_pct": 49.5
     },
     {
       "barrio": "Villa Real",
@@ -1107,7 +1322,12 @@
       "mediana_precio_noche_usd": 252,
       "pct_superhost": 0,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 6.5
+      "ratio_airbnb_zonaprop": 6.5,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 85.4,
+      "esfuerzo_1amb_pct": 60.4
     },
     {
       "barrio": "Villa Riachuelo",
@@ -1132,7 +1352,12 @@
       "mediana_precio_noche_usd": 362,
       "pct_superhost": 0,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 83.3
+      "ratio_airbnb_zonaprop": 83.3,
+      "zona_etoi": 3,
+      "zona_nombre": "Sur",
+      "ingreso_mediano_zona": 800000,
+      "esfuerzo_alquiler_pct": 96.6,
+      "esfuerzo_1amb_pct": null
     },
     {
       "barrio": "Villa Santa Rita",
@@ -1157,7 +1382,12 @@
       "mediana_precio_noche_usd": 252,
       "pct_superhost": 33.3,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 10.8
+      "ratio_airbnb_zonaprop": 10.8,
+      "zona_etoi": 2,
+      "zona_nombre": "Centro",
+      "ingreso_mediano_zona": 1000000,
+      "esfuerzo_alquiler_pct": 70,
+      "esfuerzo_1amb_pct": 62
     },
     {
       "barrio": "Villa Soldati",
@@ -1182,7 +1412,12 @@
       "mediana_precio_noche_usd": 343,
       "pct_superhost": 100,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 22.2
+      "ratio_airbnb_zonaprop": 22.2,
+      "zona_etoi": 3,
+      "zona_nombre": "Sur",
+      "ingreso_mediano_zona": 800000,
+      "esfuerzo_alquiler_pct": 71.2,
+      "esfuerzo_1amb_pct": 63.3
     },
     {
       "barrio": "Villa Urquiza",
@@ -1207,9 +1442,36 @@
       "mediana_precio_noche_usd": 302,
       "pct_superhost": 50.2,
       "pct_guest_favorite": 0,
-      "ratio_airbnb_zonaprop": 7
+      "ratio_airbnb_zonaprop": 7,
+      "zona_etoi": 1,
+      "zona_nombre": "Norte",
+      "ingreso_mediano_zona": 1300000,
+      "esfuerzo_alquiler_pct": 65,
+      "esfuerzo_1amb_pct": 54.4
     }
-  ]
+  ],
+  "etoi": {
+    "fuente": "ETOI 254 - 4to trimestre 2025",
+    "nota": "Ingresos laborales medianos de jóvenes 18-35 por zona ETOI. Puerto Madero excluido del esfuerzo de alquiler por ser outlier de mercado.",
+    "caba_total": 1000000,
+    "zonas": [
+      {
+        "zona": 1,
+        "nombre": "Norte",
+        "ingreso_mediano": 1300000
+      },
+      {
+        "zona": 2,
+        "nombre": "Centro",
+        "ingreso_mediano": 1000000
+      },
+      {
+        "zona": 3,
+        "nombre": "Sur",
+        "ingreso_mediano": 800000
+      }
+    ]
+  }
 }
 ;
 window.GEO_DATA={
