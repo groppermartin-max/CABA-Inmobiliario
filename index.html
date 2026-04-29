@@ -735,21 +735,15 @@
     return [0,1,2].map(i => Math.round(lo[i] + (hi[i]-lo[i])*t)).join(',');
   }
 
-  // useLog=true applies log interpolation for wide-range continuous vars
-  function choroplethColor(val, mn, mx, hex, useLog = true) {
+  function choroplethColor(val, mn, mx, hex) {
     if (val == null || mx === mn) return '#EDEAE5';
-    let t;
-    if (useLog) {
-      t = Math.max(0, Math.min(1, Math.log(val - mn + 1) / Math.log(mx - mn + 1)));
-    } else {
-      t = Math.max(0, Math.min(1, (val - mn) / (mx - mn)));
-    }
+    const t = Math.max(0, Math.min(1, (val - mn) / (mx - mn)));
     const lo = [240,237,232];
     return `rgb(${lerpRGB(lo, hexRGB(hex), t)})`;
   }
 
-  // Variables that should NOT use log scale (already custom-colored or ratio-like)
-  const NO_LOG_VARS = new Set(['ratio_m2_chico_vs_grande', 'esfuerzo_alquiler_pct']);
+  // Kept for reference by drawChoropleth / drawLegend
+  const NO_LOG_VARS = new Set([]);
 
   // Multi-stop green→amber→coral for esfuerzo
   function esfuerzoColor(val) {
@@ -982,13 +976,11 @@
     const note = document.getElementById('periodoNote');
     if (note) note.style.display = usePeriodo ? 'none' : 'block';
 
-    const useLog = !NO_LOG_VARS.has(curVar);
-
     geoLayer = L.geoJSON(geoData, {
       style: f => {
         const row = getPeriodRow(norm(f.properties.nombre || ''));
         const val = row ? row[curVar] : null;
-        const fc  = cfg.colorFn ? cfg.colorFn(val) : choroplethColor(val, mn, mx, cfg.color, useLog);
+        const fc  = cfg.colorFn ? cfg.colorFn(val) : choroplethColor(val, mn, mx, cfg.color);
         return { fillColor: fc, fillOpacity: 0.87, color: '#FFFFFF', weight: 1.5 };
       },
       onEachFeature: (f, layer) => {
@@ -1021,8 +1013,6 @@
   function drawLegend(cfg, mn, mx) {
     if (legendCtrl) legendCtrl.remove();
 
-    const useLog = !NO_LOG_VARS.has(curVar);
-
     legendCtrl = L.control({ position: 'bottomright' });
     legendCtrl.onAdd = () => {
       const div = L.DomUtil.create('div', 'legend-box');
@@ -1039,15 +1029,11 @@
       } else {
         for (let i = 5; i >= 0; i--) {
           const t   = i / 5;
-          // For log scale: invert log transform so legend steps match visual gradation
-          // val = (mx - mn + 1)^t + mn - 1
-          const val = useLog
-            ? Math.pow(mx - mn + 1, t) + mn - 1
-            : mn + t * (mx - mn);
-          const col = choroplethColor(val, mn, mx, cfg.color, useLog);
+          const val = mn + t * (mx - mn);
+          const col = choroplethColor(val, mn, mx, cfg.color);
           html += `<div class="legend-row">
             <div class="legend-swatch" style="background:${col}"></div>
-            <span style="color:var(--muted)">${cfg.fmt(Math.round(val))}</span>
+            <span style="color:var(--muted)">${cfg.fmt(val)}</span>
           </div>`;
         }
       }
