@@ -101,7 +101,7 @@
     .kpi-card:nth-child(3)::after { background: var(--mint); }
     .kpi-card:nth-child(4)::after { background: var(--lav); }
     .kpi-card:nth-child(5)::after { background: var(--amber); }
-    .kpi-card:nth-child(6)::after { background: var(--coral); }
+    .kpi-card:nth-child(6)::after { background: var(--amber); }
 
     .kpi-label {
       font-size: 10px;
@@ -127,7 +127,7 @@
     /* ── MAIN LAYOUT ── */
     .main-layout {
       flex: none;
-      height: calc(100vh - 158px);
+      height: calc(100vh - 204px);
       display: grid;
       grid-template-columns: 43% 57%;
       gap: 14px;
@@ -482,40 +482,6 @@
     .leaflet-tooltip::before { display: none !important; }
 
     /* ── COMPARADOR PANEL ── */
-    #comparador {
-      display: none;
-      padding: 0 24px 28px;
-    }
-
-    #comparador.visible { display: block; }
-
-    .comp-toggle-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 8px 0 4px;
-      cursor: pointer;
-      gap: 6px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 500;
-      user-select: none;
-    }
-
-    .comp-toggle-bar:hover { color: var(--text); }
-
-    .comp-toggle-icon {
-      width: 20px;
-      height: 20px;
-      border: 1.5px solid var(--border);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      line-height: 1;
-    }
-
     .comp-selects {
       display: flex;
       gap: 20px;
@@ -600,6 +566,52 @@
       font-size: 13px;
     }
 
+    /* ── TABS ── */
+    .tab-bar {
+      flex-shrink: 0;
+      display: flex;
+      gap: 0;
+      padding: 0 24px;
+      border-bottom: 2px solid var(--border);
+      background: var(--white);
+    }
+
+    .tab-btn {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 10px 18px;
+      border: none;
+      background: none;
+      color: var(--muted);
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: color .15s, border-color .15s;
+      outline: none;
+    }
+
+    .tab-btn:hover { color: var(--text); }
+    .tab-btn.active { color: var(--coral); border-bottom-color: var(--coral); font-weight: 600; }
+
+    /* ── COMPARADOR VIEW ── */
+    #view-comparador {
+      padding: 14px 24px 28px;
+    }
+
+    #view-comparador .panel {
+      max-height: calc(100vh - 204px);
+      overflow-y: auto;
+    }
+
+    #view-comparador .panel::-webkit-scrollbar { width: 3px; }
+    #view-comparador .panel::-webkit-scrollbar-track { background: transparent; }
+    #view-comparador .panel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+
+    .comp-evol-wrap {
+      padding: 14px 18px 4px;
+    }
+
     /* ── LOADING / ERROR ── */
     .center-msg {
       display: flex;
@@ -626,51 +638,56 @@
   <!-- KPI STRIP -->
   <div class="kpi-strip" id="kpiStrip"></div>
 
-  <!-- MAIN LAYOUT -->
-  <div class="main-layout">
+  <!-- TAB BAR -->
+  <div class="tab-bar">
+    <button class="tab-btn active" id="tabExplorer" onclick="switchTab('explorer')">Explorador de barrios</button>
+    <button class="tab-btn" id="tabComparador" onclick="switchTab('comparador')">Comparador</button>
+  </div>
 
-    <!-- LEFT: MAP -->
-    <div class="panel">
-      <div class="panel-head">
-        <span class="panel-title">Mapa por barrio</span>
-        <div class="map-controls">
-          <select id="mapVarSelect">
-            <option value="mediana_precio_ars">Precio mediano</option>
-            <option value="mediana_precio_m2">Precio / m²</option>
-            <option value="n_publicaciones">Publicaciones</option>
-            <option value="n_airbnb">Cantidad Airbnb</option>
-            <option value="ratio_airbnb_zonaprop">Ratio Airbnb / Zonaprop</option>
-            <option value="ratio_m2_chico_vs_grande">Sobreprecio m² chico vs grande</option>
-            <option value="esfuerzo_alquiler_pct">Esfuerzo de alquiler (%)</option>
-          </select>
-          <select id="periodoSelect"></select>
+  <!-- VIEW: EXPLORER -->
+  <div id="view-explorer">
+
+    <!-- MAIN LAYOUT -->
+    <div class="main-layout">
+
+      <!-- LEFT: MAP -->
+      <div class="panel">
+        <div class="panel-head">
+          <span class="panel-title">Mapa por barrio</span>
+          <div class="map-controls">
+            <select id="mapVarSelect">
+              <option value="mediana_precio_ars">Precio mediano</option>
+              <option value="mediana_precio_m2">Precio / m²</option>
+              <option value="n_publicaciones">Publicaciones</option>
+              <option value="n_airbnb">Cantidad Airbnb</option>
+              <option value="ratio_airbnb_zonaprop">Ratio Airbnb / Zonaprop</option>
+              <option value="ratio_m2_chico_vs_grande">Sobreprecio m² chico vs grande</option>
+              <option value="esfuerzo_alquiler_pct">Esfuerzo de alquiler (%)</option>
+            </select>
+            <select id="periodoSelect"></select>
+          </div>
+        </div>
+        <div id="periodoNote" class="periodo-note">Este indicador no varía por período</div>
+        <div id="map"></div>
+      </div>
+
+      <!-- RIGHT: DETAIL -->
+      <div class="panel">
+        <div class="panel-head">
+          <span class="panel-title" id="rightTitle">Detalle de barrio</span>
+          <select id="barrioSelect"></select>
+        </div>
+        <div id="rightBody">
+          <div class="center-msg">Cargando datos&hellip;</div>
         </div>
       </div>
-      <div id="periodoNote" class="periodo-note">Este indicador no varía por período</div>
-      <div id="map"></div>
-    </div>
 
-    <!-- RIGHT: DETAIL -->
-    <div class="panel">
-      <div class="panel-head">
-        <span class="panel-title" id="rightTitle">Detalle de barrio</span>
-        <select id="barrioSelect"></select>
-      </div>
-      <div id="rightBody">
-        <div class="center-msg">Cargando datos&hellip;</div>
-      </div>
     </div>
 
   </div>
 
-  <!-- COMPARADOR TOGGLE -->
-  <div class="comp-toggle-bar" id="compToggle" onclick="toggleComparador()">
-    <div class="comp-toggle-icon" id="compToggleIcon">+</div>
-    <span>Comparar dos barrios</span>
-  </div>
-
-  <!-- COMPARADOR PANEL -->
-  <div id="comparador">
+  <!-- VIEW: COMPARADOR -->
+  <div id="view-comparador" style="display:none">
     <div class="panel">
       <div class="panel-head">
         <span class="panel-title">Comparador de barrios</span>
@@ -684,6 +701,10 @@
           <div class="comp-sel-label">Barrio B</div>
           <select id="compSelB"><option value="">— Seleccionar barrio —</option></select>
         </div>
+      </div>
+      <div id="compEvolWrap" class="comp-evol-wrap" style="display:none">
+        <div class="section-label">Evolución de precio mediano</div>
+        <div class="chart-wrap-tall"><canvas id="compEvolChart"></canvas></div>
       </div>
       <div class="comp-grid" id="compGrid">
         <div class="comp-hint">Seleccioná los dos barrios para ver la comparación.</div>
@@ -714,12 +735,21 @@
     return [0,1,2].map(i => Math.round(lo[i] + (hi[i]-lo[i])*t)).join(',');
   }
 
-  function choroplethColor(val, mn, mx, hex) {
+  // useLog=true applies log interpolation for wide-range continuous vars
+  function choroplethColor(val, mn, mx, hex, useLog = true) {
     if (val == null || mx === mn) return '#EDEAE5';
-    const t  = Math.max(0, Math.min(1, (val-mn)/(mx-mn)));
+    let t;
+    if (useLog) {
+      t = Math.max(0, Math.min(1, Math.log(val - mn + 1) / Math.log(mx - mn + 1)));
+    } else {
+      t = Math.max(0, Math.min(1, (val - mn) / (mx - mn)));
+    }
     const lo = [240,237,232];
     return `rgb(${lerpRGB(lo, hexRGB(hex), t)})`;
   }
+
+  // Variables that should NOT use log scale (already custom-colored or ratio-like)
+  const NO_LOG_VARS = new Set(['ratio_m2_chico_vs_grande', 'esfuerzo_alquiler_pct']);
 
   // Multi-stop green→amber→coral for esfuerzo
   function esfuerzoColor(val) {
@@ -769,6 +799,8 @@
   let tipChart      = null;
   let m2Chart       = null;
   let evolChart     = null;
+  let compChart     = null;
+  let compEvolChart = null;
   let curVar        = 'mediana_precio_ars';
   let curPeriodo    = null;   // selected period for map choropleth
   let compA         = null;
@@ -873,13 +905,15 @@
   // ─────────────────────────────────────────────
   function buildKPIs() {
     const k = dash.kpis;
+    const ratioVals = dash.barrios.map(b => b.ratio_m2_chico_vs_grande).filter(v => v != null && v > 0);
+    const avgRatio  = ratioVals.length ? ratioVals.reduce((a, b) => a + b, 0) / ratioVals.length : null;
     const cards = [
-      { label: 'Precio mediano CABA',   value: fmtARS(k.mediana_precio_caba),    sub: 'por mes' },
-      { label: 'Precio mediano m²',     value: fmtARS(k.mediana_precio_m2_caba), sub: 'ARS / m²' },
-      { label: 'Publicaciones totales', value: fmtNum(k.total_publicaciones),    sub: 'en ZonaProp' },
-      { label: 'Listados Airbnb',       value: fmtNum(k.total_airbnb),           sub: 'activos' },
-      { label: 'Barrio más caro',       value: k.barrio_mas_caro,                sub: 'precio mediano' },
-      { label: 'Mayor ratio Airbnb',    value: k.barrio_mayor_ratio_airbnb,      sub: 'Airbnb / Zonaprop' },
+      { label: 'Precio mediano CABA',      value: fmtARS(k.mediana_precio_caba),           sub: 'por mes' },
+      { label: 'Precio mediano m²',        value: fmtARS(k.mediana_precio_m2_caba),        sub: 'ARS / m²' },
+      { label: 'Publicaciones totales',    value: fmtNum(k.total_publicaciones),            sub: 'en ZonaProp' },
+      { label: 'Listados Airbnb',          value: fmtNum(k.total_airbnb),                  sub: 'activos' },
+      { label: 'Barrio más caro',          value: k.barrio_mas_caro,                       sub: 'precio mediano' },
+      { label: 'Sobreprecio monoambiente', value: avgRatio ? avgRatio.toFixed(2) + 'x' : 'N/D', sub: 'precio m² · 1 amb vs 3 amb' },
     ];
     document.getElementById('kpiStrip').innerHTML = cards.map(c => `
       <div class="kpi-card">
@@ -948,11 +982,13 @@
     const note = document.getElementById('periodoNote');
     if (note) note.style.display = usePeriodo ? 'none' : 'block';
 
+    const useLog = !NO_LOG_VARS.has(curVar);
+
     geoLayer = L.geoJSON(geoData, {
       style: f => {
         const row = getPeriodRow(norm(f.properties.nombre || ''));
         const val = row ? row[curVar] : null;
-        const fc  = cfg.colorFn ? cfg.colorFn(val) : choroplethColor(val, mn, mx, cfg.color);
+        const fc  = cfg.colorFn ? cfg.colorFn(val) : choroplethColor(val, mn, mx, cfg.color, useLog);
         return { fillColor: fc, fillOpacity: 0.87, color: '#FFFFFF', weight: 1.5 };
       },
       onEachFeature: (f, layer) => {
@@ -985,6 +1021,8 @@
   function drawLegend(cfg, mn, mx) {
     if (legendCtrl) legendCtrl.remove();
 
+    const useLog = !NO_LOG_VARS.has(curVar);
+
     legendCtrl = L.control({ position: 'bottomright' });
     legendCtrl.onAdd = () => {
       const div = L.DomUtil.create('div', 'legend-box');
@@ -1001,11 +1039,15 @@
       } else {
         for (let i = 5; i >= 0; i--) {
           const t   = i / 5;
-          const val = mn + t * (mx - mn);
-          const col = choroplethColor(val, mn, mx, cfg.color);
+          // For log scale: invert log transform so legend steps match visual gradation
+          // val = (mx - mn + 1)^t + mn - 1
+          const val = useLog
+            ? Math.pow(mx - mn + 1, t) + mn - 1
+            : mn + t * (mx - mn);
+          const col = choroplethColor(val, mn, mx, cfg.color, useLog);
           html += `<div class="legend-row">
             <div class="legend-swatch" style="background:${col}"></div>
-            <span style="color:var(--muted)">${cfg.fmt(val)}</span>
+            <span style="color:var(--muted)">${cfg.fmt(Math.round(val))}</span>
           </div>`;
         }
       }
@@ -1083,7 +1125,12 @@
       <!-- PRECIOS -->
       <div class="section-label">Precios generales</div>
       <div class="stat-grid">
-        <div class="stat-box"><div class="stat-label">Precio mediano</div><div class="stat-value c-coral">${fmtARS(b.mediana_precio_ars)}</div></div>
+        <div class="stat-box">
+          <div class="stat-label">Precio mediano</div>
+          <div class="stat-value c-coral">${fmtARS(b.mediana_precio_ars)}</div>
+          ${b.mediana_precio_usd != null ? `<div style="font-size:11px;color:var(--sky);font-weight:600;margin-top:2px">USD ${fmtNum(b.mediana_precio_usd)}</div>` : ''}
+          ${b.pct_usd != null ? `<div style="font-size:10px;color:var(--muted);margin-top:1px">${(+b.pct_usd).toFixed(0)}% en USD</div>` : ''}
+        </div>
         <div class="stat-box"><div class="stat-label">Precio / m²</div><div class="stat-value c-sky">${fmtARS(b.mediana_precio_m2)}</div></div>
         <div class="stat-box"><div class="stat-label">Expensas medianas</div><div class="stat-value c-amber">${fmtARS(b.mediana_expensas)}</div></div>
         <div class="stat-box"><div class="stat-label">Costo total mediano</div><div class="stat-value c-mint">${fmtARS(b.mediana_costo_total)}</div></div>
@@ -1101,17 +1148,17 @@
       <div class="section-label">Precio / m² por ambientes (ARS)</div>
       <div class="chart-wrap"><canvas id="m2Chart"></canvas></div>
 
-      <!-- RATIO M² -->
-      <div class="section-label">Sobreprecio m² · chico vs grande</div>
-      <div class="ratio-wrap">
-        <div class="ratio-meta">
-          <span class="ratio-desc">1 amb. vs 3 amb.</span>
-          <span class="ratio-val" style="color:${ratioCol}">${ratio.toFixed(2)}x</span>
+      <!-- COMPOSICIÓN POR AMBIENTES -->
+      <div class="section-label">Composición y sobreprecio</div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <div style="flex:1;height:120px;position:relative"><canvas id="compChart"></canvas></div>
+        <div style="width:118px;flex-shrink:0">
+          <div class="stat-box">
+            <div class="stat-label">Sobreprecio m²</div>
+            <div style="font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px">1 amb. vs 3 amb.</div>
+            <div class="stat-value" style="color:${ratioCol};font-size:22px">${ratio.toFixed(2)}x</div>
+          </div>
         </div>
-        <div class="bar-track">
-          <div class="bar-fill" style="width:${ratioPct}%;background:${ratioCol}"></div>
-        </div>
-        <div class="bar-scale"><span>Sin sobreprecio (1.0x)</span><span>Doble (2.0x)</span></div>
       </div>
 
       <!-- ESFUERZO DE ALQUILER -->
@@ -1148,17 +1195,11 @@
         </div>
       </div>
 
-      <!-- PUBLICACIONES -->
-      <div class="section-label">Publicaciones por ambientes</div>
-      <div class="stat-grid stat-grid-3">
-        <div class="stat-box"><div class="stat-label">Total</div><div class="stat-value c-sky">${fmtNum(b.n_publicaciones)}</div></div>
-        <div class="stat-box"><div class="stat-label">1 ambiente</div><div class="stat-value">${b.n_1amb != null ? fmtNum(b.n_1amb) : 'N/D'}</div></div>
-        <div class="stat-box"><div class="stat-label">2 ambientes</div><div class="stat-value">${b.n_2amb != null ? fmtNum(b.n_2amb) : 'N/D'}</div></div>
-      </div>
     `;
 
     // ── CHART EVOLUCIÓN TEMPORAL ──
-    if (evolChart) { evolChart.destroy(); evolChart = null; }
+    if (compChart)  { compChart.destroy();  compChart  = null; }
+    if (evolChart)  { evolChart.destroy();  evolChart  = null; }
     const serie = serieLookup[norm(b.barrio)] || [];
     if (serie.length > 0) {
       const labels    = serie.map(r => fmtPeriodo(r.periodo));
@@ -1303,6 +1344,78 @@
       },
       options: chartOpts(fmtARS),
     });
+
+    // ── CHART 3: Composición por ambientes (donut) ──
+    if (compChart) { compChart.destroy(); compChart = null; }
+    const n1 = b.n_1amb || 0;
+    const n2 = b.n_2amb || 0;
+    const n3 = b.n_3amb || 0;
+    const nTotal = b.n_publicaciones || 0;
+    const nOther = Math.max(0, nTotal - n1 - n2 - n3);
+    const donutData   = [n1, n2, n3];
+    const donutLabels = ['1 ambiente', '2 ambientes', '3 ambientes'];
+    const donutColors = [C.coral, C.sky, C.mint];
+    if (nOther > 0) { donutData.push(nOther); donutLabels.push('Otros'); donutColors.push('#BDBDBD'); }
+
+    if (donutData.some(v => v > 0)) {
+      compChart = new Chart(document.getElementById('compChart').getContext('2d'), {
+        type: 'doughnut',
+        data: {
+          labels: donutLabels,
+          datasets: [{
+            data: donutData,
+            backgroundColor: donutColors,
+            borderWidth: 2,
+            borderColor: '#ffffff',
+            hoverOffset: 4,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: '58%',
+          plugins: {
+            legend: {
+              position: 'right',
+              labels: {
+                usePointStyle: true,
+                pointStyle: 'circle',
+                boxWidth: 7, boxHeight: 7,
+                padding: 8,
+                font: { family: 'DM Sans', size: 10 },
+                color: '#2D2D2D',
+                generateLabels: chart => {
+                  const ds = chart.data.datasets[0];
+                  const tot = ds.data.reduce((a, v) => a + v, 0);
+                  return chart.data.labels.map((lbl, i) => ({
+                    text: lbl + '  ' + (tot > 0 ? (ds.data[i] / tot * 100).toFixed(0) + '%' : ''),
+                    fillStyle: ds.backgroundColor[i],
+                    strokeStyle: '#ffffff',
+                    pointStyle: 'circle',
+                    index: i,
+                  }));
+                }
+              }
+            },
+            tooltip: {
+              backgroundColor: '#fff',
+              borderColor: '#E0DDD8',
+              borderWidth: 1,
+              titleColor: '#2D2D2D',
+              bodyColor: '#2D2D2D',
+              padding: 9,
+              callbacks: {
+                label: ctx => {
+                  const tot = ctx.dataset.data.reduce((a, v) => a + v, 0);
+                  const pct = tot > 0 ? (ctx.raw / tot * 100).toFixed(1) + '%' : '';
+                  return '  ' + fmtNum(ctx.raw) + ' (' + pct + ')';
+                }
+              }
+            }
+          }
+        }
+      });
+    }
   }
 
   function chartOpts(fmtFn) {
@@ -1368,12 +1481,13 @@
     });
   }
 
-  function toggleComparador() {
-    const el   = document.getElementById('comparador');
-    const icon = document.getElementById('compToggleIcon');
-    const open = el.classList.toggle('visible');
-    icon.textContent = open ? '−' : '+';
-    if (open) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  function switchTab(tab) {
+    document.getElementById('view-explorer').style.display  = tab === 'explorer'  ? '' : 'none';
+    document.getElementById('view-comparador').style.display = tab === 'comparador' ? '' : 'none';
+    document.getElementById('tabExplorer').classList.toggle('active',  tab === 'explorer');
+    document.getElementById('tabComparador').classList.toggle('active', tab === 'comparador');
+    // Invalidate map size when switching back to explorer
+    if (tab === 'explorer' && lmap) setTimeout(() => lmap.invalidateSize(), 50);
   }
 
   function renderComparador() {
@@ -1425,6 +1539,120 @@
       </table>`;
 
     grid.classList.add('visible');
+    renderCompEvol();
+  }
+
+  function renderCompEvol() {
+    const wrap = document.getElementById('compEvolWrap');
+    if (!compA || !compB) {
+      wrap.style.display = 'none';
+      if (compEvolChart) { compEvolChart.destroy(); compEvolChart = null; }
+      return;
+    }
+
+    const serieA = serieLookup[norm(compA.barrio)] || [];
+    const serieB = serieLookup[norm(compB.barrio)] || [];
+    if (!serieA.length && !serieB.length) { wrap.style.display = 'none'; return; }
+
+    wrap.style.display = 'block';
+
+    const allPeriods = [...new Set([
+      ...serieA.map(r => r.periodo),
+      ...serieB.map(r => r.periodo),
+    ])].sort();
+
+    const mapA = Object.fromEntries(serieA.map(r => [r.periodo, r.mediana_precio_ars]));
+    const mapB = Object.fromEntries(serieB.map(r => [r.periodo, r.mediana_precio_ars]));
+
+    if (compEvolChart) { compEvolChart.destroy(); compEvolChart = null; }
+
+    compEvolChart = new Chart(document.getElementById('compEvolChart').getContext('2d'), {
+      type: 'line',
+      data: {
+        labels: allPeriods.map(fmtPeriodo),
+        datasets: [
+          {
+            label: compA.barrio,
+            data: allPeriods.map(p => mapA[p] ?? null),
+            borderColor: C.coral,
+            backgroundColor: C.coral + '18',
+            borderWidth: 2.5,
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            pointBackgroundColor: C.coral,
+            pointBorderColor: '#fff',
+            pointBorderWidth: 1.5,
+            tension: 0.3,
+            fill: false,
+            spanGaps: true,
+          },
+          {
+            label: compB.barrio,
+            data: allPeriods.map(p => mapB[p] ?? null),
+            borderColor: C.sky,
+            backgroundColor: C.sky + '18',
+            borderWidth: 2.5,
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            pointBackgroundColor: C.sky,
+            pointBorderColor: '#fff',
+            pointBorderWidth: 1.5,
+            tension: 0.3,
+            fill: false,
+            spanGaps: true,
+          },
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top',
+            align: 'end',
+            labels: {
+              usePointStyle: true,
+              pointStyle: 'circle',
+              boxWidth: 7, boxHeight: 7,
+              padding: 12,
+              font: { family: 'DM Sans', size: 11 },
+              color: '#2D2D2D',
+            }
+          },
+          tooltip: {
+            backgroundColor: '#fff',
+            borderColor: '#E0DDD8',
+            borderWidth: 1,
+            titleColor: '#2D2D2D',
+            bodyColor: '#2D2D2D',
+            titleFont: { family: 'Syne', size: 12, weight: '700' },
+            bodyFont: { family: 'DM Sans', size: 12 },
+            padding: 10,
+            callbacks: {
+              label: ctx => ctx.raw != null ? '  ' + ctx.dataset.label + ': ' + fmtARS(ctx.raw) : null
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#EEEBE6' },
+            border: { display: false },
+            ticks: { font: { family: 'DM Sans', size: 10 }, color: '#7A7A7A' }
+          },
+          y: {
+            grid: { color: '#EEEBE6' },
+            border: { display: false },
+            ticks: {
+              font: { family: 'DM Sans', size: 10 },
+              color: '#7A7A7A',
+              callback: v => v >= 1e6 ? (v/1e6).toFixed(1)+'M' : v >= 1e3 ? (v/1e3).toFixed(0)+'K' : v
+            }
+          }
+        }
+      }
+    });
   }
 
   // ─────────────────────────────────────────────

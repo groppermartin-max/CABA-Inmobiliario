@@ -38,8 +38,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 52.3,
-      "esfuerzo_1amb_pct": 52.3
+      "mediana_precio_q4": 550000,
+      "mediana_expensas_q4": 102600,
+      "mediana_costo_q4": 665000,
+      "mediana_precio_1amb_q4": 450000,
+      "esfuerzo_alquiler_pct": 51.2,
+      "esfuerzo_1amb_pct": 42.5,
+      "pct_usd": 0,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 550000
     },
     {
       "barrio": "Almagro",
@@ -68,8 +75,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 80,
-      "esfuerzo_1amb_pct": 75
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 132600,
+      "mediana_costo_q4": 738000,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 73.8,
+      "esfuerzo_1amb_pct": 63.3,
+      "pct_usd": 8.7,
+      "mediana_precio_usd": 700,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "Balvanera",
@@ -98,8 +112,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 78,
-      "esfuerzo_1amb_pct": 70
+      "mediana_precio_q4": 550000,
+      "mediana_expensas_q4": 125000,
+      "mediana_costo_q4": 695000,
+      "mediana_precio_1amb_q4": 450000,
+      "esfuerzo_alquiler_pct": 69.5,
+      "esfuerzo_1amb_pct": 57.5,
+      "pct_usd": 15.8,
+      "mediana_precio_usd": 700,
+      "mediana_precio_ars_solo": 600000
     },
     {
       "barrio": "Barracas",
@@ -128,8 +149,15 @@
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "esfuerzo_alquiler_pct": 115.6,
-      "esfuerzo_1amb_pct": 91
+      "mediana_precio_q4": 650000,
+      "mediana_expensas_q4": 145000,
+      "mediana_costo_q4": 833000,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 104.1,
+      "esfuerzo_1amb_pct": 80.6,
+      "pct_usd": 9.3,
+      "mediana_precio_usd": 990,
+      "mediana_precio_ars_solo": 700000
     },
     {
       "barrio": "Belgrano",
@@ -158,8 +186,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 96.7,
-      "esfuerzo_1amb_pct": 74.2
+      "mediana_precio_q4": 850000,
+      "mediana_expensas_q4": 200000,
+      "mediana_costo_q4": 1050547,
+      "mediana_precio_1amb_q4": 580000,
+      "esfuerzo_alquiler_pct": 80.8,
+      "esfuerzo_1amb_pct": 60,
+      "pct_usd": 35.7,
+      "mediana_precio_usd": 1200,
+      "mediana_precio_ars_solo": 850000
     },
     {
       "barrio": "Boedo",
@@ -188,8 +223,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 80.5,
-      "esfuerzo_1amb_pct": 68
+      "mediana_precio_q4": 550000,
+      "mediana_expensas_q4": 135000,
+      "mediana_costo_q4": 690000,
+      "mediana_precio_1amb_q4": 490000,
+      "esfuerzo_alquiler_pct": 69,
+      "esfuerzo_1amb_pct": 62.5,
+      "pct_usd": 1.1,
+      "mediana_precio_usd": 1250,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "Caballito",
@@ -218,8 +260,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 91,
-      "esfuerzo_1amb_pct": 74
+      "mediana_precio_q4": 650000,
+      "mediana_expensas_q4": 146000,
+      "mediana_costo_q4": 815000,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 81.5,
+      "esfuerzo_1amb_pct": 64.6,
+      "pct_usd": 8.2,
+      "mediana_precio_usd": 1000,
+      "mediana_precio_ars_solo": 730000
     },
     {
       "barrio": "Chacarita",
@@ -248,8 +297,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 72.3,
-      "esfuerzo_1amb_pct": 67.6
+      "mediana_precio_q4": 650000,
+      "mediana_expensas_q4": 150000,
+      "mediana_costo_q4": 814000,
+      "mediana_precio_1amb_q4": 571405,
+      "esfuerzo_alquiler_pct": 62.6,
+      "esfuerzo_1amb_pct": 55.5,
+      "pct_usd": 31.5,
+      "mediana_precio_usd": 750,
+      "mediana_precio_ars_solo": 712500
     },
     {
       "barrio": "Coghlan",
@@ -278,8 +334,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 75.6,
-      "esfuerzo_1amb_pct": 67.7
+      "mediana_precio_q4": 650000,
+      "mediana_expensas_q4": 150000,
+      "mediana_costo_q4": 826500,
+      "mediana_precio_1amb_q4": 550000,
+      "esfuerzo_alquiler_pct": 63.6,
+      "esfuerzo_1amb_pct": 53.8,
+      "pct_usd": 13.5,
+      "mediana_precio_usd": 750,
+      "mediana_precio_ars_solo": 780000
     },
     {
       "barrio": "Colegiales",
@@ -308,8 +371,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 85.9,
-      "esfuerzo_1amb_pct": 73.7
+      "mediana_precio_q4": 750000,
+      "mediana_expensas_q4": 170000,
+      "mediana_costo_q4": 948626,
+      "mediana_precio_1amb_q4": 570000,
+      "esfuerzo_alquiler_pct": 73,
+      "esfuerzo_1amb_pct": 56.9,
+      "pct_usd": 35.4,
+      "mediana_precio_usd": 1190,
+      "mediana_precio_ars_solo": 780000
     },
     {
       "barrio": "Constitucion",
@@ -338,8 +408,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 75.3,
-      "esfuerzo_1amb_pct": 63.5
+      "mediana_precio_q4": 480000,
+      "mediana_expensas_q4": 123881,
+      "mediana_costo_q4": 610000,
+      "mediana_precio_1amb_q4": 450000,
+      "esfuerzo_alquiler_pct": 61,
+      "esfuerzo_1amb_pct": 57.4,
+      "pct_usd": 14.8,
+      "mediana_precio_usd": 600,
+      "mediana_precio_ars_solo": 550000
     },
     {
       "barrio": "Flores",
@@ -368,8 +445,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 82.1,
-      "esfuerzo_1amb_pct": 70
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 130000,
+      "mediana_costo_q4": 730000,
+      "mediana_precio_1amb_q4": 490000,
+      "esfuerzo_alquiler_pct": 73,
+      "esfuerzo_1amb_pct": 62,
+      "pct_usd": 5.9,
+      "mediana_precio_usd": 800,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "Floresta",
@@ -398,8 +482,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 75,
-      "esfuerzo_1amb_pct": 62
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 105000,
+      "mediana_costo_q4": 710000,
+      "mediana_precio_1amb_q4": 450000,
+      "esfuerzo_alquiler_pct": 71,
+      "esfuerzo_1amb_pct": 55.5,
+      "pct_usd": 5.7,
+      "mediana_precio_usd": 1100,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "La Boca",
@@ -428,8 +519,15 @@
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "esfuerzo_alquiler_pct": 111.1,
-      "esfuerzo_1amb_pct": 83.8
+      "mediana_precio_q4": 560000,
+      "mediana_expensas_q4": 128800,
+      "mediana_costo_q4": 692750,
+      "mediana_precio_1amb_q4": 400000,
+      "esfuerzo_alquiler_pct": 86.6,
+      "esfuerzo_1amb_pct": 66.1,
+      "pct_usd": 19.1,
+      "mediana_precio_usd": 850,
+      "mediana_precio_ars_solo": 600000
     },
     {
       "barrio": "Liniers",
@@ -458,8 +556,15 @@
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "esfuerzo_alquiler_pct": 87.5,
-      "esfuerzo_1amb_pct": 77.5
+      "mediana_precio_q4": 550000,
+      "mediana_expensas_q4": 100000,
+      "mediana_costo_q4": 650000,
+      "mediana_precio_1amb_q4": 450000,
+      "esfuerzo_alquiler_pct": 81.2,
+      "esfuerzo_1amb_pct": 68.8,
+      "pct_usd": 0,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 600000
     },
     {
       "barrio": "Mataderos",
@@ -488,8 +593,15 @@
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "esfuerzo_alquiler_pct": 100,
-      "esfuerzo_1amb_pct": 75
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 95000,
+      "mediana_costo_q4": 700000,
+      "mediana_precio_1amb_q4": 480000,
+      "esfuerzo_alquiler_pct": 87.5,
+      "esfuerzo_1amb_pct": 71.9,
+      "pct_usd": 0,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 680000
     },
     {
       "barrio": "Monserrat",
@@ -518,8 +630,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 80,
-      "esfuerzo_1amb_pct": 75
+      "mediana_precio_q4": 590000,
+      "mediana_expensas_q4": 139875,
+      "mediana_costo_q4": 745000,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 74.5,
+      "esfuerzo_1amb_pct": 64,
+      "pct_usd": 26.9,
+      "mediana_precio_usd": 700,
+      "mediana_precio_ars_solo": 600000
     },
     {
       "barrio": "Monte Castro",
@@ -548,8 +667,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 72,
-      "esfuerzo_1amb_pct": 63
+      "mediana_precio_q4": 565000,
+      "mediana_expensas_q4": 120000,
+      "mediana_costo_q4": 695000,
+      "mediana_precio_1amb_q4": 460000,
+      "esfuerzo_alquiler_pct": 69.5,
+      "esfuerzo_1amb_pct": 58,
+      "pct_usd": 1.7,
+      "mediana_precio_usd": 600,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "Nueva Pompeya",
@@ -578,8 +704,15 @@
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "esfuerzo_alquiler_pct": 112.5,
-      "esfuerzo_1amb_pct": null
+      "mediana_precio_q4": 500000,
+      "mediana_expensas_q4": 80000,
+      "mediana_costo_q4": 570000,
+      "mediana_precio_1amb_q4": 365000,
+      "esfuerzo_alquiler_pct": 71.2,
+      "esfuerzo_1amb_pct": 55.6,
+      "pct_usd": 0,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 850000
     },
     {
       "barrio": "Nuñez",
@@ -608,8 +741,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 99.6,
-      "esfuerzo_1amb_pct": 76.5
+      "mediana_precio_q4": 856571,
+      "mediana_expensas_q4": 181000,
+      "mediana_costo_q4": 1044703,
+      "mediana_precio_1amb_q4": 650000,
+      "esfuerzo_alquiler_pct": 80.4,
+      "esfuerzo_1amb_pct": 63.9,
+      "pct_usd": 43.3,
+      "mediana_precio_usd": 1150,
+      "mediana_precio_ars_solo": 850000
     },
     {
       "barrio": "Palermo",
@@ -638,8 +778,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 97.5,
-      "esfuerzo_1amb_pct": 76
+      "mediana_precio_q4": 859214,
+      "mediana_expensas_q4": 190000,
+      "mediana_costo_q4": 1055951,
+      "mediana_precio_1amb_q4": 650000,
+      "esfuerzo_alquiler_pct": 81.2,
+      "esfuerzo_1amb_pct": 64.6,
+      "pct_usd": 48.6,
+      "mediana_precio_usd": 1200,
+      "mediana_precio_ars_solo": 800000
     },
     {
       "barrio": "Parque Avellaneda",
@@ -668,8 +815,15 @@
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "esfuerzo_alquiler_pct": 92.5,
-      "esfuerzo_1amb_pct": 76.5
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 105000,
+      "mediana_costo_q4": 690000,
+      "mediana_precio_1amb_q4": 480000,
+      "esfuerzo_alquiler_pct": 86.2,
+      "esfuerzo_1amb_pct": 73.1,
+      "pct_usd": 0,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "Parque Chacabuco",
@@ -698,8 +852,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 78,
-      "esfuerzo_1amb_pct": 71.5
+      "mediana_precio_q4": 590000,
+      "mediana_expensas_q4": 143000,
+      "mediana_costo_q4": 744000,
+      "mediana_precio_1amb_q4": 490000,
+      "esfuerzo_alquiler_pct": 74.4,
+      "esfuerzo_1amb_pct": 63.3,
+      "pct_usd": 2.8,
+      "mediana_precio_usd": 875,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "Parque Chas",
@@ -728,8 +889,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 80,
-      "esfuerzo_1amb_pct": 74
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 110000,
+      "mediana_costo_q4": 705000,
+      "mediana_precio_1amb_q4": 530000,
+      "esfuerzo_alquiler_pct": 70.5,
+      "esfuerzo_1amb_pct": 64,
+      "pct_usd": 7,
+      "mediana_precio_usd": 600,
+      "mediana_precio_ars_solo": 690000
     },
     {
       "barrio": "Parque Patricios",
@@ -758,8 +926,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 75,
-      "esfuerzo_1amb_pct": 67.8
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 120000,
+      "mediana_costo_q4": 720000,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 72,
+      "esfuerzo_1amb_pct": 62,
+      "pct_usd": 1.9,
+      "mediana_precio_usd": 700,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "Paternal",
@@ -788,8 +963,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 56.9,
-      "esfuerzo_1amb_pct": 48.7
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 118000,
+      "mediana_costo_q4": 721527,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 55.5,
+      "esfuerzo_1amb_pct": 47.5,
+      "pct_usd": 4,
+      "mediana_precio_usd": 1850,
+      "mediana_precio_ars_solo": 625000
     },
     {
       "barrio": "Puerto Madero",
@@ -818,8 +1000,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
+      "mediana_precio_q4": 3293652,
+      "mediana_expensas_q4": 700000,
+      "mediana_costo_q4": 4049018,
+      "mediana_precio_1amb_q4": 1427618,
       "esfuerzo_alquiler_pct": null,
-      "esfuerzo_1amb_pct": null
+      "esfuerzo_1amb_pct": null,
+      "pct_usd": 97.6,
+      "mediana_precio_usd": 2200,
+      "mediana_precio_ars_solo": 1500000
     },
     {
       "barrio": "Recoleta",
@@ -848,8 +1037,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 91.3,
-      "esfuerzo_1amb_pct": 64.6
+      "mediana_precio_q4": 790000,
+      "mediana_expensas_q4": 190000,
+      "mediana_costo_q4": 965750,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 74.3,
+      "esfuerzo_1amb_pct": 53.1,
+      "pct_usd": 41.4,
+      "mediana_precio_usd": 1300,
+      "mediana_precio_ars_solo": 750000
     },
     {
       "barrio": "Retiro",
@@ -878,8 +1074,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 115.7,
-      "esfuerzo_1amb_pct": 92.4
+      "mediana_precio_q4": 859214,
+      "mediana_expensas_q4": 240000,
+      "mediana_costo_q4": 1107612,
+      "mediana_precio_1amb_q4": 571047,
+      "esfuerzo_alquiler_pct": 110.8,
+      "esfuerzo_1amb_pct": 81.1,
+      "pct_usd": 48.8,
+      "mediana_precio_usd": 1100,
+      "mediana_precio_ars_solo": 700000
     },
     {
       "barrio": "Saavedra",
@@ -908,8 +1111,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 68.1,
-      "esfuerzo_1amb_pct": 61.5
+      "mediana_precio_q4": 750000,
+      "mediana_expensas_q4": 140000,
+      "mediana_costo_q4": 895000,
+      "mediana_precio_1amb_q4": 620000,
+      "esfuerzo_alquiler_pct": 68.8,
+      "esfuerzo_1amb_pct": 58.5,
+      "pct_usd": 14.2,
+      "mediana_precio_usd": 990,
+      "mediana_precio_ars_solo": 700000
     },
     {
       "barrio": "San Cristobal",
@@ -938,8 +1148,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 76.6,
-      "esfuerzo_1amb_pct": 69.8
+      "mediana_precio_q4": 550000,
+      "mediana_expensas_q4": 127000,
+      "mediana_costo_q4": 670000,
+      "mediana_precio_1amb_q4": 460000,
+      "esfuerzo_alquiler_pct": 67,
+      "esfuerzo_1amb_pct": 58.7,
+      "pct_usd": 6.8,
+      "mediana_precio_usd": 640,
+      "mediana_precio_ars_solo": 600000
     },
     {
       "barrio": "San Nicolas",
@@ -968,8 +1185,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 80,
-      "esfuerzo_1amb_pct": 71
+      "mediana_precio_q4": 550000,
+      "mediana_expensas_q4": 150000,
+      "mediana_costo_q4": 710000,
+      "mediana_precio_1amb_q4": 440000,
+      "esfuerzo_alquiler_pct": 71,
+      "esfuerzo_1amb_pct": 59,
+      "pct_usd": 19.7,
+      "mediana_precio_usd": 700,
+      "mediana_precio_ars_solo": 600000
     },
     {
       "barrio": "San Telmo",
@@ -998,8 +1222,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 89.6,
-      "esfuerzo_1amb_pct": 75.3
+      "mediana_precio_q4": 620000,
+      "mediana_expensas_q4": 145000,
+      "mediana_costo_q4": 782000,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 78.2,
+      "esfuerzo_1amb_pct": 64.5,
+      "pct_usd": 35.3,
+      "mediana_precio_usd": 800,
+      "mediana_precio_ars_solo": 660000
     },
     {
       "barrio": "Velez Sarsfield",
@@ -1028,8 +1259,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 77,
-      "esfuerzo_1amb_pct": 70
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 100000,
+      "mediana_costo_q4": 700000,
+      "mediana_precio_1amb_q4": 460000,
+      "esfuerzo_alquiler_pct": 70,
+      "esfuerzo_1amb_pct": 56,
+      "pct_usd": 0,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "Versalles",
@@ -1058,8 +1296,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 78.5,
-      "esfuerzo_1amb_pct": 51.5
+      "mediana_precio_q4": 745000,
+      "mediana_expensas_q4": 195500,
+      "mediana_costo_q4": 942000,
+      "mediana_precio_1amb_q4": null,
+      "esfuerzo_alquiler_pct": 94.2,
+      "esfuerzo_1amb_pct": null,
+      "pct_usd": 0,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "Villa Crespo",
@@ -1088,8 +1333,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 69.2,
-      "esfuerzo_1amb_pct": 62
+      "mediana_precio_q4": 650000,
+      "mediana_expensas_q4": 135000,
+      "mediana_costo_q4": 795000,
+      "mediana_precio_1amb_q4": 550000,
+      "esfuerzo_alquiler_pct": 61.2,
+      "esfuerzo_1amb_pct": 52.7,
+      "pct_usd": 14.6,
+      "mediana_precio_usd": 800,
+      "mediana_precio_ars_solo": 750000
     },
     {
       "barrio": "Villa Del Parque",
@@ -1118,8 +1370,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 60.8,
-      "esfuerzo_1amb_pct": 52.9
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 120000,
+      "mediana_costo_q4": 700000,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 53.8,
+      "esfuerzo_1amb_pct": 47.7,
+      "pct_usd": 6,
+      "mediana_precio_usd": 875,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "Villa Devoto",
@@ -1148,8 +1407,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 73.1,
-      "esfuerzo_1amb_pct": 58.5
+      "mediana_precio_q4": 690000,
+      "mediana_expensas_q4": 130000,
+      "mediana_costo_q4": 800000,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 61.5,
+      "esfuerzo_1amb_pct": 48.5,
+      "pct_usd": 14.5,
+      "mediana_precio_usd": 1300,
+      "mediana_precio_ars_solo": 750000
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -1178,8 +1444,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 61.7,
-      "esfuerzo_1amb_pct": 48.7
+      "mediana_precio_q4": 580000,
+      "mediana_expensas_q4": 135000,
+      "mediana_costo_q4": 717000,
+      "mediana_precio_1amb_q4": 510000,
+      "esfuerzo_alquiler_pct": 55.2,
+      "esfuerzo_1amb_pct": 49.6,
+      "pct_usd": 0,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 680000
     },
     {
       "barrio": "Villa Lugano",
@@ -1208,8 +1481,15 @@
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "esfuerzo_alquiler_pct": 90,
-      "esfuerzo_1amb_pct": 70.6
+      "mediana_precio_q4": 590000,
+      "mediana_expensas_q4": 90000,
+      "mediana_costo_q4": 660000,
+      "mediana_precio_1amb_q4": 445000,
+      "esfuerzo_alquiler_pct": 82.5,
+      "esfuerzo_1amb_pct": 66.9,
+      "pct_usd": 2.4,
+      "mediana_precio_usd": 550,
+      "mediana_precio_ars_solo": 630000
     },
     {
       "barrio": "Villa Luro",
@@ -1238,8 +1518,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 81,
-      "esfuerzo_1amb_pct": 62.5
+      "mediana_precio_q4": 650000,
+      "mediana_expensas_q4": 115000,
+      "mediana_costo_q4": 790000,
+      "mediana_precio_1amb_q4": 480000,
+      "esfuerzo_alquiler_pct": 79,
+      "esfuerzo_1amb_pct": 59.5,
+      "pct_usd": 10.3,
+      "mediana_precio_usd": 1000,
+      "mediana_precio_ars_solo": 675000
     },
     {
       "barrio": "Villa Ortuzar",
@@ -1268,8 +1555,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 59.6,
-      "esfuerzo_1amb_pct": 57.7
+      "mediana_precio_q4": 690000,
+      "mediana_expensas_q4": 150000,
+      "mediana_costo_q4": 820000,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 63.1,
+      "esfuerzo_1amb_pct": 50,
+      "pct_usd": 4.8,
+      "mediana_precio_usd": 1625,
+      "mediana_precio_ars_solo": 640000
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -1298,8 +1592,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 65.2,
-      "esfuerzo_1amb_pct": 61.5
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 122000,
+      "mediana_costo_q4": 730000,
+      "mediana_precio_1amb_q4": 500000,
+      "esfuerzo_alquiler_pct": 56.2,
+      "esfuerzo_1amb_pct": 47.8,
+      "pct_usd": 7,
+      "mediana_precio_usd": 550,
+      "mediana_precio_ars_solo": 715000
     },
     {
       "barrio": "Villa Real",
@@ -1328,8 +1629,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 78,
-      "esfuerzo_1amb_pct": null
+      "mediana_precio_q4": 600000,
+      "mediana_expensas_q4": 125000,
+      "mediana_costo_q4": 696000,
+      "mediana_precio_1amb_q4": 450000,
+      "esfuerzo_alquiler_pct": 69.6,
+      "esfuerzo_1amb_pct": 57.5,
+      "pct_usd": 0,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 700000
     },
     {
       "barrio": "Villa Riachuelo",
@@ -1358,8 +1666,15 @@
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "esfuerzo_alquiler_pct": 100,
-      "esfuerzo_1amb_pct": null
+      "mediana_precio_q4": null,
+      "mediana_expensas_q4": null,
+      "mediana_costo_q4": null,
+      "mediana_precio_1amb_q4": null,
+      "esfuerzo_alquiler_pct": null,
+      "esfuerzo_1amb_pct": null,
+      "pct_usd": 0,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 750000
     },
     {
       "barrio": "Villa Santa Rita",
@@ -1388,8 +1703,15 @@
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "esfuerzo_alquiler_pct": 80,
-      "esfuerzo_1amb_pct": 69
+      "mediana_precio_q4": 530000,
+      "mediana_expensas_q4": 130000,
+      "mediana_costo_q4": 661449,
+      "mediana_precio_1amb_q4": 450000,
+      "esfuerzo_alquiler_pct": 66.1,
+      "esfuerzo_1amb_pct": 58,
+      "pct_usd": 5.4,
+      "mediana_precio_usd": 675,
+      "mediana_precio_ars_solo": 650000
     },
     {
       "barrio": "Villa Soldati",
@@ -1418,8 +1740,15 @@
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "esfuerzo_alquiler_pct": 100.8,
-      "esfuerzo_1amb_pct": null
+      "mediana_precio_q4": 450000,
+      "mediana_expensas_q4": 50000,
+      "mediana_costo_q4": 500000,
+      "mediana_precio_1amb_q4": 450000,
+      "esfuerzo_alquiler_pct": 62.5,
+      "esfuerzo_1amb_pct": 62.5,
+      "pct_usd": 0,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 775000
     },
     {
       "barrio": "Villa Urquiza",
@@ -1448,8 +1777,15 @@
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "esfuerzo_alquiler_pct": 70.6,
-      "esfuerzo_1amb_pct": 62.7
+      "mediana_precio_q4": 680000,
+      "mediana_expensas_q4": 140000,
+      "mediana_costo_q4": 830000,
+      "mediana_precio_1amb_q4": 550000,
+      "esfuerzo_alquiler_pct": 63.8,
+      "esfuerzo_1amb_pct": 53.1,
+      "pct_usd": 13.1,
+      "mediana_precio_usd": 730,
+      "mediana_precio_ars_solo": 745000
     }
   ],
   "serie_temporal": [
@@ -6098,7 +6434,8 @@
   ],
   "etoi": {
     "fuente": "ETOI 254 - 4to trimestre 2025",
-    "nota": "Ingresos laborales medianos de jóvenes 18-35 por zona ETOI",
+    "nota": "Ingresos laborales medianos de jóvenes 18-35. Esfuerzo calculado con alquileres Q4 2025 (oct-dic), mismo período que la ETOI.",
+    "periodos_etoi": ["2025-10", "2025-11", "2025-12"],
     "caba_total": 1000000,
     "zonas": [
       {
