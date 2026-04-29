@@ -1093,12 +1093,12 @@
       <div class="section-label">Evolución mensual de precios</div>
       <div class="chart-wrap-tall"><canvas id="evolChart"></canvas></div>
 
-      <!-- PRECIO POR TIPOLOGÍA -->
-      <div class="section-label">Precio mediano por tipología</div>
+      <!-- PRECIO POR AMBIENTES -->
+      <div class="section-label">Precio mediano por ambientes</div>
       <div class="chart-wrap"><canvas id="tipChart"></canvas></div>
 
-      <!-- PRECIO/M² POR TIPOLOGÍA -->
-      <div class="section-label">Precio / m² por tipología (ARS)</div>
+      <!-- PRECIO/M² POR AMBIENTES -->
+      <div class="section-label">Precio / m² por ambientes (ARS)</div>
       <div class="chart-wrap"><canvas id="m2Chart"></canvas></div>
 
       <!-- RATIO M² -->
@@ -1149,7 +1149,7 @@
       </div>
 
       <!-- PUBLICACIONES -->
-      <div class="section-label">Publicaciones por tipología</div>
+      <div class="section-label">Publicaciones por ambientes</div>
       <div class="stat-grid stat-grid-3">
         <div class="stat-box"><div class="stat-label">Total</div><div class="stat-value c-sky">${fmtNum(b.n_publicaciones)}</div></div>
         <div class="stat-box"><div class="stat-label">1 ambiente</div><div class="stat-value">${b.n_1amb != null ? fmtNum(b.n_1amb) : 'N/D'}</div></div>
@@ -1272,12 +1272,12 @@
       });
     }
 
-    // ── CHART 1: Precio por tipología ──
+    // ── CHART 1: Precio por ambientes ──
     if (tipChart) { tipChart.destroy(); tipChart = null; }
     tipChart = new Chart(document.getElementById('tipChart').getContext('2d'), {
       type: 'bar',
       data: {
-        labels: ['1 amb.', '2 amb.', '3 amb.'],
+        labels: ['1 ambiente', '2 ambientes', '3 ambientes'],
         datasets: [{
           data: [b.mediana_precio_1amb, b.mediana_precio_2amb, b.mediana_precio_3amb],
           backgroundColor: [C.coral, C.sky, C.mint],
@@ -1288,12 +1288,12 @@
       options: chartOpts(fmtARS),
     });
 
-    // ── CHART 2: Precio/m² por tipología ──
+    // ── CHART 2: Precio/m² por ambientes ──
     if (m2Chart) { m2Chart.destroy(); m2Chart = null; }
     m2Chart = new Chart(document.getElementById('m2Chart').getContext('2d'), {
       type: 'bar',
       data: {
-        labels: ['1 amb.', '2 amb.', '3 amb.'],
+        labels: ['1 ambiente', '2 ambientes', '3 ambientes'],
         datasets: [{
           data: [b.mediana_m2_1amb, b.mediana_m2_2amb, b.mediana_m2_3amb],
           backgroundColor: [C.coral, C.sky, C.mint],
