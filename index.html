@@ -964,15 +964,19 @@
     return [Math.min(...vals), Math.max(...vals)];
   }
 
-  // Hard cap para variables con outliers que distorsionan la escala
-  const VAR_MAX_CAP = { mediana_precio_ars: 1_700_000 };
+  // Escala fija por variable para evitar distorsión por outliers
+  const VAR_SCALE = {
+    mediana_precio_ars: { min: 550_000, max: 1_700_000 },
+  };
 
   function drawChoropleth() {
     if (geoLayer) geoLayer.remove();
 
-    const cfg          = VAR_CONFIG[curVar];
-    const [mn, rawMx]  = varRange(curVar);
-    const mx           = VAR_MAX_CAP[curVar] != null ? Math.min(rawMx, VAR_MAX_CAP[curVar]) : rawMx;
+    const cfg         = VAR_CONFIG[curVar];
+    const [rawMn, rawMx] = varRange(curVar);
+    const scale       = VAR_SCALE[curVar];
+    const mn          = scale ? scale.min : rawMn;
+    const mx          = scale ? scale.max : rawMx;
     const usePeriodo   = SERIE_VARS.has(curVar);
     const periodoLabel = usePeriodo && curPeriodo ? ' (' + fmtPeriodo(curPeriodo) + ')' : '';
 
