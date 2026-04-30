@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -18,17 +18,15 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --coral:  #E8533A;
-      --sky:    #3A8FE8;
-      --mint:   #2ECC8F;
-      --amber:  #F0A500;
-      --lav:    #8B5CF6;
-      --bg:     #F5F2ED;
-      --white:  #FFFFFF;
-      --text:   #2D2D2D;
-      --muted:  #7A7A7A;
-      --border: #E0DDD8;
-      --shadow: 0 2px 14px rgba(0,0,0,0.07);
+      --bg:      #F4F4F4;
+      --surface: #FFFFFF;
+      --dark:    #2B2B2B;
+      --accent:  #4A7C59;
+      --accent2: #6B9E7A;
+      --muted:   #6B6B6B;
+      --border:  #E0E0E0;
+      --text:    #1C1C1C;
+      --shadow:  0 2px 14px rgba(0,0,0,0.07);
     }
 
     html { height: 100%; }
@@ -46,28 +44,71 @@
     /* ── HEADER ── */
     header {
       flex-shrink: 0;
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      padding: 14px 24px;
+      background: var(--dark);
+      padding: 28px 24px 0;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      text-align: center;
+    }
+
+    .header-logo {
+      margin-bottom: 12px;
+      filter: brightness(0) invert(1);
+      opacity: 0.9;
     }
 
     header h1 {
-      font-family: 'Syne', sans-serif;
-      font-size: 20px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.95rem;
       font-weight: 800;
-      letter-spacing: -0.4px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      line-height: 1.2;
+      margin-bottom: 6px;
     }
 
-    header h1 .dot { color: var(--coral); }
+    .header-subtitle {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 22px;
+      letter-spacing: 0.02em;
+    }
 
-    .header-source {
-      font-size: 11px;
-      color: var(--muted);
-      text-align: right;
-      line-height: 1.6;
+    /* tabs inside header */
+    .tab-bar {
+      flex-shrink: 0;
+      display: flex;
+      gap: 0;
+      align-self: center;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      margin-top: 0;
+      padding: 0 4px;
+    }
+
+    .tab-btn {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 10px 22px;
+      border: none;
+      background: transparent;
+      color: rgba(255,255,255,0.6);
+      cursor: pointer;
+      transition: background .15s, color .15s;
+      outline: none;
+      border-radius: 0;
+    }
+
+    .tab-btn:hover { color: #fff; }
+
+    .tab-btn.active {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
     }
 
     /* ── KPI STRIP ── */
@@ -80,7 +121,7 @@
     }
 
     .kpi-card {
-      background: var(--white);
+      background: var(--surface);
       border-radius: 10px;
       padding: 12px 14px;
       box-shadow: var(--shadow);
@@ -94,40 +135,38 @@
       top: 0; left: 0; right: 0;
       height: 3px;
       border-radius: 10px 10px 0 0;
+      background: var(--accent);
     }
 
-    .kpi-card:nth-child(1)::after { background: var(--coral); }
-    .kpi-card:nth-child(2)::after { background: var(--sky); }
-    .kpi-card:nth-child(3)::after { background: var(--mint); }
-    .kpi-card:nth-child(4)::after { background: var(--lav); }
-    .kpi-card:nth-child(5)::after { background: var(--amber); }
-    .kpi-card:nth-child(6)::after { background: var(--amber); }
-
     .kpi-label {
-      font-size: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.06em;
       color: var(--muted);
       margin-bottom: 5px;
     }
 
     .kpi-value {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 18px;
       font-weight: 700;
       line-height: 1.2;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      color: var(--dark);
     }
+
+    .kpi-value.kpi-accent { color: var(--accent); }
 
     .kpi-sub { font-size: 10px; color: var(--muted); margin-top: 2px; }
 
     /* ── MAIN LAYOUT ── */
     .main-layout {
       flex: none;
-      height: calc(100vh - 204px);
+      height: calc(100vh - 230px);
       display: grid;
       grid-template-columns: 43% 57%;
       gap: 14px;
@@ -136,7 +175,7 @@
 
     /* ── PANELS ── */
     .panel {
-      background: var(--white);
+      background: var(--surface);
       border-radius: 14px;
       box-shadow: var(--shadow);
       display: flex;
@@ -156,10 +195,11 @@
     }
 
     .panel-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 600;
       white-space: nowrap;
+      color: var(--dark);
     }
 
     select {
@@ -172,21 +212,21 @@
       color: var(--text);
       cursor: pointer;
       appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 24 24' fill='none' stroke='%237A7A7A' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 24 24' fill='none' stroke='%236B6B6B' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: right 7px center;
       outline: none;
       transition: border-color .15s;
     }
 
-    select:focus { border-color: var(--coral); }
+    select:focus { border-color: var(--accent); }
 
     /* ── MAP ── */
     #map { flex: 1; min-height: 0; }
 
     /* ── LEGEND ── */
     .legend-box {
-      background: var(--white);
+      background: var(--surface);
       border-radius: 8px;
       padding: 9px 11px;
       box-shadow: var(--shadow);
@@ -216,6 +256,7 @@
       min-height: 0;
       overflow-y: auto;
       padding: 14px 18px 18px;
+      background: var(--bg);
     }
 
     #rightBody::-webkit-scrollbar { width: 3px; }
@@ -224,27 +265,20 @@
 
     /* ── SECTION LABEL ── */
     .section-label {
-      font-family: 'Syne', sans-serif;
-      font-size: 10.5px;
-      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.7px;
-      color: var(--muted);
+      letter-spacing: 0.06em;
+      color: var(--dark);
       margin-bottom: 9px;
       margin-top: 14px;
-      display: flex;
-      align-items: center;
-      gap: 7px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--accent);
+      display: block;
     }
 
     .section-label:first-child { margin-top: 0; }
-
-    .section-label::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
 
     /* ── STAT GRIDS ── */
     .stat-grid {
@@ -257,7 +291,7 @@
     .stat-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
 
     .stat-box {
-      background: var(--bg);
+      background: var(--surface);
       border-radius: 9px;
       padding: 10px 12px;
       border: 1px solid var(--border);
@@ -273,17 +307,17 @@
     }
 
     .stat-value {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 16px;
       font-weight: 700;
       line-height: 1.2;
+      color: var(--dark);
     }
 
-    .c-coral  { color: var(--coral); }
-    .c-sky    { color: var(--sky); }
-    .c-mint   { color: var(--mint); }
-    .c-amber  { color: var(--amber); }
-    .c-lav    { color: var(--lav); }
+    /* color helpers — used in detail panel and charts */
+    .c-accent  { color: var(--accent); }
+    .c-accent2 { color: var(--accent2); }
+    .c-muted   { color: var(--muted); }
 
     /* ── MAP CONTROLS ── */
     .map-controls {
@@ -298,9 +332,9 @@
       flex-shrink: 0;
       padding: 5px 14px;
       font-size: 11px;
-      color: #a07200;
-      background: rgba(240,165,0,0.09);
-      border-bottom: 1px solid rgba(240,165,0,0.22);
+      color: var(--muted);
+      background: rgba(74,124,89,0.08);
+      border-bottom: 1px solid rgba(74,124,89,0.18);
       text-align: center;
       font-style: italic;
     }
@@ -331,7 +365,7 @@
     .ratio-desc { font-size: 11px; color: var(--muted); }
 
     .ratio-val {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 15px;
       font-weight: 700;
     }
@@ -412,7 +446,7 @@
     }
 
     .esfuerzo-pct {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 15px;
       font-weight: 700;
       width: 44px;
@@ -423,7 +457,7 @@
     .esfuerzo-context {
       font-size: 11px;
       color: var(--muted);
-      background: var(--bg);
+      background: var(--surface);
       border-radius: 7px;
       padding: 8px 10px;
       border: 1px solid var(--border);
@@ -469,7 +503,7 @@
 
     /* ── TOOLTIP ── */
     .leaflet-tooltip {
-      background: var(--white) !important;
+      background: var(--surface) !important;
       border: 1px solid var(--border) !important;
       border-radius: 7px !important;
       padding: 7px 10px !important;
@@ -493,6 +527,7 @@
     .comp-sel-group { flex: 1; }
 
     .comp-sel-label {
+      font-family: 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 600;
       text-transform: uppercase;
@@ -519,10 +554,10 @@
     }
 
     .comp-table th {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 13px;
       font-weight: 700;
-      background: var(--white);
+      background: var(--surface);
       position: sticky;
       top: 0;
     }
@@ -538,23 +573,23 @@
     }
 
     .comp-val {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-weight: 600;
     }
 
     .comp-better {
-      background: rgba(46, 204, 143, 0.10);
-      color: #1a9e6a;
+      background: rgba(74,124,89,0.10);
+      color: #4A7C59;
     }
 
     .comp-worse {
-      background: rgba(232, 83, 58, 0.09);
-      color: #c03e28;
+      background: rgba(198,40,40,0.09);
+      color: #C62828;
     }
 
     .comp-higher {
-      background: rgba(240, 165, 0, 0.10);
-      color: #b07a00;
+      background: rgba(74,124,89,0.07);
+      color: #4A7C59;
     }
 
     .comp-nodata { color: var(--muted); font-style: italic; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 11px; }
@@ -566,41 +601,13 @@
       font-size: 13px;
     }
 
-    /* ── TABS ── */
-    .tab-bar {
-      flex-shrink: 0;
-      display: flex;
-      gap: 0;
-      padding: 0 24px;
-      border-bottom: 2px solid var(--border);
-      background: var(--white);
-    }
-
-    .tab-btn {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 13px;
-      font-weight: 500;
-      padding: 10px 18px;
-      border: none;
-      background: none;
-      color: var(--muted);
-      cursor: pointer;
-      border-bottom: 3px solid transparent;
-      margin-bottom: -2px;
-      transition: color .15s, border-color .15s;
-      outline: none;
-    }
-
-    .tab-btn:hover { color: var(--text); }
-    .tab-btn.active { color: var(--coral); border-bottom-color: var(--coral); font-weight: 600; }
-
     /* ── COMPARADOR VIEW ── */
     #view-comparador {
       padding: 14px 24px 28px;
     }
 
     #view-comparador .panel {
-      max-height: calc(100vh - 204px);
+      max-height: calc(100vh - 230px);
       overflow-y: auto;
     }
 
@@ -628,21 +635,21 @@
 
   <!-- HEADER -->
   <header>
-    <h1>Mercado de Alquileres <span class="dot">·</span> CABA</h1>
-    <div class="header-source">
-      Fuentes: ZonaProp &amp; Airbnb &mdash; Límites geográficos: Gobierno CABA<br>
-      <span id="headerPeriodo">Cargando&hellip;</span>
+    <img class="header-logo"
+         src="https://www.iciudad.org.ar/wp-content/uploads/2026/03/logo-final-blanco-y-negro-varias-versiones-vector-04-1.png"
+         height="32" alt="iCiudad">
+    <h1>Mercado de Alquileres en CABA</h1>
+    <div class="header-subtitle">Análisis territorial &nbsp;·&nbsp; <span id="headerPeriodo">Cargando&hellip;</span></div>
+
+    <!-- TAB BAR integrado al header -->
+    <div class="tab-bar">
+      <button class="tab-btn active" id="tabExplorer" onclick="switchTab('explorer')">Explorador de barrios</button>
+      <button class="tab-btn" id="tabComparador" onclick="switchTab('comparador')">Comparador</button>
     </div>
   </header>
 
   <!-- KPI STRIP -->
   <div class="kpi-strip" id="kpiStrip"></div>
-
-  <!-- TAB BAR -->
-  <div class="tab-bar">
-    <button class="tab-btn active" id="tabExplorer" onclick="switchTab('explorer')">Explorador de barrios</button>
-    <button class="tab-btn" id="tabComparador" onclick="switchTab('comparador')">Comparador</button>
-  </div>
 
   <!-- VIEW: EXPLORER -->
   <div id="view-explorer">
@@ -717,15 +724,21 @@
   //  PALETTE
   // ─────────────────────────────────────────────
   const C = {
-    coral: '#E8533A',
-    sky:   '#3A8FE8',
-    mint:  '#2ECC8F',
-    amber: '#F0A500',
-    lav:   '#8B5CF6',
+    accent:  '#4A7C59',
+    accent2: '#6B9E7A',
+    light:   '#A5C8AE',
+    muted:   '#6B6B6B',
+    dark:    '#2B2B2B',
+    // legacy aliases used in chart datasets
+    coral:   '#4A7C59',
+    sky:     '#6B9E7A',
+    mint:    '#A5C8AE',
+    amber:   '#6B9E7A',
+    lav:     '#4A7C59',
   };
 
   // ─────────────────────────────────────────────
-  //  CHOROPLETH COLOR HELPERS
+  //  CHOROPLETH COLOR HELPERS  (green scale)
   // ─────────────────────────────────────────────
   function hexRGB(h) {
     return [parseInt(h.slice(1,3),16), parseInt(h.slice(3,5),16), parseInt(h.slice(5,7),16)];
@@ -736,41 +749,40 @@
   }
 
   function choroplethColor(val, mn, mx, hex) {
-    if (val == null || mx === mn) return '#EDEAE5';
+    if (val == null || mx === mn) return '#E8F5E9';
     const t = Math.max(0, Math.min(1, (val - mn) / (mx - mn)));
-    const lo = [240,237,232];
-    return `rgb(${lerpRGB(lo, hexRGB(hex), t)})`;
+    const lo = hexRGB('#C8E6C9');
+    return `rgb(${lerpRGB(lo, hexRGB('#1B5E20'), t)})`;
   }
 
-  // Kept for reference by drawChoropleth / drawLegend
   const NO_LOG_VARS = new Set([]);
 
-  // Multi-stop green→amber→coral for esfuerzo
+  // Multi-stop green scale for esfuerzo
   function esfuerzoColor(val) {
-    if (val == null) return '#EDEAE5';
+    if (val == null) return '#E8F5E9';
     const v = Math.max(0, val);
-    if (v <= 30)  return `rgb(${lerpRGB([229,246,238], hexRGB(C.mint),  v/30)})`;
-    if (v <= 60)  return `rgb(${lerpRGB(hexRGB(C.mint),  hexRGB(C.amber), (v-30)/30)})`;
-    return             `rgb(${lerpRGB(hexRGB(C.amber), hexRGB(C.coral), Math.min(1,(v-60)/40))})`;
+    if (v <= 30)  return `rgb(${lerpRGB(hexRGB('#C8E6C9'), hexRGB('#4A7C59'), v/30)})`;
+    if (v <= 60)  return `rgb(${lerpRGB(hexRGB('#4A7C59'), hexRGB('#2E7D32'), (v-30)/30)})`;
+    return             `rgb(${lerpRGB(hexRGB('#2E7D32'), hexRGB('#1B5E20'), Math.min(1,(v-60)/40))})`;
   }
 
   function esfuerzoBarColor(v) {
-    if (v == null) return C.mint;
-    if (v <= 30) return C.mint;
-    if (v <= 60) return C.amber;
-    return C.coral;
+    if (v == null) return C.accent;
+    if (v <= 30) return C.accent;
+    if (v <= 60) return C.accent2;
+    return '#1B5E20';
   }
 
   // ─────────────────────────────────────────────
   //  VAR CONFIG
   // ─────────────────────────────────────────────
   const VAR_CONFIG = {
-    mediana_precio_ars:       { label: 'Precio mediano',          color: C.coral,  fmt: fmtARS },
-    mediana_precio_m2:        { label: 'Precio / m²',             color: C.coral,  fmt: fmtARS },
-    n_publicaciones:          { label: 'Publicaciones',           color: C.sky,    fmt: fmtNum },
-    n_airbnb:                 { label: 'Airbnb',                  color: C.lav,    fmt: fmtNum },
-    ratio_airbnb_zonaprop:    { label: 'Ratio Airbnb / Zonaprop', color: C.amber,  fmt: v => (+v).toFixed(1)+'%' },
-    ratio_m2_chico_vs_grande: { label: 'Sobreprecio m² chico',    color: C.mint,   fmt: v => (+v).toFixed(2)+'x' },
+    mediana_precio_ars:       { label: 'Precio mediano',          color: C.accent,  fmt: fmtARS },
+    mediana_precio_m2:        { label: 'Precio / m²',             color: C.accent,  fmt: fmtARS },
+    n_publicaciones:          { label: 'Publicaciones',           color: C.accent2, fmt: fmtNum },
+    n_airbnb:                 { label: 'Airbnb',                  color: C.accent,  fmt: fmtNum },
+    ratio_airbnb_zonaprop:    { label: 'Ratio Airbnb / Zonaprop', color: C.accent2, fmt: v => (+v).toFixed(1)+'%' },
+    ratio_m2_chico_vs_grande: { label: 'Sobreprecio m² chico',    color: C.accent2, fmt: v => (+v).toFixed(2)+'x' },
     esfuerzo_alquiler_pct:    { label: 'Esfuerzo de alquiler',    colorFn: esfuerzoColor,
                                 fmt: v => v != null ? (+v).toFixed(1)+'%' : 'N/D',
                                 legendStops: [
@@ -796,13 +808,12 @@
   let compChart     = null;
   let compEvolChart = null;
   let curVar        = 'mediana_precio_ars';
-  let curPeriodo    = null;   // selected period for map choropleth
+  let curPeriodo    = null;
   let compA         = null;
   let compB         = null;
-  let serieLookup   = {};    // norm(barrio) → sorted array of period rows
-  let serieByPeriodo = {};   // periodo → norm(barrio) → row
+  let serieLookup   = {};
+  let serieByPeriodo = {};
 
-  // Variables available in serie_temporal (subset of all map vars)
   const SERIE_VARS = new Set(['mediana_precio_ars', 'mediana_precio_m2', 'mediana_costo_total', 'n_publicaciones']);
 
   // ─────────────────────────────────────────────
@@ -827,7 +838,7 @@
 
   function norm(s) {
     return String(s).toLowerCase()
-      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .normalize('NFD').replace(/[̀-ͯ]/g, '')
       .trim();
   }
 
@@ -835,13 +846,11 @@
   const MONTH_FULL  = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 
   function fmtPeriodo(p) {
-    // "2025-08" → "Ago 25"
     const [yr, mo] = p.split('-');
     return MONTH_SHORT[+mo - 1] + ' ' + yr.slice(2);
   }
 
   function fmtPeriodoFull(p) {
-    // "2026-04" → "Abril 2026"
     const [yr, mo] = p.split('-');
     return MONTH_FULL[+mo - 1] + ' ' + yr;
   }
@@ -857,14 +866,11 @@
 
       for (const b of dash.barrios) lookup[norm(b.barrio)] = b;
 
-      // Build serie_temporal lookups
       if (dash.serie_temporal) {
         for (const row of dash.serie_temporal) {
           const key = norm(row.barrio);
-          // serieLookup: barrio → sorted array (for evolution chart)
           if (!serieLookup[key]) serieLookup[key] = [];
           serieLookup[key].push(row);
-          // serieByPeriodo: periodo → barrio → row (for map choropleth)
           if (!serieByPeriodo[row.periodo]) serieByPeriodo[row.periodo] = {};
           serieByPeriodo[row.periodo][key] = row;
         }
@@ -874,10 +880,9 @@
       }
       curPeriodo = dash.kpis.ultimo_periodo;
 
-      // Dynamic header text
       const up = dash.kpis.ultimo_periodo;
       const headerEl = document.getElementById('headerPeriodo');
-      if (headerEl && up) headerEl.textContent = 'Últimos datos: ' + fmtPeriodoFull(up);
+      if (headerEl && up) headerEl.textContent = 'Abril 2026';
 
       buildKPIs();
       buildMap();
@@ -889,7 +894,7 @@
 
     } catch(e) {
       document.getElementById('rightBody').innerHTML =
-        `<div class="center-msg" style="color:var(--coral)">Error: ${e.message}</div>`;
+        `<div class="center-msg" style="color:#C62828">Error: ${e.message}</div>`;
       console.error(e);
     }
   }
@@ -902,7 +907,7 @@
     const ratioVals = dash.barrios.map(b => b.ratio_m2_chico_vs_grande).filter(v => v != null && v > 0);
     const avgRatio  = ratioVals.length ? ratioVals.reduce((a, b) => a + b, 0) / ratioVals.length : null;
     const cards = [
-      { label: 'Precio mediano CABA',      value: fmtARS(k.mediana_precio_caba),           sub: 'por mes' },
+      { label: 'Precio mediano CABA',      value: fmtARS(k.mediana_precio_caba),           sub: 'por mes', accent: true },
       { label: 'Precio mediano m²',        value: fmtARS(k.mediana_precio_m2_caba),        sub: 'ARS / m²' },
       { label: 'Publicaciones totales',    value: fmtNum(k.total_publicaciones),            sub: 'en ZonaProp' },
       { label: 'Listados Airbnb',          value: fmtNum(k.total_airbnb),                  sub: 'activos' },
@@ -912,7 +917,7 @@
     document.getElementById('kpiStrip').innerHTML = cards.map(c => `
       <div class="kpi-card">
         <div class="kpi-label">${c.label}</div>
-        <div class="kpi-value">${c.value}</div>
+        <div class="kpi-value${c.accent ? ' kpi-accent' : ''}">${c.value}</div>
         <div class="kpi-sub">${c.sub}</div>
       </div>`).join('');
   }
@@ -922,7 +927,7 @@
   // ─────────────────────────────────────────────
   function buildPeriodoSelect() {
     const sel     = document.getElementById('periodoSelect');
-    const periods = (dash.kpis.periodos_disponibles || []).slice().reverse(); // latest first
+    const periods = (dash.kpis.periodos_disponibles || []).slice().reverse();
     sel.innerHTML = periods.map(p =>
       `<option value="${p}" ${p === curPeriodo ? 'selected' : ''}>${fmtPeriodo(p)}</option>`
     ).join('');
@@ -947,7 +952,6 @@
     });
   }
 
-  // Returns the data source row for a barrio/var: period-filtered when applicable
   function getPeriodRow(normName) {
     if (SERIE_VARS.has(curVar) && curPeriodo && serieByPeriodo[curPeriodo]) {
       return serieByPeriodo[curPeriodo][normName] || null;
@@ -964,7 +968,6 @@
     return [Math.min(...vals), Math.max(...vals)];
   }
 
-  // Escala fija por variable para evitar distorsión por outliers
   const VAR_SCALE = {
     mediana_precio_ars: { min: 550_000, max: 1_700_000 },
   };
@@ -980,7 +983,6 @@
     const usePeriodo   = SERIE_VARS.has(curVar);
     const periodoLabel = usePeriodo && curPeriodo ? ' (' + fmtPeriodo(curPeriodo) + ')' : '';
 
-    // Show/hide "no varía por período" note
     const note = document.getElementById('periodoNote');
     if (note) note.style.display = usePeriodo ? 'none' : 'block';
 
@@ -1003,13 +1005,12 @@
           { sticky: true }
         );
 
-        // Click always selects from barrios (latest period detail panel)
         layer.on('click', () => {
           const d = lookup[normN];
           if (d) { selectBarrio(d); document.getElementById('barrioSelect').value = normN; }
         });
 
-        layer.on('mouseover', function() { this.setStyle({ weight: 2.5, color: '#2D2D2D' }); this.bringToFront(); });
+        layer.on('mouseover', function() { this.setStyle({ weight: 2.5, color: '#2B2B2B' }); this.bringToFront(); });
         layer.on('mouseout',  function() { this.setStyle({ weight: 1.5, color: '#FFFFFF' }); });
       }
     }).addTo(lmap);
@@ -1027,7 +1028,6 @@
       let html  = `<div class="legend-title">${cfg.label}</div>`;
 
       if (cfg.legendStops) {
-        // Custom stops for esfuerzo
         [...cfg.legendStops].reverse().forEach(s => {
           html += `<div class="legend-row">
             <div class="legend-swatch" style="background:${esfuerzoColor(s.val)}"></div>
@@ -1083,12 +1083,12 @@
 
     const ratio    = +(b.ratio_m2_chico_vs_grande || 1);
     const ratioPct = Math.min(100, Math.max(0, (ratio - 1) * 100));
-    const ratioCol = ratio <= 1.1 ? C.mint : ratio <= 1.4 ? C.amber : C.coral;
+    const ratioCol = ratio <= 1.1 ? C.accent : ratio <= 1.4 ? C.accent2 : '#1B5E20';
 
     const esfuerzo    = b.esfuerzo_alquiler_pct;
     const esfuerzo1   = b.esfuerzo_1amb_pct;
-    const ef30Pct     = 30;  // reference line at 30%
-    const efMax       = 120; // bar scale max
+    const ef30Pct     = 30;
+    const efMax       = 120;
 
     function esfuerzoBar(val, label) {
       if (val == null) return `
@@ -1121,13 +1121,13 @@
       <div class="stat-grid">
         <div class="stat-box">
           <div class="stat-label">Precio mediano</div>
-          <div class="stat-value c-coral">${fmtARS(b.mediana_precio_ars)}</div>
-          ${b.mediana_precio_usd != null ? `<div style="font-size:11px;color:var(--sky);font-weight:600;margin-top:2px">USD ${fmtNum(b.mediana_precio_usd)}</div>` : ''}
+          <div class="stat-value c-accent">${fmtARS(b.mediana_precio_ars)}</div>
+          ${b.mediana_precio_usd != null ? `<div style="font-size:11px;color:var(--accent2);font-weight:600;margin-top:2px">USD ${fmtNum(b.mediana_precio_usd)}</div>` : ''}
           ${b.pct_usd != null ? `<div style="font-size:10px;color:var(--muted);margin-top:1px">${(+b.pct_usd).toFixed(0)}% en USD</div>` : ''}
         </div>
-        <div class="stat-box"><div class="stat-label">Precio / m²</div><div class="stat-value c-sky">${fmtARS(b.mediana_precio_m2)}</div></div>
-        <div class="stat-box"><div class="stat-label">Expensas medianas</div><div class="stat-value c-amber">${fmtARS(b.mediana_expensas)}</div></div>
-        <div class="stat-box"><div class="stat-label">Costo total mediano</div><div class="stat-value c-mint">${fmtARS(b.mediana_costo_total)}</div></div>
+        <div class="stat-box"><div class="stat-label">Precio / m²</div><div class="stat-value">${fmtARS(b.mediana_precio_m2)}</div></div>
+        <div class="stat-box"><div class="stat-label">Expensas medianas</div><div class="stat-value">${fmtARS(b.mediana_expensas)}</div></div>
+        <div class="stat-box"><div class="stat-label">Costo total mediano</div><div class="stat-value">${fmtARS(b.mediana_costo_total)}</div></div>
       </div>
 
       <!-- EVOLUCIÓN TEMPORAL -->
@@ -1168,10 +1168,10 @@
       <!-- AIRBNB -->
       <div class="section-label">Airbnb</div>
       <div class="stat-grid">
-        <div class="stat-box"><div class="stat-label">Listados Airbnb</div><div class="stat-value c-lav">${fmtNum(b.n_airbnb)}</div></div>
-        <div class="stat-box"><div class="stat-label">Precio noche mediana</div><div class="stat-value c-sky">USD ${fmtNum(b.mediana_precio_noche_usd)}</div></div>
-        <div class="stat-box"><div class="stat-label">% Superhost</div><div class="stat-value c-amber">${fmtPct(b.pct_superhost)}</div></div>
-        <div class="stat-box"><div class="stat-label">Ratio Airbnb / ZP</div><div class="stat-value c-coral">${fmtPct(b.ratio_airbnb_zonaprop)}</div></div>
+        <div class="stat-box"><div class="stat-label">Listados Airbnb</div><div class="stat-value">${fmtNum(b.n_airbnb)}</div></div>
+        <div class="stat-box"><div class="stat-label">Precio noche mediana</div><div class="stat-value">USD ${fmtNum(b.mediana_precio_noche_usd)}</div></div>
+        <div class="stat-box"><div class="stat-label">% Superhost</div><div class="stat-value">${fmtPct(b.pct_superhost)}</div></div>
+        <div class="stat-box"><div class="stat-label">Ratio Airbnb / ZP</div><div class="stat-value">${fmtPct(b.ratio_airbnb_zonaprop)}</div></div>
       </div>
 
       <!-- AMENITIES -->
@@ -1179,13 +1179,13 @@
       <div style="margin-bottom:4px">
         <div class="amenity-row">
           <span class="amenity-name">Pileta</span>
-          <div class="amenity-track"><div class="amenity-fill" style="width:${b.pct_pileta??0}%;background:var(--sky)"></div></div>
-          <span class="amenity-pct c-sky">${fmtPct(b.pct_pileta, 1)}</span>
+          <div class="amenity-track"><div class="amenity-fill" style="width:${b.pct_pileta??0}%;background:var(--accent2)"></div></div>
+          <span class="amenity-pct c-accent2">${fmtPct(b.pct_pileta, 1)}</span>
         </div>
         <div class="amenity-row">
           <span class="amenity-name">Gimnasio</span>
-          <div class="amenity-track"><div class="amenity-fill" style="width:${b.pct_gimnasio??0}%;background:var(--mint)"></div></div>
-          <span class="amenity-pct c-mint">${fmtPct(b.pct_gimnasio, 1)}</span>
+          <div class="amenity-track"><div class="amenity-fill" style="width:${b.pct_gimnasio??0}%;background:var(--accent)"></div></div>
+          <span class="amenity-pct c-accent">${fmtPct(b.pct_gimnasio, 1)}</span>
         </div>
       </div>
 
@@ -1208,12 +1208,12 @@
             {
               label: 'Precio mediano',
               data: precios,
-              borderColor: C.coral,
-              backgroundColor: C.coral + '18',
+              borderColor: C.accent,
+              backgroundColor: C.accent + '22',
               borderWidth: 2.5,
               pointRadius: 4,
               pointHoverRadius: 6,
-              pointBackgroundColor: C.coral,
+              pointBackgroundColor: C.accent,
               pointBorderColor: '#fff',
               pointBorderWidth: 1.5,
               yAxisID: 'y',
@@ -1223,12 +1223,12 @@
             {
               label: 'Precio / m²',
               data: preciosM2,
-              borderColor: C.sky,
+              borderColor: C.accent2,
               backgroundColor: 'transparent',
               borderWidth: 2.5,
               pointRadius: 4,
               pointHoverRadius: 6,
-              pointBackgroundColor: C.sky,
+              pointBackgroundColor: C.accent2,
               pointBorderColor: '#fff',
               pointBorderWidth: 1.5,
               yAxisID: 'y2',
@@ -1253,16 +1253,16 @@
                 boxHeight: 7,
                 padding: 12,
                 font: { family: 'DM Sans', size: 11 },
-                color: '#2D2D2D',
+                color: '#1C1C1C',
               }
             },
             tooltip: {
               backgroundColor: '#fff',
-              borderColor: '#E0DDD8',
+              borderColor: '#E0E0E0',
               borderWidth: 1,
-              titleColor: '#2D2D2D',
-              bodyColor: '#2D2D2D',
-              titleFont: { family: 'Syne', size: 12, weight: '700' },
+              titleColor: '#1C1C1C',
+              bodyColor: '#1C1C1C',
+              titleFont: { family: 'Inter', size: 12, weight: '700' },
               bodyFont: { family: 'DM Sans', size: 12 },
               padding: 10,
               callbacks: {
@@ -1278,17 +1278,17 @@
           },
           scales: {
             x: {
-              grid: { color: '#EEEBE6' },
+              grid: { color: '#EEEEEE' },
               border: { display: false },
-              ticks: { font: { family: 'DM Sans', size: 10 }, color: '#7A7A7A' }
+              ticks: { font: { family: 'DM Sans', size: 10 }, color: '#6B6B6B' }
             },
             y: {
               position: 'left',
-              grid: { color: '#EEEBE6' },
+              grid: { color: '#EEEEEE' },
               border: { display: false },
               ticks: {
                 font: { family: 'DM Sans', size: 10 },
-                color: C.coral,
+                color: C.accent,
                 callback: v => v >= 1e6 ? (v/1e6).toFixed(1)+'M' : v >= 1e3 ? (v/1e3).toFixed(0)+'K' : v
               }
             },
@@ -1298,7 +1298,7 @@
               border: { display: false },
               ticks: {
                 font: { family: 'DM Sans', size: 10 },
-                color: C.sky,
+                color: C.accent2,
                 callback: v => v >= 1e3 ? (v/1e3).toFixed(0)+'K' : v
               }
             }
@@ -1315,7 +1315,7 @@
         labels: ['1 ambiente', '2 ambientes', '3 ambientes'],
         datasets: [{
           data: [b.mediana_precio_1amb, b.mediana_precio_2amb, b.mediana_precio_3amb],
-          backgroundColor: [C.coral, C.sky, C.mint],
+          backgroundColor: [C.accent, C.accent2, C.light],
           borderRadius: 5,
           barThickness: 24,
         }]
@@ -1331,7 +1331,7 @@
         labels: ['1 ambiente', '2 ambientes', '3 ambientes'],
         datasets: [{
           data: [b.mediana_m2_1amb, b.mediana_m2_2amb, b.mediana_m2_3amb],
-          backgroundColor: [C.coral, C.sky, C.mint],
+          backgroundColor: [C.accent, C.accent2, C.light],
           borderRadius: 5,
           barThickness: 24,
         }]
@@ -1348,7 +1348,7 @@
     const nOther = Math.max(0, nTotal - n1 - n2 - n3);
     const donutData   = [n1, n2, n3];
     const donutLabels = ['1 ambiente', '2 ambientes', '3 ambientes'];
-    const donutColors = [C.coral, C.sky, C.mint];
+    const donutColors = [C.accent, C.accent2, C.light];
     if (nOther > 0) { donutData.push(nOther); donutLabels.push('Otros'); donutColors.push('#BDBDBD'); }
 
     if (donutData.some(v => v > 0)) {
@@ -1377,7 +1377,7 @@
                 boxWidth: 7, boxHeight: 7,
                 padding: 8,
                 font: { family: 'DM Sans', size: 10 },
-                color: '#2D2D2D',
+                color: '#1C1C1C',
                 generateLabels: chart => {
                   const ds = chart.data.datasets[0];
                   const tot = ds.data.reduce((a, v) => a + v, 0);
@@ -1393,10 +1393,10 @@
             },
             tooltip: {
               backgroundColor: '#fff',
-              borderColor: '#E0DDD8',
+              borderColor: '#E0E0E0',
               borderWidth: 1,
-              titleColor: '#2D2D2D',
-              bodyColor: '#2D2D2D',
+              titleColor: '#1C1C1C',
+              bodyColor: '#1C1C1C',
               padding: 9,
               callbacks: {
                 label: ctx => {
@@ -1423,18 +1423,18 @@
       },
       scales: {
         x: {
-          grid: { color: '#EEEBE6' },
+          grid: { color: '#EEEEEE' },
           border: { display: false },
           ticks: {
             font: { family: 'DM Sans', size: 10 },
-            color: '#7A7A7A',
+            color: '#6B6B6B',
             callback: v => v >= 1e6 ? (v/1e6).toFixed(1)+'M' : v >= 1e3 ? (v/1e3).toFixed(0)+'K' : v
           }
         },
         y: {
           grid: { display: false },
           border: { display: false },
-          ticks: { font: { family: 'DM Sans', size: 12 }, color: '#2D2D2D' }
+          ticks: { font: { family: 'DM Sans', size: 12 }, color: '#1C1C1C' }
         }
       }
     };
@@ -1480,7 +1480,6 @@
     document.getElementById('view-comparador').style.display = tab === 'comparador' ? '' : 'none';
     document.getElementById('tabExplorer').classList.toggle('active',  tab === 'explorer');
     document.getElementById('tabComparador').classList.toggle('active', tab === 'comparador');
-    // Invalidate map size when switching back to explorer
     if (tab === 'explorer' && lmap) setTimeout(() => lmap.invalidateSize(), 50);
   }
 
@@ -1568,12 +1567,12 @@
           {
             label: compA.barrio,
             data: allPeriods.map(p => mapA[p] ?? null),
-            borderColor: C.coral,
-            backgroundColor: C.coral + '18',
+            borderColor: C.accent,
+            backgroundColor: C.accent + '22',
             borderWidth: 2.5,
             pointRadius: 4,
             pointHoverRadius: 6,
-            pointBackgroundColor: C.coral,
+            pointBackgroundColor: C.accent,
             pointBorderColor: '#fff',
             pointBorderWidth: 1.5,
             tension: 0.3,
@@ -1583,12 +1582,12 @@
           {
             label: compB.barrio,
             data: allPeriods.map(p => mapB[p] ?? null),
-            borderColor: C.sky,
-            backgroundColor: C.sky + '18',
+            borderColor: C.accent2,
+            backgroundColor: C.accent2 + '22',
             borderWidth: 2.5,
             pointRadius: 4,
             pointHoverRadius: 6,
-            pointBackgroundColor: C.sky,
+            pointBackgroundColor: C.accent2,
             pointBorderColor: '#fff',
             pointBorderWidth: 1.5,
             tension: 0.3,
@@ -1612,16 +1611,16 @@
               boxWidth: 7, boxHeight: 7,
               padding: 12,
               font: { family: 'DM Sans', size: 11 },
-              color: '#2D2D2D',
+              color: '#1C1C1C',
             }
           },
           tooltip: {
             backgroundColor: '#fff',
-            borderColor: '#E0DDD8',
+            borderColor: '#E0E0E0',
             borderWidth: 1,
-            titleColor: '#2D2D2D',
-            bodyColor: '#2D2D2D',
-            titleFont: { family: 'Syne', size: 12, weight: '700' },
+            titleColor: '#1C1C1C',
+            bodyColor: '#1C1C1C',
+            titleFont: { family: 'Inter', size: 12, weight: '700' },
             bodyFont: { family: 'DM Sans', size: 12 },
             padding: 10,
             callbacks: {
@@ -1631,16 +1630,16 @@
         },
         scales: {
           x: {
-            grid: { color: '#EEEBE6' },
+            grid: { color: '#EEEEEE' },
             border: { display: false },
-            ticks: { font: { family: 'DM Sans', size: 10 }, color: '#7A7A7A' }
+            ticks: { font: { family: 'DM Sans', size: 10 }, color: '#6B6B6B' }
           },
           y: {
-            grid: { color: '#EEEBE6' },
+            grid: { color: '#EEEEEE' },
             border: { display: false },
             ticks: {
               font: { family: 'DM Sans', size: 10 },
-              color: '#7A7A7A',
+              color: '#6B6B6B',
               callback: v => v >= 1e6 ? (v/1e6).toFixed(1)+'M' : v >= 1e3 ? (v/1e3).toFixed(0)+'K' : v
             }
           }
