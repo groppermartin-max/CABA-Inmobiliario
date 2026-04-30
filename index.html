@@ -964,12 +964,16 @@
     return [Math.min(...vals), Math.max(...vals)];
   }
 
+  // Hard cap para variables con outliers que distorsionan la escala
+  const VAR_MAX_CAP = { mediana_precio_ars: 2_000_000 };
+
   function drawChoropleth() {
     if (geoLayer) geoLayer.remove();
 
-    const cfg        = VAR_CONFIG[curVar];
-    const [mn, mx]   = varRange(curVar);
-    const usePeriodo = SERIE_VARS.has(curVar);
+    const cfg          = VAR_CONFIG[curVar];
+    const [mn, rawMx]  = varRange(curVar);
+    const mx           = VAR_MAX_CAP[curVar] != null ? Math.min(rawMx, VAR_MAX_CAP[curVar]) : rawMx;
+    const usePeriodo   = SERIE_VARS.has(curVar);
     const periodoLabel = usePeriodo && curPeriodo ? ' (' + fmtPeriodo(curPeriodo) + ')' : '';
 
     // Show/hide "no varía por período" note
