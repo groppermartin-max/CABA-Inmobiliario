@@ -670,6 +670,7 @@
               <option value="ratio_airbnb_zonaprop">Ratio Airbnb / Zonaprop</option>
               <option value="ratio_m2_chico_vs_grande">Sobreprecio m² chico vs grande</option>
               <option value="esfuerzo_alquiler_pct">Esfuerzo de alquiler (%)</option>
+              <option value="pct_expensas_alquiler">Expensas como % del alquiler</option>
             </select>
             <select id="periodoSelect"></select>
           </div>
@@ -773,6 +774,14 @@
     return '#1B5E20';
   }
 
+  // Green→red scale for expensas/alquiler ratio
+  function expensasColor(val) {
+    if (val == null) return '#E8F5E9';
+    const t = Math.max(0, Math.min(1, (+val) / 40));
+    if (t <= 0.5) return `rgb(${lerpRGB(hexRGB('#C8E6C9'), hexRGB('#FFF9C4'), t * 2)})`;
+    return `rgb(${lerpRGB(hexRGB('#FFF9C4'), hexRGB('#C62828'), (t - 0.5) * 2)})`;
+  }
+
   // ─────────────────────────────────────────────
   //  VAR CONFIG
   // ─────────────────────────────────────────────
@@ -790,6 +799,15 @@
                                   { val: 30,  label: '30% (referencia)' },
                                   { val: 60,  label: '60% (alto)' },
                                   { val: 90,  label: '90%+ (muy alto)' },
+                                ] },
+    pct_expensas_alquiler:    { label: 'Expensas / Alquiler',     colorFn: expensasColor,
+                                fmt: v => v != null ? (+v).toFixed(1)+'%' : 'N/D',
+                                serieKey: 'pct_expensas',
+                                legendStops: [
+                                  { val: 0,   label: '0%' },
+                                  { val: 10,  label: '10%' },
+                                  { val: 20,  label: '20%' },
+                                  { val: 30,  label: '30%+' },
                                 ] },
   };
 
@@ -814,7 +832,9 @@
   let serieLookup   = {};
   let serieByPeriodo = {};
 
-  const SERIE_VARS = new Set(['mediana_precio_ars', 'mediana_precio_m2', 'mediana_costo_total', 'n_publicaciones']);
+  const SERIE_VARS = new Set(['mediana_precio_ars', 'mediana_precio_m2', 'mediana_costo_total', 'n_publicaciones', 'pct_usd', 'pct_expensas_alquiler']);
+  // Variables without monthly data — show "no varía por período" note
+  const NO_PERIOD_VARS = new Set(['n_airbnb', 'ratio_airbnb_zonaprop', 'esfuerzo_alquiler_pct']);
 
   // ─────────────────────────────────────────────
   //  FORMATTERS
@@ -960,8 +980,10 @@
   }
 
   function varRange(key) {
+    const cfg = VAR_CONFIG[key];
+    const serieKey = cfg && cfg.serieKey ? cfg.serieKey : key;
     if (SERIE_VARS.has(key) && curPeriodo && serieByPeriodo[curPeriodo]) {
-      const vals = Object.values(serieByPeriodo[curPeriodo]).map(r => r[key]).filter(v => v != null);
+      const vals = Object.values(serieByPeriodo[curPeriodo]).map(r => r[serieKey]).filter(v => v != null);
       if (vals.length > 0) return [Math.min(...vals), Math.max(...vals)];
     }
     const vals = dash.barrios.map(b => b[key]).filter(v => v != null);
@@ -982,14 +1004,15 @@
     const mx          = scale ? scale.max : rawMx;
     const usePeriodo   = SERIE_VARS.has(curVar);
     const periodoLabel = usePeriodo && curPeriodo ? ' (' + fmtPeriodo(curPeriodo) + ')' : '';
+    const valKey       = (usePeriodo && cfg.serieKey) ? cfg.serieKey : curVar;
 
     const note = document.getElementById('periodoNote');
-    if (note) note.style.display = usePeriodo ? 'none' : 'block';
+    if (note) note.style.display = NO_PERIOD_VARS.has(curVar) ? 'block' : 'none';
 
     geoLayer = L.geoJSON(geoData, {
       style: f => {
         const row = getPeriodRow(norm(f.properties.nombre || ''));
-        const val = row ? row[curVar] : null;
+        const val = row ? row[valKey] : null;
         const fc  = cfg.colorFn ? cfg.colorFn(val) : choroplethColor(val, mn, mx, cfg.color);
         return { fillColor: fc, fillOpacity: 0.87, color: '#FFFFFF', weight: 1.5 };
       },
@@ -997,7 +1020,7 @@
         const name   = f.properties.nombre || 'Desconocido';
         const normN  = norm(name);
         const row    = getPeriodRow(normN);
-        const val    = row ? row[curVar] : null;
+        const val    = row ? row[valKey] : null;
         const valStr = cfg.fmt(val);
 
         layer.bindTooltip(
@@ -1029,8 +1052,9 @@
 
       if (cfg.legendStops) {
         [...cfg.legendStops].reverse().forEach(s => {
+          const stopColor = cfg.colorFn ? cfg.colorFn(s.val) : esfuerzoColor(s.val);
           html += `<div class="legend-row">
-            <div class="legend-swatch" style="background:${esfuerzoColor(s.val)}"></div>
+            <div class="legend-swatch" style="background:${stopColor}"></div>
             <span style="color:var(--muted)">${s.label}</span>
           </div>`;
         });
@@ -1128,6 +1152,13 @@
         <div class="stat-box"><div class="stat-label">Precio / m²</div><div class="stat-value">${fmtARS(b.mediana_precio_m2)}</div></div>
         <div class="stat-box"><div class="stat-label">Expensas medianas</div><div class="stat-value">${fmtARS(b.mediana_expensas)}</div></div>
         <div class="stat-box"><div class="stat-label">Costo total mediano</div><div class="stat-value">${fmtARS(b.mediana_costo_total)}</div></div>
+        <div class="stat-box"><div class="stat-label">Expensas / Alquiler</div><div class="stat-value">${b.pct_expensas_alquiler != null ? fmtPct(b.pct_expensas_alquiler, 1) : '—'}</div></div>
+        <div class="stat-box">
+          <div class="stat-label">Publicaciones</div>
+          <div class="stat-value">${fmtNum(b.n_publicaciones)}</div>
+          <div style="font-size:10px;color:var(--muted);margin-top:3px">En pesos: ${b.n_ars != null ? fmtNum(b.n_ars) : '—'}</div>
+          <div style="font-size:10px;color:${(+(b.pct_usd||0)) > 30 ? '#F0A500' : 'var(--muted)'};margin-top:1px">En dólares: ${b.n_usd != null ? fmtNum(b.n_usd) : '—'}</div>
+        </div>
       </div>
 
       <!-- EVOLUCIÓN TEMPORAL -->
@@ -1172,20 +1203,27 @@
         <div class="stat-box"><div class="stat-label">Precio noche mediana</div><div class="stat-value">USD ${fmtNum(b.mediana_precio_noche_usd)}</div></div>
         <div class="stat-box"><div class="stat-label">Ratio Airbnb / ZP</div><div class="stat-value">${fmtPct(b.ratio_airbnb_zonaprop)}</div></div>
       </div>
+      <div style="font-size:10px;color:var(--muted);font-style:italic;margin-top:5px;margin-bottom:2px">Datos correspondientes a feb–abr 2026. No disponibles por período mensual.</div>
 
-      <!-- AMENITIES -->
+      <!-- AMENITIES ZONAPROP -->
       <div class="section-label">Amenities · Zonaprop</div>
-      <div style="margin-bottom:4px">
-        <div class="amenity-row">
-          <span class="amenity-name">Pileta</span>
-          <div class="amenity-track"><div class="amenity-fill" style="width:${b.pct_pileta??0}%;background:var(--accent2)"></div></div>
-          <span class="amenity-pct c-accent2">${fmtPct(b.pct_pileta, 1)}</span>
+      <div class="stat-grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:10px">
+        <div class="stat-box"><div class="stat-label">Pileta</div><div class="stat-value">${b.pct_pileta != null ? fmtPct(b.pct_pileta,1) : '—'}</div></div>
+        <div class="stat-box"><div class="stat-label">Gimnasio</div><div class="stat-value">${b.pct_gimnasio != null ? fmtPct(b.pct_gimnasio,1) : '—'}</div></div>
+        <div class="stat-box">
+          <div class="stat-label">Cochera</div>
+          <div class="stat-value">${b.pct_cochera != null ? fmtPct(b.pct_cochera,1) : '—'}</div>
+          <div style="font-size:9px;color:var(--muted);margin-top:2px">Ago'25–Feb'26</div>
         </div>
-        <div class="amenity-row">
-          <span class="amenity-name">Gimnasio</span>
-          <div class="amenity-track"><div class="amenity-fill" style="width:${b.pct_gimnasio??0}%;background:var(--accent)"></div></div>
-          <span class="amenity-pct c-accent">${fmtPct(b.pct_gimnasio, 1)}</span>
-        </div>
+        <div class="stat-box"><div class="stat-label">SUM</div><div class="stat-value">${b.pct_sum != null ? fmtPct(b.pct_sum,1) : '—'}</div></div>
+      </div>
+
+      <!-- AMENITIES AIRBNB -->
+      <div class="section-label">Amenities · Airbnb</div>
+      <div class="stat-grid stat-grid-3" style="margin-bottom:4px">
+        <div class="stat-box"><div class="stat-label">Pileta / Pool</div><div class="stat-value">${b.pct_pool_airbnb != null ? fmtPct(b.pct_pool_airbnb,1) : '—'}</div></div>
+        <div class="stat-box"><div class="stat-label">Gimnasio</div><div class="stat-value">${b.pct_gym_airbnb != null ? fmtPct(b.pct_gym_airbnb,1) : '—'}</div></div>
+        <div class="stat-box"><div class="stat-label">Estacionamiento</div><div class="stat-value">${b.pct_parking_airbnb != null ? fmtPct(b.pct_parking_airbnb,1) : '—'}</div></div>
       </div>
 
     `;
