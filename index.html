@@ -1122,7 +1122,7 @@
         <div class="stat-box">
           <div class="stat-label">Precio mediano</div>
           <div class="stat-value c-accent">${fmtARS(b.mediana_precio_ars)}</div>
-          ${b.mediana_precio_usd != null ? `<div style="font-size:11px;color:var(--accent2);font-weight:600;margin-top:2px">USD ${fmtNum(b.mediana_precio_usd)}</div>` : ''}
+          ${b.mediana_precio_usd != null ? `<div style="font-size:11px;color:var(--muted);font-weight:500;margin-top:3px">USD ${fmtNum(b.mediana_precio_usd)}</div>` : ''}
           ${b.pct_usd != null ? `<div style="font-size:10px;color:var(--muted);margin-top:1px">${(+b.pct_usd).toFixed(0)}% en USD</div>` : ''}
         </div>
         <div class="stat-box"><div class="stat-label">Precio / m²</div><div class="stat-value">${fmtARS(b.mediana_precio_m2)}</div></div>
@@ -1144,13 +1144,13 @@
 
       <!-- COMPOSICIÓN POR AMBIENTES -->
       <div class="section-label">Composición y sobreprecio</div>
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
-        <div style="flex:1;height:120px;position:relative"><canvas id="compChart"></canvas></div>
-        <div style="width:118px;flex-shrink:0">
-          <div class="stat-box">
-            <div class="stat-label">Sobreprecio m²</div>
-            <div style="font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px">1 amb. vs 3 amb.</div>
-            <div class="stat-value" style="color:${ratioCol};font-size:22px">${ratio.toFixed(2)}x</div>
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:4px">
+        <div style="flex:1;height:170px;position:relative"><canvas id="compChart"></canvas></div>
+        <div style="width:136px;flex-shrink:0">
+          <div class="stat-box" style="padding:14px 12px">
+            <div class="stat-label" style="font-size:9px;margin-bottom:4px">Sobreprecio m²</div>
+            <div style="font-size:8.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:10px">precio/m² · 1 amb vs 3 amb</div>
+            <div style="font-family:'Inter',sans-serif;font-size:1.8rem;font-weight:800;color:${ratioCol};line-height:1">${ratio.toFixed(2)}x</div>
           </div>
         </div>
       </div>
@@ -1167,15 +1167,14 @@
 
       <!-- AIRBNB -->
       <div class="section-label">Airbnb</div>
-      <div class="stat-grid">
+      <div class="stat-grid stat-grid-3">
         <div class="stat-box"><div class="stat-label">Listados Airbnb</div><div class="stat-value">${fmtNum(b.n_airbnb)}</div></div>
         <div class="stat-box"><div class="stat-label">Precio noche mediana</div><div class="stat-value">USD ${fmtNum(b.mediana_precio_noche_usd)}</div></div>
-        <div class="stat-box"><div class="stat-label">% Superhost</div><div class="stat-value">${fmtPct(b.pct_superhost)}</div></div>
         <div class="stat-box"><div class="stat-label">Ratio Airbnb / ZP</div><div class="stat-value">${fmtPct(b.ratio_airbnb_zonaprop)}</div></div>
       </div>
 
       <!-- AMENITIES -->
-      <div class="section-label">Amenities</div>
+      <div class="section-label">Amenities · Zonaprop</div>
       <div style="margin-bottom:4px">
         <div class="amenity-row">
           <span class="amenity-name">Pileta</span>
@@ -1349,7 +1348,7 @@
     const donutData   = [n1, n2, n3];
     const donutLabels = ['1 ambiente', '2 ambientes', '3 ambientes'];
     const donutColors = [C.accent, C.accent2, C.light];
-    if (nOther > 0) { donutData.push(nOther); donutLabels.push('Otros'); donutColors.push('#BDBDBD'); }
+    if (nOther > 0) { donutData.push(nOther); donutLabels.push('4+ ambientes'); donutColors.push('#BDBDBD'); }
 
     if (donutData.some(v => v > 0)) {
       compChart = new Chart(document.getElementById('compChart').getContext('2d'), {
@@ -1370,13 +1369,14 @@
           cutout: '58%',
           plugins: {
             legend: {
-              position: 'right',
+              position: 'bottom',
+              align: 'center',
               labels: {
                 usePointStyle: true,
                 pointStyle: 'circle',
                 boxWidth: 7, boxHeight: 7,
-                padding: 8,
-                font: { family: 'DM Sans', size: 10 },
+                padding: 10,
+                font: { family: 'DM Sans', size: 11 },
                 color: '#1C1C1C',
                 generateLabels: chart => {
                   const ds = chart.data.datasets[0];
