@@ -11,7 +11,7 @@
     "ultimo_periodo": "2026-04",
     "periodos_disponibles": ["2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04"],
     "nota_airbnb": "Datos Airbnb corresponden a 3 fechas de scraping (feb, mar, abr 2026). No varían por período mensual.",
-    "nota_cochera": "pct_cochera calculado sobre períodos ago 2025 - feb 2026 (últimos períodos con dato disponible)."
+    "nota_cochera": "pct_cochera calculado sobre todos los períodos disponibles con dato."
   },
   "barrios": [
     {
@@ -39,9 +39,9 @@
       "n_4amb_mas": 0,
       "pct_pileta": 7.7,
       "pct_gimnasio": 7.7,
+      "pct_cochera": 0,
       "pct_sum": 15.4,
       "ratio_m2_chico_vs_grande": 0.86,
-      "pct_cochera": 16.1,
       "n_airbnb": 108,
       "mediana_precio_noche_usd": 310,
       "pct_guest_favorite": 0,
@@ -83,9 +83,9 @@
       "n_4amb_mas": 15,
       "pct_pileta": 18.3,
       "pct_gimnasio": 8.9,
+      "pct_cochera": 5.6,
       "pct_sum": 16.7,
       "ratio_m2_chico_vs_grande": 1.14,
-      "pct_cochera": 7.4,
       "n_airbnb": 611,
       "mediana_precio_noche_usd": 318,
       "pct_guest_favorite": 0,
@@ -127,9 +127,9 @@
       "n_4amb_mas": 32,
       "pct_pileta": 9.1,
       "pct_gimnasio": 5.9,
+      "pct_cochera": 3.9,
       "pct_sum": 6.7,
       "ratio_m2_chico_vs_grande": 1.31,
-      "pct_cochera": 4.4,
       "n_airbnb": 688,
       "mediana_precio_noche_usd": 540,
       "pct_guest_favorite": 0,
@@ -171,9 +171,9 @@
       "n_4amb_mas": 8,
       "pct_pileta": 26.3,
       "pct_gimnasio": 11,
+      "pct_cochera": 16.1,
       "pct_sum": 20.3,
       "ratio_m2_chico_vs_grande": 1.14,
-      "pct_cochera": 18,
       "n_airbnb": 347,
       "mediana_precio_noche_usd": 369,
       "pct_guest_favorite": 0,
@@ -215,9 +215,9 @@
       "n_4amb_mas": 158,
       "pct_pileta": 27.7,
       "pct_gimnasio": 15.5,
+      "pct_cochera": 28.7,
       "pct_sum": 19.7,
       "ratio_m2_chico_vs_grande": 0.96,
-      "pct_cochera": 29.2,
       "n_airbnb": 518,
       "mediana_precio_noche_usd": 744,
       "pct_guest_favorite": 0,
@@ -259,9 +259,9 @@
       "n_4amb_mas": 4,
       "pct_pileta": 19.5,
       "pct_gimnasio": 3.4,
+      "pct_cochera": 6.9,
       "pct_sum": 17.2,
       "ratio_m2_chico_vs_grande": 1.02,
-      "pct_cochera": 14.3,
       "n_airbnb": 205,
       "mediana_precio_noche_usd": 286,
       "pct_guest_favorite": 0,
@@ -303,9 +303,9 @@
       "n_4amb_mas": 92,
       "pct_pileta": 17.7,
       "pct_gimnasio": 7.6,
+      "pct_cochera": 13.8,
       "pct_sum": 16.4,
       "ratio_m2_chico_vs_grande": 1.09,
-      "pct_cochera": 15.8,
       "n_airbnb": 308,
       "mediana_precio_noche_usd": 314,
       "pct_guest_favorite": 0,
@@ -347,9 +347,9 @@
       "n_4amb_mas": 1,
       "pct_pileta": 43.8,
       "pct_gimnasio": 26,
+      "pct_cochera": 8.2,
       "pct_sum": 28.8,
       "ratio_m2_chico_vs_grande": 1.24,
-      "pct_cochera": 9.6,
       "n_airbnb": 350,
       "mediana_precio_noche_usd": 294,
       "pct_guest_favorite": 0,
@@ -391,9 +391,9 @@
       "n_4amb_mas": 1,
       "pct_pileta": 26.9,
       "pct_gimnasio": 5.8,
+      "pct_cochera": 17.3,
       "pct_sum": 15.4,
       "ratio_m2_chico_vs_grande": 1.11,
-      "pct_cochera": 21.2,
       "n_airbnb": 188,
       "mediana_precio_noche_usd": 299,
       "pct_guest_favorite": 0,
@@ -435,9 +435,9 @@
       "n_4amb_mas": 15,
       "pct_pileta": 30.9,
       "pct_gimnasio": 16.9,
+      "pct_cochera": 20.8,
       "pct_sum": 18.5,
       "ratio_m2_chico_vs_grande": 1,
-      "pct_cochera": 18.1,
       "n_airbnb": 715,
       "mediana_precio_noche_usd": 664,
       "pct_guest_favorite": 0,
@@ -479,9 +479,9 @@
       "n_4amb_mas": 2,
       "pct_pileta": 31.1,
       "pct_gimnasio": 24.6,
+      "pct_cochera": 1.6,
       "pct_sum": 21.3,
       "ratio_m2_chico_vs_grande": 1.12,
-      "pct_cochera": 3,
       "n_airbnb": 461,
       "mediana_precio_noche_usd": 297,
       "pct_guest_favorite": 0,
@@ -523,9 +523,9 @@
       "n_4amb_mas": 24,
       "pct_pileta": 17.4,
       "pct_gimnasio": 5.3,
+      "pct_cochera": 12.2,
       "pct_sum": 19.4,
       "ratio_m2_chico_vs_grande": 1.16,
-      "pct_cochera": 11.8,
       "n_airbnb": 137,
       "mediana_precio_noche_usd": 269,
       "pct_guest_favorite": 0,
@@ -567,9 +567,9 @@
       "n_4amb_mas": 9,
       "pct_pileta": 10.3,
       "pct_gimnasio": 0,
+      "pct_cochera": 8,
       "pct_sum": 6.9,
       "ratio_m2_chico_vs_grande": 1.18,
-      "pct_cochera": 9,
       "n_airbnb": 50,
       "mediana_precio_noche_usd": 330,
       "pct_guest_favorite": 0,
@@ -611,9 +611,9 @@
       "n_4amb_mas": 4,
       "pct_pileta": 10.6,
       "pct_gimnasio": 10.6,
+      "pct_cochera": 8.5,
       "pct_sum": 8.5,
       "ratio_m2_chico_vs_grande": 0.91,
-      "pct_cochera": 6.8,
       "n_airbnb": 189,
       "mediana_precio_noche_usd": 291,
       "pct_guest_favorite": 0,
@@ -655,9 +655,9 @@
       "n_4amb_mas": 3,
       "pct_pileta": 3.2,
       "pct_gimnasio": 1.6,
+      "pct_cochera": 3.2,
       "pct_sum": 1.6,
       "ratio_m2_chico_vs_grande": 0.97,
-      "pct_cochera": 8.7,
       "n_airbnb": 49,
       "mediana_precio_noche_usd": 302,
       "pct_guest_favorite": 0,
@@ -699,9 +699,9 @@
       "n_4amb_mas": 1,
       "pct_pileta": 9.3,
       "pct_gimnasio": 0,
+      "pct_cochera": 18.6,
       "pct_sum": 0,
       "ratio_m2_chico_vs_grande": 0.92,
-      "pct_cochera": 12.3,
       "n_airbnb": 39,
       "mediana_precio_noche_usd": 258,
       "pct_guest_favorite": 0,
@@ -743,9 +743,9 @@
       "n_4amb_mas": 4,
       "pct_pileta": 22.8,
       "pct_gimnasio": 17.3,
+      "pct_cochera": 3,
       "pct_sum": 13.7,
       "ratio_m2_chico_vs_grande": 1.33,
-      "pct_cochera": 5.8,
       "n_airbnb": 663,
       "mediana_precio_noche_usd": 520,
       "pct_guest_favorite": 0,
@@ -787,9 +787,9 @@
       "n_4amb_mas": 1,
       "pct_pileta": 6.8,
       "pct_gimnasio": 3.4,
+      "pct_cochera": 6.8,
       "pct_sum": 6.8,
       "ratio_m2_chico_vs_grande": 1.07,
-      "pct_cochera": 11.4,
       "n_airbnb": 40,
       "mediana_precio_noche_usd": 364,
       "pct_guest_favorite": 0,
@@ -831,9 +831,9 @@
       "n_4amb_mas": 2,
       "pct_pileta": 0,
       "pct_gimnasio": 0,
+      "pct_cochera": 0,
       "pct_sum": 0,
       "ratio_m2_chico_vs_grande": null,
-      "pct_cochera": 2.3,
       "n_airbnb": 16,
       "mediana_precio_noche_usd": 284,
       "pct_guest_favorite": 0,
@@ -875,9 +875,9 @@
       "n_4amb_mas": 39,
       "pct_pileta": 38.9,
       "pct_gimnasio": 22.7,
+      "pct_cochera": 26.9,
       "pct_sum": 29.8,
       "ratio_m2_chico_vs_grande": 0.88,
-      "pct_cochera": 31.7,
       "n_airbnb": 397,
       "mediana_precio_noche_usd": 503,
       "pct_guest_favorite": 0,
@@ -919,9 +919,9 @@
       "n_4amb_mas": 268,
       "pct_pileta": 33.7,
       "pct_gimnasio": 21.4,
+      "pct_cochera": 21.2,
       "pct_sum": 21.4,
       "ratio_m2_chico_vs_grande": 0.97,
-      "pct_cochera": 24.5,
       "n_airbnb": 1008,
       "mediana_precio_noche_usd": 838,
       "pct_guest_favorite": 0,
@@ -963,9 +963,9 @@
       "n_4amb_mas": 0,
       "pct_pileta": 3.8,
       "pct_gimnasio": 0,
+      "pct_cochera": 11.5,
       "pct_sum": 3.8,
       "ratio_m2_chico_vs_grande": 1.03,
-      "pct_cochera": 1.6,
       "n_airbnb": 23,
       "mediana_precio_noche_usd": 345,
       "pct_guest_favorite": 0,
@@ -1007,9 +1007,9 @@
       "n_4amb_mas": 2,
       "pct_pileta": 15.3,
       "pct_gimnasio": 6.9,
+      "pct_cochera": 11.1,
       "pct_sum": 16.7,
       "ratio_m2_chico_vs_grande": 1.12,
-      "pct_cochera": 9.8,
       "n_airbnb": 120,
       "mediana_precio_noche_usd": 320,
       "pct_guest_favorite": 0,
@@ -1051,9 +1051,9 @@
       "n_4amb_mas": 1,
       "pct_pileta": 4.7,
       "pct_gimnasio": 0,
+      "pct_cochera": 0,
       "pct_sum": 25.6,
       "ratio_m2_chico_vs_grande": 0.91,
-      "pct_cochera": 9.9,
       "n_airbnb": 92,
       "mediana_precio_noche_usd": 283,
       "pct_guest_favorite": 0,
@@ -1095,9 +1095,9 @@
       "n_4amb_mas": 2,
       "pct_pileta": 14.8,
       "pct_gimnasio": 7.4,
+      "pct_cochera": 7.4,
       "pct_sum": 14.8,
       "ratio_m2_chico_vs_grande": 1.2,
-      "pct_cochera": 8.9,
       "n_airbnb": 94,
       "mediana_precio_noche_usd": 314,
       "pct_guest_favorite": 0,
@@ -1139,9 +1139,9 @@
       "n_4amb_mas": 4,
       "pct_pileta": 8,
       "pct_gimnasio": 8,
+      "pct_cochera": 4,
       "pct_sum": 14,
       "ratio_m2_chico_vs_grande": 1.15,
-      "pct_cochera": 6.5,
       "n_airbnb": 84,
       "mediana_precio_noche_usd": 249,
       "pct_guest_favorite": 0,
@@ -1183,9 +1183,9 @@
       "n_4amb_mas": 92,
       "pct_pileta": 82.1,
       "pct_gimnasio": 73.2,
+      "pct_cochera": 63.4,
       "pct_sum": 40.1,
       "ratio_m2_chico_vs_grande": 1.15,
-      "pct_cochera": 78.2,
       "n_airbnb": 647,
       "mediana_precio_noche_usd": 813,
       "pct_guest_favorite": 0,
@@ -1227,9 +1227,9 @@
       "n_4amb_mas": 276,
       "pct_pileta": 8.3,
       "pct_gimnasio": 6.4,
+      "pct_cochera": 17.1,
       "pct_sum": 5.6,
       "ratio_m2_chico_vs_grande": 1.07,
-      "pct_cochera": 15.3,
       "n_airbnb": 785,
       "mediana_precio_noche_usd": 784,
       "pct_guest_favorite": 0,
@@ -1271,9 +1271,9 @@
       "n_4amb_mas": 56,
       "pct_pileta": 13.2,
       "pct_gimnasio": 11.4,
+      "pct_cochera": 18.5,
       "pct_sum": 4.3,
       "ratio_m2_chico_vs_grande": 1.32,
-      "pct_cochera": 26.3,
       "n_airbnb": 621,
       "mediana_precio_noche_usd": 510,
       "pct_guest_favorite": 0,
@@ -1315,9 +1315,9 @@
       "n_4amb_mas": 3,
       "pct_pileta": 19.2,
       "pct_gimnasio": 5.8,
+      "pct_cochera": 22.5,
       "pct_sum": 19.2,
       "ratio_m2_chico_vs_grande": 0.88,
-      "pct_cochera": 21,
       "n_airbnb": 172,
       "mediana_precio_noche_usd": 364,
       "pct_guest_favorite": 0,
@@ -1359,9 +1359,9 @@
       "n_4amb_mas": 9,
       "pct_pileta": 20.9,
       "pct_gimnasio": 10.8,
+      "pct_cochera": 3.4,
       "pct_sum": 17.6,
       "ratio_m2_chico_vs_grande": 1.12,
-      "pct_cochera": 4.5,
       "n_airbnb": 257,
       "mediana_precio_noche_usd": 277,
       "pct_guest_favorite": 0,
@@ -1403,9 +1403,9 @@
       "n_4amb_mas": 33,
       "pct_pileta": 4,
       "pct_gimnasio": 2,
+      "pct_cochera": 2.3,
       "pct_sum": 2.3,
       "ratio_m2_chico_vs_grande": 1.28,
-      "pct_cochera": 2.5,
       "n_airbnb": 808,
       "mediana_precio_noche_usd": 571,
       "pct_guest_favorite": 0,
@@ -1447,9 +1447,9 @@
       "n_4amb_mas": 8,
       "pct_pileta": 20.1,
       "pct_gimnasio": 16.1,
+      "pct_cochera": 5.4,
       "pct_sum": 16.5,
       "ratio_m2_chico_vs_grande": 1.29,
-      "pct_cochera": 8.4,
       "n_airbnb": 376,
       "mediana_precio_noche_usd": 421,
       "pct_guest_favorite": 0,
@@ -1491,9 +1491,9 @@
       "n_4amb_mas": 0,
       "pct_pileta": 20,
       "pct_gimnasio": 0,
+      "pct_cochera": 0,
       "pct_sum": 6.7,
       "ratio_m2_chico_vs_grande": 1.2,
-      "pct_cochera": 10.8,
       "n_airbnb": 40,
       "mediana_precio_noche_usd": 274,
       "pct_guest_favorite": 0,
@@ -1535,9 +1535,9 @@
       "n_4amb_mas": 0,
       "pct_pileta": 7.7,
       "pct_gimnasio": 7.7,
+      "pct_cochera": 7.7,
       "pct_sum": 7.7,
       "ratio_m2_chico_vs_grande": 1.25,
-      "pct_cochera": 29.7,
       "n_airbnb": null,
       "mediana_precio_noche_usd": null,
       "pct_guest_favorite": null,
@@ -1579,9 +1579,9 @@
       "n_4amb_mas": 16,
       "pct_pileta": 24.7,
       "pct_gimnasio": 11.1,
+      "pct_cochera": 8.9,
       "pct_sum": 23.4,
       "ratio_m2_chico_vs_grande": 1.03,
-      "pct_cochera": 9.6,
       "n_airbnb": 357,
       "mediana_precio_noche_usd": 511,
       "pct_guest_favorite": 0,
@@ -1623,9 +1623,9 @@
       "n_4amb_mas": 5,
       "pct_pileta": 13.7,
       "pct_gimnasio": 3.6,
+      "pct_cochera": 6.5,
       "pct_sum": 16.1,
       "ratio_m2_chico_vs_grande": 1.04,
-      "pct_cochera": 10.1,
       "n_airbnb": 147,
       "mediana_precio_noche_usd": 282,
       "pct_guest_favorite": 0,
@@ -1667,9 +1667,9 @@
       "n_4amb_mas": 20,
       "pct_pileta": 12.4,
       "pct_gimnasio": 8.3,
+      "pct_cochera": 19.7,
       "pct_sum": 15.5,
       "ratio_m2_chico_vs_grande": 1.04,
-      "pct_cochera": 18.3,
       "n_airbnb": 241,
       "mediana_precio_noche_usd": 548,
       "pct_guest_favorite": 0,
@@ -1711,9 +1711,9 @@
       "n_4amb_mas": 2,
       "pct_pileta": 9.5,
       "pct_gimnasio": 4.8,
+      "pct_cochera": 0,
       "pct_sum": 14.3,
       "ratio_m2_chico_vs_grande": 1.37,
-      "pct_cochera": 5.9,
       "n_airbnb": 55,
       "mediana_precio_noche_usd": 286,
       "pct_guest_favorite": 0,
@@ -1755,9 +1755,9 @@
       "n_4amb_mas": 3,
       "pct_pileta": 0,
       "pct_gimnasio": 0,
+      "pct_cochera": 7.1,
       "pct_sum": 0,
       "ratio_m2_chico_vs_grande": 1.23,
-      "pct_cochera": 17.9,
       "n_airbnb": 8,
       "mediana_precio_noche_usd": 335,
       "pct_guest_favorite": 0,
@@ -1799,9 +1799,9 @@
       "n_4amb_mas": 9,
       "pct_pileta": 11.5,
       "pct_gimnasio": 3.4,
+      "pct_cochera": 10.3,
       "pct_sum": 13.8,
       "ratio_m2_chico_vs_grande": 1.11,
-      "pct_cochera": 9.3,
       "n_airbnb": 51,
       "mediana_precio_noche_usd": 343,
       "pct_guest_favorite": 0,
@@ -1843,9 +1843,9 @@
       "n_4amb_mas": 2,
       "pct_pileta": 26.2,
       "pct_gimnasio": 4.8,
+      "pct_cochera": 4.8,
       "pct_sum": 28.6,
       "ratio_m2_chico_vs_grande": 1,
-      "pct_cochera": 21.7,
       "n_airbnb": 149,
       "mediana_precio_noche_usd": 320,
       "pct_guest_favorite": 0,
@@ -1887,9 +1887,9 @@
       "n_4amb_mas": 2,
       "pct_pileta": 8.5,
       "pct_gimnasio": 4.2,
+      "pct_cochera": 11.3,
       "pct_sum": 12.7,
       "ratio_m2_chico_vs_grande": 1.1,
-      "pct_cochera": 11.7,
       "n_airbnb": 66,
       "mediana_precio_noche_usd": 284,
       "pct_guest_favorite": 0,
@@ -1931,9 +1931,9 @@
       "n_4amb_mas": 0,
       "pct_pileta": 14.3,
       "pct_gimnasio": 0,
+      "pct_cochera": 14.3,
       "pct_sum": 0,
       "ratio_m2_chico_vs_grande": null,
-      "pct_cochera": 35.3,
       "n_airbnb": 2,
       "mediana_precio_noche_usd": 252,
       "pct_guest_favorite": 0,
@@ -1975,9 +1975,9 @@
       "n_4amb_mas": 0,
       "pct_pileta": 0,
       "pct_gimnasio": 0,
+      "pct_cochera": 0,
       "pct_sum": 0,
       "ratio_m2_chico_vs_grande": null,
-      "pct_cochera": 0,
       "n_airbnb": 5,
       "mediana_precio_noche_usd": 362,
       "pct_guest_favorite": 0,
@@ -2019,9 +2019,9 @@
       "n_4amb_mas": 2,
       "pct_pileta": 10.8,
       "pct_gimnasio": 2.7,
+      "pct_cochera": 2.7,
       "pct_sum": 10.8,
       "ratio_m2_chico_vs_grande": 1.25,
-      "pct_cochera": 5.4,
       "n_airbnb": 39,
       "mediana_precio_noche_usd": 252,
       "pct_guest_favorite": 0,
@@ -2063,9 +2063,9 @@
       "n_4amb_mas": 0,
       "pct_pileta": 0,
       "pct_gimnasio": 0,
+      "pct_cochera": 0,
       "pct_sum": 0,
       "ratio_m2_chico_vs_grande": null,
-      "pct_cochera": 0,
       "n_airbnb": 2,
       "mediana_precio_noche_usd": 343,
       "pct_guest_favorite": 0,
@@ -2107,9 +2107,9 @@
       "n_4amb_mas": 14,
       "pct_pileta": 21.2,
       "pct_gimnasio": 9.2,
+      "pct_cochera": 13.9,
       "pct_sum": 20.6,
       "ratio_m2_chico_vs_grande": 0.94,
-      "pct_cochera": 18.9,
       "n_airbnb": 267,
       "mediana_precio_noche_usd": 302,
       "pct_guest_favorite": 0,
@@ -2141,7 +2141,8 @@
       "mediana_precio_1amb": 430000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 18.3
+      "pct_expensas": 18.3,
+      "pct_cochera": 11.8
     },
     {
       "barrio": "Agronomia",
@@ -2156,7 +2157,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 17.9
+      "pct_expensas": 17.9,
+      "pct_cochera": 12.5
     },
     {
       "barrio": "Agronomia",
@@ -2171,7 +2173,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 595000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 19.7
+      "pct_expensas": 19.7,
+      "pct_cochera": 18.8
     },
     {
       "barrio": "Agronomia",
@@ -2186,7 +2189,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 925000,
-      "pct_expensas": 22.2
+      "pct_expensas": 22.2,
+      "pct_cochera": 15.8
     },
     {
       "barrio": "Agronomia",
@@ -2201,7 +2205,8 @@
       "mediana_precio_1amb": 440000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 19
+      "pct_expensas": 19,
+      "pct_cochera": 17.6
     },
     {
       "barrio": "Agronomia",
@@ -2216,7 +2221,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 615000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 19.5
+      "pct_expensas": 19.5,
+      "pct_cochera": 20
     },
     {
       "barrio": "Agronomia",
@@ -2231,7 +2237,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 665000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 21
+      "pct_expensas": 21,
+      "pct_cochera": 15.8
     },
     {
       "barrio": "Agronomia",
@@ -2246,7 +2253,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 925000,
-      "pct_expensas": 20.4
+      "pct_expensas": 20.4,
+      "pct_cochera": 0
     },
     {
       "barrio": "Agronomia",
@@ -2261,7 +2269,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 670000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 23.6
+      "pct_expensas": 23.6,
+      "pct_cochera": 0
     },
     {
       "barrio": "Almagro",
@@ -2276,7 +2285,8 @@
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 20.3
+      "pct_expensas": 20.3,
+      "pct_cochera": 7.5
     },
     {
       "barrio": "Almagro",
@@ -2291,7 +2301,8 @@
       "mediana_precio_1amb": 497500,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 755000,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 7.5
     },
     {
       "barrio": "Almagro",
@@ -2306,7 +2317,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 570000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22.3
+      "pct_expensas": 22.3,
+      "pct_cochera": 6.7
     },
     {
       "barrio": "Almagro",
@@ -2321,7 +2333,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 585000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22.2
+      "pct_expensas": 22.2,
+      "pct_cochera": 9
     },
     {
       "barrio": "Almagro",
@@ -2336,7 +2349,8 @@
       "mediana_precio_1amb": 535000,
       "mediana_precio_2amb": 595000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 21.9
+      "pct_expensas": 21.9,
+      "pct_cochera": 7.3
     },
     {
       "barrio": "Almagro",
@@ -2351,7 +2365,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 21.3
+      "pct_expensas": 21.3,
+      "pct_cochera": 6.5
     },
     {
       "barrio": "Almagro",
@@ -2366,7 +2381,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 630000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 21.3
+      "pct_expensas": 21.3,
+      "pct_cochera": 7.3
     },
     {
       "barrio": "Almagro",
@@ -2381,7 +2397,8 @@
       "mediana_precio_1amb": 590000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 990000,
-      "pct_expensas": 21.1
+      "pct_expensas": 21.1,
+      "pct_cochera": 5.4
     },
     {
       "barrio": "Almagro",
@@ -2396,7 +2413,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1000000,
-      "pct_expensas": 21.7
+      "pct_expensas": 21.7,
+      "pct_cochera": 5.6
     },
     {
       "barrio": "Balvanera",
@@ -2411,7 +2429,8 @@
       "mediana_precio_1amb": 426000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 22.4
+      "pct_expensas": 22.4,
+      "pct_cochera": 2.8
     },
     {
       "barrio": "Balvanera",
@@ -2426,7 +2445,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 22.6
+      "pct_expensas": 22.6,
+      "pct_cochera": 3.6
     },
     {
       "barrio": "Balvanera",
@@ -2441,7 +2461,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 530000,
       "mediana_precio_3amb": 760000,
-      "pct_expensas": 23
+      "pct_expensas": 23,
+      "pct_cochera": 5.4
     },
     {
       "barrio": "Balvanera",
@@ -2456,7 +2477,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 23.3
+      "pct_expensas": 23.3,
+      "pct_cochera": 3.8
     },
     {
       "barrio": "Balvanera",
@@ -2471,7 +2493,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 755000,
-      "pct_expensas": 22.2
+      "pct_expensas": 22.2,
+      "pct_cochera": 4.6
     },
     {
       "barrio": "Balvanera",
@@ -2486,7 +2509,8 @@
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22.1
+      "pct_expensas": 22.1,
+      "pct_cochera": 5.1
     },
     {
       "barrio": "Balvanera",
@@ -2501,7 +2525,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 570000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22.1
+      "pct_expensas": 22.1,
+      "pct_cochera": 5.6
     },
     {
       "barrio": "Balvanera",
@@ -2516,7 +2541,8 @@
       "mediana_precio_1amb": 542286,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 23.5
+      "pct_expensas": 23.5,
+      "pct_cochera": 6.2
     },
     {
       "barrio": "Balvanera",
@@ -2531,7 +2557,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 22.4
+      "pct_expensas": 22.4,
+      "pct_cochera": 3.9
     },
     {
       "barrio": "Barracas",
@@ -2546,7 +2573,8 @@
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 595000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 20.5
+      "pct_expensas": 20.5,
+      "pct_cochera": 13.6
     },
     {
       "barrio": "Barracas",
@@ -2561,7 +2589,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 599000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 21.1
+      "pct_expensas": 21.1,
+      "pct_cochera": 18.8
     },
     {
       "barrio": "Barracas",
@@ -2576,7 +2605,8 @@
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 22.2
+      "pct_expensas": 22.2,
+      "pct_cochera": 19.8
     },
     {
       "barrio": "Barracas",
@@ -2591,7 +2621,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 595000,
       "mediana_precio_3amb": 875000,
-      "pct_expensas": 21.2
+      "pct_expensas": 21.2,
+      "pct_cochera": 22.3
     },
     {
       "barrio": "Barracas",
@@ -2606,7 +2637,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 23.1
+      "pct_expensas": 23.1,
+      "pct_cochera": 17.6
     },
     {
       "barrio": "Barracas",
@@ -2621,7 +2653,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 925000,
-      "pct_expensas": 21
+      "pct_expensas": 21,
+      "pct_cochera": 15.6
     },
     {
       "barrio": "Barracas",
@@ -2636,7 +2669,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 665000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 21.7
+      "pct_expensas": 21.7,
+      "pct_cochera": 17.1
     },
     {
       "barrio": "Barracas",
@@ -2651,7 +2685,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 680000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 21.8
+      "pct_expensas": 21.8,
+      "pct_cochera": 9.5
     },
     {
       "barrio": "Barracas",
@@ -2666,7 +2701,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 725000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 22.9
+      "pct_expensas": 22.9,
+      "pct_cochera": 16.1
     },
     {
       "barrio": "Belgrano",
@@ -2681,7 +2717,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 25.4
     },
     {
       "barrio": "Belgrano",
@@ -2696,7 +2733,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 22.1
+      "pct_expensas": 22.1,
+      "pct_cochera": 27
     },
     {
       "barrio": "Belgrano",
@@ -2711,7 +2749,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 22.1
+      "pct_expensas": 22.1,
+      "pct_cochera": 27.3
     },
     {
       "barrio": "Belgrano",
@@ -2726,7 +2765,8 @@
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 713809,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 22.3
+      "pct_expensas": 22.3,
+      "pct_cochera": 31.1
     },
     {
       "barrio": "Belgrano",
@@ -2741,7 +2781,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 740000,
       "mediana_precio_3amb": 1300000,
-      "pct_expensas": 21.8
+      "pct_expensas": 21.8,
+      "pct_cochera": 29.8
     },
     {
       "barrio": "Belgrano",
@@ -2756,7 +2797,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 22.7
+      "pct_expensas": 22.7,
+      "pct_cochera": 28.7
     },
     {
       "barrio": "Belgrano",
@@ -2771,7 +2813,8 @@
       "mediana_precio_1amb": 637173,
       "mediana_precio_2amb": 800000,
       "mediana_precio_3amb": 1404829,
-      "pct_expensas": 21.9
+      "pct_expensas": 21.9,
+      "pct_cochera": 32.3
     },
     {
       "barrio": "Belgrano",
@@ -2786,7 +2829,8 @@
       "mediana_precio_1amb": 698169,
       "mediana_precio_2amb": 850000,
       "mediana_precio_3amb": 1500000,
-      "pct_expensas": 21.7
+      "pct_expensas": 21.7,
+      "pct_cochera": 32.1
     },
     {
       "barrio": "Belgrano",
@@ -2801,7 +2845,8 @@
       "mediana_precio_1amb": 745000,
       "mediana_precio_2amb": 880000,
       "mediana_precio_3amb": 1500000,
-      "pct_expensas": 21.2
+      "pct_expensas": 21.2,
+      "pct_cochera": 28.7
     },
     {
       "barrio": "Boedo",
@@ -2816,7 +2861,8 @@
       "mediana_precio_1amb": 440000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 11.5
     },
     {
       "barrio": "Boedo",
@@ -2831,7 +2877,8 @@
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 590000,
       "mediana_precio_3amb": 825000,
-      "pct_expensas": 21.8
+      "pct_expensas": 21.8,
+      "pct_cochera": 15.8
     },
     {
       "barrio": "Boedo",
@@ -2846,7 +2893,8 @@
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 540000,
       "mediana_precio_3amb": 725000,
-      "pct_expensas": 22.4
+      "pct_expensas": 22.4,
+      "pct_cochera": 10.7
     },
     {
       "barrio": "Boedo",
@@ -2861,7 +2909,8 @@
       "mediana_precio_1amb": 497000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 790000,
-      "pct_expensas": 21.3
+      "pct_expensas": 21.3,
+      "pct_cochera": 9.5
     },
     {
       "barrio": "Boedo",
@@ -2876,7 +2925,8 @@
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 22.3
+      "pct_expensas": 22.3,
+      "pct_cochera": 10.2
     },
     {
       "barrio": "Boedo",
@@ -2891,7 +2941,8 @@
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22.7
+      "pct_expensas": 22.7,
+      "pct_cochera": 12.2
     },
     {
       "barrio": "Boedo",
@@ -2906,7 +2957,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 25.5
+      "pct_expensas": 25.5,
+      "pct_cochera": 31
     },
     {
       "barrio": "Boedo",
@@ -2921,7 +2973,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 23.8
+      "pct_expensas": 23.8,
+      "pct_cochera": 5.7
     },
     {
       "barrio": "Boedo",
@@ -2936,7 +2989,8 @@
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 925000,
-      "pct_expensas": 22.1
+      "pct_expensas": 22.1,
+      "pct_cochera": 6.9
     },
     {
       "barrio": "Caballito",
@@ -2951,7 +3005,8 @@
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 599000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 20.8
+      "pct_expensas": 20.8,
+      "pct_cochera": 16.6
     },
     {
       "barrio": "Caballito",
@@ -2966,7 +3021,8 @@
       "mediana_precio_1amb": 482500,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 21
+      "pct_expensas": 21,
+      "pct_cochera": 15.6
     },
     {
       "barrio": "Caballito",
@@ -2981,7 +3037,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 21.2
+      "pct_expensas": 21.2,
+      "pct_cochera": 15.1
     },
     {
       "barrio": "Caballito",
@@ -2996,7 +3053,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 890000,
-      "pct_expensas": 21.1
+      "pct_expensas": 21.1,
+      "pct_cochera": 16.3
     },
     {
       "barrio": "Caballito",
@@ -3011,7 +3069,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 21.4
+      "pct_expensas": 21.4,
+      "pct_cochera": 16.1
     },
     {
       "barrio": "Caballito",
@@ -3026,7 +3085,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 16
     },
     {
       "barrio": "Caballito",
@@ -3041,7 +3101,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 680000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 14.8
     },
     {
       "barrio": "Caballito",
@@ -3056,7 +3117,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 980000,
-      "pct_expensas": 20.8
+      "pct_expensas": 20.8,
+      "pct_cochera": 14.2
     },
     {
       "barrio": "Caballito",
@@ -3071,7 +3133,8 @@
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 21
+      "pct_expensas": 21,
+      "pct_cochera": 13.8
     },
     {
       "barrio": "Chacarita",
@@ -3086,7 +3149,8 @@
       "mediana_precio_1amb": 540000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1025000,
-      "pct_expensas": 24.3
+      "pct_expensas": 24.3,
+      "pct_cochera": 7.8
     },
     {
       "barrio": "Chacarita",
@@ -3101,7 +3165,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 24
+      "pct_expensas": 24,
+      "pct_cochera": 8.6
     },
     {
       "barrio": "Chacarita",
@@ -3116,7 +3181,8 @@
       "mediana_precio_1amb": 560000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 21.2
+      "pct_expensas": 21.2,
+      "pct_cochera": 10.2
     },
     {
       "barrio": "Chacarita",
@@ -3131,7 +3197,8 @@
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 680000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 20.4
+      "pct_expensas": 20.4,
+      "pct_cochera": 9.5
     },
     {
       "barrio": "Chacarita",
@@ -3146,7 +3213,8 @@
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 790000,
       "mediana_precio_3amb": 1017939,
-      "pct_expensas": 20.5
+      "pct_expensas": 20.5,
+      "pct_cochera": 14.3
     },
     {
       "barrio": "Chacarita",
@@ -3161,7 +3229,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 725000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 20.6
+      "pct_expensas": 20.6,
+      "pct_cochera": 6.5
     },
     {
       "barrio": "Chacarita",
@@ -3176,7 +3245,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 22.3
+      "pct_expensas": 22.3,
+      "pct_cochera": 9.2
     },
     {
       "barrio": "Chacarita",
@@ -3191,7 +3261,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 812500,
       "mediana_precio_3amb": 1047254,
-      "pct_expensas": 23.5
+      "pct_expensas": 23.5,
+      "pct_cochera": 12.3
     },
     {
       "barrio": "Chacarita",
@@ -3206,7 +3277,8 @@
       "mediana_precio_1amb": 699085,
       "mediana_precio_2amb": 837803,
       "mediana_precio_3amb": 1250000,
-      "pct_expensas": 21.9
+      "pct_expensas": 21.9,
+      "pct_cochera": 8.2
     },
     {
       "barrio": "Coghlan",
@@ -3221,7 +3293,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 620000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 18.5
+      "pct_expensas": 18.5,
+      "pct_cochera": 9.8
     },
     {
       "barrio": "Coghlan",
@@ -3236,7 +3309,8 @@
       "mediana_precio_1amb": 525000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 890000,
-      "pct_expensas": 21.1
+      "pct_expensas": 21.1,
+      "pct_cochera": 20.8
     },
     {
       "barrio": "Coghlan",
@@ -3251,7 +3325,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 730000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 22.5
+      "pct_expensas": 22.5,
+      "pct_cochera": 27.1
     },
     {
       "barrio": "Coghlan",
@@ -3266,7 +3341,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 21.4
+      "pct_expensas": 21.4,
+      "pct_cochera": 29.5
     },
     {
       "barrio": "Coghlan",
@@ -3281,7 +3357,8 @@
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 20.7
+      "pct_expensas": 20.7,
+      "pct_cochera": 21.8
     },
     {
       "barrio": "Coghlan",
@@ -3296,7 +3373,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 20.9
+      "pct_expensas": 20.9,
+      "pct_cochera": 17.9
     },
     {
       "barrio": "Coghlan",
@@ -3311,7 +3389,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 895000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 20.4
     },
     {
       "barrio": "Coghlan",
@@ -3326,7 +3405,8 @@
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 850000,
       "mediana_precio_3amb": 1150000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 22.9
     },
     {
       "barrio": "Coghlan",
@@ -3341,7 +3421,8 @@
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 790000,
       "mediana_precio_3amb": 1243444,
-      "pct_expensas": 22
+      "pct_expensas": 22,
+      "pct_cochera": 17.3
     },
     {
       "barrio": "Colegiales",
@@ -3356,7 +3437,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 797722,
-      "pct_expensas": 21.1
+      "pct_expensas": 21.1,
+      "pct_cochera": 11.8
     },
     {
       "barrio": "Colegiales",
@@ -3371,7 +3453,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 20.8
+      "pct_expensas": 20.8,
+      "pct_cochera": 15.7
     },
     {
       "barrio": "Colegiales",
@@ -3386,7 +3469,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 685000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 21.9
+      "pct_expensas": 21.9,
+      "pct_cochera": 18.2
     },
     {
       "barrio": "Colegiales",
@@ -3401,7 +3485,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 22
+      "pct_expensas": 22,
+      "pct_cochera": 20.1
     },
     {
       "barrio": "Colegiales",
@@ -3416,7 +3501,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 875000,
-      "pct_expensas": 21.6
+      "pct_expensas": 21.6,
+      "pct_cochera": 19.5
     },
     {
       "barrio": "Colegiales",
@@ -3431,7 +3517,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 740000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 22.3
+      "pct_expensas": 22.3,
+      "pct_cochera": 18.7
     },
     {
       "barrio": "Colegiales",
@@ -3446,7 +3533,8 @@
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 850000,
       "mediana_precio_3amb": 955000,
-      "pct_expensas": 22.1
+      "pct_expensas": 22.1,
+      "pct_cochera": 25.2
     },
     {
       "barrio": "Colegiales",
@@ -3461,7 +3549,8 @@
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 800000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 21.6
+      "pct_expensas": 21.6,
+      "pct_cochera": 22.1
     },
     {
       "barrio": "Colegiales",
@@ -3476,7 +3565,8 @@
       "mediana_precio_1amb": 758993,
       "mediana_precio_2amb": 900000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 20.4
+      "pct_expensas": 20.4,
+      "pct_cochera": 20.8
     },
     {
       "barrio": "Constitucion",
@@ -3491,7 +3581,8 @@
       "mediana_precio_1amb": 410000,
       "mediana_precio_2amb": 470000,
       "mediana_precio_3amb": 595000,
-      "pct_expensas": 21.7
+      "pct_expensas": 21.7,
+      "pct_cochera": 2.4
     },
     {
       "barrio": "Constitucion",
@@ -3506,7 +3597,8 @@
       "mediana_precio_1amb": 425000,
       "mediana_precio_2amb": 460000,
       "mediana_precio_3amb": 570000,
-      "pct_expensas": 22.7
+      "pct_expensas": 22.7,
+      "pct_cochera": 1.9
     },
     {
       "barrio": "Constitucion",
@@ -3521,7 +3613,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 475000,
       "mediana_precio_3amb": 605000,
-      "pct_expensas": 21.9
+      "pct_expensas": 21.9,
+      "pct_cochera": 3.2
     },
     {
       "barrio": "Constitucion",
@@ -3536,7 +3629,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 470000,
       "mediana_precio_3amb": 650000,
-      "pct_expensas": 25.5
+      "pct_expensas": 25.5,
+      "pct_cochera": 3.1
     },
     {
       "barrio": "Constitucion",
@@ -3551,7 +3645,8 @@
       "mediana_precio_1amb": 460000,
       "mediana_precio_2amb": 480000,
       "mediana_precio_3amb": 765000,
-      "pct_expensas": 24
+      "pct_expensas": 24,
+      "pct_cochera": 4.8
     },
     {
       "barrio": "Constitucion",
@@ -3566,7 +3661,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 515000,
       "mediana_precio_3amb": 670000,
-      "pct_expensas": 25.6
+      "pct_expensas": 25.6,
+      "pct_cochera": 3.3
     },
     {
       "barrio": "Constitucion",
@@ -3581,7 +3677,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 27.9
+      "pct_expensas": 27.9,
+      "pct_cochera": 1.9
     },
     {
       "barrio": "Constitucion",
@@ -3596,7 +3693,8 @@
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 25.7
+      "pct_expensas": 25.7,
+      "pct_cochera": 1.9
     },
     {
       "barrio": "Constitucion",
@@ -3611,7 +3709,8 @@
       "mediana_precio_1amb": 495000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 765000,
-      "pct_expensas": 23.2
+      "pct_expensas": 23.2,
+      "pct_cochera": 1.6
     },
     {
       "barrio": "Flores",
@@ -3626,7 +3725,8 @@
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 745000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 11.5
     },
     {
       "barrio": "Flores",
@@ -3641,7 +3741,8 @@
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 21.1
+      "pct_expensas": 21.1,
+      "pct_cochera": 8.5
     },
     {
       "barrio": "Flores",
@@ -3656,7 +3757,8 @@
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 9.4
     },
     {
       "barrio": "Flores",
@@ -3671,7 +3773,8 @@
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 580000,
       "mediana_precio_3amb": 760000,
-      "pct_expensas": 21.8
+      "pct_expensas": 21.8,
+      "pct_cochera": 11.3
     },
     {
       "barrio": "Flores",
@@ -3686,7 +3789,8 @@
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 590000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22
+      "pct_expensas": 22,
+      "pct_cochera": 11.9
     },
     {
       "barrio": "Flores",
@@ -3701,7 +3805,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 21.9
+      "pct_expensas": 21.9,
+      "pct_cochera": 15.1
     },
     {
       "barrio": "Flores",
@@ -3716,7 +3821,8 @@
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22.3
+      "pct_expensas": 22.3,
+      "pct_cochera": 14.5
     },
     {
       "barrio": "Flores",
@@ -3731,7 +3837,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 890000,
-      "pct_expensas": 21.7
+      "pct_expensas": 21.7,
+      "pct_cochera": 12.5
     },
     {
       "barrio": "Flores",
@@ -3746,7 +3853,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 665000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 12.2
     },
     {
       "barrio": "Floresta",
@@ -3761,7 +3869,8 @@
       "mediana_precio_1amb": 395000,
       "mediana_precio_2amb": 470000,
       "mediana_precio_3amb": 725000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 7.8
     },
     {
       "barrio": "Floresta",
@@ -3776,7 +3885,8 @@
       "mediana_precio_1amb": 420000,
       "mediana_precio_2amb": 520000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 18.8
+      "pct_expensas": 18.8,
+      "pct_cochera": 6.8
     },
     {
       "barrio": "Floresta",
@@ -3791,7 +3901,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 17.8
+      "pct_expensas": 17.8,
+      "pct_cochera": 9.6
     },
     {
       "barrio": "Floresta",
@@ -3806,7 +3917,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 17.9
+      "pct_expensas": 17.9,
+      "pct_cochera": 9.4
     },
     {
       "barrio": "Floresta",
@@ -3821,7 +3933,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 17.3
+      "pct_expensas": 17.3,
+      "pct_cochera": 8.7
     },
     {
       "barrio": "Floresta",
@@ -3836,7 +3949,8 @@
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 580000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 18.3
+      "pct_expensas": 18.3,
+      "pct_cochera": 11.2
     },
     {
       "barrio": "Floresta",
@@ -3851,7 +3965,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 790000,
-      "pct_expensas": 18.6
+      "pct_expensas": 18.6,
+      "pct_cochera": 8.3
     },
     {
       "barrio": "Floresta",
@@ -3866,7 +3981,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 580000,
       "mediana_precio_3amb": 820000,
-      "pct_expensas": 20.8
+      "pct_expensas": 20.8,
+      "pct_cochera": 5.6
     },
     {
       "barrio": "Floresta",
@@ -3881,7 +3997,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 19.1
+      "pct_expensas": 19.1,
+      "pct_cochera": 8
     },
     {
       "barrio": "La Boca",
@@ -3896,7 +4013,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 650000,
-      "pct_expensas": 24.4
+      "pct_expensas": 24.4,
+      "pct_cochera": 6.9
     },
     {
       "barrio": "La Boca",
@@ -3911,7 +4029,8 @@
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 575000,
       "mediana_precio_3amb": 650000,
-      "pct_expensas": 23.6
+      "pct_expensas": 23.6,
+      "pct_cochera": 10.7
     },
     {
       "barrio": "La Boca",
@@ -3926,7 +4045,8 @@
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 597500,
-      "pct_expensas": 26.7
+      "pct_expensas": 26.7,
+      "pct_cochera": 8
     },
     {
       "barrio": "La Boca",
@@ -3941,7 +4061,8 @@
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 585000,
       "mediana_precio_3amb": 682500,
-      "pct_expensas": 25
+      "pct_expensas": 25,
+      "pct_cochera": 8.1
     },
     {
       "barrio": "La Boca",
@@ -3956,7 +4077,8 @@
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 630000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 26.7
+      "pct_expensas": 26.7,
+      "pct_cochera": 5.6
     },
     {
       "barrio": "La Boca",
@@ -3971,7 +4093,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 705000,
-      "pct_expensas": 26.7
+      "pct_expensas": 26.7,
+      "pct_cochera": 4.9
     },
     {
       "barrio": "La Boca",
@@ -3986,7 +4109,8 @@
       "mediana_precio_1amb": 475000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 665000,
-      "pct_expensas": 25.5
+      "pct_expensas": 25.5,
+      "pct_cochera": 5.3
     },
     {
       "barrio": "La Boca",
@@ -4001,7 +4125,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 660121,
       "mediana_precio_3amb": 790000,
-      "pct_expensas": 24.6
+      "pct_expensas": 24.6,
+      "pct_cochera": 0
     },
     {
       "barrio": "La Boca",
@@ -4016,7 +4141,8 @@
       "mediana_precio_1amb": 525000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 843203,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 8.5
     },
     {
       "barrio": "Liniers",
@@ -4031,7 +4157,8 @@
       "mediana_precio_1amb": 420000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 17.9
+      "pct_expensas": 17.9,
+      "pct_cochera": 13.5
     },
     {
       "barrio": "Liniers",
@@ -4046,7 +4173,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 685000,
-      "pct_expensas": 16.3
+      "pct_expensas": 16.3,
+      "pct_cochera": 6.2
     },
     {
       "barrio": "Liniers",
@@ -4061,7 +4189,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 780000,
-      "pct_expensas": 18.2
+      "pct_expensas": 18.2,
+      "pct_cochera": 9.5
     },
     {
       "barrio": "Liniers",
@@ -4076,7 +4205,8 @@
       "mediana_precio_1amb": 430000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 745000,
-      "pct_expensas": 18.5
+      "pct_expensas": 18.5,
+      "pct_cochera": 9.7
     },
     {
       "barrio": "Liniers",
@@ -4091,7 +4221,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 580000,
       "mediana_precio_3amb": 760000,
-      "pct_expensas": 20.3
+      "pct_expensas": 20.3,
+      "pct_cochera": 5.1
     },
     {
       "barrio": "Liniers",
@@ -4106,7 +4237,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 565000,
       "mediana_precio_3amb": 725000,
-      "pct_expensas": 18.6
+      "pct_expensas": 18.6,
+      "pct_cochera": 6.3
     },
     {
       "barrio": "Liniers",
@@ -4121,7 +4253,8 @@
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 725000,
-      "pct_expensas": 18.2
+      "pct_expensas": 18.2,
+      "pct_cochera": 12.9
     },
     {
       "barrio": "Liniers",
@@ -4136,7 +4269,8 @@
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 740000,
-      "pct_expensas": 18.1
+      "pct_expensas": 18.1,
+      "pct_cochera": 9.4
     },
     {
       "barrio": "Liniers",
@@ -4151,7 +4285,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 875000,
-      "pct_expensas": 18.8
+      "pct_expensas": 18.8,
+      "pct_cochera": 3.2
     },
     {
       "barrio": "Mataderos",
@@ -4166,7 +4301,8 @@
       "mediana_precio_1amb": 410000,
       "mediana_precio_2amb": 570000,
       "mediana_precio_3amb": 730000,
-      "pct_expensas": 20.5
+      "pct_expensas": 20.5,
+      "pct_cochera": 20
     },
     {
       "barrio": "Mataderos",
@@ -4181,7 +4317,8 @@
       "mediana_precio_1amb": 405000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 775000,
-      "pct_expensas": 13.8
+      "pct_expensas": 13.8,
+      "pct_cochera": 29.6
     },
     {
       "barrio": "Mataderos",
@@ -4196,7 +4333,8 @@
       "mediana_precio_1amb": 440000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 890000,
-      "pct_expensas": 16.8
+      "pct_expensas": 16.8,
+      "pct_cochera": 14.3
     },
     {
       "barrio": "Mataderos",
@@ -4211,7 +4349,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 725000,
-      "pct_expensas": 15.6
+      "pct_expensas": 15.6,
+      "pct_cochera": 7.9
     },
     {
       "barrio": "Mataderos",
@@ -4226,7 +4365,8 @@
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 14.3
+      "pct_expensas": 14.3,
+      "pct_cochera": 10.7
     },
     {
       "barrio": "Mataderos",
@@ -4241,7 +4381,8 @@
       "mediana_precio_1amb": 555000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 780000,
-      "pct_expensas": 13.9
+      "pct_expensas": 13.9,
+      "pct_cochera": 3.6
     },
     {
       "barrio": "Mataderos",
@@ -4256,7 +4397,8 @@
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 625000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 14.7
+      "pct_expensas": 14.7,
+      "pct_cochera": 0
     },
     {
       "barrio": "Mataderos",
@@ -4271,7 +4413,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 740000,
-      "pct_expensas": 15.3
+      "pct_expensas": 15.3,
+      "pct_cochera": 3.1
     },
     {
       "barrio": "Mataderos",
@@ -4286,7 +4429,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 980000,
-      "pct_expensas": 15.6
+      "pct_expensas": 15.6,
+      "pct_cochera": 18.6
     },
     {
       "barrio": "Monserrat",
@@ -4301,7 +4445,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 580000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 21.1
+      "pct_expensas": 21.1,
+      "pct_cochera": 5.6
     },
     {
       "barrio": "Monserrat",
@@ -4316,7 +4461,8 @@
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 881936,
-      "pct_expensas": 21.8
+      "pct_expensas": 21.8,
+      "pct_cochera": 4
     },
     {
       "barrio": "Monserrat",
@@ -4331,7 +4477,8 @@
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 22.7
+      "pct_expensas": 22.7,
+      "pct_cochera": 6.4
     },
     {
       "barrio": "Monserrat",
@@ -4346,7 +4493,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 530000,
       "mediana_precio_3amb": 740000,
-      "pct_expensas": 22.8
+      "pct_expensas": 22.8,
+      "pct_cochera": 5.5
     },
     {
       "barrio": "Monserrat",
@@ -4361,7 +4509,8 @@
       "mediana_precio_1amb": 525000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 721959,
-      "pct_expensas": 21.6
+      "pct_expensas": 21.6,
+      "pct_cochera": 7
     },
     {
       "barrio": "Monserrat",
@@ -4376,7 +4525,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 22.2
+      "pct_expensas": 22.2,
+      "pct_cochera": 4.9
     },
     {
       "barrio": "Monserrat",
@@ -4391,7 +4541,8 @@
       "mediana_precio_1amb": 563863,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 22.4
+      "pct_expensas": 22.4,
+      "pct_cochera": 7.3
     },
     {
       "barrio": "Monserrat",
@@ -4406,7 +4557,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 620000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 22.7
+      "pct_expensas": 22.7,
+      "pct_cochera": 2.9
     },
     {
       "barrio": "Monserrat",
@@ -4421,7 +4573,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 925000,
-      "pct_expensas": 23.6
+      "pct_expensas": 23.6,
+      "pct_cochera": 3
     },
     {
       "barrio": "Monte Castro",
@@ -4436,7 +4589,8 @@
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 570000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 17.9
+      "pct_expensas": 17.9,
+      "pct_cochera": 7.5
     },
     {
       "barrio": "Monte Castro",
@@ -4451,7 +4605,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 740000,
-      "pct_expensas": 18
+      "pct_expensas": 18,
+      "pct_cochera": 5.1
     },
     {
       "barrio": "Monte Castro",
@@ -4466,7 +4621,8 @@
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 725000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 11.3
     },
     {
       "barrio": "Monte Castro",
@@ -4481,7 +4637,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 625000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 11.5
     },
     {
       "barrio": "Monte Castro",
@@ -4496,7 +4653,8 @@
       "mediana_precio_1amb": 460000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 21.8
+      "pct_expensas": 21.8,
+      "pct_cochera": 11.6
     },
     {
       "barrio": "Monte Castro",
@@ -4511,7 +4669,8 @@
       "mediana_precio_1amb": 455000,
       "mediana_precio_2amb": 690000,
       "mediana_precio_3amb": 825000,
-      "pct_expensas": 19.3
+      "pct_expensas": 19.3,
+      "pct_cochera": 16.2
     },
     {
       "barrio": "Monte Castro",
@@ -4526,7 +4685,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 18.8
+      "pct_expensas": 18.8,
+      "pct_cochera": 17.1
     },
     {
       "barrio": "Monte Castro",
@@ -4541,7 +4701,8 @@
       "mediana_precio_1amb": 510000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 21.1
+      "pct_expensas": 21.1,
+      "pct_cochera": 18.4
     },
     {
       "barrio": "Monte Castro",
@@ -4556,7 +4717,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 6.8
     },
     {
       "barrio": "Nueva Pompeya",
@@ -4571,7 +4733,8 @@
       "mediana_precio_1amb": 320000,
       "mediana_precio_2amb": 350000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 0
     },
     {
       "barrio": "Nueva Pompeya",
@@ -4586,7 +4749,8 @@
       "mediana_precio_1amb": 305000,
       "mediana_precio_2amb": null,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 23.6
+      "pct_expensas": 23.6,
+      "pct_cochera": 14.3
     },
     {
       "barrio": "Nueva Pompeya",
@@ -4601,7 +4765,8 @@
       "mediana_precio_1amb": 260000,
       "mediana_precio_2amb": 450000,
       "mediana_precio_3amb": 500000,
-      "pct_expensas": 16.8
+      "pct_expensas": 16.8,
+      "pct_cochera": 0
     },
     {
       "barrio": "Nueva Pompeya",
@@ -4616,7 +4781,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 525000,
       "mediana_precio_3amb": null,
-      "pct_expensas": 16
+      "pct_expensas": 16,
+      "pct_cochera": 0
     },
     {
       "barrio": "Nueva Pompeya",
@@ -4631,7 +4797,8 @@
       "mediana_precio_1amb": 365000,
       "mediana_precio_2amb": 510000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 17.7
+      "pct_expensas": 17.7,
+      "pct_cochera": 0
     },
     {
       "barrio": "Nueva Pompeya",
@@ -4646,7 +4813,8 @@
       "mediana_precio_1amb": 280000,
       "mediana_precio_2amb": 560000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 26.1
+      "pct_expensas": 26.1,
+      "pct_cochera": 0
     },
     {
       "barrio": "Nueva Pompeya",
@@ -4661,7 +4829,8 @@
       "mediana_precio_1amb": 280000,
       "mediana_precio_2amb": 450000,
       "mediana_precio_3amb": 645000,
-      "pct_expensas": 22
+      "pct_expensas": 22,
+      "pct_cochera": 0
     },
     {
       "barrio": "Nueva Pompeya",
@@ -4676,7 +4845,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 21.8
+      "pct_expensas": 21.8,
+      "pct_cochera": 0
     },
     {
       "barrio": "Nueva Pompeya",
@@ -4691,7 +4861,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 875000,
-      "pct_expensas": 16.9
+      "pct_expensas": 16.9,
+      "pct_cochera": 0
     },
     {
       "barrio": "Nuñez",
@@ -4706,7 +4877,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 770000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 20.4
+      "pct_expensas": 20.4,
+      "pct_cochera": 31.2
     },
     {
       "barrio": "Nuñez",
@@ -4721,7 +4893,8 @@
       "mediana_precio_1amb": 585000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1400000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 30.4
     },
     {
       "barrio": "Nuñez",
@@ -4736,7 +4909,8 @@
       "mediana_precio_1amb": 635000,
       "mediana_precio_2amb": 800000,
       "mediana_precio_3amb": 1400000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 27.8
     },
     {
       "barrio": "Nuñez",
@@ -4751,7 +4925,8 @@
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 850000,
       "mediana_precio_3amb": 1500000,
-      "pct_expensas": 20.7
+      "pct_expensas": 20.7,
+      "pct_cochera": 28.7
     },
     {
       "barrio": "Nuñez",
@@ -4766,7 +4941,8 @@
       "mediana_precio_1amb": 651527,
       "mediana_precio_2amb": 850000,
       "mediana_precio_3amb": 1447838,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 32
     },
     {
       "barrio": "Nuñez",
@@ -4781,7 +4957,8 @@
       "mediana_precio_1amb": 680000,
       "mediana_precio_2amb": 850000,
       "mediana_precio_3amb": 1475000,
-      "pct_expensas": 21.2
+      "pct_expensas": 21.2,
+      "pct_cochera": 33.3
     },
     {
       "barrio": "Nuñez",
@@ -4796,7 +4973,8 @@
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 950000,
       "mediana_precio_3amb": 1409657,
-      "pct_expensas": 21.6
+      "pct_expensas": 21.6,
+      "pct_cochera": 34.9
     },
     {
       "barrio": "Nuñez",
@@ -4811,7 +4989,8 @@
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 1000000,
       "mediana_precio_3amb": 1600000,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 32.8
     },
     {
       "barrio": "Nuñez",
@@ -4826,7 +5005,8 @@
       "mediana_precio_1amb": 750000,
       "mediana_precio_2amb": 1000000,
       "mediana_precio_3amb": 1605790,
-      "pct_expensas": 21.7
+      "pct_expensas": 21.7,
+      "pct_cochera": 26.9
     },
     {
       "barrio": "Palermo",
@@ -4841,7 +5021,8 @@
       "mediana_precio_1amb": 598292,
       "mediana_precio_2amb": 780000,
       "mediana_precio_3amb": 1300000,
-      "pct_expensas": 20.9
+      "pct_expensas": 20.9,
+      "pct_cochera": 24.2
     },
     {
       "barrio": "Palermo",
@@ -4856,7 +5037,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 790000,
       "mediana_precio_3amb": 1329903,
-      "pct_expensas": 21
+      "pct_expensas": 21,
+      "pct_cochera": 24.4
     },
     {
       "barrio": "Palermo",
@@ -4871,7 +5053,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 850000,
       "mediana_precio_3amb": 1300000,
-      "pct_expensas": 20.9
+      "pct_expensas": 20.9,
+      "pct_cochera": 23.8
     },
     {
       "barrio": "Palermo",
@@ -4886,7 +5069,8 @@
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 850000,
       "mediana_precio_3amb": 1400000,
-      "pct_expensas": 21.3
+      "pct_expensas": 21.3,
+      "pct_cochera": 23.5
     },
     {
       "barrio": "Palermo",
@@ -4901,7 +5085,8 @@
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 820000,
       "mediana_precio_3amb": 1433359,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 24.2
     },
     {
       "barrio": "Palermo",
@@ -4916,7 +5101,8 @@
       "mediana_precio_1amb": 680000,
       "mediana_precio_2amb": 850000,
       "mediana_precio_3amb": 1449335,
-      "pct_expensas": 21.2
+      "pct_expensas": 21.2,
+      "pct_cochera": 23.3
     },
     {
       "barrio": "Palermo",
@@ -4931,7 +5117,8 @@
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 900000,
       "mediana_precio_3amb": 1600000,
-      "pct_expensas": 21.3
+      "pct_expensas": 21.3,
+      "pct_cochera": 25.5
     },
     {
       "barrio": "Palermo",
@@ -4946,7 +5133,8 @@
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 900000,
       "mediana_precio_3amb": 1535973,
-      "pct_expensas": 21.3
+      "pct_expensas": 21.3,
+      "pct_cochera": 23.7
     },
     {
       "barrio": "Palermo",
@@ -4961,7 +5149,8 @@
       "mediana_precio_1amb": 767986,
       "mediana_precio_2amb": 1000000,
       "mediana_precio_3amb": 1675606,
-      "pct_expensas": 20.8
+      "pct_expensas": 20.8,
+      "pct_cochera": 21.2
     },
     {
       "barrio": "Parque Avellaneda",
@@ -4976,7 +5165,8 @@
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 635000,
-      "pct_expensas": 15.6
+      "pct_expensas": 15.6,
+      "pct_cochera": 0
     },
     {
       "barrio": "Parque Avellaneda",
@@ -4991,7 +5181,8 @@
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 590000,
       "mediana_precio_3amb": 650000,
-      "pct_expensas": 16.6
+      "pct_expensas": 16.6,
+      "pct_cochera": 5
     },
     {
       "barrio": "Parque Avellaneda",
@@ -5006,7 +5197,8 @@
       "mediana_precio_1amb": 505000,
       "mediana_precio_2amb": 580000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 16.3
+      "pct_expensas": 16.3,
+      "pct_cochera": 0
     },
     {
       "barrio": "Parque Avellaneda",
@@ -5021,7 +5213,8 @@
       "mediana_precio_1amb": 460000,
       "mediana_precio_2amb": 570000,
       "mediana_precio_3amb": 825000,
-      "pct_expensas": 16.2
+      "pct_expensas": 16.2,
+      "pct_cochera": 0
     },
     {
       "barrio": "Parque Avellaneda",
@@ -5036,7 +5229,8 @@
       "mediana_precio_1amb": 465000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 20.6
+      "pct_expensas": 20.6,
+      "pct_cochera": 0
     },
     {
       "barrio": "Parque Avellaneda",
@@ -5051,7 +5245,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 18
+      "pct_expensas": 18,
+      "pct_cochera": 0
     },
     {
       "barrio": "Parque Avellaneda",
@@ -5066,7 +5261,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 620000,
       "mediana_precio_3amb": 725000,
-      "pct_expensas": 23.9
+      "pct_expensas": 23.9,
+      "pct_cochera": 7.1
     },
     {
       "barrio": "Parque Avellaneda",
@@ -5081,7 +5277,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 580000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 21
+      "pct_expensas": 21,
+      "pct_cochera": 14.3
     },
     {
       "barrio": "Parque Avellaneda",
@@ -5096,7 +5293,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 660000,
       "mediana_precio_3amb": 780000,
-      "pct_expensas": 20.4
+      "pct_expensas": 20.4,
+      "pct_cochera": 11.5
     },
     {
       "barrio": "Parque Chacabuco",
@@ -5111,7 +5309,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 21.1
+      "pct_expensas": 21.1,
+      "pct_cochera": 10
     },
     {
       "barrio": "Parque Chacabuco",
@@ -5126,7 +5325,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 565000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 21.2
+      "pct_expensas": 21.2,
+      "pct_cochera": 5.5
     },
     {
       "barrio": "Parque Chacabuco",
@@ -5141,7 +5341,8 @@
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 770000,
-      "pct_expensas": 23
+      "pct_expensas": 23,
+      "pct_cochera": 6.7
     },
     {
       "barrio": "Parque Chacabuco",
@@ -5156,7 +5357,8 @@
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 810000,
-      "pct_expensas": 24.7
+      "pct_expensas": 24.7,
+      "pct_cochera": 10
     },
     {
       "barrio": "Parque Chacabuco",
@@ -5171,7 +5373,8 @@
       "mediana_precio_1amb": 495000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 795000,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 10.1
     },
     {
       "barrio": "Parque Chacabuco",
@@ -5186,7 +5389,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 685000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22.4
+      "pct_expensas": 22.4,
+      "pct_cochera": 11.7
     },
     {
       "barrio": "Parque Chacabuco",
@@ -5201,7 +5405,8 @@
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22.1
+      "pct_expensas": 22.1,
+      "pct_cochera": 14.8
     },
     {
       "barrio": "Parque Chacabuco",
@@ -5216,7 +5421,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 722500,
       "mediana_precio_3amb": 995000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 9.9
     },
     {
       "barrio": "Parque Chacabuco",
@@ -5231,7 +5437,8 @@
       "mediana_precio_1amb": 565000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 21.7
+      "pct_expensas": 21.7,
+      "pct_cochera": 11.1
     },
     {
       "barrio": "Parque Chas",
@@ -5246,7 +5453,8 @@
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 680000,
       "mediana_precio_3amb": null,
-      "pct_expensas": 16.3
+      "pct_expensas": 16.3,
+      "pct_cochera": 6.7
     },
     {
       "barrio": "Parque Chas",
@@ -5261,7 +5469,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 630000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 21.1
+      "pct_expensas": 21.1,
+      "pct_cochera": 5.6
     },
     {
       "barrio": "Parque Chas",
@@ -5276,7 +5485,8 @@
       "mediana_precio_1amb": 535000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 17.4
+      "pct_expensas": 17.4,
+      "pct_cochera": 5
     },
     {
       "barrio": "Parque Chas",
@@ -5291,7 +5501,8 @@
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 725000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 18.8
+      "pct_expensas": 18.8,
+      "pct_cochera": 12.5
     },
     {
       "barrio": "Parque Chas",
@@ -5306,7 +5517,8 @@
       "mediana_precio_1amb": 570000,
       "mediana_precio_2amb": 715000,
       "mediana_precio_3amb": 1050000,
-      "pct_expensas": 19.4
+      "pct_expensas": 19.4,
+      "pct_cochera": 6.5
     },
     {
       "barrio": "Parque Chas",
@@ -5321,7 +5533,8 @@
       "mediana_precio_1amb": 510000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 10
     },
     {
       "barrio": "Parque Chas",
@@ -5336,7 +5549,8 @@
       "mediana_precio_1amb": 556931,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 21.3
+      "pct_expensas": 21.3,
+      "pct_cochera": 20
     },
     {
       "barrio": "Parque Chas",
@@ -5351,7 +5565,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 740000,
       "mediana_precio_3amb": 1050000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 7.5
     },
     {
       "barrio": "Parque Chas",
@@ -5366,7 +5581,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 740000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 21.4
+      "pct_expensas": 21.4,
+      "pct_cochera": 0
     },
     {
       "barrio": "Parque Patricios",
@@ -5381,7 +5597,8 @@
       "mediana_precio_1amb": 430000,
       "mediana_precio_2amb": 575000,
       "mediana_precio_3amb": 600000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 3.9
     },
     {
       "barrio": "Parque Patricios",
@@ -5396,7 +5613,8 @@
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 590000,
       "mediana_precio_3amb": 650000,
-      "pct_expensas": 18.7
+      "pct_expensas": 18.7,
+      "pct_cochera": 7.7
     },
     {
       "barrio": "Parque Patricios",
@@ -5411,7 +5629,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 580000,
       "mediana_precio_3amb": 650000,
-      "pct_expensas": 21
+      "pct_expensas": 21,
+      "pct_cochera": 12.7
     },
     {
       "barrio": "Parque Patricios",
@@ -5426,7 +5645,8 @@
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 571047,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 6.5
     },
     {
       "barrio": "Parque Patricios",
@@ -5441,7 +5661,8 @@
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 18.2
+      "pct_expensas": 18.2,
+      "pct_cochera": 4
     },
     {
       "barrio": "Parque Patricios",
@@ -5456,7 +5677,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 620000,
       "mediana_precio_3amb": 775000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 15.1
     },
     {
       "barrio": "Parque Patricios",
@@ -5471,7 +5693,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 20.2
+      "pct_expensas": 20.2,
+      "pct_cochera": 11.9
     },
     {
       "barrio": "Parque Patricios",
@@ -5486,7 +5709,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 825000,
-      "pct_expensas": 20.1
+      "pct_expensas": 20.1,
+      "pct_cochera": 4.5
     },
     {
       "barrio": "Parque Patricios",
@@ -5501,7 +5725,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 7.4
     },
     {
       "barrio": "Paternal",
@@ -5516,7 +5741,8 @@
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 525000,
       "mediana_precio_3amb": 755000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 10.9
     },
     {
       "barrio": "Paternal",
@@ -5531,7 +5757,8 @@
       "mediana_precio_1amb": 499500,
       "mediana_precio_2amb": 570000,
       "mediana_precio_3amb": 780000,
-      "pct_expensas": 18
+      "pct_expensas": 18,
+      "pct_cochera": 14.3
     },
     {
       "barrio": "Paternal",
@@ -5546,7 +5773,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 575000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 19.5
+      "pct_expensas": 19.5,
+      "pct_cochera": 7.6
     },
     {
       "barrio": "Paternal",
@@ -5561,7 +5789,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 620000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 19
+      "pct_expensas": 19,
+      "pct_cochera": 1.8
     },
     {
       "barrio": "Paternal",
@@ -5576,7 +5805,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 790000,
-      "pct_expensas": 21
+      "pct_expensas": 21,
+      "pct_cochera": 3
     },
     {
       "barrio": "Paternal",
@@ -5591,7 +5821,8 @@
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 580000,
       "mediana_precio_3amb": 780000,
-      "pct_expensas": 20.6
+      "pct_expensas": 20.6,
+      "pct_cochera": 4
     },
     {
       "barrio": "Paternal",
@@ -5606,7 +5837,8 @@
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22.8
+      "pct_expensas": 22.8,
+      "pct_cochera": 4.8
     },
     {
       "barrio": "Paternal",
@@ -5621,7 +5853,8 @@
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 22.3
+      "pct_expensas": 22.3,
+      "pct_cochera": 3.1
     },
     {
       "barrio": "Paternal",
@@ -5636,7 +5869,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22
+      "pct_expensas": 22,
+      "pct_cochera": 4
     },
     {
       "barrio": "Puerto Madero",
@@ -5651,7 +5885,8 @@
       "mediana_precio_1amb": 1462491,
       "mediana_precio_2amb": 2260214,
       "mediana_precio_3amb": 4121566,
-      "pct_expensas": 22
+      "pct_expensas": 22,
+      "pct_cochera": 78.6
     },
     {
       "barrio": "Puerto Madero",
@@ -5666,7 +5901,8 @@
       "mediana_precio_1amb": 1399898,
       "mediana_precio_2amb": 2659806,
       "mediana_precio_3amb": 4619662,
-      "pct_expensas": 20.5
+      "pct_expensas": 20.5,
+      "pct_cochera": 78.7
     },
     {
       "barrio": "Puerto Madero",
@@ -5681,7 +5917,8 @@
       "mediana_precio_1amb": 1317461,
       "mediana_precio_2amb": 2720843,
       "mediana_precio_3amb": 4546672,
-      "pct_expensas": 20.9
+      "pct_expensas": 20.9,
+      "pct_cochera": 79.6
     },
     {
       "barrio": "Puerto Madero",
@@ -5696,7 +5933,8 @@
       "mediana_precio_1amb": 1399065,
       "mediana_precio_2amb": 2605402,
       "mediana_precio_3amb": 4282853,
-      "pct_expensas": 21
+      "pct_expensas": 21,
+      "pct_cochera": 79.5
     },
     {
       "barrio": "Puerto Madero",
@@ -5711,7 +5949,8 @@
       "mediana_precio_1amb": 1447838,
       "mediana_precio_2amb": 2316540,
       "mediana_precio_3amb": 4343513,
-      "pct_expensas": 20.2
+      "pct_expensas": 20.2,
+      "pct_cochera": 76
     },
     {
       "barrio": "Puerto Madero",
@@ -5726,7 +5965,8 @@
       "mediana_precio_1amb": 1376868,
       "mediana_precio_2amb": 2608802,
       "mediana_precio_3amb": 4348004,
-      "pct_expensas": 19.7
+      "pct_expensas": 19.7,
+      "pct_cochera": 74
     },
     {
       "barrio": "Puerto Madero",
@@ -5741,7 +5981,8 @@
       "mediana_precio_1amb": 1409657,
       "mediana_precio_2amb": 2537383,
       "mediana_precio_3amb": 4228971,
-      "pct_expensas": 21.3
+      "pct_expensas": 21.3,
+      "pct_cochera": 77.6
     },
     {
       "barrio": "Puerto Madero",
@@ -5756,7 +5997,8 @@
       "mediana_precio_1amb": 1396339,
       "mediana_precio_2amb": 2234142,
       "mediana_precio_3amb": 4189016,
-      "pct_expensas": 20.8
+      "pct_expensas": 20.8,
+      "pct_cochera": 67.8
     },
     {
       "barrio": "Puerto Madero",
@@ -5771,7 +6013,8 @@
       "mediana_precio_1amb": 1535973,
       "mediana_precio_2amb": 2653044,
       "mediana_precio_3amb": 4468284,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 63.4
     },
     {
       "barrio": "Recoleta",
@@ -5786,7 +6029,8 @@
       "mediana_precio_1amb": 462500,
       "mediana_precio_2amb": 624883,
       "mediana_precio_3amb": 1063630,
-      "pct_expensas": 22.7
+      "pct_expensas": 22.7,
+      "pct_cochera": 15.7
     },
     {
       "barrio": "Recoleta",
@@ -5801,7 +6045,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 620000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 22.7
+      "pct_expensas": 22.7,
+      "pct_cochera": 14.5
     },
     {
       "barrio": "Recoleta",
@@ -5816,7 +6061,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 22.6
+      "pct_expensas": 22.6,
+      "pct_cochera": 14.1
     },
     {
       "barrio": "Recoleta",
@@ -5831,7 +6077,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 22.8
+      "pct_expensas": 22.8,
+      "pct_cochera": 13.6
     },
     {
       "barrio": "Recoleta",
@@ -5846,7 +6093,8 @@
       "mediana_precio_1amb": 540000,
       "mediana_precio_2amb": 690000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 23
+      "pct_expensas": 23,
+      "pct_cochera": 14.7
     },
     {
       "barrio": "Recoleta",
@@ -5861,7 +6109,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1231934,
-      "pct_expensas": 23
+      "pct_expensas": 23,
+      "pct_cochera": 16.8
     },
     {
       "barrio": "Recoleta",
@@ -5876,7 +6125,8 @@
       "mediana_precio_1amb": 563863,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1300000,
-      "pct_expensas": 23.1
+      "pct_expensas": 23.1,
+      "pct_cochera": 16.3
     },
     {
       "barrio": "Recoleta",
@@ -5891,7 +6141,8 @@
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1396339,
-      "pct_expensas": 23.4
+      "pct_expensas": 23.4,
+      "pct_cochera": 17.3
     },
     {
       "barrio": "Recoleta",
@@ -5906,7 +6157,8 @@
       "mediana_precio_1amb": 620000,
       "mediana_precio_2amb": 790000,
       "mediana_precio_3amb": 1450000,
-      "pct_expensas": 22.7
+      "pct_expensas": 22.7,
+      "pct_cochera": 17.1
     },
     {
       "barrio": "Retiro",
@@ -5921,7 +6173,8 @@
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 560000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 25.1
+      "pct_expensas": 25.1,
+      "pct_cochera": 22.7
     },
     {
       "barrio": "Retiro",
@@ -5936,7 +6189,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 639977,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 25
+      "pct_expensas": 25,
+      "pct_cochera": 22.8
     },
     {
       "barrio": "Retiro",
@@ -5951,7 +6205,8 @@
       "mediana_precio_1amb": 570000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1145618,
-      "pct_expensas": 24.5
+      "pct_expensas": 24.5,
+      "pct_cochera": 26.6
     },
     {
       "barrio": "Retiro",
@@ -5966,7 +6221,8 @@
       "mediana_precio_1amb": 585524,
       "mediana_precio_2amb": 636214,
       "mediana_precio_3amb": 1075357,
-      "pct_expensas": 25.3
+      "pct_expensas": 25.3,
+      "pct_cochera": 27.2
     },
     {
       "barrio": "Retiro",
@@ -5981,7 +6237,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 26.8
+      "pct_expensas": 26.8,
+      "pct_cochera": 27
     },
     {
       "barrio": "Retiro",
@@ -5996,7 +6253,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 25.9
+      "pct_expensas": 25.9,
+      "pct_cochera": 26.7
     },
     {
       "barrio": "Retiro",
@@ -6011,7 +6269,8 @@
       "mediana_precio_1amb": 634346,
       "mediana_precio_2amb": 702414,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 25
+      "pct_expensas": 25,
+      "pct_cochera": 27.2
     },
     {
       "barrio": "Retiro",
@@ -6026,7 +6285,8 @@
       "mediana_precio_1amb": 628352,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1180000,
-      "pct_expensas": 25
+      "pct_expensas": 25,
+      "pct_cochera": 22.3
     },
     {
       "barrio": "Retiro",
@@ -6041,7 +6301,8 @@
       "mediana_precio_1amb": 674085,
       "mediana_precio_2amb": 778993,
       "mediana_precio_3amb": 1280000,
-      "pct_expensas": 25
+      "pct_expensas": 25,
+      "pct_cochera": 18.5
     },
     {
       "barrio": "Saavedra",
@@ -6056,7 +6317,8 @@
       "mediana_precio_1amb": 575000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1025000,
-      "pct_expensas": 17.1
+      "pct_expensas": 17.1,
+      "pct_cochera": 23.1
     },
     {
       "barrio": "Saavedra",
@@ -6071,7 +6333,8 @@
       "mediana_precio_1amb": 595000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 975000,
-      "pct_expensas": 17
+      "pct_expensas": 17,
+      "pct_cochera": 24.8
     },
     {
       "barrio": "Saavedra",
@@ -6086,7 +6349,8 @@
       "mediana_precio_1amb": 625000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 16.6
+      "pct_expensas": 16.6,
+      "pct_cochera": 19.2
     },
     {
       "barrio": "Saavedra",
@@ -6101,7 +6365,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 715000,
       "mediana_precio_3amb": 1000000,
-      "pct_expensas": 17.3
+      "pct_expensas": 17.3,
+      "pct_cochera": 19.5
     },
     {
       "barrio": "Saavedra",
@@ -6116,7 +6381,8 @@
       "mediana_precio_1amb": 612500,
       "mediana_precio_2amb": 740000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 17.2
+      "pct_expensas": 17.2,
+      "pct_cochera": 19
     },
     {
       "barrio": "Saavedra",
@@ -6131,7 +6397,8 @@
       "mediana_precio_1amb": 676100,
       "mediana_precio_2amb": 800000,
       "mediana_precio_3amb": 1000000,
-      "pct_expensas": 16.9
+      "pct_expensas": 16.9,
+      "pct_cochera": 20
     },
     {
       "barrio": "Saavedra",
@@ -6146,7 +6413,8 @@
       "mediana_precio_1amb": 665000,
       "mediana_precio_2amb": 825000,
       "mediana_precio_3amb": 975000,
-      "pct_expensas": 18.6
+      "pct_expensas": 18.6,
+      "pct_cochera": 23.7
     },
     {
       "barrio": "Saavedra",
@@ -6161,7 +6429,8 @@
       "mediana_precio_1amb": 655000,
       "mediana_precio_2amb": 875000,
       "mediana_precio_3amb": 1150000,
-      "pct_expensas": 19.5
+      "pct_expensas": 19.5,
+      "pct_cochera": 16
     },
     {
       "barrio": "Saavedra",
@@ -6176,7 +6445,8 @@
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 850000,
       "mediana_precio_3amb": 1363261,
-      "pct_expensas": 18.8
+      "pct_expensas": 18.8,
+      "pct_cochera": 22.5
     },
     {
       "barrio": "San Cristobal",
@@ -6191,7 +6461,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 720000,
-      "pct_expensas": 22.2
+      "pct_expensas": 22.2,
+      "pct_cochera": 4.2
     },
     {
       "barrio": "San Cristobal",
@@ -6206,7 +6477,8 @@
       "mediana_precio_1amb": 455000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 24
+      "pct_expensas": 24,
+      "pct_cochera": 3.5
     },
     {
       "barrio": "San Cristobal",
@@ -6221,7 +6493,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 24.3
+      "pct_expensas": 24.3,
+      "pct_cochera": 6.2
     },
     {
       "barrio": "San Cristobal",
@@ -6236,7 +6509,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 24.3
+      "pct_expensas": 24.3,
+      "pct_cochera": 2.7
     },
     {
       "barrio": "San Cristobal",
@@ -6251,7 +6525,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 22.7
+      "pct_expensas": 22.7,
+      "pct_cochera": 5.4
     },
     {
       "barrio": "San Cristobal",
@@ -6266,7 +6541,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 780000,
-      "pct_expensas": 22.8
+      "pct_expensas": 22.8,
+      "pct_cochera": 4.2
     },
     {
       "barrio": "San Cristobal",
@@ -6281,7 +6557,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 780000,
-      "pct_expensas": 24
+      "pct_expensas": 24,
+      "pct_cochera": 5.9
     },
     {
       "barrio": "San Cristobal",
@@ -6296,7 +6573,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 792500,
-      "pct_expensas": 23.6
+      "pct_expensas": 23.6,
+      "pct_cochera": 4
     },
     {
       "barrio": "San Cristobal",
@@ -6311,7 +6589,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 845000,
-      "pct_expensas": 22.8
+      "pct_expensas": 22.8,
+      "pct_cochera": 3.4
     },
     {
       "barrio": "San Nicolas",
@@ -6326,7 +6605,8 @@
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 670000,
-      "pct_expensas": 25.5
+      "pct_expensas": 25.5,
+      "pct_cochera": 3.6
     },
     {
       "barrio": "San Nicolas",
@@ -6341,7 +6621,8 @@
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 531961,
       "mediana_precio_3amb": 695000,
-      "pct_expensas": 25
+      "pct_expensas": 25,
+      "pct_cochera": 1.6
     },
     {
       "barrio": "San Nicolas",
@@ -6356,7 +6637,8 @@
       "mediana_precio_1amb": 417500,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 733006,
-      "pct_expensas": 24.2
+      "pct_expensas": 24.2,
+      "pct_cochera": 3
     },
     {
       "barrio": "San Nicolas",
@@ -6371,7 +6653,8 @@
       "mediana_precio_1amb": 440000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 25
+      "pct_expensas": 25,
+      "pct_cochera": 3.1
     },
     {
       "barrio": "San Nicolas",
@@ -6386,7 +6669,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 736959,
-      "pct_expensas": 27
+      "pct_expensas": 27,
+      "pct_cochera": 2.4
     },
     {
       "barrio": "San Nicolas",
@@ -6401,7 +6685,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 26.7
+      "pct_expensas": 26.7,
+      "pct_cochera": 1
     },
     {
       "barrio": "San Nicolas",
@@ -6416,7 +6701,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 26.6
+      "pct_expensas": 26.6,
+      "pct_cochera": 3
     },
     {
       "barrio": "San Nicolas",
@@ -6431,7 +6717,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 870000,
-      "pct_expensas": 25.7
+      "pct_expensas": 25.7,
+      "pct_cochera": 2.3
     },
     {
       "barrio": "San Nicolas",
@@ -6446,7 +6733,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 25
+      "pct_expensas": 25,
+      "pct_cochera": 2.3
     },
     {
       "barrio": "San Telmo",
@@ -6461,7 +6749,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 560000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 20.6
+      "pct_expensas": 20.6,
+      "pct_cochera": 7.5
     },
     {
       "barrio": "San Telmo",
@@ -6476,7 +6765,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 22.5
+      "pct_expensas": 22.5,
+      "pct_cochera": 11.1
     },
     {
       "barrio": "San Telmo",
@@ -6491,7 +6781,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 23.8
+      "pct_expensas": 23.8,
+      "pct_cochera": 7.6
     },
     {
       "barrio": "San Telmo",
@@ -6506,7 +6797,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22.1
+      "pct_expensas": 22.1,
+      "pct_cochera": 5.5
     },
     {
       "barrio": "San Telmo",
@@ -6521,7 +6813,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 835000,
-      "pct_expensas": 22.2
+      "pct_expensas": 22.2,
+      "pct_cochera": 5.7
     },
     {
       "barrio": "San Telmo",
@@ -6536,7 +6829,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 810000,
-      "pct_expensas": 22.7
+      "pct_expensas": 22.7,
+      "pct_cochera": 10.7
     },
     {
       "barrio": "San Telmo",
@@ -6551,7 +6845,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 690732,
       "mediana_precio_3amb": 825000,
-      "pct_expensas": 21.8
+      "pct_expensas": 21.8,
+      "pct_cochera": 10.4
     },
     {
       "barrio": "San Telmo",
@@ -6566,7 +6861,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 698169,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 6.1
     },
     {
       "barrio": "San Telmo",
@@ -6581,7 +6877,8 @@
       "mediana_precio_1amb": 593231,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 22.1
+      "pct_expensas": 22.1,
+      "pct_cochera": 5.4
     },
     {
       "barrio": "Velez Sarsfield",
@@ -6596,7 +6893,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 525000,
       "mediana_precio_3amb": 650000,
-      "pct_expensas": 16.9
+      "pct_expensas": 16.9,
+      "pct_cochera": 0
     },
     {
       "barrio": "Velez Sarsfield",
@@ -6611,7 +6909,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 520000,
       "mediana_precio_3amb": 650000,
-      "pct_expensas": 18.9
+      "pct_expensas": 18.9,
+      "pct_cochera": 0
     },
     {
       "barrio": "Velez Sarsfield",
@@ -6626,7 +6925,8 @@
       "mediana_precio_1amb": 460000,
       "mediana_precio_2amb": 590000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 20.5
+      "pct_expensas": 20.5,
+      "pct_cochera": 33.3
     },
     {
       "barrio": "Velez Sarsfield",
@@ -6641,7 +6941,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 587500,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 16.8
+      "pct_expensas": 16.8,
+      "pct_cochera": 25
     },
     {
       "barrio": "Velez Sarsfield",
@@ -6656,7 +6957,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 619500,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 17
+      "pct_expensas": 17,
+      "pct_cochera": 5.6
     },
     {
       "barrio": "Velez Sarsfield",
@@ -6671,7 +6973,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 575000,
       "mediana_precio_3amb": 650000,
-      "pct_expensas": 18
+      "pct_expensas": 18,
+      "pct_cochera": 4.8
     },
     {
       "barrio": "Velez Sarsfield",
@@ -6686,7 +6989,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 22.3
+      "pct_expensas": 22.3,
+      "pct_cochera": 10
     },
     {
       "barrio": "Velez Sarsfield",
@@ -6701,7 +7005,8 @@
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 825000,
-      "pct_expensas": 17.2
+      "pct_expensas": 17.2,
+      "pct_cochera": 5.6
     },
     {
       "barrio": "Velez Sarsfield",
@@ -6716,7 +7021,8 @@
       "mediana_precio_1amb": 575000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 19.8
+      "pct_expensas": 19.8,
+      "pct_cochera": 0
     },
     {
       "barrio": "Versalles",
@@ -6731,7 +7037,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 625000,
-      "pct_expensas": 18.3
+      "pct_expensas": 18.3,
+      "pct_cochera": 22.2
     },
     {
       "barrio": "Versalles",
@@ -6746,7 +7053,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 665000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 24.1
+      "pct_expensas": 24.1,
+      "pct_cochera": 50
     },
     {
       "barrio": "Versalles",
@@ -6761,7 +7069,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": null,
       "mediana_precio_3amb": 705000,
-      "pct_expensas": 26.4
+      "pct_expensas": 26.4,
+      "pct_cochera": 20
     },
     {
       "barrio": "Versalles",
@@ -6776,7 +7085,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": null,
       "mediana_precio_3amb": 725000,
-      "pct_expensas": 26.4
+      "pct_expensas": 26.4,
+      "pct_cochera": 20
     },
     {
       "barrio": "Versalles",
@@ -6791,7 +7101,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 21.5
+      "pct_expensas": 21.5,
+      "pct_cochera": 33.3
     },
     {
       "barrio": "Versalles",
@@ -6806,7 +7117,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 625000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 18.8
+      "pct_expensas": 18.8,
+      "pct_cochera": 40
     },
     {
       "barrio": "Versalles",
@@ -6821,7 +7133,8 @@
       "mediana_precio_1amb": 380000,
       "mediana_precio_2amb": 660000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 22
+      "pct_expensas": 22,
+      "pct_cochera": 33.3
     },
     {
       "barrio": "Versalles",
@@ -6836,7 +7149,8 @@
       "mediana_precio_1amb": 380000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 20.8
+      "pct_expensas": 20.8,
+      "pct_cochera": 7.7
     },
     {
       "barrio": "Villa Crespo",
@@ -6851,7 +7165,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 9.8
     },
     {
       "barrio": "Villa Crespo",
@@ -6866,7 +7181,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 640000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 20.2
+      "pct_expensas": 20.2,
+      "pct_cochera": 9.6
     },
     {
       "barrio": "Villa Crespo",
@@ -6881,7 +7197,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 860000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 11
     },
     {
       "barrio": "Villa Crespo",
@@ -6896,7 +7213,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 12
     },
     {
       "barrio": "Villa Crespo",
@@ -6911,7 +7229,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 685000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 20.2
+      "pct_expensas": 20.2,
+      "pct_cochera": 8.6
     },
     {
       "barrio": "Villa Crespo",
@@ -6926,7 +7245,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 680000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 6.2
     },
     {
       "barrio": "Villa Crespo",
@@ -6941,7 +7261,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1000000,
-      "pct_expensas": 19
+      "pct_expensas": 19,
+      "pct_cochera": 10
     },
     {
       "barrio": "Villa Crespo",
@@ -6956,7 +7277,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1050000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 10
     },
     {
       "barrio": "Villa Crespo",
@@ -6971,7 +7293,8 @@
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 800000,
       "mediana_precio_3amb": 1183535,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 8.9
     },
     {
       "barrio": "Villa Del Parque",
@@ -6986,7 +7309,8 @@
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 18.4
+      "pct_expensas": 18.4,
+      "pct_cochera": 8
     },
     {
       "barrio": "Villa Del Parque",
@@ -7001,7 +7325,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 575000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 18.6
+      "pct_expensas": 18.6,
+      "pct_cochera": 10.3
     },
     {
       "barrio": "Villa Del Parque",
@@ -7016,7 +7341,8 @@
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 19.4
+      "pct_expensas": 19.4,
+      "pct_cochera": 11.1
     },
     {
       "barrio": "Villa Del Parque",
@@ -7031,7 +7357,8 @@
       "mediana_precio_1amb": 497500,
       "mediana_precio_2amb": 640000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 11.2
     },
     {
       "barrio": "Villa Del Parque",
@@ -7046,7 +7373,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 19.8
+      "pct_expensas": 19.8,
+      "pct_cochera": 9.1
     },
     {
       "barrio": "Villa Del Parque",
@@ -7061,7 +7389,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 625000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 8.7
     },
     {
       "barrio": "Villa Del Parque",
@@ -7076,7 +7405,8 @@
       "mediana_precio_1amb": 545000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 19.1
+      "pct_expensas": 19.1,
+      "pct_cochera": 12.3
     },
     {
       "barrio": "Villa Del Parque",
@@ -7091,7 +7421,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 11.6
     },
     {
       "barrio": "Villa Del Parque",
@@ -7106,7 +7437,8 @@
       "mediana_precio_1amb": 565000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 20.5
+      "pct_expensas": 20.5,
+      "pct_cochera": 6.5
     },
     {
       "barrio": "Villa Devoto",
@@ -7121,7 +7453,8 @@
       "mediana_precio_1amb": 495000,
       "mediana_precio_2amb": 627500,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 18.2
+      "pct_expensas": 18.2,
+      "pct_cochera": 19.7
     },
     {
       "barrio": "Villa Devoto",
@@ -7136,7 +7469,8 @@
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 630000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 18.3
+      "pct_expensas": 18.3,
+      "pct_cochera": 19.6
     },
     {
       "barrio": "Villa Devoto",
@@ -7151,7 +7485,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 875000,
-      "pct_expensas": 18.7
+      "pct_expensas": 18.7,
+      "pct_cochera": 18.9
     },
     {
       "barrio": "Villa Devoto",
@@ -7166,7 +7501,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1000000,
-      "pct_expensas": 18.8
+      "pct_expensas": 18.8,
+      "pct_cochera": 20.9
     },
     {
       "barrio": "Villa Devoto",
@@ -7181,7 +7517,8 @@
       "mediana_precio_1amb": 540000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 925000,
-      "pct_expensas": 18
+      "pct_expensas": 18,
+      "pct_cochera": 15.8
     },
     {
       "barrio": "Villa Devoto",
@@ -7196,7 +7533,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 680000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 18.8
+      "pct_expensas": 18.8,
+      "pct_cochera": 12.3
     },
     {
       "barrio": "Villa Devoto",
@@ -7211,7 +7549,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 18.2
+      "pct_expensas": 18.2,
+      "pct_cochera": 21.4
     },
     {
       "barrio": "Villa Devoto",
@@ -7226,7 +7565,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 18.6
+      "pct_expensas": 18.6,
+      "pct_cochera": 17
     },
     {
       "barrio": "Villa Devoto",
@@ -7241,7 +7581,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 17.5
+      "pct_expensas": 17.5,
+      "pct_cochera": 19.7
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -7256,7 +7597,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 565000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 20.7
+      "pct_expensas": 20.7,
+      "pct_cochera": 13
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -7271,7 +7613,8 @@
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 580000,
       "mediana_precio_3amb": 775000,
-      "pct_expensas": 23.2
+      "pct_expensas": 23.2,
+      "pct_cochera": 3.6
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -7286,7 +7629,8 @@
       "mediana_precio_1amb": 524500,
       "mediana_precio_2amb": 615000,
       "mediana_precio_3amb": 775000,
-      "pct_expensas": 23.5
+      "pct_expensas": 23.5,
+      "pct_cochera": 10.7
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -7301,7 +7645,8 @@
       "mediana_precio_1amb": 505000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 725000,
-      "pct_expensas": 25.7
+      "pct_expensas": 25.7,
+      "pct_cochera": 7.4
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -7316,7 +7661,8 @@
       "mediana_precio_1amb": 510000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 22.8
+      "pct_expensas": 22.8,
+      "pct_cochera": 2.8
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -7331,7 +7677,8 @@
       "mediana_precio_1amb": 505000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 660000,
-      "pct_expensas": 25.2
+      "pct_expensas": 25.2,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -7346,7 +7693,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 620000,
-      "pct_expensas": 23.3
+      "pct_expensas": 23.3,
+      "pct_cochera": 5.3
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -7361,7 +7709,8 @@
       "mediana_precio_1amb": 540000,
       "mediana_precio_2amb": 615000,
       "mediana_precio_3amb": 690000,
-      "pct_expensas": 24.4
+      "pct_expensas": 24.4,
+      "pct_cochera": 9.1
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -7376,7 +7725,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 665000,
       "mediana_precio_3amb": 707500,
-      "pct_expensas": 24
+      "pct_expensas": 24,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Lugano",
@@ -7391,7 +7741,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 450000,
       "mediana_precio_3amb": 550000,
-      "pct_expensas": 16
+      "pct_expensas": 16,
+      "pct_cochera": 18.8
     },
     {
       "barrio": "Villa Lugano",
@@ -7406,7 +7757,8 @@
       "mediana_precio_1amb": 460000,
       "mediana_precio_2amb": 575000,
       "mediana_precio_3amb": 530000,
-      "pct_expensas": 16
+      "pct_expensas": 16,
+      "pct_cochera": 26.7
     },
     {
       "barrio": "Villa Lugano",
@@ -7421,7 +7773,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 16.1
+      "pct_expensas": 16.1,
+      "pct_cochera": 8.3
     },
     {
       "barrio": "Villa Lugano",
@@ -7436,7 +7789,8 @@
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 600000,
-      "pct_expensas": 13.3
+      "pct_expensas": 13.3,
+      "pct_cochera": 10.5
     },
     {
       "barrio": "Villa Lugano",
@@ -7451,7 +7805,8 @@
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 600000,
-      "pct_expensas": 12.3
+      "pct_expensas": 12.3,
+      "pct_cochera": 25
     },
     {
       "barrio": "Villa Lugano",
@@ -7466,7 +7821,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
       "mediana_precio_3amb": 550000,
-      "pct_expensas": 15.4
+      "pct_expensas": 15.4,
+      "pct_cochera": 11.1
     },
     {
       "barrio": "Villa Lugano",
@@ -7481,7 +7837,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 620000,
-      "pct_expensas": 15.7
+      "pct_expensas": 15.7,
+      "pct_cochera": 25
     },
     {
       "barrio": "Villa Lugano",
@@ -7496,7 +7853,8 @@
       "mediana_precio_1amb": 435000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 610000,
-      "pct_expensas": 15.3
+      "pct_expensas": 15.3,
+      "pct_cochera": 14.8
     },
     {
       "barrio": "Villa Lugano",
@@ -7511,7 +7869,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 600000,
-      "pct_expensas": 17.1
+      "pct_expensas": 17.1,
+      "pct_cochera": 7.1
     },
     {
       "barrio": "Villa Luro",
@@ -7526,7 +7885,8 @@
       "mediana_precio_1amb": 410000,
       "mediana_precio_2amb": 540000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 17.9
+      "pct_expensas": 17.9,
+      "pct_cochera": 10.5
     },
     {
       "barrio": "Villa Luro",
@@ -7541,7 +7901,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 635000,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 17.9
+      "pct_expensas": 17.9,
+      "pct_cochera": 14.5
     },
     {
       "barrio": "Villa Luro",
@@ -7556,7 +7917,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 18.9
+      "pct_expensas": 18.9,
+      "pct_cochera": 12.1
     },
     {
       "barrio": "Villa Luro",
@@ -7571,7 +7933,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 16.7
+      "pct_expensas": 16.7,
+      "pct_cochera": 8.2
     },
     {
       "barrio": "Villa Luro",
@@ -7586,7 +7949,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 810000,
-      "pct_expensas": 16.6
+      "pct_expensas": 16.6,
+      "pct_cochera": 6.2
     },
     {
       "barrio": "Villa Luro",
@@ -7601,7 +7965,8 @@
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 595000,
       "mediana_precio_3amb": 820000,
-      "pct_expensas": 17.9
+      "pct_expensas": 17.9,
+      "pct_cochera": 4.5
     },
     {
       "barrio": "Villa Luro",
@@ -7616,7 +7981,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 820000,
-      "pct_expensas": 17.9
+      "pct_expensas": 17.9,
+      "pct_cochera": 9.5
     },
     {
       "barrio": "Villa Luro",
@@ -7631,7 +7997,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 825000,
-      "pct_expensas": 16.8
+      "pct_expensas": 16.8,
+      "pct_cochera": 10.9
     },
     {
       "barrio": "Villa Luro",
@@ -7646,7 +8013,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 980000,
-      "pct_expensas": 18.6
+      "pct_expensas": 18.6,
+      "pct_cochera": 10.3
     },
     {
       "barrio": "Villa Ortuzar",
@@ -7661,7 +8029,8 @@
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1229822,
-      "pct_expensas": 18.8
+      "pct_expensas": 18.8,
+      "pct_cochera": 18.8
     },
     {
       "barrio": "Villa Ortuzar",
@@ -7676,7 +8045,8 @@
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 20.6
+      "pct_expensas": 20.6,
+      "pct_cochera": 20.9
     },
     {
       "barrio": "Villa Ortuzar",
@@ -7691,7 +8061,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1108610,
-      "pct_expensas": 20.7
+      "pct_expensas": 20.7,
+      "pct_cochera": 22.9
     },
     {
       "barrio": "Villa Ortuzar",
@@ -7706,7 +8077,8 @@
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 780000,
       "mediana_precio_3amb": 1470880,
-      "pct_expensas": 22
+      "pct_expensas": 22,
+      "pct_cochera": 27.3
     },
     {
       "barrio": "Villa Ortuzar",
@@ -7721,7 +8093,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 24.7
+      "pct_expensas": 24.7,
+      "pct_cochera": 25.7
     },
     {
       "barrio": "Villa Ortuzar",
@@ -7736,7 +8109,8 @@
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 712500,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 18.2
+      "pct_expensas": 18.2,
+      "pct_cochera": 21.7
     },
     {
       "barrio": "Villa Ortuzar",
@@ -7751,7 +8125,8 @@
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1000000,
-      "pct_expensas": 20.5
+      "pct_expensas": 20.5,
+      "pct_cochera": 17.5
     },
     {
       "barrio": "Villa Ortuzar",
@@ -7766,7 +8141,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 19.3
+      "pct_expensas": 19.3,
+      "pct_cochera": 8.5
     },
     {
       "barrio": "Villa Ortuzar",
@@ -7781,7 +8157,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 680000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 18.7
+      "pct_expensas": 18.7,
+      "pct_cochera": 4.8
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -7796,7 +8173,8 @@
       "mediana_precio_1amb": 465000,
       "mediana_precio_2amb": 595000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 19
+      "pct_expensas": 19,
+      "pct_cochera": 10.3
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -7811,7 +8189,8 @@
       "mediana_precio_1amb": 475000,
       "mediana_precio_2amb": 590000,
       "mediana_precio_3amb": 825000,
-      "pct_expensas": 19.8
+      "pct_expensas": 19.8,
+      "pct_cochera": 9.2
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -7826,7 +8205,8 @@
       "mediana_precio_1amb": 497500,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 875000,
-      "pct_expensas": 19.9
+      "pct_expensas": 19.9,
+      "pct_cochera": 15.1
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -7841,7 +8221,8 @@
       "mediana_precio_1amb": 515000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 14.5
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -7856,7 +8237,8 @@
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 1000000,
-      "pct_expensas": 20.6
+      "pct_expensas": 20.6,
+      "pct_cochera": 14.3
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -7871,7 +8253,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 20.1
+      "pct_expensas": 20.1,
+      "pct_cochera": 9.7
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -7886,7 +8269,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1050000,
-      "pct_expensas": 20.6
+      "pct_expensas": 20.6,
+      "pct_cochera": 7.8
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -7901,7 +8285,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 940000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 11.4
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -7916,7 +8301,8 @@
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1000000,
-      "pct_expensas": 18.9
+      "pct_expensas": 18.9,
+      "pct_cochera": 11.3
     },
     {
       "barrio": "Villa Real",
@@ -7931,7 +8317,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 430000,
       "mediana_precio_3amb": 720000,
-      "pct_expensas": 5.5
+      "pct_expensas": 5.5,
+      "pct_cochera": 33.3
     },
     {
       "barrio": "Villa Real",
@@ -7946,7 +8333,8 @@
       "mediana_precio_1amb": 380000,
       "mediana_precio_2amb": null,
       "mediana_precio_3amb": null,
-      "pct_expensas": 30.3
+      "pct_expensas": 30.3,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Real",
@@ -7961,7 +8349,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": null,
-      "pct_expensas": 16
+      "pct_expensas": 16,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Real",
@@ -7976,7 +8365,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 400000,
       "mediana_precio_3amb": null,
-      "pct_expensas": 31.2
+      "pct_expensas": 31.2,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Real",
@@ -7991,7 +8381,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": null,
       "mediana_precio_3amb": null,
-      "pct_expensas": 12.3
+      "pct_expensas": 12.3,
+      "pct_cochera": 33.3
     },
     {
       "barrio": "Villa Real",
@@ -8006,7 +8397,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 450000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 17.1
+      "pct_expensas": 17.1,
+      "pct_cochera": 40
     },
     {
       "barrio": "Villa Real",
@@ -8021,7 +8413,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": null,
       "mediana_precio_3amb": 800000,
-      "pct_expensas": 19.2
+      "pct_expensas": 19.2,
+      "pct_cochera": 66.7
     },
     {
       "barrio": "Villa Real",
@@ -8036,7 +8429,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 775000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 30.4
+      "pct_expensas": 30.4,
+      "pct_cochera": 71.4
     },
     {
       "barrio": "Villa Real",
@@ -8051,7 +8445,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 500000,
       "mediana_precio_3amb": 1050000,
-      "pct_expensas": 20
+      "pct_expensas": 20,
+      "pct_cochera": 14.3
     },
     {
       "barrio": "Villa Riachuelo",
@@ -8066,7 +8461,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 730000,
       "mediana_precio_3amb": null,
-      "pct_expensas": 4.1
+      "pct_expensas": 4.1,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Riachuelo",
@@ -8081,7 +8477,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 650000,
-      "pct_expensas": 12.1
+      "pct_expensas": 12.1,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Riachuelo",
@@ -8096,7 +8493,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 675000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 7.8
+      "pct_expensas": 7.8,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Santa Rita",
@@ -8111,7 +8509,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 600000,
       "mediana_precio_3amb": 700000,
-      "pct_expensas": 20.8
+      "pct_expensas": 20.8,
+      "pct_cochera": 8.6
     },
     {
       "barrio": "Villa Santa Rita",
@@ -8126,7 +8525,8 @@
       "mediana_precio_1amb": 415000,
       "mediana_precio_2amb": 580000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 21.2
+      "pct_expensas": 21.2,
+      "pct_cochera": 7.1
     },
     {
       "barrio": "Villa Santa Rita",
@@ -8141,7 +8541,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 560000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 23.1
+      "pct_expensas": 23.1,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Santa Rita",
@@ -8156,7 +8557,8 @@
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 595000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 22.9
+      "pct_expensas": 22.9,
+      "pct_cochera": 4.8
     },
     {
       "barrio": "Villa Santa Rita",
@@ -8171,7 +8573,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 672500,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 23.6
+      "pct_expensas": 23.6,
+      "pct_cochera": 4.1
     },
     {
       "barrio": "Villa Santa Rita",
@@ -8186,7 +8589,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 690000,
       "mediana_precio_3amb": 765000,
-      "pct_expensas": 19.9
+      "pct_expensas": 19.9,
+      "pct_cochera": 4.2
     },
     {
       "barrio": "Villa Santa Rita",
@@ -8201,7 +8605,8 @@
       "mediana_precio_1amb": 525000,
       "mediana_precio_2amb": 645000,
       "mediana_precio_3amb": 900000,
-      "pct_expensas": 19.7
+      "pct_expensas": 19.7,
+      "pct_cochera": 9.5
     },
     {
       "barrio": "Villa Santa Rita",
@@ -8216,7 +8621,8 @@
       "mediana_precio_1amb": 565000,
       "mediana_precio_2amb": 680000,
       "mediana_precio_3amb": 830000,
-      "pct_expensas": 21.7
+      "pct_expensas": 21.7,
+      "pct_cochera": 6.8
     },
     {
       "barrio": "Villa Santa Rita",
@@ -8231,7 +8637,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 680000,
       "mediana_precio_3amb": 750000,
-      "pct_expensas": 18.8
+      "pct_expensas": 18.8,
+      "pct_cochera": 2.7
     },
     {
       "barrio": "Villa Soldati",
@@ -8246,7 +8653,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": null,
       "mediana_precio_3amb": null,
-      "pct_expensas": 13.3
+      "pct_expensas": 13.3,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Soldati",
@@ -8261,7 +8669,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": null,
       "mediana_precio_3amb": null,
-      "pct_expensas": 11.1
+      "pct_expensas": 11.1,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Soldati",
@@ -8276,7 +8685,8 @@
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": null,
       "mediana_precio_3amb": null,
-      "pct_expensas": 11.1
+      "pct_expensas": 11.1,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Soldati",
@@ -8291,7 +8701,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": null,
       "mediana_precio_3amb": null,
-      "pct_expensas": 14
+      "pct_expensas": 14,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Soldati",
@@ -8306,7 +8717,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": null,
-      "pct_expensas": 9.1
+      "pct_expensas": 9.1,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Soldati",
@@ -8321,7 +8733,8 @@
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 9.1
+      "pct_expensas": 9.1,
+      "pct_cochera": 0
     },
     {
       "barrio": "Villa Urquiza",
@@ -8336,7 +8749,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 850000,
-      "pct_expensas": 21.8
+      "pct_expensas": 21.8,
+      "pct_cochera": 17.7
     },
     {
       "barrio": "Villa Urquiza",
@@ -8351,7 +8765,8 @@
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
       "mediana_precio_3amb": 950000,
-      "pct_expensas": 21.4
+      "pct_expensas": 21.4,
+      "pct_cochera": 18
     },
     {
       "barrio": "Villa Urquiza",
@@ -8366,7 +8781,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1000000,
-      "pct_expensas": 21
+      "pct_expensas": 21,
+      "pct_cochera": 19.6
     },
     {
       "barrio": "Villa Urquiza",
@@ -8381,7 +8797,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
       "mediana_precio_3amb": 1100000,
-      "pct_expensas": 21.2
+      "pct_expensas": 21.2,
+      "pct_cochera": 20.6
     },
     {
       "barrio": "Villa Urquiza",
@@ -8396,7 +8813,8 @@
       "mediana_precio_1amb": 540000,
       "mediana_precio_2amb": 723919,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 20.4
+      "pct_expensas": 20.4,
+      "pct_cochera": 18.9
     },
     {
       "barrio": "Villa Urquiza",
@@ -8411,7 +8829,8 @@
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1231934,
-      "pct_expensas": 20.7
+      "pct_expensas": 20.7,
+      "pct_cochera": 19.8
     },
     {
       "barrio": "Villa Urquiza",
@@ -8426,7 +8845,8 @@
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 20.6
+      "pct_expensas": 20.6,
+      "pct_cochera": 16.8
     },
     {
       "barrio": "Villa Urquiza",
@@ -8441,7 +8861,8 @@
       "mediana_precio_1amb": 635000,
       "mediana_precio_2amb": 750000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 20.2
+      "pct_expensas": 20.2,
+      "pct_cochera": 15.9
     },
     {
       "barrio": "Villa Urquiza",
@@ -8456,7 +8877,8 @@
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 790000,
       "mediana_precio_3amb": 1200000,
-      "pct_expensas": 20.7
+      "pct_expensas": 20.7,
+      "pct_cochera": 13.9
     }
   ],
   "etoi": {
