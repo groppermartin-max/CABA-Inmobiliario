@@ -2,13 +2,16 @@
   "kpis": {
     "mediana_precio_caba": 850000,
     "mediana_precio_m2_caba": 18067,
+    "pct_expensas_caba": 21.4,
     "total_publicaciones": 11796,
     "total_airbnb": 12595,
     "barrio_mas_caro": "Puerto Madero",
     "barrio_mas_airbnb": "Palermo",
     "barrio_mayor_ratio_airbnb": "Agronomia",
     "ultimo_periodo": "2026-04",
-    "periodos_disponibles": ["2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04"]
+    "periodos_disponibles": ["2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04"],
+    "nota_airbnb": "Datos Airbnb corresponden a 3 fechas de scraping (feb, mar, abr 2026). No varían por período mensual.",
+    "nota_cochera": "pct_cochera calculado sobre períodos ago 2025 - feb 2026 (últimos períodos con dato disponible)."
   },
   "barrios": [
     {
@@ -17,7 +20,13 @@
       "mediana_precio_m2": 15556,
       "mediana_expensas": 130000,
       "mediana_costo_total": 680000,
+      "pct_expensas_alquiler": 23.6,
       "n_publicaciones": 13,
+      "pct_usd": 0,
+      "n_usd": 0,
+      "n_ars": 13,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 550000,
       "mediana_precio_1amb": 550000,
       "mediana_m2_1amb": 15417,
       "n_1amb": 10,
@@ -27,26 +36,27 @@
       "mediana_precio_3amb": 900000,
       "mediana_m2_3amb": 18000,
       "n_3amb": 1,
+      "n_4amb_mas": 0,
       "pct_pileta": 7.7,
       "pct_gimnasio": 7.7,
+      "pct_sum": 15.4,
       "ratio_m2_chico_vs_grande": 0.86,
+      "pct_cochera": 16.1,
       "n_airbnb": 108,
       "mediana_precio_noche_usd": 310,
-      "pct_superhost": 46.3,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 27.8,
+      "pct_pool_airbnb": 37,
+      "pct_parking_airbnb": 13.9,
       "ratio_airbnb_zonaprop": 830.8,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 550000,
-      "mediana_expensas_q4": 102600,
       "mediana_costo_q4": 665000,
       "mediana_precio_1amb_q4": 450000,
+      "mediana_expensas_q4": 102600,
       "esfuerzo_alquiler_pct": 51.2,
-      "esfuerzo_1amb_pct": 42.5,
-      "pct_usd": 0,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": 550000
+      "esfuerzo_1amb_pct": 42.5
     },
     {
       "barrio": "Almagro",
@@ -54,7 +64,13 @@
       "mediana_precio_m2": 16667,
       "mediana_expensas": 150000,
       "mediana_costo_total": 800000,
+      "pct_expensas_alquiler": 21.7,
       "n_publicaciones": 448,
+      "pct_usd": 8.7,
+      "n_usd": 39,
+      "n_ars": 409,
+      "mediana_precio_usd": 700,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 600000,
       "mediana_m2_1amb": 17446,
       "n_1amb": 146,
@@ -64,26 +80,27 @@
       "mediana_precio_3amb": 1000000,
       "mediana_m2_3amb": 15317,
       "n_3amb": 78,
+      "n_4amb_mas": 15,
       "pct_pileta": 18.3,
       "pct_gimnasio": 8.9,
+      "pct_sum": 16.7,
       "ratio_m2_chico_vs_grande": 1.14,
+      "pct_cochera": 7.4,
       "n_airbnb": 611,
       "mediana_precio_noche_usd": 318,
-      "pct_superhost": 54.2,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 14.2,
+      "pct_pool_airbnb": 52,
+      "pct_parking_airbnb": 8.3,
       "ratio_airbnb_zonaprop": 136.4,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 132600,
       "mediana_costo_q4": 738000,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 132600,
       "esfuerzo_alquiler_pct": 73.8,
-      "esfuerzo_1amb_pct": 63.3,
-      "pct_usd": 8.7,
-      "mediana_precio_usd": 700,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": 63.3
     },
     {
       "barrio": "Balvanera",
@@ -91,7 +108,13 @@
       "mediana_precio_m2": 15000,
       "mediana_expensas": 150000,
       "mediana_costo_total": 780000,
+      "pct_expensas_alquiler": 22.4,
       "n_publicaciones": 461,
+      "pct_usd": 15.8,
+      "n_usd": 73,
+      "n_ars": 388,
+      "mediana_precio_usd": 700,
+      "mediana_precio_ars_solo": 600000,
       "mediana_precio_1amb": 550000,
       "mediana_m2_1amb": 17188,
       "n_1amb": 157,
@@ -101,26 +124,27 @@
       "mediana_precio_3amb": 850000,
       "mediana_m2_3amb": 13111,
       "n_3amb": 99,
+      "n_4amb_mas": 32,
       "pct_pileta": 9.1,
       "pct_gimnasio": 5.9,
+      "pct_sum": 6.7,
       "ratio_m2_chico_vs_grande": 1.31,
+      "pct_cochera": 4.4,
       "n_airbnb": 688,
       "mediana_precio_noche_usd": 540,
-      "pct_superhost": 33.9,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 10.8,
+      "pct_pool_airbnb": 24.9,
+      "pct_parking_airbnb": 14,
       "ratio_airbnb_zonaprop": 149.2,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 550000,
-      "mediana_expensas_q4": 125000,
       "mediana_costo_q4": 695000,
       "mediana_precio_1amb_q4": 450000,
+      "mediana_expensas_q4": 125000,
       "esfuerzo_alquiler_pct": 69.5,
-      "esfuerzo_1amb_pct": 57.5,
-      "pct_usd": 15.8,
-      "mediana_precio_usd": 700,
-      "mediana_precio_ars_solo": 600000
+      "esfuerzo_1amb_pct": 57.5
     },
     {
       "barrio": "Barracas",
@@ -128,7 +152,13 @@
       "mediana_precio_m2": 15000,
       "mediana_expensas": 178000,
       "mediana_costo_total": 925000,
+      "pct_expensas_alquiler": 22.9,
       "n_publicaciones": 118,
+      "pct_usd": 9.3,
+      "n_usd": 11,
+      "n_ars": 107,
+      "mediana_precio_usd": 990,
+      "mediana_precio_ars_solo": 700000,
       "mediana_precio_1amb": 550000,
       "mediana_m2_1amb": 16927,
       "n_1amb": 28,
@@ -138,26 +168,27 @@
       "mediana_precio_3amb": 900000,
       "mediana_m2_3amb": 14828,
       "n_3amb": 40,
+      "n_4amb_mas": 8,
       "pct_pileta": 26.3,
       "pct_gimnasio": 11,
+      "pct_sum": 20.3,
       "ratio_m2_chico_vs_grande": 1.14,
+      "pct_cochera": 18,
       "n_airbnb": 347,
       "mediana_precio_noche_usd": 369,
-      "pct_superhost": 58.2,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 26.8,
+      "pct_pool_airbnb": 63.7,
+      "pct_parking_airbnb": 10.4,
       "ratio_airbnb_zonaprop": 294.1,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "mediana_precio_q4": 650000,
-      "mediana_expensas_q4": 145000,
       "mediana_costo_q4": 833000,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 145000,
       "esfuerzo_alquiler_pct": 104.1,
-      "esfuerzo_1amb_pct": 80.6,
-      "pct_usd": 9.3,
-      "mediana_precio_usd": 990,
-      "mediana_precio_ars_solo": 700000
+      "esfuerzo_1amb_pct": 80.6
     },
     {
       "barrio": "Belgrano",
@@ -165,7 +196,13 @@
       "mediana_precio_m2": 19833,
       "mediana_expensas": 220000,
       "mediana_costo_total": 1256705,
+      "pct_expensas_alquiler": 21.2,
       "n_publicaciones": 1003,
+      "pct_usd": 35.7,
+      "n_usd": 358,
+      "n_ars": 645,
+      "mediana_precio_usd": 1200,
+      "mediana_precio_ars_solo": 850000,
       "mediana_precio_1amb": 745000,
       "mediana_m2_1amb": 20085,
       "n_1amb": 232,
@@ -175,26 +212,27 @@
       "mediana_precio_3amb": 1500000,
       "mediana_m2_3amb": 20871,
       "n_3amb": 226,
+      "n_4amb_mas": 158,
       "pct_pileta": 27.7,
       "pct_gimnasio": 15.5,
+      "pct_sum": 19.7,
       "ratio_m2_chico_vs_grande": 0.96,
+      "pct_cochera": 29.2,
       "n_airbnb": 518,
       "mediana_precio_noche_usd": 744,
-      "pct_superhost": 46.7,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 13.7,
+      "pct_pool_airbnb": 51,
+      "pct_parking_airbnb": 14.9,
       "ratio_airbnb_zonaprop": 51.6,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 850000,
-      "mediana_expensas_q4": 200000,
       "mediana_costo_q4": 1050547,
       "mediana_precio_1amb_q4": 580000,
+      "mediana_expensas_q4": 200000,
       "esfuerzo_alquiler_pct": 80.8,
-      "esfuerzo_1amb_pct": 60,
-      "pct_usd": 35.7,
-      "mediana_precio_usd": 1200,
-      "mediana_precio_ars_solo": 850000
+      "esfuerzo_1amb_pct": 60
     },
     {
       "barrio": "Boedo",
@@ -202,7 +240,13 @@
       "mediana_precio_m2": 15278,
       "mediana_expensas": 160000,
       "mediana_costo_total": 805000,
+      "pct_expensas_alquiler": 22.1,
       "n_publicaciones": 87,
+      "pct_usd": 1.1,
+      "n_usd": 1,
+      "n_ars": 86,
+      "mediana_precio_usd": 1250,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 520000,
       "mediana_m2_1amb": 15676,
       "n_1amb": 29,
@@ -212,26 +256,27 @@
       "mediana_precio_3amb": 925000,
       "mediana_m2_3amb": 15386,
       "n_3amb": 18,
+      "n_4amb_mas": 4,
       "pct_pileta": 19.5,
       "pct_gimnasio": 3.4,
+      "pct_sum": 17.2,
       "ratio_m2_chico_vs_grande": 1.02,
+      "pct_cochera": 14.3,
       "n_airbnb": 205,
       "mediana_precio_noche_usd": 286,
-      "pct_superhost": 44.9,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 7.8,
+      "pct_pool_airbnb": 34.6,
+      "pct_parking_airbnb": 6.3,
       "ratio_airbnb_zonaprop": 235.6,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 550000,
-      "mediana_expensas_q4": 135000,
       "mediana_costo_q4": 690000,
       "mediana_precio_1amb_q4": 490000,
+      "mediana_expensas_q4": 135000,
       "esfuerzo_alquiler_pct": 69,
-      "esfuerzo_1amb_pct": 62.5,
-      "pct_usd": 1.1,
-      "mediana_precio_usd": 1250,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": 62.5
     },
     {
       "barrio": "Caballito",
@@ -239,7 +284,13 @@
       "mediana_precio_m2": 16667,
       "mediana_expensas": 160000,
       "mediana_costo_total": 910000,
+      "pct_expensas_alquiler": 21,
       "n_publicaciones": 803,
+      "pct_usd": 8.2,
+      "n_usd": 66,
+      "n_ars": 737,
+      "mediana_precio_usd": 1000,
+      "mediana_precio_ars_solo": 730000,
       "mediana_precio_1amb": 580000,
       "mediana_m2_1amb": 17500,
       "n_1amb": 195,
@@ -249,26 +300,27 @@
       "mediana_precio_3amb": 1100000,
       "mediana_m2_3amb": 16000,
       "n_3amb": 153,
+      "n_4amb_mas": 92,
       "pct_pileta": 17.7,
       "pct_gimnasio": 7.6,
+      "pct_sum": 16.4,
       "ratio_m2_chico_vs_grande": 1.09,
+      "pct_cochera": 15.8,
       "n_airbnb": 308,
       "mediana_precio_noche_usd": 314,
-      "pct_superhost": 46.8,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 11,
+      "pct_pool_airbnb": 40.9,
+      "pct_parking_airbnb": 8.1,
       "ratio_airbnb_zonaprop": 38.4,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 650000,
-      "mediana_expensas_q4": 146000,
       "mediana_costo_q4": 815000,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 146000,
       "esfuerzo_alquiler_pct": 81.5,
-      "esfuerzo_1amb_pct": 64.6,
-      "pct_usd": 8.2,
-      "mediana_precio_usd": 1000,
-      "mediana_precio_ars_solo": 730000
+      "esfuerzo_1amb_pct": 64.6
     },
     {
       "barrio": "Chacarita",
@@ -276,7 +328,13 @@
       "mediana_precio_m2": 18839,
       "mediana_expensas": 180000,
       "mediana_costo_total": 940000,
+      "pct_expensas_alquiler": 21.9,
       "n_publicaciones": 73,
+      "pct_usd": 31.5,
+      "n_usd": 23,
+      "n_ars": 50,
+      "mediana_precio_usd": 750,
+      "mediana_precio_ars_solo": 712500,
       "mediana_precio_1amb": 699085,
       "mediana_m2_1amb": 21638,
       "n_1amb": 32,
@@ -286,26 +344,27 @@
       "mediana_precio_3amb": 1250000,
       "mediana_m2_3amb": 17391,
       "n_3amb": 9,
+      "n_4amb_mas": 1,
       "pct_pileta": 43.8,
       "pct_gimnasio": 26,
+      "pct_sum": 28.8,
       "ratio_m2_chico_vs_grande": 1.24,
+      "pct_cochera": 9.6,
       "n_airbnb": 350,
       "mediana_precio_noche_usd": 294,
-      "pct_superhost": 56.6,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 22.9,
+      "pct_pool_airbnb": 67.7,
+      "pct_parking_airbnb": 11.1,
       "ratio_airbnb_zonaprop": 479.5,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 650000,
-      "mediana_expensas_q4": 150000,
       "mediana_costo_q4": 814000,
       "mediana_precio_1amb_q4": 571405,
+      "mediana_expensas_q4": 150000,
       "esfuerzo_alquiler_pct": 62.6,
-      "esfuerzo_1amb_pct": 55.5,
-      "pct_usd": 31.5,
-      "mediana_precio_usd": 750,
-      "mediana_precio_ars_solo": 712500
+      "esfuerzo_1amb_pct": 55.5
     },
     {
       "barrio": "Coghlan",
@@ -313,7 +372,13 @@
       "mediana_precio_m2": 18229,
       "mediana_expensas": 180000,
       "mediana_costo_total": 982790,
+      "pct_expensas_alquiler": 22,
       "n_publicaciones": 52,
+      "pct_usd": 13.5,
+      "n_usd": 7,
+      "n_ars": 45,
+      "mediana_precio_usd": 750,
+      "mediana_precio_ars_solo": 780000,
       "mediana_precio_1amb": 700000,
       "mediana_m2_1amb": 20270,
       "n_1amb": 21,
@@ -323,26 +388,27 @@
       "mediana_precio_3amb": 1243444,
       "mediana_m2_3amb": 18194,
       "n_3amb": 12,
+      "n_4amb_mas": 1,
       "pct_pileta": 26.9,
       "pct_gimnasio": 5.8,
+      "pct_sum": 15.4,
       "ratio_m2_chico_vs_grande": 1.11,
+      "pct_cochera": 21.2,
       "n_airbnb": 188,
       "mediana_precio_noche_usd": 299,
-      "pct_superhost": 35.6,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 10.6,
+      "pct_pool_airbnb": 47.3,
+      "pct_parking_airbnb": 17,
       "ratio_airbnb_zonaprop": 361.5,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 650000,
-      "mediana_expensas_q4": 150000,
       "mediana_costo_q4": 826500,
       "mediana_precio_1amb_q4": 550000,
+      "mediana_expensas_q4": 150000,
       "esfuerzo_alquiler_pct": 63.6,
-      "esfuerzo_1amb_pct": 53.8,
-      "pct_usd": 13.5,
-      "mediana_precio_usd": 750,
-      "mediana_precio_ars_solo": 780000
+      "esfuerzo_1amb_pct": 53.8
     },
     {
       "barrio": "Colegiales",
@@ -350,7 +416,13 @@
       "mediana_precio_m2": 18869,
       "mediana_expensas": 199000,
       "mediana_costo_total": 1117071,
+      "pct_expensas_alquiler": 20.4,
       "n_publicaciones": 178,
+      "pct_usd": 35.4,
+      "n_usd": 63,
+      "n_ars": 115,
+      "mediana_precio_usd": 1190,
+      "mediana_precio_ars_solo": 780000,
       "mediana_precio_1amb": 758993,
       "mediana_m2_1amb": 18955,
       "n_1amb": 56,
@@ -360,26 +432,27 @@
       "mediana_precio_3amb": 1200000,
       "mediana_m2_3amb": 18869,
       "n_3amb": 33,
+      "n_4amb_mas": 15,
       "pct_pileta": 30.9,
       "pct_gimnasio": 16.9,
+      "pct_sum": 18.5,
       "ratio_m2_chico_vs_grande": 1,
+      "pct_cochera": 18.1,
       "n_airbnb": 715,
       "mediana_precio_noche_usd": 664,
-      "pct_superhost": 47.8,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 40.3,
+      "pct_pool_airbnb": 72,
+      "pct_parking_airbnb": 11.9,
       "ratio_airbnb_zonaprop": 401.7,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 750000,
-      "mediana_expensas_q4": 170000,
       "mediana_costo_q4": 948626,
       "mediana_precio_1amb_q4": 570000,
+      "mediana_expensas_q4": 170000,
       "esfuerzo_alquiler_pct": 73,
-      "esfuerzo_1amb_pct": 56.9,
-      "pct_usd": 35.4,
-      "mediana_precio_usd": 1190,
-      "mediana_precio_ars_solo": 780000
+      "esfuerzo_1amb_pct": 56.9
     },
     {
       "barrio": "Constitucion",
@@ -387,7 +460,13 @@
       "mediana_precio_m2": 13889,
       "mediana_expensas": 140000,
       "mediana_costo_total": 753352,
+      "pct_expensas_alquiler": 23.2,
       "n_publicaciones": 61,
+      "pct_usd": 14.8,
+      "n_usd": 9,
+      "n_ars": 52,
+      "mediana_precio_usd": 600,
+      "mediana_precio_ars_solo": 550000,
       "mediana_precio_1amb": 495000,
       "mediana_m2_1amb": 14286,
       "n_1amb": 34,
@@ -397,26 +476,27 @@
       "mediana_precio_3amb": 765000,
       "mediana_m2_3amb": 12745,
       "n_3amb": 10,
+      "n_4amb_mas": 2,
       "pct_pileta": 31.1,
       "pct_gimnasio": 24.6,
+      "pct_sum": 21.3,
       "ratio_m2_chico_vs_grande": 1.12,
+      "pct_cochera": 3,
       "n_airbnb": 461,
       "mediana_precio_noche_usd": 297,
-      "pct_superhost": 47.1,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 25.6,
+      "pct_pool_airbnb": 58.8,
+      "pct_parking_airbnb": 3.7,
       "ratio_airbnb_zonaprop": 755.7,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 480000,
-      "mediana_expensas_q4": 123881,
       "mediana_costo_q4": 610000,
       "mediana_precio_1amb_q4": 450000,
+      "mediana_expensas_q4": 123881,
       "esfuerzo_alquiler_pct": 61,
-      "esfuerzo_1amb_pct": 57.4,
-      "pct_usd": 14.8,
-      "mediana_precio_usd": 600,
-      "mediana_precio_ars_solo": 550000
+      "esfuerzo_1amb_pct": 57.4
     },
     {
       "barrio": "Flores",
@@ -424,7 +504,13 @@
       "mediana_precio_m2": 15000,
       "mediana_expensas": 150000,
       "mediana_costo_total": 821000,
+      "pct_expensas_alquiler": 21.5,
       "n_publicaciones": 304,
+      "pct_usd": 5.9,
+      "n_usd": 18,
+      "n_ars": 286,
+      "mediana_precio_usd": 800,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 550000,
       "mediana_m2_1amb": 15451,
       "n_1amb": 88,
@@ -434,26 +520,27 @@
       "mediana_precio_3amb": 900000,
       "mediana_m2_3amb": 13273,
       "n_3amb": 55,
+      "n_4amb_mas": 24,
       "pct_pileta": 17.4,
       "pct_gimnasio": 5.3,
+      "pct_sum": 19.4,
       "ratio_m2_chico_vs_grande": 1.16,
+      "pct_cochera": 11.8,
       "n_airbnb": 137,
       "mediana_precio_noche_usd": 269,
-      "pct_superhost": 34.3,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 2.9,
+      "pct_pool_airbnb": 29.9,
+      "pct_parking_airbnb": 10.2,
       "ratio_airbnb_zonaprop": 45.1,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 130000,
       "mediana_costo_q4": 730000,
       "mediana_precio_1amb_q4": 490000,
+      "mediana_expensas_q4": 130000,
       "esfuerzo_alquiler_pct": 73,
-      "esfuerzo_1amb_pct": 62,
-      "pct_usd": 5.9,
-      "mediana_precio_usd": 800,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": 62
     },
     {
       "barrio": "Floresta",
@@ -461,7 +548,13 @@
       "mediana_precio_m2": 14167,
       "mediana_expensas": 120000,
       "mediana_costo_total": 750000,
+      "pct_expensas_alquiler": 19.1,
       "n_publicaciones": 87,
+      "pct_usd": 5.7,
+      "n_usd": 5,
+      "n_ars": 82,
+      "mediana_precio_usd": 1100,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 500000,
       "mediana_m2_1amb": 14706,
       "n_1amb": 22,
@@ -471,26 +564,27 @@
       "mediana_precio_3amb": 800000,
       "mediana_m2_3amb": 12500,
       "n_3amb": 13,
+      "n_4amb_mas": 9,
       "pct_pileta": 10.3,
       "pct_gimnasio": 0,
+      "pct_sum": 6.9,
       "ratio_m2_chico_vs_grande": 1.18,
+      "pct_cochera": 9,
       "n_airbnb": 50,
       "mediana_precio_noche_usd": 330,
-      "pct_superhost": 16,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 4,
+      "pct_pool_airbnb": 10,
+      "pct_parking_airbnb": 4,
       "ratio_airbnb_zonaprop": 57.5,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 105000,
       "mediana_costo_q4": 710000,
       "mediana_precio_1amb_q4": 450000,
+      "mediana_expensas_q4": 105000,
       "esfuerzo_alquiler_pct": 71,
-      "esfuerzo_1amb_pct": 55.5,
-      "pct_usd": 5.7,
-      "mediana_precio_usd": 1100,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": 55.5
     },
     {
       "barrio": "La Boca",
@@ -498,7 +592,13 @@
       "mediana_precio_m2": 15000,
       "mediana_expensas": 145000,
       "mediana_costo_total": 889000,
+      "pct_expensas_alquiler": 20,
       "n_publicaciones": 47,
+      "pct_usd": 19.1,
+      "n_usd": 9,
+      "n_ars": 38,
+      "mediana_precio_usd": 850,
+      "mediana_precio_ars_solo": 600000,
       "mediana_precio_1amb": 525000,
       "mediana_m2_1amb": 14265,
       "n_1amb": 14,
@@ -508,26 +608,27 @@
       "mediana_precio_3amb": 843203,
       "mediana_m2_3amb": 15680,
       "n_3amb": 6,
+      "n_4amb_mas": 4,
       "pct_pileta": 10.6,
       "pct_gimnasio": 10.6,
+      "pct_sum": 8.5,
       "ratio_m2_chico_vs_grande": 0.91,
+      "pct_cochera": 6.8,
       "n_airbnb": 189,
       "mediana_precio_noche_usd": 291,
-      "pct_superhost": 38.1,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 25.4,
+      "pct_pool_airbnb": 51.3,
+      "pct_parking_airbnb": 19,
       "ratio_airbnb_zonaprop": 402.1,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "mediana_precio_q4": 560000,
-      "mediana_expensas_q4": 128800,
       "mediana_costo_q4": 692750,
       "mediana_precio_1amb_q4": 400000,
+      "mediana_expensas_q4": 128800,
       "esfuerzo_alquiler_pct": 86.6,
-      "esfuerzo_1amb_pct": 66.1,
-      "pct_usd": 19.1,
-      "mediana_precio_usd": 850,
-      "mediana_precio_ars_solo": 600000
+      "esfuerzo_1amb_pct": 66.1
     },
     {
       "barrio": "Liniers",
@@ -535,7 +636,13 @@
       "mediana_precio_m2": 14634,
       "mediana_expensas": 120000,
       "mediana_costo_total": 700000,
+      "pct_expensas_alquiler": 18.8,
       "n_publicaciones": 63,
+      "pct_usd": 0,
+      "n_usd": 0,
+      "n_ars": 63,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 600000,
       "mediana_precio_1amb": 500000,
       "mediana_m2_1amb": 15000,
       "n_1amb": 21,
@@ -545,26 +652,27 @@
       "mediana_precio_3amb": 875000,
       "mediana_m2_3amb": 15500,
       "n_3amb": 10,
+      "n_4amb_mas": 3,
       "pct_pileta": 3.2,
       "pct_gimnasio": 1.6,
+      "pct_sum": 1.6,
       "ratio_m2_chico_vs_grande": 0.97,
+      "pct_cochera": 8.7,
       "n_airbnb": 49,
       "mediana_precio_noche_usd": 302,
-      "pct_superhost": 30.6,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 10.2,
+      "pct_parking_airbnb": 0,
       "ratio_airbnb_zonaprop": 77.8,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "mediana_precio_q4": 550000,
-      "mediana_expensas_q4": 100000,
       "mediana_costo_q4": 650000,
       "mediana_precio_1amb_q4": 450000,
+      "mediana_expensas_q4": 100000,
       "esfuerzo_alquiler_pct": 81.2,
-      "esfuerzo_1amb_pct": 68.8,
-      "pct_usd": 0,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": 600000
+      "esfuerzo_1amb_pct": 68.8
     },
     {
       "barrio": "Mataderos",
@@ -572,7 +680,13 @@
       "mediana_precio_m2": 14286,
       "mediana_expensas": 100000,
       "mediana_costo_total": 800000,
+      "pct_expensas_alquiler": 15.6,
       "n_publicaciones": 43,
+      "pct_usd": 0,
+      "n_usd": 0,
+      "n_ars": 43,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 680000,
       "mediana_precio_1amb": 500000,
       "mediana_m2_1amb": 14286,
       "n_1amb": 7,
@@ -582,26 +696,27 @@
       "mediana_precio_3amb": 980000,
       "mediana_m2_3amb": 15556,
       "n_3amb": 11,
+      "n_4amb_mas": 1,
       "pct_pileta": 9.3,
       "pct_gimnasio": 0,
+      "pct_sum": 0,
       "ratio_m2_chico_vs_grande": 0.92,
+      "pct_cochera": 12.3,
       "n_airbnb": 39,
       "mediana_precio_noche_usd": 258,
-      "pct_superhost": 69.2,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 33.3,
+      "pct_parking_airbnb": 2.6,
       "ratio_airbnb_zonaprop": 90.7,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 95000,
       "mediana_costo_q4": 700000,
       "mediana_precio_1amb_q4": 480000,
+      "mediana_expensas_q4": 95000,
       "esfuerzo_alquiler_pct": 87.5,
-      "esfuerzo_1amb_pct": 71.9,
-      "pct_usd": 0,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": 680000
+      "esfuerzo_1amb_pct": 71.9
     },
     {
       "barrio": "Monserrat",
@@ -609,7 +724,13 @@
       "mediana_precio_m2": 16250,
       "mediana_expensas": 150000,
       "mediana_costo_total": 800000,
+      "pct_expensas_alquiler": 23.6,
       "n_publicaciones": 197,
+      "pct_usd": 26.9,
+      "n_usd": 53,
+      "n_ars": 144,
+      "mediana_precio_usd": 700,
+      "mediana_precio_ars_solo": 600000,
       "mediana_precio_1amb": 600000,
       "mediana_m2_1amb": 18373,
       "n_1amb": 105,
@@ -619,26 +740,27 @@
       "mediana_precio_3amb": 925000,
       "mediana_m2_3amb": 13779,
       "n_3amb": 26,
+      "n_4amb_mas": 4,
       "pct_pileta": 22.8,
       "pct_gimnasio": 17.3,
+      "pct_sum": 13.7,
       "ratio_m2_chico_vs_grande": 1.33,
+      "pct_cochera": 5.8,
       "n_airbnb": 663,
       "mediana_precio_noche_usd": 520,
-      "pct_superhost": 47.7,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 26.7,
+      "pct_pool_airbnb": 58.8,
+      "pct_parking_airbnb": 5.4,
       "ratio_airbnb_zonaprop": 336.5,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 590000,
-      "mediana_expensas_q4": 139875,
       "mediana_costo_q4": 745000,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 139875,
       "esfuerzo_alquiler_pct": 74.5,
-      "esfuerzo_1amb_pct": 64,
-      "pct_usd": 26.9,
-      "mediana_precio_usd": 700,
-      "mediana_precio_ars_solo": 600000
+      "esfuerzo_1amb_pct": 64
     },
     {
       "barrio": "Monte Castro",
@@ -646,7 +768,13 @@
       "mediana_precio_m2": 15152,
       "mediana_expensas": 130000,
       "mediana_costo_total": 720000,
+      "pct_expensas_alquiler": 20,
       "n_publicaciones": 59,
+      "pct_usd": 1.7,
+      "n_usd": 1,
+      "n_ars": 58,
+      "mediana_precio_usd": 600,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 500000,
       "mediana_m2_1amb": 15789,
       "n_1amb": 25,
@@ -656,26 +784,27 @@
       "mediana_precio_3amb": 950000,
       "mediana_m2_3amb": 14705,
       "n_3amb": 10,
+      "n_4amb_mas": 1,
       "pct_pileta": 6.8,
       "pct_gimnasio": 3.4,
+      "pct_sum": 6.8,
       "ratio_m2_chico_vs_grande": 1.07,
+      "pct_cochera": 11.4,
       "n_airbnb": 40,
       "mediana_precio_noche_usd": 364,
-      "pct_superhost": 37.5,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 5,
+      "pct_parking_airbnb": 5,
       "ratio_airbnb_zonaprop": 67.8,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 565000,
-      "mediana_expensas_q4": 120000,
       "mediana_costo_q4": 695000,
       "mediana_precio_1amb_q4": 460000,
+      "mediana_expensas_q4": 120000,
       "esfuerzo_alquiler_pct": 69.5,
-      "esfuerzo_1amb_pct": 58,
-      "pct_usd": 1.7,
-      "mediana_precio_usd": 600,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": 58
     },
     {
       "barrio": "Nueva Pompeya",
@@ -683,7 +812,13 @@
       "mediana_precio_m2": 12500,
       "mediana_expensas": 100000,
       "mediana_costo_total": 900000,
+      "pct_expensas_alquiler": 16.9,
       "n_publicaciones": 7,
+      "pct_usd": 0,
+      "n_usd": 0,
+      "n_ars": 7,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 850000,
       "mediana_precio_1amb": null,
       "mediana_m2_1amb": null,
       "n_1amb": 0,
@@ -693,26 +828,27 @@
       "mediana_precio_3amb": 875000,
       "mediana_m2_3amb": 13750,
       "n_3amb": 2,
+      "n_4amb_mas": 2,
       "pct_pileta": 0,
       "pct_gimnasio": 0,
+      "pct_sum": 0,
       "ratio_m2_chico_vs_grande": null,
+      "pct_cochera": 2.3,
       "n_airbnb": 16,
       "mediana_precio_noche_usd": 284,
-      "pct_superhost": 50,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
       "ratio_airbnb_zonaprop": 228.6,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "mediana_precio_q4": 500000,
-      "mediana_expensas_q4": 80000,
       "mediana_costo_q4": 570000,
       "mediana_precio_1amb_q4": 365000,
+      "mediana_expensas_q4": 80000,
       "esfuerzo_alquiler_pct": 71.2,
-      "esfuerzo_1amb_pct": 55.6,
-      "pct_usd": 0,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": 850000
+      "esfuerzo_1amb_pct": 55.6
     },
     {
       "barrio": "Nuñez",
@@ -720,7 +856,13 @@
       "mediana_precio_m2": 20208,
       "mediana_expensas": 244500,
       "mediana_costo_total": 1295000,
+      "pct_expensas_alquiler": 21.7,
       "n_publicaciones": 383,
+      "pct_usd": 43.3,
+      "n_usd": 166,
+      "n_ars": 217,
+      "mediana_precio_usd": 1150,
+      "mediana_precio_ars_solo": 850000,
       "mediana_precio_1amb": 750000,
       "mediana_m2_1amb": 20000,
       "n_1amb": 96,
@@ -730,26 +872,27 @@
       "mediana_precio_3amb": 1605790,
       "mediana_m2_3amb": 22642,
       "n_3amb": 79,
+      "n_4amb_mas": 39,
       "pct_pileta": 38.9,
       "pct_gimnasio": 22.7,
+      "pct_sum": 29.8,
       "ratio_m2_chico_vs_grande": 0.88,
+      "pct_cochera": 31.7,
       "n_airbnb": 397,
       "mediana_precio_noche_usd": 503,
-      "pct_superhost": 43.1,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 18.4,
+      "pct_pool_airbnb": 64.5,
+      "pct_parking_airbnb": 11.3,
       "ratio_airbnb_zonaprop": 103.7,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 856571,
-      "mediana_expensas_q4": 181000,
       "mediana_costo_q4": 1044703,
       "mediana_precio_1amb_q4": 650000,
+      "mediana_expensas_q4": 181000,
       "esfuerzo_alquiler_pct": 80.4,
-      "esfuerzo_1amb_pct": 63.9,
-      "pct_usd": 43.3,
-      "mediana_precio_usd": 1150,
-      "mediana_precio_ars_solo": 850000
+      "esfuerzo_1amb_pct": 63.9
     },
     {
       "barrio": "Palermo",
@@ -757,7 +900,13 @@
       "mediana_precio_m2": 21373,
       "mediana_expensas": 220000,
       "mediana_costo_total": 1267071,
+      "pct_expensas_alquiler": 20.8,
       "n_publicaciones": 2309,
+      "pct_usd": 48.6,
+      "n_usd": 1122,
+      "n_ars": 1187,
+      "mediana_precio_usd": 1200,
+      "mediana_precio_ars_solo": 800000,
       "mediana_precio_1amb": 767986,
       "mediana_m2_1amb": 21364,
       "n_1amb": 697,
@@ -767,26 +916,27 @@
       "mediana_precio_3amb": 1675606,
       "mediana_m2_3amb": 21990,
       "n_3amb": 439,
+      "n_4amb_mas": 268,
       "pct_pileta": 33.7,
       "pct_gimnasio": 21.4,
+      "pct_sum": 21.4,
       "ratio_m2_chico_vs_grande": 0.97,
+      "pct_cochera": 24.5,
       "n_airbnb": 1008,
       "mediana_precio_noche_usd": 838,
-      "pct_superhost": 77,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 35.1,
+      "pct_pool_airbnb": 76.4,
+      "pct_parking_airbnb": 14,
       "ratio_airbnb_zonaprop": 43.7,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 859214,
-      "mediana_expensas_q4": 190000,
       "mediana_costo_q4": 1055951,
       "mediana_precio_1amb_q4": 650000,
+      "mediana_expensas_q4": 190000,
       "esfuerzo_alquiler_pct": 81.2,
-      "esfuerzo_1amb_pct": 64.6,
-      "pct_usd": 48.6,
-      "mediana_precio_usd": 1200,
-      "mediana_precio_ars_solo": 800000
+      "esfuerzo_1amb_pct": 64.6
     },
     {
       "barrio": "Parque Avellaneda",
@@ -794,7 +944,13 @@
       "mediana_precio_m2": 13750,
       "mediana_expensas": 111650,
       "mediana_costo_total": 740000,
+      "pct_expensas_alquiler": 20.4,
       "n_publicaciones": 26,
+      "pct_usd": 0,
+      "n_usd": 0,
+      "n_ars": 26,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 500000,
       "mediana_m2_1amb": 13750,
       "n_1amb": 7,
@@ -804,26 +960,27 @@
       "mediana_precio_3amb": 780000,
       "mediana_m2_3amb": 13393,
       "n_3amb": 9,
+      "n_4amb_mas": 0,
       "pct_pileta": 3.8,
       "pct_gimnasio": 0,
+      "pct_sum": 3.8,
       "ratio_m2_chico_vs_grande": 1.03,
+      "pct_cochera": 1.6,
       "n_airbnb": 23,
       "mediana_precio_noche_usd": 345,
-      "pct_superhost": 34.8,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 13,
+      "pct_parking_airbnb": 17.4,
       "ratio_airbnb_zonaprop": 88.5,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 105000,
       "mediana_costo_q4": 690000,
       "mediana_precio_1amb_q4": 480000,
+      "mediana_expensas_q4": 105000,
       "esfuerzo_alquiler_pct": 86.2,
-      "esfuerzo_1amb_pct": 73.1,
-      "pct_usd": 0,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": 73.1
     },
     {
       "barrio": "Parque Chacabuco",
@@ -831,7 +988,13 @@
       "mediana_precio_m2": 15385,
       "mediana_expensas": 150000,
       "mediana_costo_total": 780000,
+      "pct_expensas_alquiler": 21.7,
       "n_publicaciones": 72,
+      "pct_usd": 2.8,
+      "n_usd": 2,
+      "n_ars": 70,
+      "mediana_precio_usd": 875,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 565000,
       "mediana_m2_1amb": 16141,
       "n_1amb": 22,
@@ -841,26 +1004,27 @@
       "mediana_precio_3amb": 950000,
       "mediana_m2_3amb": 14444,
       "n_3amb": 17,
+      "n_4amb_mas": 2,
       "pct_pileta": 15.3,
       "pct_gimnasio": 6.9,
+      "pct_sum": 16.7,
       "ratio_m2_chico_vs_grande": 1.12,
+      "pct_cochera": 9.8,
       "n_airbnb": 120,
       "mediana_precio_noche_usd": 320,
-      "pct_superhost": 31.7,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 16.7,
+      "pct_pool_airbnb": 45.8,
+      "pct_parking_airbnb": 8.3,
       "ratio_airbnb_zonaprop": 166.7,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 590000,
-      "mediana_expensas_q4": 143000,
       "mediana_costo_q4": 744000,
       "mediana_precio_1amb_q4": 490000,
+      "mediana_expensas_q4": 143000,
       "esfuerzo_alquiler_pct": 74.4,
-      "esfuerzo_1amb_pct": 63.3,
-      "pct_usd": 2.8,
-      "mediana_precio_usd": 875,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": 63.3
     },
     {
       "barrio": "Parque Chas",
@@ -868,7 +1032,13 @@
       "mediana_precio_m2": 16981,
       "mediana_expensas": 140000,
       "mediana_costo_total": 800000,
+      "pct_expensas_alquiler": 21.4,
       "n_publicaciones": 43,
+      "pct_usd": 7,
+      "n_usd": 3,
+      "n_ars": 40,
+      "mediana_precio_usd": 600,
+      "mediana_precio_ars_solo": 690000,
       "mediana_precio_1amb": 600000,
       "mediana_m2_1amb": 16216,
       "n_1amb": 23,
@@ -878,26 +1048,27 @@
       "mediana_precio_3amb": 900000,
       "mediana_m2_3amb": 17866,
       "n_3amb": 2,
+      "n_4amb_mas": 1,
       "pct_pileta": 4.7,
       "pct_gimnasio": 0,
+      "pct_sum": 25.6,
       "ratio_m2_chico_vs_grande": 0.91,
+      "pct_cochera": 9.9,
       "n_airbnb": 92,
       "mediana_precio_noche_usd": 283,
-      "pct_superhost": 39.1,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 46.7,
+      "pct_parking_airbnb": 9.8,
       "ratio_airbnb_zonaprop": 214,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 110000,
       "mediana_costo_q4": 705000,
       "mediana_precio_1amb_q4": 530000,
+      "mediana_expensas_q4": 110000,
       "esfuerzo_alquiler_pct": 70.5,
-      "esfuerzo_1amb_pct": 64,
-      "pct_usd": 7,
-      "mediana_precio_usd": 600,
-      "mediana_precio_ars_solo": 690000
+      "esfuerzo_1amb_pct": 64
     },
     {
       "barrio": "Parque Patricios",
@@ -905,7 +1076,13 @@
       "mediana_precio_m2": 16265,
       "mediana_expensas": 128000,
       "mediana_costo_total": 750000,
+      "pct_expensas_alquiler": 20,
       "n_publicaciones": 54,
+      "pct_usd": 1.9,
+      "n_usd": 1,
+      "n_ars": 53,
+      "mediana_precio_usd": 700,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 550000,
       "mediana_m2_1amb": 16667,
       "n_1amb": 14,
@@ -915,26 +1092,27 @@
       "mediana_precio_3amb": 900000,
       "mediana_m2_3amb": 13846,
       "n_3amb": 11,
+      "n_4amb_mas": 2,
       "pct_pileta": 14.8,
       "pct_gimnasio": 7.4,
+      "pct_sum": 14.8,
       "ratio_m2_chico_vs_grande": 1.2,
+      "pct_cochera": 8.9,
       "n_airbnb": 94,
       "mediana_precio_noche_usd": 314,
-      "pct_superhost": 36.2,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 25.5,
+      "pct_pool_airbnb": 51.1,
+      "pct_parking_airbnb": 10.6,
       "ratio_airbnb_zonaprop": 174.1,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 120000,
       "mediana_costo_q4": 720000,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 120000,
       "esfuerzo_alquiler_pct": 72,
-      "esfuerzo_1amb_pct": 62,
-      "pct_usd": 1.9,
-      "mediana_precio_usd": 700,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": 62
     },
     {
       "barrio": "Paternal",
@@ -942,7 +1120,13 @@
       "mediana_precio_m2": 15339,
       "mediana_expensas": 132500,
       "mediana_costo_total": 740000,
+      "pct_expensas_alquiler": 22,
       "n_publicaciones": 50,
+      "pct_usd": 4,
+      "n_usd": 2,
+      "n_ars": 48,
+      "mediana_precio_usd": 1850,
+      "mediana_precio_ars_solo": 625000,
       "mediana_precio_1amb": 500000,
       "mediana_m2_1amb": 16458,
       "n_1amb": 16,
@@ -952,26 +1136,27 @@
       "mediana_precio_3amb": 800000,
       "mediana_m2_3amb": 14306,
       "n_3amb": 8,
+      "n_4amb_mas": 4,
       "pct_pileta": 8,
       "pct_gimnasio": 8,
+      "pct_sum": 14,
       "ratio_m2_chico_vs_grande": 1.15,
+      "pct_cochera": 6.5,
       "n_airbnb": 84,
       "mediana_precio_noche_usd": 249,
-      "pct_superhost": 15.5,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 6,
+      "pct_pool_airbnb": 29.8,
+      "pct_parking_airbnb": 9.5,
       "ratio_airbnb_zonaprop": 168,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 118000,
       "mediana_costo_q4": 721527,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 118000,
       "esfuerzo_alquiler_pct": 55.5,
-      "esfuerzo_1amb_pct": 47.5,
-      "pct_usd": 4,
-      "mediana_precio_usd": 1850,
-      "mediana_precio_ars_solo": 625000
+      "esfuerzo_1amb_pct": 47.5
     },
     {
       "barrio": "Puerto Madero",
@@ -979,7 +1164,13 @@
       "mediana_precio_m2": 35440,
       "mediana_expensas": 600000,
       "mediana_costo_total": 3411579,
+      "pct_expensas_alquiler": 21.5,
       "n_publicaciones": 719,
+      "pct_usd": 97.6,
+      "n_usd": 702,
+      "n_ars": 17,
+      "mediana_precio_usd": 2200,
+      "mediana_precio_ars_solo": 1500000,
       "mediana_precio_1amb": 1535973,
       "mediana_m2_1amb": 38622,
       "n_1amb": 130,
@@ -989,26 +1180,27 @@
       "mediana_precio_3amb": 4468284,
       "mediana_m2_3amb": 33635,
       "n_3amb": 204,
+      "n_4amb_mas": 92,
       "pct_pileta": 82.1,
       "pct_gimnasio": 73.2,
+      "pct_sum": 40.1,
       "ratio_m2_chico_vs_grande": 1.15,
+      "pct_cochera": 78.2,
       "n_airbnb": 647,
       "mediana_precio_noche_usd": 813,
-      "pct_superhost": 60.3,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 65.1,
+      "pct_pool_airbnb": 91.5,
+      "pct_parking_airbnb": 25.8,
       "ratio_airbnb_zonaprop": 90,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 3293652,
-      "mediana_expensas_q4": 700000,
       "mediana_costo_q4": 4049018,
       "mediana_precio_1amb_q4": 1427618,
+      "mediana_expensas_q4": 700000,
       "esfuerzo_alquiler_pct": null,
-      "esfuerzo_1amb_pct": null,
-      "pct_usd": 97.6,
-      "mediana_precio_usd": 2200,
-      "mediana_precio_ars_solo": 1500000
+      "esfuerzo_1amb_pct": null
     },
     {
       "barrio": "Recoleta",
@@ -1016,7 +1208,13 @@
       "mediana_precio_m2": 18718,
       "mediana_expensas": 220000,
       "mediana_costo_total": 1186888,
+      "pct_expensas_alquiler": 22.7,
       "n_publicaciones": 1429,
+      "pct_usd": 41.4,
+      "n_usd": 591,
+      "n_ars": 838,
+      "mediana_precio_usd": 1300,
+      "mediana_precio_ars_solo": 750000,
       "mediana_precio_1amb": 620000,
       "mediana_m2_1amb": 19643,
       "n_1amb": 330,
@@ -1026,26 +1224,27 @@
       "mediana_precio_3amb": 1450000,
       "mediana_m2_3amb": 18293,
       "n_3amb": 325,
+      "n_4amb_mas": 276,
       "pct_pileta": 8.3,
       "pct_gimnasio": 6.4,
+      "pct_sum": 5.6,
       "ratio_m2_chico_vs_grande": 1.07,
+      "pct_cochera": 15.3,
       "n_airbnb": 785,
       "mediana_precio_noche_usd": 784,
-      "pct_superhost": 60.5,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 28.3,
+      "pct_pool_airbnb": 49.3,
+      "pct_parking_airbnb": 8,
       "ratio_airbnb_zonaprop": 54.9,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 790000,
-      "mediana_expensas_q4": 190000,
       "mediana_costo_q4": 965750,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 190000,
       "esfuerzo_alquiler_pct": 74.3,
-      "esfuerzo_1amb_pct": 53.1,
-      "pct_usd": 41.4,
-      "mediana_precio_usd": 1300,
-      "mediana_precio_ars_solo": 750000
+      "esfuerzo_1amb_pct": 53.1
     },
     {
       "barrio": "Retiro",
@@ -1053,7 +1252,13 @@
       "mediana_precio_m2": 17731,
       "mediana_expensas": 249914,
       "mediana_costo_total": 1157447,
+      "pct_expensas_alquiler": 25,
       "n_publicaciones": 281,
+      "pct_usd": 48.8,
+      "n_usd": 137,
+      "n_ars": 144,
+      "mediana_precio_usd": 1100,
+      "mediana_precio_ars_solo": 700000,
       "mediana_precio_1amb": 674085,
       "mediana_m2_1amb": 19329,
       "n_1amb": 80,
@@ -1063,26 +1268,27 @@
       "mediana_precio_3amb": 1280000,
       "mediana_m2_3amb": 14667,
       "n_3amb": 55,
+      "n_4amb_mas": 56,
       "pct_pileta": 13.2,
       "pct_gimnasio": 11.4,
+      "pct_sum": 4.3,
       "ratio_m2_chico_vs_grande": 1.32,
+      "pct_cochera": 26.3,
       "n_airbnb": 621,
       "mediana_precio_noche_usd": 510,
-      "pct_superhost": 47.7,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 27.2,
+      "pct_pool_airbnb": 35.9,
+      "pct_parking_airbnb": 7.7,
       "ratio_airbnb_zonaprop": 221,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 859214,
-      "mediana_expensas_q4": 240000,
       "mediana_costo_q4": 1107612,
       "mediana_precio_1amb_q4": 571047,
+      "mediana_expensas_q4": 240000,
       "esfuerzo_alquiler_pct": 110.8,
-      "esfuerzo_1amb_pct": 81.1,
-      "pct_usd": 48.8,
-      "mediana_precio_usd": 1100,
-      "mediana_precio_ars_solo": 700000
+      "esfuerzo_1amb_pct": 81.1
     },
     {
       "barrio": "Saavedra",
@@ -1090,7 +1296,13 @@
       "mediana_precio_m2": 17426,
       "mediana_expensas": 150000,
       "mediana_costo_total": 884938,
+      "pct_expensas_alquiler": 18.8,
       "n_publicaciones": 120,
+      "pct_usd": 14.2,
+      "n_usd": 17,
+      "n_ars": 103,
+      "mediana_precio_usd": 990,
+      "mediana_precio_ars_solo": 700000,
       "mediana_precio_1amb": 650000,
       "mediana_m2_1amb": 17124,
       "n_1amb": 44,
@@ -1100,26 +1312,27 @@
       "mediana_precio_3amb": 1363261,
       "mediana_m2_3amb": 19497,
       "n_3amb": 22,
+      "n_4amb_mas": 3,
       "pct_pileta": 19.2,
       "pct_gimnasio": 5.8,
+      "pct_sum": 19.2,
       "ratio_m2_chico_vs_grande": 0.88,
+      "pct_cochera": 21,
       "n_airbnb": 172,
       "mediana_precio_noche_usd": 364,
-      "pct_superhost": 43,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 6.4,
+      "pct_pool_airbnb": 43.6,
+      "pct_parking_airbnb": 18,
       "ratio_airbnb_zonaprop": 143.3,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 750000,
-      "mediana_expensas_q4": 140000,
       "mediana_costo_q4": 895000,
       "mediana_precio_1amb_q4": 620000,
+      "mediana_expensas_q4": 140000,
       "esfuerzo_alquiler_pct": 68.8,
-      "esfuerzo_1amb_pct": 58.5,
-      "pct_usd": 14.2,
-      "mediana_precio_usd": 990,
-      "mediana_precio_ars_solo": 700000
+      "esfuerzo_1amb_pct": 58.5
     },
     {
       "barrio": "San Cristobal",
@@ -1127,7 +1340,13 @@
       "mediana_precio_m2": 15446,
       "mediana_expensas": 148000,
       "mediana_costo_total": 766000,
+      "pct_expensas_alquiler": 22.8,
       "n_publicaciones": 148,
+      "pct_usd": 6.8,
+      "n_usd": 10,
+      "n_ars": 138,
+      "mediana_precio_usd": 640,
+      "mediana_precio_ars_solo": 600000,
       "mediana_precio_1amb": 550000,
       "mediana_m2_1amb": 16120,
       "n_1amb": 66,
@@ -1137,26 +1356,27 @@
       "mediana_precio_3amb": 845000,
       "mediana_m2_3amb": 14382,
       "n_3amb": 26,
+      "n_4amb_mas": 9,
       "pct_pileta": 20.9,
       "pct_gimnasio": 10.8,
+      "pct_sum": 17.6,
       "ratio_m2_chico_vs_grande": 1.12,
+      "pct_cochera": 4.5,
       "n_airbnb": 257,
       "mediana_precio_noche_usd": 277,
-      "pct_superhost": 36.2,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 15.2,
+      "pct_pool_airbnb": 43.6,
+      "pct_parking_airbnb": 8.2,
       "ratio_airbnb_zonaprop": 173.6,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 550000,
-      "mediana_expensas_q4": 127000,
       "mediana_costo_q4": 670000,
       "mediana_precio_1amb_q4": 460000,
+      "mediana_expensas_q4": 127000,
       "esfuerzo_alquiler_pct": 67,
-      "esfuerzo_1amb_pct": 58.7,
-      "pct_usd": 6.8,
-      "mediana_precio_usd": 640,
-      "mediana_precio_ars_solo": 600000
+      "esfuerzo_1amb_pct": 58.7
     },
     {
       "barrio": "San Nicolas",
@@ -1164,7 +1384,13 @@
       "mediana_precio_m2": 15789,
       "mediana_expensas": 160000,
       "mediana_costo_total": 800000,
+      "pct_expensas_alquiler": 25,
       "n_publicaciones": 351,
+      "pct_usd": 19.7,
+      "n_usd": 69,
+      "n_ars": 282,
+      "mediana_precio_usd": 700,
+      "mediana_precio_ars_solo": 600000,
       "mediana_precio_1amb": 550000,
       "mediana_m2_1amb": 17903,
       "n_1amb": 140,
@@ -1174,26 +1400,27 @@
       "mediana_precio_3amb": 900000,
       "mediana_m2_3amb": 14035,
       "n_3amb": 57,
+      "n_4amb_mas": 33,
       "pct_pileta": 4,
       "pct_gimnasio": 2,
+      "pct_sum": 2.3,
       "ratio_m2_chico_vs_grande": 1.28,
+      "pct_cochera": 2.5,
       "n_airbnb": 808,
       "mediana_precio_noche_usd": 571,
-      "pct_superhost": 50.7,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 2,
+      "pct_pool_airbnb": 17.2,
+      "pct_parking_airbnb": 3,
       "ratio_airbnb_zonaprop": 230.2,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 550000,
-      "mediana_expensas_q4": 150000,
       "mediana_costo_q4": 710000,
       "mediana_precio_1amb_q4": 440000,
+      "mediana_expensas_q4": 150000,
       "esfuerzo_alquiler_pct": 71,
-      "esfuerzo_1amb_pct": 59,
-      "pct_usd": 19.7,
-      "mediana_precio_usd": 700,
-      "mediana_precio_ars_solo": 600000
+      "esfuerzo_1amb_pct": 59
     },
     {
       "barrio": "San Telmo",
@@ -1201,7 +1428,13 @@
       "mediana_precio_m2": 17026,
       "mediana_expensas": 160000,
       "mediana_costo_total": 895635,
+      "pct_expensas_alquiler": 22.1,
       "n_publicaciones": 224,
+      "pct_usd": 35.3,
+      "n_usd": 79,
+      "n_ars": 145,
+      "mediana_precio_usd": 800,
+      "mediana_precio_ars_solo": 660000,
       "mediana_precio_1amb": 593231,
       "mediana_m2_1amb": 18593,
       "n_1amb": 84,
@@ -1211,26 +1444,27 @@
       "mediana_precio_3amb": 950000,
       "mediana_m2_3amb": 14423,
       "n_3amb": 45,
+      "n_4amb_mas": 8,
       "pct_pileta": 20.1,
       "pct_gimnasio": 16.1,
+      "pct_sum": 16.5,
       "ratio_m2_chico_vs_grande": 1.29,
+      "pct_cochera": 8.4,
       "n_airbnb": 376,
       "mediana_precio_noche_usd": 421,
-      "pct_superhost": 45.2,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 26.9,
+      "pct_pool_airbnb": 56.1,
+      "pct_parking_airbnb": 9,
       "ratio_airbnb_zonaprop": 167.9,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 620000,
-      "mediana_expensas_q4": 145000,
       "mediana_costo_q4": 782000,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 145000,
       "esfuerzo_alquiler_pct": 78.2,
-      "esfuerzo_1amb_pct": 64.5,
-      "pct_usd": 35.3,
-      "mediana_precio_usd": 800,
-      "mediana_precio_ars_solo": 660000
+      "esfuerzo_1amb_pct": 64.5
     },
     {
       "barrio": "Velez Sarsfield",
@@ -1238,7 +1472,13 @@
       "mediana_precio_m2": 15588,
       "mediana_expensas": 125000,
       "mediana_costo_total": 770000,
+      "pct_expensas_alquiler": 19.8,
       "n_publicaciones": 15,
+      "pct_usd": 0,
+      "n_usd": 0,
+      "n_ars": 15,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 575000,
       "mediana_m2_1amb": 15651,
       "n_1amb": 6,
@@ -1248,26 +1488,27 @@
       "mediana_precio_3amb": 800000,
       "mediana_m2_3amb": 13077,
       "n_3amb": 3,
+      "n_4amb_mas": 0,
       "pct_pileta": 20,
       "pct_gimnasio": 0,
+      "pct_sum": 6.7,
       "ratio_m2_chico_vs_grande": 1.2,
+      "pct_cochera": 10.8,
       "n_airbnb": 40,
       "mediana_precio_noche_usd": 274,
-      "pct_superhost": 5,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 10,
+      "pct_parking_airbnb": 0,
       "ratio_airbnb_zonaprop": 266.7,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 100000,
       "mediana_costo_q4": 700000,
       "mediana_precio_1amb_q4": 460000,
+      "mediana_expensas_q4": 100000,
       "esfuerzo_alquiler_pct": 70,
-      "esfuerzo_1amb_pct": 56,
-      "pct_usd": 0,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": 56
     },
     {
       "barrio": "Versalles",
@@ -1275,7 +1516,13 @@
       "mediana_precio_m2": 15200,
       "mediana_expensas": 135000,
       "mediana_costo_total": 785000,
+      "pct_expensas_alquiler": 20.8,
       "n_publicaciones": 13,
+      "pct_usd": 0,
+      "n_usd": 0,
+      "n_ars": 13,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 380000,
       "mediana_m2_1amb": 15200,
       "n_1amb": 1,
@@ -1285,26 +1532,27 @@
       "mediana_precio_3amb": 800000,
       "mediana_m2_3amb": 12143,
       "n_3amb": 3,
+      "n_4amb_mas": 0,
       "pct_pileta": 7.7,
       "pct_gimnasio": 7.7,
+      "pct_sum": 7.7,
       "ratio_m2_chico_vs_grande": 1.25,
+      "pct_cochera": 29.7,
       "n_airbnb": null,
       "mediana_precio_noche_usd": null,
-      "pct_superhost": null,
       "pct_guest_favorite": null,
+      "pct_gym_airbnb": null,
+      "pct_pool_airbnb": null,
+      "pct_parking_airbnb": null,
       "ratio_airbnb_zonaprop": null,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 745000,
-      "mediana_expensas_q4": 195500,
       "mediana_costo_q4": 942000,
       "mediana_precio_1amb_q4": null,
+      "mediana_expensas_q4": 195500,
       "esfuerzo_alquiler_pct": 94.2,
-      "esfuerzo_1amb_pct": null,
-      "pct_usd": 0,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": null
     },
     {
       "barrio": "Villa Crespo",
@@ -1312,7 +1560,13 @@
       "mediana_precio_m2": 17499,
       "mediana_expensas": 156500,
       "mediana_costo_total": 900000,
+      "pct_expensas_alquiler": 20,
       "n_publicaciones": 316,
+      "pct_usd": 14.6,
+      "n_usd": 46,
+      "n_ars": 270,
+      "mediana_precio_usd": 800,
+      "mediana_precio_ars_solo": 750000,
       "mediana_precio_1amb": 650000,
       "mediana_m2_1amb": 18182,
       "n_1amb": 101,
@@ -1322,26 +1576,27 @@
       "mediana_precio_3amb": 1183535,
       "mediana_m2_3amb": 17616,
       "n_3amb": 50,
+      "n_4amb_mas": 16,
       "pct_pileta": 24.7,
       "pct_gimnasio": 11.1,
+      "pct_sum": 23.4,
       "ratio_m2_chico_vs_grande": 1.03,
+      "pct_cochera": 9.6,
       "n_airbnb": 357,
       "mediana_precio_noche_usd": 511,
-      "pct_superhost": 60.2,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 10.6,
+      "pct_pool_airbnb": 54.1,
+      "pct_parking_airbnb": 8.1,
       "ratio_airbnb_zonaprop": 113,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 650000,
-      "mediana_expensas_q4": 135000,
       "mediana_costo_q4": 795000,
       "mediana_precio_1amb_q4": 550000,
+      "mediana_expensas_q4": 135000,
       "esfuerzo_alquiler_pct": 61.2,
-      "esfuerzo_1amb_pct": 52.7,
-      "pct_usd": 14.6,
-      "mediana_precio_usd": 800,
-      "mediana_precio_ars_solo": 750000
+      "esfuerzo_1amb_pct": 52.7
     },
     {
       "barrio": "Villa Del Parque",
@@ -1349,7 +1604,13 @@
       "mediana_precio_m2": 15430,
       "mediana_expensas": 123000,
       "mediana_costo_total": 789838,
+      "pct_expensas_alquiler": 20.5,
       "n_publicaciones": 168,
+      "pct_usd": 6,
+      "n_usd": 10,
+      "n_ars": 158,
+      "mediana_precio_usd": 875,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 565000,
       "mediana_m2_1amb": 16667,
       "n_1amb": 50,
@@ -1359,26 +1620,27 @@
       "mediana_precio_3amb": 900000,
       "mediana_m2_3amb": 16013,
       "n_3amb": 36,
+      "n_4amb_mas": 5,
       "pct_pileta": 13.7,
       "pct_gimnasio": 3.6,
+      "pct_sum": 16.1,
       "ratio_m2_chico_vs_grande": 1.04,
+      "pct_cochera": 10.1,
       "n_airbnb": 147,
       "mediana_precio_noche_usd": 282,
-      "pct_superhost": 21.1,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 3.4,
+      "pct_pool_airbnb": 19.7,
+      "pct_parking_airbnb": 12.9,
       "ratio_airbnb_zonaprop": 87.5,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 120000,
       "mediana_costo_q4": 700000,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 120000,
       "esfuerzo_alquiler_pct": 53.8,
-      "esfuerzo_1amb_pct": 47.7,
-      "pct_usd": 6,
-      "mediana_precio_usd": 875,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": 47.7
     },
     {
       "barrio": "Villa Devoto",
@@ -1386,7 +1648,13 @@
       "mediana_precio_m2": 16667,
       "mediana_expensas": 160000,
       "mediana_costo_total": 950000,
+      "pct_expensas_alquiler": 17.5,
       "n_publicaciones": 193,
+      "pct_usd": 14.5,
+      "n_usd": 28,
+      "n_ars": 165,
+      "mediana_precio_usd": 1300,
+      "mediana_precio_ars_solo": 750000,
       "mediana_precio_1amb": 600000,
       "mediana_m2_1amb": 16667,
       "n_1amb": 47,
@@ -1396,26 +1664,27 @@
       "mediana_precio_3amb": 1200000,
       "mediana_m2_3amb": 16036,
       "n_3amb": 44,
+      "n_4amb_mas": 20,
       "pct_pileta": 12.4,
       "pct_gimnasio": 8.3,
+      "pct_sum": 15.5,
       "ratio_m2_chico_vs_grande": 1.04,
+      "pct_cochera": 18.3,
       "n_airbnb": 241,
       "mediana_precio_noche_usd": 548,
-      "pct_superhost": 40.2,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 8.3,
+      "pct_pool_airbnb": 32.8,
+      "pct_parking_airbnb": 11.2,
       "ratio_airbnb_zonaprop": 124.9,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 690000,
-      "mediana_expensas_q4": 130000,
       "mediana_costo_q4": 800000,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 130000,
       "esfuerzo_alquiler_pct": 61.5,
-      "esfuerzo_1amb_pct": 48.5,
-      "pct_usd": 14.5,
-      "mediana_precio_usd": 1300,
-      "mediana_precio_ars_solo": 750000
+      "esfuerzo_1amb_pct": 48.5
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -1423,7 +1692,13 @@
       "mediana_precio_m2": 14722,
       "mediana_expensas": 132500,
       "mediana_costo_total": 802000,
+      "pct_expensas_alquiler": 24,
       "n_publicaciones": 21,
+      "pct_usd": 0,
+      "n_usd": 0,
+      "n_ars": 21,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 680000,
       "mediana_precio_1amb": 500000,
       "mediana_m2_1amb": 16667,
       "n_1amb": 5,
@@ -1433,26 +1708,27 @@
       "mediana_precio_3amb": 707500,
       "mediana_m2_3amb": 12201,
       "n_3amb": 8,
+      "n_4amb_mas": 2,
       "pct_pileta": 9.5,
       "pct_gimnasio": 4.8,
+      "pct_sum": 14.3,
       "ratio_m2_chico_vs_grande": 1.37,
+      "pct_cochera": 5.9,
       "n_airbnb": 55,
       "mediana_precio_noche_usd": 286,
-      "pct_superhost": 20,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 9.1,
+      "pct_pool_airbnb": 9.1,
+      "pct_parking_airbnb": 9.1,
       "ratio_airbnb_zonaprop": 261.9,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 580000,
-      "mediana_expensas_q4": 135000,
       "mediana_costo_q4": 717000,
       "mediana_precio_1amb_q4": 510000,
+      "mediana_expensas_q4": 135000,
       "esfuerzo_alquiler_pct": 55.2,
-      "esfuerzo_1amb_pct": 49.6,
-      "pct_usd": 0,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": 680000
+      "esfuerzo_1amb_pct": 49.6
     },
     {
       "barrio": "Villa Lugano",
@@ -1460,7 +1736,13 @@
       "mediana_precio_m2": 14286,
       "mediana_expensas": 115000,
       "mediana_costo_total": 720000,
+      "pct_expensas_alquiler": 17.1,
       "n_publicaciones": 42,
+      "pct_usd": 2.4,
+      "n_usd": 1,
+      "n_ars": 41,
+      "mediana_precio_usd": 550,
+      "mediana_precio_ars_solo": 630000,
       "mediana_precio_1amb": 450000,
       "mediana_m2_1amb": 15076,
       "n_1amb": 8,
@@ -1470,26 +1752,27 @@
       "mediana_precio_3amb": 600000,
       "mediana_m2_3amb": 12245,
       "n_3amb": 19,
+      "n_4amb_mas": 3,
       "pct_pileta": 0,
       "pct_gimnasio": 0,
+      "pct_sum": 0,
       "ratio_m2_chico_vs_grande": 1.23,
+      "pct_cochera": 17.9,
       "n_airbnb": 8,
       "mediana_precio_noche_usd": 335,
-      "pct_superhost": 0,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
       "ratio_airbnb_zonaprop": 19,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "mediana_precio_q4": 590000,
-      "mediana_expensas_q4": 90000,
       "mediana_costo_q4": 660000,
       "mediana_precio_1amb_q4": 445000,
+      "mediana_expensas_q4": 90000,
       "esfuerzo_alquiler_pct": 82.5,
-      "esfuerzo_1amb_pct": 66.9,
-      "pct_usd": 2.4,
-      "mediana_precio_usd": 550,
-      "mediana_precio_ars_solo": 630000
+      "esfuerzo_1amb_pct": 66.9
     },
     {
       "barrio": "Villa Luro",
@@ -1497,7 +1780,13 @@
       "mediana_precio_m2": 15476,
       "mediana_expensas": 125000,
       "mediana_costo_total": 810000,
+      "pct_expensas_alquiler": 18.6,
       "n_publicaciones": 87,
+      "pct_usd": 10.3,
+      "n_usd": 9,
+      "n_ars": 78,
+      "mediana_precio_usd": 1000,
+      "mediana_precio_ars_solo": 675000,
       "mediana_precio_1amb": 500000,
       "mediana_m2_1amb": 15333,
       "n_1amb": 25,
@@ -1507,26 +1796,27 @@
       "mediana_precio_3amb": 980000,
       "mediana_m2_3amb": 13793,
       "n_3amb": 17,
+      "n_4amb_mas": 9,
       "pct_pileta": 11.5,
       "pct_gimnasio": 3.4,
+      "pct_sum": 13.8,
       "ratio_m2_chico_vs_grande": 1.11,
+      "pct_cochera": 9.3,
       "n_airbnb": 51,
       "mediana_precio_noche_usd": 343,
-      "pct_superhost": 49,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 33.3,
+      "pct_parking_airbnb": 31.4,
       "ratio_airbnb_zonaprop": 58.6,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 650000,
-      "mediana_expensas_q4": 115000,
       "mediana_costo_q4": 790000,
       "mediana_precio_1amb_q4": 480000,
+      "mediana_expensas_q4": 115000,
       "esfuerzo_alquiler_pct": 79,
-      "esfuerzo_1amb_pct": 59.5,
-      "pct_usd": 10.3,
-      "mediana_precio_usd": 1000,
-      "mediana_precio_ars_solo": 675000
+      "esfuerzo_1amb_pct": 59.5
     },
     {
       "barrio": "Villa Ortuzar",
@@ -1534,7 +1824,13 @@
       "mediana_precio_m2": 16497,
       "mediana_expensas": 150000,
       "mediana_costo_total": 775000,
+      "pct_expensas_alquiler": 18.7,
       "n_publicaciones": 42,
+      "pct_usd": 4.8,
+      "n_usd": 2,
+      "n_ars": 40,
+      "mediana_precio_usd": 1625,
+      "mediana_precio_ars_solo": 640000,
       "mediana_precio_1amb": 600000,
       "mediana_m2_1amb": 16667,
       "n_1amb": 21,
@@ -1544,26 +1840,27 @@
       "mediana_precio_3amb": 950000,
       "mediana_m2_3amb": 16621,
       "n_3amb": 4,
+      "n_4amb_mas": 2,
       "pct_pileta": 26.2,
       "pct_gimnasio": 4.8,
+      "pct_sum": 28.6,
       "ratio_m2_chico_vs_grande": 1,
+      "pct_cochera": 21.7,
       "n_airbnb": 149,
       "mediana_precio_noche_usd": 320,
-      "pct_superhost": 43.6,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 3.4,
+      "pct_pool_airbnb": 32.2,
+      "pct_parking_airbnb": 6.7,
       "ratio_airbnb_zonaprop": 354.8,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 690000,
-      "mediana_expensas_q4": 150000,
       "mediana_costo_q4": 820000,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 150000,
       "esfuerzo_alquiler_pct": 63.1,
-      "esfuerzo_1amb_pct": 50,
-      "pct_usd": 4.8,
-      "mediana_precio_usd": 1625,
-      "mediana_precio_ars_solo": 640000
+      "esfuerzo_1amb_pct": 50
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -1571,7 +1868,13 @@
       "mediana_precio_m2": 16279,
       "mediana_expensas": 150000,
       "mediana_costo_total": 848000,
+      "pct_expensas_alquiler": 18.9,
       "n_publicaciones": 71,
+      "pct_usd": 7,
+      "n_usd": 5,
+      "n_ars": 66,
+      "mediana_precio_usd": 550,
+      "mediana_precio_ars_solo": 715000,
       "mediana_precio_1amb": 650000,
       "mediana_m2_1amb": 17124,
       "n_1amb": 24,
@@ -1581,26 +1884,27 @@
       "mediana_precio_3amb": 1000000,
       "mediana_m2_3amb": 15584,
       "n_3amb": 11,
+      "n_4amb_mas": 2,
       "pct_pileta": 8.5,
       "pct_gimnasio": 4.2,
+      "pct_sum": 12.7,
       "ratio_m2_chico_vs_grande": 1.1,
+      "pct_cochera": 11.7,
       "n_airbnb": 66,
       "mediana_precio_noche_usd": 284,
-      "pct_superhost": 33.3,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 4.5,
+      "pct_pool_airbnb": 19.7,
+      "pct_parking_airbnb": 7.6,
       "ratio_airbnb_zonaprop": 93,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 122000,
       "mediana_costo_q4": 730000,
       "mediana_precio_1amb_q4": 500000,
+      "mediana_expensas_q4": 122000,
       "esfuerzo_alquiler_pct": 56.2,
-      "esfuerzo_1amb_pct": 47.8,
-      "pct_usd": 7,
-      "mediana_precio_usd": 550,
-      "mediana_precio_ars_solo": 715000
+      "esfuerzo_1amb_pct": 47.8
     },
     {
       "barrio": "Villa Real",
@@ -1608,7 +1912,13 @@
       "mediana_precio_m2": 12500,
       "mediana_expensas": 125000,
       "mediana_costo_total": 780000,
+      "pct_expensas_alquiler": 20,
       "n_publicaciones": 7,
+      "pct_usd": 0,
+      "n_usd": 0,
+      "n_ars": 7,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 700000,
       "mediana_precio_1amb": null,
       "mediana_m2_1amb": null,
       "n_1amb": 0,
@@ -1618,26 +1928,27 @@
       "mediana_precio_3amb": 1050000,
       "mediana_m2_3amb": 14948,
       "n_3amb": 2,
+      "n_4amb_mas": 0,
       "pct_pileta": 14.3,
       "pct_gimnasio": 0,
+      "pct_sum": 0,
       "ratio_m2_chico_vs_grande": null,
+      "pct_cochera": 35.3,
       "n_airbnb": 2,
       "mediana_precio_noche_usd": 252,
-      "pct_superhost": 0,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 100,
       "ratio_airbnb_zonaprop": 28.6,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 600000,
-      "mediana_expensas_q4": 125000,
       "mediana_costo_q4": 696000,
       "mediana_precio_1amb_q4": 450000,
+      "mediana_expensas_q4": 125000,
       "esfuerzo_alquiler_pct": 69.6,
-      "esfuerzo_1amb_pct": 57.5,
-      "pct_usd": 0,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": 700000
+      "esfuerzo_1amb_pct": 57.5
     },
     {
       "barrio": "Villa Riachuelo",
@@ -1645,7 +1956,13 @@
       "mediana_precio_m2": 13415,
       "mediana_expensas": 51500,
       "mediana_costo_total": 800000,
+      "pct_expensas_alquiler": 7.8,
       "n_publicaciones": 3,
+      "pct_usd": 0,
+      "n_usd": 0,
+      "n_ars": 3,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 750000,
       "mediana_precio_1amb": null,
       "mediana_m2_1amb": null,
       "n_1amb": 0,
@@ -1655,26 +1972,27 @@
       "mediana_precio_3amb": 750000,
       "mediana_m2_3amb": 9375,
       "n_3amb": 1,
+      "n_4amb_mas": 0,
       "pct_pileta": 0,
       "pct_gimnasio": 0,
+      "pct_sum": 0,
       "ratio_m2_chico_vs_grande": null,
+      "pct_cochera": 0,
       "n_airbnb": 5,
       "mediana_precio_noche_usd": 362,
-      "pct_superhost": 0,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 100,
       "ratio_airbnb_zonaprop": 166.7,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "mediana_precio_q4": null,
-      "mediana_expensas_q4": null,
       "mediana_costo_q4": null,
       "mediana_precio_1amb_q4": null,
+      "mediana_expensas_q4": null,
       "esfuerzo_alquiler_pct": null,
-      "esfuerzo_1amb_pct": null,
-      "pct_usd": 0,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": 750000
+      "esfuerzo_1amb_pct": null
     },
     {
       "barrio": "Villa Santa Rita",
@@ -1682,7 +2000,13 @@
       "mediana_precio_m2": 16000,
       "mediana_expensas": 140000,
       "mediana_costo_total": 800000,
+      "pct_expensas_alquiler": 18.8,
       "n_publicaciones": 37,
+      "pct_usd": 5.4,
+      "n_usd": 2,
+      "n_ars": 35,
+      "mediana_precio_usd": 675,
+      "mediana_precio_ars_solo": 650000,
       "mediana_precio_1amb": 550000,
       "mediana_m2_1amb": 14865,
       "n_1amb": 13,
@@ -1692,26 +2016,27 @@
       "mediana_precio_3amb": 750000,
       "mediana_m2_3amb": 11905,
       "n_3amb": 3,
+      "n_4amb_mas": 2,
       "pct_pileta": 10.8,
       "pct_gimnasio": 2.7,
+      "pct_sum": 10.8,
       "ratio_m2_chico_vs_grande": 1.25,
+      "pct_cochera": 5.4,
       "n_airbnb": 39,
       "mediana_precio_noche_usd": 252,
-      "pct_superhost": 33.3,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 12.8,
+      "pct_parking_airbnb": 5.1,
       "ratio_airbnb_zonaprop": 105.4,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
-      "mediana_precio_q4": 530000,
-      "mediana_expensas_q4": 130000,
       "mediana_costo_q4": 661449,
       "mediana_precio_1amb_q4": 450000,
+      "mediana_expensas_q4": 130000,
       "esfuerzo_alquiler_pct": 66.1,
-      "esfuerzo_1amb_pct": 58,
-      "pct_usd": 5.4,
-      "mediana_precio_usd": 675,
-      "mediana_precio_ars_solo": 650000
+      "esfuerzo_1amb_pct": 58
     },
     {
       "barrio": "Villa Soldati",
@@ -1719,7 +2044,13 @@
       "mediana_precio_m2": 15947,
       "mediana_expensas": 63400,
       "mediana_costo_total": 806700,
+      "pct_expensas_alquiler": 9.1,
       "n_publicaciones": 2,
+      "pct_usd": 0,
+      "n_usd": 0,
+      "n_ars": 2,
+      "mediana_precio_usd": null,
+      "mediana_precio_ars_solo": 775000,
       "mediana_precio_1amb": null,
       "mediana_m2_1amb": null,
       "n_1amb": 0,
@@ -1729,26 +2060,27 @@
       "mediana_precio_3amb": 850000,
       "mediana_m2_3amb": 17000,
       "n_3amb": 1,
+      "n_4amb_mas": 0,
       "pct_pileta": 0,
       "pct_gimnasio": 0,
+      "pct_sum": 0,
       "ratio_m2_chico_vs_grande": null,
+      "pct_cochera": 0,
       "n_airbnb": 2,
       "mediana_precio_noche_usd": 343,
-      "pct_superhost": 100,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 100,
+      "pct_parking_airbnb": 0,
       "ratio_airbnb_zonaprop": 100,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
-      "mediana_precio_q4": 450000,
-      "mediana_expensas_q4": 50000,
       "mediana_costo_q4": 500000,
       "mediana_precio_1amb_q4": 450000,
+      "mediana_expensas_q4": 50000,
       "esfuerzo_alquiler_pct": 62.5,
-      "esfuerzo_1amb_pct": 62.5,
-      "pct_usd": 0,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": 775000
+      "esfuerzo_1amb_pct": 62.5
     },
     {
       "barrio": "Villa Urquiza",
@@ -1756,7 +2088,13 @@
       "mediana_precio_m2": 17477,
       "mediana_expensas": 165000,
       "mediana_costo_total": 918000,
+      "pct_expensas_alquiler": 20.7,
       "n_publicaciones": 466,
+      "pct_usd": 13.1,
+      "n_usd": 61,
+      "n_ars": 405,
+      "mediana_precio_usd": 730,
+      "mediana_precio_ars_solo": 745000,
       "mediana_precio_1amb": 650000,
       "mediana_m2_1amb": 17168,
       "n_1amb": 178,
@@ -1766,26 +2104,27 @@
       "mediana_precio_3amb": 1200000,
       "mediana_m2_3amb": 18213,
       "n_3amb": 83,
+      "n_4amb_mas": 14,
       "pct_pileta": 21.2,
       "pct_gimnasio": 9.2,
+      "pct_sum": 20.6,
       "ratio_m2_chico_vs_grande": 0.94,
+      "pct_cochera": 18.9,
       "n_airbnb": 267,
       "mediana_precio_noche_usd": 302,
-      "pct_superhost": 50.2,
       "pct_guest_favorite": 0,
+      "pct_gym_airbnb": 13.9,
+      "pct_pool_airbnb": 52.4,
+      "pct_parking_airbnb": 16.1,
       "ratio_airbnb_zonaprop": 57.3,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
-      "mediana_precio_q4": 680000,
-      "mediana_expensas_q4": 140000,
       "mediana_costo_q4": 830000,
       "mediana_precio_1amb_q4": 550000,
+      "mediana_expensas_q4": 140000,
       "esfuerzo_alquiler_pct": 63.8,
-      "esfuerzo_1amb_pct": 53.1,
-      "pct_usd": 13.1,
-      "mediana_precio_usd": 730,
-      "mediana_precio_ars_solo": 745000
+      "esfuerzo_1amb_pct": 53.1
     }
   ],
   "serie_temporal": [
@@ -1796,9 +2135,13 @@
       "mediana_precio_m2": 13514,
       "mediana_costo_total": 650000,
       "n_publicaciones": 17,
+      "n_usd": 0,
+      "n_ars": 17,
+      "pct_usd": 0,
       "mediana_precio_1amb": 430000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 18.3
     },
     {
       "barrio": "Agronomia",
@@ -1807,9 +2150,13 @@
       "mediana_precio_m2": 13750,
       "mediana_costo_total": 641250,
       "n_publicaciones": 16,
+      "n_usd": 0,
+      "n_ars": 16,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 17.9
     },
     {
       "barrio": "Agronomia",
@@ -1818,9 +2165,13 @@
       "mediana_precio_m2": 13521,
       "mediana_costo_total": 650000,
       "n_publicaciones": 16,
+      "n_usd": 0,
+      "n_ars": 16,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 595000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 19.7
     },
     {
       "barrio": "Agronomia",
@@ -1829,9 +2180,13 @@
       "mediana_precio_m2": 13750,
       "mediana_costo_total": 695000,
       "n_publicaciones": 19,
+      "n_usd": 0,
+      "n_ars": 19,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 925000
+      "mediana_precio_3amb": 925000,
+      "pct_expensas": 22.2
     },
     {
       "barrio": "Agronomia",
@@ -1840,9 +2195,13 @@
       "mediana_precio_m2": 14000,
       "mediana_costo_total": 580000,
       "n_publicaciones": 17,
+      "n_usd": 0,
+      "n_ars": 17,
+      "pct_usd": 0,
       "mediana_precio_1amb": 440000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 19
     },
     {
       "barrio": "Agronomia",
@@ -1851,9 +2210,13 @@
       "mediana_precio_m2": 14750,
       "mediana_costo_total": 662500,
       "n_publicaciones": 20,
+      "n_usd": 0,
+      "n_ars": 20,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 615000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 19.5
     },
     {
       "barrio": "Agronomia",
@@ -1862,9 +2225,13 @@
       "mediana_precio_m2": 14286,
       "mediana_costo_total": 660000,
       "n_publicaciones": 19,
+      "n_usd": 0,
+      "n_ars": 19,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 665000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 21
     },
     {
       "barrio": "Agronomia",
@@ -1873,9 +2240,13 @@
       "mediana_precio_m2": 14416,
       "mediana_costo_total": 696000,
       "n_publicaciones": 20,
+      "n_usd": 0,
+      "n_ars": 20,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 925000
+      "mediana_precio_3amb": 925000,
+      "pct_expensas": 20.4
     },
     {
       "barrio": "Agronomia",
@@ -1884,9 +2255,13 @@
       "mediana_precio_m2": 15556,
       "mediana_costo_total": 680000,
       "n_publicaciones": 13,
+      "n_usd": 0,
+      "n_ars": 13,
+      "pct_usd": 0,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 670000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 23.6
     },
     {
       "barrio": "Almagro",
@@ -1895,9 +2270,13 @@
       "mediana_precio_m2": 13235,
       "mediana_costo_total": 670000,
       "n_publicaciones": 439,
+      "n_usd": 30,
+      "n_ars": 409,
+      "pct_usd": 6.8,
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 20.3
     },
     {
       "barrio": "Almagro",
@@ -1906,9 +2285,13 @@
       "mediana_precio_m2": 13415,
       "mediana_costo_total": 680000,
       "n_publicaciones": 426,
+      "n_usd": 31,
+      "n_ars": 395,
+      "pct_usd": 7.3,
       "mediana_precio_1amb": 497500,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 755000
+      "mediana_precio_3amb": 755000,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "Almagro",
@@ -1917,9 +2300,13 @@
       "mediana_precio_m2": 13830,
       "mediana_costo_total": 716000,
       "n_publicaciones": 446,
+      "n_usd": 34,
+      "n_ars": 412,
+      "pct_usd": 7.6,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 570000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22.3
     },
     {
       "barrio": "Almagro",
@@ -1928,9 +2315,13 @@
       "mediana_precio_m2": 14235,
       "mediana_costo_total": 740000,
       "n_publicaciones": 432,
+      "n_usd": 33,
+      "n_ars": 399,
+      "pct_usd": 7.6,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 585000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22.2
     },
     {
       "barrio": "Almagro",
@@ -1939,9 +2330,13 @@
       "mediana_precio_m2": 14286,
       "mediana_costo_total": 747500,
       "n_publicaciones": 478,
+      "n_usd": 35,
+      "n_ars": 443,
+      "pct_usd": 7.3,
       "mediana_precio_1amb": 535000,
       "mediana_precio_2amb": 595000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 21.9
     },
     {
       "barrio": "Almagro",
@@ -1950,9 +2345,13 @@
       "mediana_precio_m2": 14865,
       "mediana_costo_total": 770000,
       "n_publicaciones": 491,
+      "n_usd": 31,
+      "n_ars": 460,
+      "pct_usd": 6.3,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 21.3
     },
     {
       "barrio": "Almagro",
@@ -1961,9 +2360,13 @@
       "mediana_precio_m2": 15484,
       "mediana_costo_total": 780000,
       "n_publicaciones": 395,
+      "n_usd": 29,
+      "n_ars": 366,
+      "pct_usd": 7.3,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 630000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 21.3
     },
     {
       "barrio": "Almagro",
@@ -1972,9 +2375,13 @@
       "mediana_precio_m2": 15979,
       "mediana_costo_total": 800000,
       "n_publicaciones": 426,
+      "n_usd": 30,
+      "n_ars": 396,
+      "pct_usd": 7,
       "mediana_precio_1amb": 590000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 990000
+      "mediana_precio_3amb": 990000,
+      "pct_expensas": 21.1
     },
     {
       "barrio": "Almagro",
@@ -1983,9 +2390,13 @@
       "mediana_precio_m2": 16667,
       "mediana_costo_total": 800000,
       "n_publicaciones": 448,
+      "n_usd": 39,
+      "n_ars": 409,
+      "pct_usd": 8.7,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1000000
+      "mediana_precio_3amb": 1000000,
+      "pct_expensas": 21.7
     },
     {
       "barrio": "Balvanera",
@@ -1994,9 +2405,13 @@
       "mediana_precio_m2": 11920,
       "mediana_costo_total": 642500,
       "n_publicaciones": 422,
+      "n_usd": 31,
+      "n_ars": 391,
+      "pct_usd": 7.3,
       "mediana_precio_1amb": 426000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 22.4
     },
     {
       "barrio": "Balvanera",
@@ -2005,9 +2420,13 @@
       "mediana_precio_m2": 12195,
       "mediana_costo_total": 670000,
       "n_publicaciones": 444,
+      "n_usd": 34,
+      "n_ars": 410,
+      "pct_usd": 7.7,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 22.6
     },
     {
       "barrio": "Balvanera",
@@ -2016,9 +2435,13 @@
       "mediana_precio_m2": 12515,
       "mediana_costo_total": 690000,
       "n_publicaciones": 462,
+      "n_usd": 44,
+      "n_ars": 418,
+      "pct_usd": 9.5,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 530000,
-      "mediana_precio_3amb": 760000
+      "mediana_precio_3amb": 760000,
+      "pct_expensas": 23
     },
     {
       "barrio": "Balvanera",
@@ -2027,9 +2450,13 @@
       "mediana_precio_m2": 12772,
       "mediana_costo_total": 700000,
       "n_publicaciones": 446,
+      "n_usd": 35,
+      "n_ars": 411,
+      "pct_usd": 7.8,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 23.3
     },
     {
       "barrio": "Balvanera",
@@ -2038,9 +2465,13 @@
       "mediana_precio_m2": 13250,
       "mediana_costo_total": 700000,
       "n_publicaciones": 483,
+      "n_usd": 42,
+      "n_ars": 441,
+      "pct_usd": 8.7,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 755000
+      "mediana_precio_3amb": 755000,
+      "pct_expensas": 22.2
     },
     {
       "barrio": "Balvanera",
@@ -2049,9 +2480,13 @@
       "mediana_precio_m2": 13477,
       "mediana_costo_total": 730000,
       "n_publicaciones": 430,
+      "n_usd": 46,
+      "n_ars": 384,
+      "pct_usd": 10.7,
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22.1
     },
     {
       "barrio": "Balvanera",
@@ -2060,9 +2495,13 @@
       "mediana_precio_m2": 13750,
       "mediana_costo_total": 765400,
       "n_publicaciones": 409,
+      "n_usd": 50,
+      "n_ars": 359,
+      "pct_usd": 12.2,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 570000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22.1
     },
     {
       "barrio": "Balvanera",
@@ -2071,9 +2510,13 @@
       "mediana_precio_m2": 14074,
       "mediana_costo_total": 800000,
       "n_publicaciones": 402,
+      "n_usd": 48,
+      "n_ars": 354,
+      "pct_usd": 11.9,
       "mediana_precio_1amb": 542286,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 23.5
     },
     {
       "barrio": "Balvanera",
@@ -2082,9 +2525,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 780000,
       "n_publicaciones": 461,
+      "n_usd": 73,
+      "n_ars": 388,
+      "pct_usd": 15.8,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 22.4
     },
     {
       "barrio": "Barracas",
@@ -2093,9 +2540,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 829500,
       "n_publicaciones": 88,
+      "n_usd": 6,
+      "n_ars": 82,
+      "pct_usd": 6.8,
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 595000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 20.5
     },
     {
       "barrio": "Barracas",
@@ -2104,9 +2555,13 @@
       "mediana_precio_m2": 12566,
       "mediana_costo_total": 829500,
       "n_publicaciones": 112,
+      "n_usd": 10,
+      "n_ars": 102,
+      "pct_usd": 8.9,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 599000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 21.1
     },
     {
       "barrio": "Barracas",
@@ -2115,9 +2570,13 @@
       "mediana_precio_m2": 12739,
       "mediana_costo_total": 797500,
       "n_publicaciones": 116,
+      "n_usd": 11,
+      "n_ars": 105,
+      "pct_usd": 9.5,
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 22.2
     },
     {
       "barrio": "Barracas",
@@ -2126,9 +2585,13 @@
       "mediana_precio_m2": 13333,
       "mediana_costo_total": 850000,
       "n_publicaciones": 121,
+      "n_usd": 15,
+      "n_ars": 106,
+      "pct_usd": 12.4,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 595000,
-      "mediana_precio_3amb": 875000
+      "mediana_precio_3amb": 875000,
+      "pct_expensas": 21.2
     },
     {
       "barrio": "Barracas",
@@ -2137,9 +2600,13 @@
       "mediana_precio_m2": 13333,
       "mediana_costo_total": 830000,
       "n_publicaciones": 131,
+      "n_usd": 11,
+      "n_ars": 120,
+      "pct_usd": 8.4,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 23.1
     },
     {
       "barrio": "Barracas",
@@ -2148,9 +2615,13 @@
       "mediana_precio_m2": 14055,
       "mediana_costo_total": 805000,
       "n_publicaciones": 122,
+      "n_usd": 6,
+      "n_ars": 116,
+      "pct_usd": 4.9,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 925000
+      "mediana_precio_3amb": 925000,
+      "pct_expensas": 21
     },
     {
       "barrio": "Barracas",
@@ -2159,9 +2630,13 @@
       "mediana_precio_m2": 14545,
       "mediana_costo_total": 790000,
       "n_publicaciones": 105,
+      "n_usd": 5,
+      "n_ars": 100,
+      "pct_usd": 4.8,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 665000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 21.7
     },
     {
       "barrio": "Barracas",
@@ -2170,9 +2645,13 @@
       "mediana_precio_m2": 14545,
       "mediana_costo_total": 840000,
       "n_publicaciones": 95,
+      "n_usd": 5,
+      "n_ars": 90,
+      "pct_usd": 5.3,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 680000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 21.8
     },
     {
       "barrio": "Barracas",
@@ -2181,9 +2660,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 925000,
       "n_publicaciones": 118,
+      "n_usd": 11,
+      "n_ars": 107,
+      "pct_usd": 9.3,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 725000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 22.9
     },
     {
       "barrio": "Belgrano",
@@ -2192,9 +2675,13 @@
       "mediana_precio_m2": 15315,
       "mediana_costo_total": 910000,
       "n_publicaciones": 981,
+      "n_usd": 248,
+      "n_ars": 733,
+      "pct_usd": 25.3,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "Belgrano",
@@ -2203,9 +2690,13 @@
       "mediana_precio_m2": 15614,
       "mediana_costo_total": 950000,
       "n_publicaciones": 1019,
+      "n_usd": 249,
+      "n_ars": 770,
+      "pct_usd": 24.4,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 22.1
     },
     {
       "barrio": "Belgrano",
@@ -2214,9 +2705,13 @@
       "mediana_precio_m2": 16250,
       "mediana_costo_total": 1017372,
       "n_publicaciones": 1028,
+      "n_usd": 278,
+      "n_ars": 750,
+      "pct_usd": 27,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 22.1
     },
     {
       "barrio": "Belgrano",
@@ -2225,9 +2720,13 @@
       "mediana_precio_m2": 16995,
       "mediana_costo_total": 1066535,
       "n_publicaciones": 978,
+      "n_usd": 293,
+      "n_ars": 685,
+      "pct_usd": 30,
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 713809,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 22.3
     },
     {
       "barrio": "Belgrano",
@@ -2236,9 +2735,13 @@
       "mediana_precio_m2": 17500,
       "mediana_costo_total": 1084547,
       "n_publicaciones": 990,
+      "n_usd": 310,
+      "n_ars": 680,
+      "pct_usd": 31.3,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 740000,
-      "mediana_precio_3amb": 1300000
+      "mediana_precio_3amb": 1300000,
+      "pct_expensas": 21.8
     },
     {
       "barrio": "Belgrano",
@@ -2247,9 +2750,13 @@
       "mediana_precio_m2": 17451,
       "mediana_costo_total": 1090000,
       "n_publicaciones": 955,
+      "n_usd": 301,
+      "n_ars": 654,
+      "pct_usd": 31.5,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 22.7
     },
     {
       "barrio": "Belgrano",
@@ -2258,9 +2765,13 @@
       "mediana_precio_m2": 18125,
       "mediana_costo_total": 1208380,
       "n_publicaciones": 838,
+      "n_usd": 308,
+      "n_ars": 530,
+      "pct_usd": 36.8,
       "mediana_precio_1amb": 637173,
       "mediana_precio_2amb": 800000,
-      "mediana_precio_3amb": 1404829
+      "mediana_precio_3amb": 1404829,
+      "pct_expensas": 21.9
     },
     {
       "barrio": "Belgrano",
@@ -2269,9 +2780,13 @@
       "mediana_precio_m2": 18750,
       "mediana_costo_total": 1280000,
       "n_publicaciones": 825,
+      "n_usd": 291,
+      "n_ars": 534,
+      "pct_usd": 35.3,
       "mediana_precio_1amb": 698169,
       "mediana_precio_2amb": 850000,
-      "mediana_precio_3amb": 1500000
+      "mediana_precio_3amb": 1500000,
+      "pct_expensas": 21.7
     },
     {
       "barrio": "Belgrano",
@@ -2280,9 +2795,13 @@
       "mediana_precio_m2": 19833,
       "mediana_costo_total": 1256705,
       "n_publicaciones": 1003,
+      "n_usd": 358,
+      "n_ars": 645,
+      "pct_usd": 35.7,
       "mediana_precio_1amb": 745000,
       "mediana_precio_2amb": 880000,
-      "mediana_precio_3amb": 1500000
+      "mediana_precio_3amb": 1500000,
+      "pct_expensas": 21.2
     },
     {
       "barrio": "Boedo",
@@ -2291,9 +2810,13 @@
       "mediana_precio_m2": 12434,
       "mediana_costo_total": 697400,
       "n_publicaciones": 96,
+      "n_usd": 1,
+      "n_ars": 95,
+      "pct_usd": 1,
       "mediana_precio_1amb": 440000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Boedo",
@@ -2302,9 +2825,13 @@
       "mediana_precio_m2": 13188,
       "mediana_costo_total": 708000,
       "n_publicaciones": 76,
+      "n_usd": 2,
+      "n_ars": 74,
+      "pct_usd": 2.6,
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 590000,
-      "mediana_precio_3amb": 825000
+      "mediana_precio_3amb": 825000,
+      "pct_expensas": 21.8
     },
     {
       "barrio": "Boedo",
@@ -2313,9 +2840,13 @@
       "mediana_precio_m2": 12931,
       "mediana_costo_total": 681000,
       "n_publicaciones": 75,
+      "n_usd": 4,
+      "n_ars": 71,
+      "pct_usd": 5.3,
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 540000,
-      "mediana_precio_3amb": 725000
+      "mediana_precio_3amb": 725000,
+      "pct_expensas": 22.4
     },
     {
       "barrio": "Boedo",
@@ -2324,9 +2855,13 @@
       "mediana_precio_m2": 13675,
       "mediana_costo_total": 691700,
       "n_publicaciones": 84,
+      "n_usd": 2,
+      "n_ars": 82,
+      "pct_usd": 2.4,
       "mediana_precio_1amb": 497000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 790000
+      "mediana_precio_3amb": 790000,
+      "pct_expensas": 21.3
     },
     {
       "barrio": "Boedo",
@@ -2335,9 +2870,13 @@
       "mediana_precio_m2": 13675,
       "mediana_costo_total": 695000,
       "n_publicaciones": 88,
+      "n_usd": 2,
+      "n_ars": 86,
+      "pct_usd": 2.3,
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 22.3
     },
     {
       "barrio": "Boedo",
@@ -2346,9 +2885,13 @@
       "mediana_precio_m2": 13675,
       "mediana_costo_total": 738600,
       "n_publicaciones": 98,
+      "n_usd": 2,
+      "n_ars": 96,
+      "pct_usd": 2,
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22.7
     },
     {
       "barrio": "Boedo",
@@ -2357,9 +2900,13 @@
       "mediana_precio_m2": 13424,
       "mediana_costo_total": 766250,
       "n_publicaciones": 84,
+      "n_usd": 0,
+      "n_ars": 84,
+      "pct_usd": 0,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 25.5
     },
     {
       "barrio": "Boedo",
@@ -2368,9 +2915,13 @@
       "mediana_precio_m2": 14443,
       "mediana_costo_total": 800000,
       "n_publicaciones": 70,
+      "n_usd": 1,
+      "n_ars": 69,
+      "pct_usd": 1.4,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 23.8
     },
     {
       "barrio": "Boedo",
@@ -2379,9 +2930,13 @@
       "mediana_precio_m2": 15278,
       "mediana_costo_total": 805000,
       "n_publicaciones": 87,
+      "n_usd": 1,
+      "n_ars": 86,
+      "pct_usd": 1.1,
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 925000
+      "mediana_precio_3amb": 925000,
+      "pct_expensas": 22.1
     },
     {
       "barrio": "Caballito",
@@ -2390,9 +2945,13 @@
       "mediana_precio_m2": 13462,
       "mediana_costo_total": 730000,
       "n_publicaciones": 723,
+      "n_usd": 33,
+      "n_ars": 690,
+      "pct_usd": 4.6,
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 599000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 20.8
     },
     {
       "barrio": "Caballito",
@@ -2401,9 +2960,13 @@
       "mediana_precio_m2": 13889,
       "mediana_costo_total": 750000,
       "n_publicaciones": 775,
+      "n_usd": 54,
+      "n_ars": 721,
+      "pct_usd": 7,
       "mediana_precio_1amb": 482500,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 21
     },
     {
       "barrio": "Caballito",
@@ -2412,9 +2975,13 @@
       "mediana_precio_m2": 14118,
       "mediana_costo_total": 794524,
       "n_publicaciones": 834,
+      "n_usd": 66,
+      "n_ars": 768,
+      "pct_usd": 7.9,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 21.2
     },
     {
       "barrio": "Caballito",
@@ -2423,9 +2990,13 @@
       "mediana_precio_m2": 14394,
       "mediana_costo_total": 814000,
       "n_publicaciones": 829,
+      "n_usd": 54,
+      "n_ars": 775,
+      "pct_usd": 6.5,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 890000
+      "mediana_precio_3amb": 890000,
+      "pct_expensas": 21.1
     },
     {
       "barrio": "Caballito",
@@ -2434,9 +3005,13 @@
       "mediana_precio_m2": 14773,
       "mediana_costo_total": 849000,
       "n_publicaciones": 836,
+      "n_usd": 57,
+      "n_ars": 779,
+      "pct_usd": 6.8,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 21.4
     },
     {
       "barrio": "Caballito",
@@ -2445,9 +3020,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 870000,
       "n_publicaciones": 808,
+      "n_usd": 57,
+      "n_ars": 751,
+      "pct_usd": 7.1,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "Caballito",
@@ -2456,9 +3035,13 @@
       "mediana_precio_m2": 15526,
       "mediana_costo_total": 880000,
       "n_publicaciones": 723,
+      "n_usd": 48,
+      "n_ars": 675,
+      "pct_usd": 6.6,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 680000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "Caballito",
@@ -2467,9 +3050,13 @@
       "mediana_precio_m2": 16000,
       "mediana_costo_total": 880000,
       "n_publicaciones": 738,
+      "n_usd": 48,
+      "n_ars": 690,
+      "pct_usd": 6.5,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 980000
+      "mediana_precio_3amb": 980000,
+      "pct_expensas": 20.8
     },
     {
       "barrio": "Caballito",
@@ -2478,9 +3065,13 @@
       "mediana_precio_m2": 16667,
       "mediana_costo_total": 910000,
       "n_publicaciones": 803,
+      "n_usd": 66,
+      "n_ars": 737,
+      "pct_usd": 8.2,
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 21
     },
     {
       "barrio": "Chacarita",
@@ -2489,9 +3080,13 @@
       "mediana_precio_m2": 14286,
       "mediana_costo_total": 740000,
       "n_publicaciones": 77,
+      "n_usd": 13,
+      "n_ars": 64,
+      "pct_usd": 16.9,
       "mediana_precio_1amb": 540000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1025000
+      "mediana_precio_3amb": 1025000,
+      "pct_expensas": 24.3
     },
     {
       "barrio": "Chacarita",
@@ -2500,9 +3095,13 @@
       "mediana_precio_m2": 14894,
       "mediana_costo_total": 780000,
       "n_publicaciones": 81,
+      "n_usd": 11,
+      "n_ars": 70,
+      "pct_usd": 13.6,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 24
     },
     {
       "barrio": "Chacarita",
@@ -2511,9 +3110,13 @@
       "mediana_precio_m2": 15195,
       "mediana_costo_total": 766500,
       "n_publicaciones": 88,
+      "n_usd": 12,
+      "n_ars": 76,
+      "pct_usd": 13.6,
       "mediana_precio_1amb": 560000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 21.2
     },
     {
       "barrio": "Chacarita",
@@ -2522,9 +3125,13 @@
       "mediana_precio_m2": 15488,
       "mediana_costo_total": 821000,
       "n_publicaciones": 84,
+      "n_usd": 11,
+      "n_ars": 73,
+      "pct_usd": 13.1,
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 680000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 20.4
     },
     {
       "barrio": "Chacarita",
@@ -2533,9 +3140,13 @@
       "mediana_precio_m2": 16000,
       "mediana_costo_total": 860000,
       "n_publicaciones": 77,
+      "n_usd": 14,
+      "n_ars": 63,
+      "pct_usd": 18.2,
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 790000,
-      "mediana_precio_3amb": 1017939
+      "mediana_precio_3amb": 1017939,
+      "pct_expensas": 20.5
     },
     {
       "barrio": "Chacarita",
@@ -2544,9 +3155,13 @@
       "mediana_precio_m2": 16667,
       "mediana_costo_total": 811340,
       "n_publicaciones": 62,
+      "n_usd": 13,
+      "n_ars": 49,
+      "pct_usd": 21,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 725000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 20.6
     },
     {
       "barrio": "Chacarita",
@@ -2555,9 +3170,13 @@
       "mediana_precio_m2": 17073,
       "mediana_costo_total": 865000,
       "n_publicaciones": 65,
+      "n_usd": 11,
+      "n_ars": 54,
+      "pct_usd": 16.9,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 22.3
     },
     {
       "barrio": "Chacarita",
@@ -2566,9 +3185,13 @@
       "mediana_precio_m2": 16757,
       "mediana_costo_total": 915000,
       "n_publicaciones": 65,
+      "n_usd": 6,
+      "n_ars": 59,
+      "pct_usd": 9.2,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 812500,
-      "mediana_precio_3amb": 1047254
+      "mediana_precio_3amb": 1047254,
+      "pct_expensas": 23.5
     },
     {
       "barrio": "Chacarita",
@@ -2577,9 +3200,13 @@
       "mediana_precio_m2": 18839,
       "mediana_costo_total": 940000,
       "n_publicaciones": 73,
+      "n_usd": 23,
+      "n_ars": 50,
+      "pct_usd": 31.5,
       "mediana_precio_1amb": 699085,
       "mediana_precio_2amb": 837803,
-      "mediana_precio_3amb": 1250000
+      "mediana_precio_3amb": 1250000,
+      "pct_expensas": 21.9
     },
     {
       "barrio": "Coghlan",
@@ -2588,9 +3215,13 @@
       "mediana_precio_m2": 14706,
       "mediana_costo_total": 755000,
       "n_publicaciones": 51,
+      "n_usd": 6,
+      "n_ars": 45,
+      "pct_usd": 11.8,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 620000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 18.5
     },
     {
       "barrio": "Coghlan",
@@ -2599,9 +3230,13 @@
       "mediana_precio_m2": 14733,
       "mediana_costo_total": 782500,
       "n_publicaciones": 48,
+      "n_usd": 7,
+      "n_ars": 41,
+      "pct_usd": 14.6,
       "mediana_precio_1amb": 525000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 890000
+      "mediana_precio_3amb": 890000,
+      "pct_expensas": 21.1
     },
     {
       "barrio": "Coghlan",
@@ -2610,9 +3245,13 @@
       "mediana_precio_m2": 14567,
       "mediana_costo_total": 796885,
       "n_publicaciones": 48,
+      "n_usd": 7,
+      "n_ars": 41,
+      "pct_usd": 14.6,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 730000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 22.5
     },
     {
       "barrio": "Coghlan",
@@ -2621,9 +3260,13 @@
       "mediana_precio_m2": 15556,
       "mediana_costo_total": 880000,
       "n_publicaciones": 61,
+      "n_usd": 7,
+      "n_ars": 54,
+      "pct_usd": 11.5,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 21.4
     },
     {
       "barrio": "Coghlan",
@@ -2632,9 +3275,13 @@
       "mediana_precio_m2": 15357,
       "mediana_costo_total": 808000,
       "n_publicaciones": 55,
+      "n_usd": 6,
+      "n_ars": 49,
+      "pct_usd": 10.9,
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 20.7
     },
     {
       "barrio": "Coghlan",
@@ -2643,9 +3290,13 @@
       "mediana_precio_m2": 16183,
       "mediana_costo_total": 902500,
       "n_publicaciones": 56,
+      "n_usd": 9,
+      "n_ars": 47,
+      "pct_usd": 16.1,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 20.9
     },
     {
       "barrio": "Coghlan",
@@ -2654,9 +3305,13 @@
       "mediana_precio_m2": 17500,
       "mediana_costo_total": 900000,
       "n_publicaciones": 49,
+      "n_usd": 9,
+      "n_ars": 40,
+      "pct_usd": 18.4,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 895000
+      "mediana_precio_3amb": 895000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Coghlan",
@@ -2665,9 +3320,13 @@
       "mediana_precio_m2": 17616,
       "mediana_costo_total": 965000,
       "n_publicaciones": 48,
+      "n_usd": 11,
+      "n_ars": 37,
+      "pct_usd": 22.9,
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 850000,
-      "mediana_precio_3amb": 1150000
+      "mediana_precio_3amb": 1150000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Coghlan",
@@ -2676,9 +3335,13 @@
       "mediana_precio_m2": 18229,
       "mediana_costo_total": 982790,
       "n_publicaciones": 52,
+      "n_usd": 7,
+      "n_ars": 45,
+      "pct_usd": 13.5,
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 790000,
-      "mediana_precio_3amb": 1243444
+      "mediana_precio_3amb": 1243444,
+      "pct_expensas": 22
     },
     {
       "barrio": "Colegiales",
@@ -2687,9 +3350,13 @@
       "mediana_precio_m2": 14444,
       "mediana_costo_total": 800000,
       "n_publicaciones": 187,
+      "n_usd": 37,
+      "n_ars": 150,
+      "pct_usd": 19.8,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 797722
+      "mediana_precio_3amb": 797722,
+      "pct_expensas": 21.1
     },
     {
       "barrio": "Colegiales",
@@ -2698,9 +3365,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 839944,
       "n_publicaciones": 185,
+      "n_usd": 32,
+      "n_ars": 153,
+      "pct_usd": 17.3,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 20.8
     },
     {
       "barrio": "Colegiales",
@@ -2709,9 +3380,13 @@
       "mediana_precio_m2": 15341,
       "mediana_costo_total": 898806,
       "n_publicaciones": 176,
+      "n_usd": 39,
+      "n_ars": 137,
+      "pct_usd": 22.2,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 685000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 21.9
     },
     {
       "barrio": "Colegiales",
@@ -2720,9 +3395,13 @@
       "mediana_precio_m2": 15962,
       "mediana_costo_total": 1012500,
       "n_publicaciones": 144,
+      "n_usd": 44,
+      "n_ars": 100,
+      "pct_usd": 30.6,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 22
     },
     {
       "barrio": "Colegiales",
@@ -2731,9 +3410,13 @@
       "mediana_precio_m2": 16545,
       "mediana_costo_total": 970000,
       "n_publicaciones": 164,
+      "n_usd": 38,
+      "n_ars": 126,
+      "pct_usd": 23.2,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 875000
+      "mediana_precio_3amb": 875000,
+      "pct_expensas": 21.6
     },
     {
       "barrio": "Colegiales",
@@ -2742,9 +3425,13 @@
       "mediana_precio_m2": 16815,
       "mediana_costo_total": 1040000,
       "n_publicaciones": 166,
+      "n_usd": 48,
+      "n_ars": 118,
+      "pct_usd": 28.9,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 740000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 22.3
     },
     {
       "barrio": "Colegiales",
@@ -2753,9 +3440,13 @@
       "mediana_precio_m2": 17647,
       "mediana_costo_total": 1081000,
       "n_publicaciones": 143,
+      "n_usd": 39,
+      "n_ars": 104,
+      "pct_usd": 27.3,
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 850000,
-      "mediana_precio_3amb": 955000
+      "mediana_precio_3amb": 955000,
+      "pct_expensas": 22.1
     },
     {
       "barrio": "Colegiales",
@@ -2764,9 +3455,13 @@
       "mediana_precio_m2": 17600,
       "mediana_costo_total": 1052400,
       "n_publicaciones": 131,
+      "n_usd": 36,
+      "n_ars": 95,
+      "pct_usd": 27.5,
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 800000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 21.6
     },
     {
       "barrio": "Colegiales",
@@ -2775,9 +3470,13 @@
       "mediana_precio_m2": 18869,
       "mediana_costo_total": 1117071,
       "n_publicaciones": 178,
+      "n_usd": 63,
+      "n_ars": 115,
+      "pct_usd": 35.4,
       "mediana_precio_1amb": 758993,
       "mediana_precio_2amb": 900000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 20.4
     },
     {
       "barrio": "Constitucion",
@@ -2786,9 +3485,13 @@
       "mediana_precio_m2": 11990,
       "mediana_costo_total": 540000,
       "n_publicaciones": 42,
+      "n_usd": 3,
+      "n_ars": 39,
+      "pct_usd": 7.1,
       "mediana_precio_1amb": 410000,
       "mediana_precio_2amb": 470000,
-      "mediana_precio_3amb": 595000
+      "mediana_precio_3amb": 595000,
+      "pct_expensas": 21.7
     },
     {
       "barrio": "Constitucion",
@@ -2797,9 +3500,13 @@
       "mediana_precio_m2": 11926,
       "mediana_costo_total": 575000,
       "n_publicaciones": 54,
+      "n_usd": 1,
+      "n_ars": 53,
+      "pct_usd": 1.9,
       "mediana_precio_1amb": 425000,
       "mediana_precio_2amb": 460000,
-      "mediana_precio_3amb": 570000
+      "mediana_precio_3amb": 570000,
+      "pct_expensas": 22.7
     },
     {
       "barrio": "Constitucion",
@@ -2808,9 +3515,13 @@
       "mediana_precio_m2": 12159,
       "mediana_costo_total": 610000,
       "n_publicaciones": 63,
+      "n_usd": 2,
+      "n_ars": 61,
+      "pct_usd": 3.2,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 475000,
-      "mediana_precio_3amb": 605000
+      "mediana_precio_3amb": 605000,
+      "pct_expensas": 21.9
     },
     {
       "barrio": "Constitucion",
@@ -2819,9 +3530,13 @@
       "mediana_precio_m2": 12162,
       "mediana_costo_total": 638000,
       "n_publicaciones": 64,
+      "n_usd": 2,
+      "n_ars": 62,
+      "pct_usd": 3.1,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 470000,
-      "mediana_precio_3amb": 650000
+      "mediana_precio_3amb": 650000,
+      "pct_expensas": 25.5
     },
     {
       "barrio": "Constitucion",
@@ -2830,9 +3545,13 @@
       "mediana_precio_m2": 12466,
       "mediana_costo_total": 605000,
       "n_publicaciones": 62,
+      "n_usd": 1,
+      "n_ars": 61,
+      "pct_usd": 1.6,
       "mediana_precio_1amb": 460000,
       "mediana_precio_2amb": 480000,
-      "mediana_precio_3amb": 765000
+      "mediana_precio_3amb": 765000,
+      "pct_expensas": 24
     },
     {
       "barrio": "Constitucion",
@@ -2841,9 +3560,13 @@
       "mediana_precio_m2": 12238,
       "mediana_costo_total": 617500,
       "n_publicaciones": 60,
+      "n_usd": 4,
+      "n_ars": 56,
+      "pct_usd": 6.7,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 515000,
-      "mediana_precio_3amb": 670000
+      "mediana_precio_3amb": 670000,
+      "pct_expensas": 25.6
     },
     {
       "barrio": "Constitucion",
@@ -2852,9 +3575,13 @@
       "mediana_precio_m2": 12929,
       "mediana_costo_total": 615500,
       "n_publicaciones": 54,
+      "n_usd": 2,
+      "n_ars": 52,
+      "pct_usd": 3.7,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 27.9
     },
     {
       "barrio": "Constitucion",
@@ -2863,9 +3590,13 @@
       "mediana_precio_m2": 13333,
       "mediana_costo_total": 685000,
       "n_publicaciones": 53,
+      "n_usd": 2,
+      "n_ars": 51,
+      "pct_usd": 3.8,
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 25.7
     },
     {
       "barrio": "Constitucion",
@@ -2874,9 +3605,13 @@
       "mediana_precio_m2": 13889,
       "mediana_costo_total": 753352,
       "n_publicaciones": 61,
+      "n_usd": 9,
+      "n_ars": 52,
+      "pct_usd": 14.8,
       "mediana_precio_1amb": 495000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 765000
+      "mediana_precio_3amb": 765000,
+      "pct_expensas": 23.2
     },
     {
       "barrio": "Flores",
@@ -2885,9 +3620,13 @@
       "mediana_precio_m2": 11978,
       "mediana_costo_total": 680000,
       "n_publicaciones": 252,
+      "n_usd": 13,
+      "n_ars": 239,
+      "pct_usd": 5.2,
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 745000
+      "mediana_precio_3amb": 745000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Flores",
@@ -2896,9 +3635,13 @@
       "mediana_precio_m2": 12264,
       "mediana_costo_total": 697000,
       "n_publicaciones": 247,
+      "n_usd": 12,
+      "n_ars": 235,
+      "pct_usd": 4.9,
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 21.1
     },
     {
       "barrio": "Flores",
@@ -2907,9 +3650,13 @@
       "mediana_precio_m2": 12564,
       "mediana_costo_total": 700000,
       "n_publicaciones": 299,
+      "n_usd": 14,
+      "n_ars": 285,
+      "pct_usd": 4.7,
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "Flores",
@@ -2918,9 +3665,13 @@
       "mediana_precio_m2": 12889,
       "mediana_costo_total": 730000,
       "n_publicaciones": 318,
+      "n_usd": 13,
+      "n_ars": 305,
+      "pct_usd": 4.1,
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 580000,
-      "mediana_precio_3amb": 760000
+      "mediana_precio_3amb": 760000,
+      "pct_expensas": 21.8
     },
     {
       "barrio": "Flores",
@@ -2929,9 +3680,13 @@
       "mediana_precio_m2": 12986,
       "mediana_costo_total": 756000,
       "n_publicaciones": 344,
+      "n_usd": 17,
+      "n_ars": 327,
+      "pct_usd": 4.9,
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 590000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22
     },
     {
       "barrio": "Flores",
@@ -2940,9 +3695,13 @@
       "mediana_precio_m2": 13571,
       "mediana_costo_total": 775000,
       "n_publicaciones": 304,
+      "n_usd": 18,
+      "n_ars": 286,
+      "pct_usd": 5.9,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 21.9
     },
     {
       "barrio": "Flores",
@@ -2951,9 +3710,13 @@
       "mediana_precio_m2": 14000,
       "mediana_costo_total": 800000,
       "n_publicaciones": 303,
+      "n_usd": 20,
+      "n_ars": 283,
+      "pct_usd": 6.6,
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22.3
     },
     {
       "barrio": "Flores",
@@ -2962,9 +3725,13 @@
       "mediana_precio_m2": 14404,
       "mediana_costo_total": 820000,
       "n_publicaciones": 280,
+      "n_usd": 19,
+      "n_ars": 261,
+      "pct_usd": 6.8,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 890000
+      "mediana_precio_3amb": 890000,
+      "pct_expensas": 21.7
     },
     {
       "barrio": "Flores",
@@ -2973,9 +3740,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 821000,
       "n_publicaciones": 304,
+      "n_usd": 18,
+      "n_ars": 286,
+      "pct_usd": 5.9,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 665000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "Floresta",
@@ -2984,9 +3755,13 @@
       "mediana_precio_m2": 12327,
       "mediana_costo_total": 602500,
       "n_publicaciones": 64,
+      "n_usd": 3,
+      "n_ars": 61,
+      "pct_usd": 4.7,
       "mediana_precio_1amb": 395000,
       "mediana_precio_2amb": 470000,
-      "mediana_precio_3amb": 725000
+      "mediana_precio_3amb": 725000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Floresta",
@@ -2995,9 +3770,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 689000,
       "n_publicaciones": 74,
+      "n_usd": 3,
+      "n_ars": 71,
+      "pct_usd": 4.1,
       "mediana_precio_1amb": 420000,
       "mediana_precio_2amb": 520000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 18.8
     },
     {
       "barrio": "Floresta",
@@ -3006,9 +3785,13 @@
       "mediana_precio_m2": 12810,
       "mediana_costo_total": 671500,
       "n_publicaciones": 94,
+      "n_usd": 1,
+      "n_ars": 93,
+      "pct_usd": 1.1,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 17.8
     },
     {
       "barrio": "Floresta",
@@ -3017,9 +3800,13 @@
       "mediana_precio_m2": 13000,
       "mediana_costo_total": 740000,
       "n_publicaciones": 85,
+      "n_usd": 4,
+      "n_ars": 81,
+      "pct_usd": 4.7,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 17.9
     },
     {
       "barrio": "Floresta",
@@ -3028,9 +3815,13 @@
       "mediana_precio_m2": 12639,
       "mediana_costo_total": 712500,
       "n_publicaciones": 104,
+      "n_usd": 9,
+      "n_ars": 95,
+      "pct_usd": 8.7,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 17.3
     },
     {
       "barrio": "Floresta",
@@ -3039,9 +3830,13 @@
       "mediana_precio_m2": 12670,
       "mediana_costo_total": 737500,
       "n_publicaciones": 98,
+      "n_usd": 5,
+      "n_ars": 93,
+      "pct_usd": 5.1,
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 580000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 18.3
     },
     {
       "barrio": "Floresta",
@@ -3050,9 +3845,13 @@
       "mediana_precio_m2": 13521,
       "mediana_costo_total": 746750,
       "n_publicaciones": 84,
+      "n_usd": 2,
+      "n_ars": 82,
+      "pct_usd": 2.4,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 790000
+      "mediana_precio_3amb": 790000,
+      "pct_expensas": 18.6
     },
     {
       "barrio": "Floresta",
@@ -3061,9 +3860,13 @@
       "mediana_precio_m2": 13624,
       "mediana_costo_total": 707500,
       "n_publicaciones": 72,
+      "n_usd": 2,
+      "n_ars": 70,
+      "pct_usd": 2.8,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 580000,
-      "mediana_precio_3amb": 820000
+      "mediana_precio_3amb": 820000,
+      "pct_expensas": 20.8
     },
     {
       "barrio": "Floresta",
@@ -3072,9 +3875,13 @@
       "mediana_precio_m2": 14167,
       "mediana_costo_total": 750000,
       "n_publicaciones": 87,
+      "n_usd": 5,
+      "n_ars": 82,
+      "pct_usd": 5.7,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 19.1
     },
     {
       "barrio": "La Boca",
@@ -3083,9 +3890,13 @@
       "mediana_precio_m2": 11458,
       "mediana_costo_total": 655000,
       "n_publicaciones": 29,
+      "n_usd": 2,
+      "n_ars": 27,
+      "pct_usd": 6.9,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 650000
+      "mediana_precio_3amb": 650000,
+      "pct_expensas": 24.4
     },
     {
       "barrio": "La Boca",
@@ -3094,9 +3905,13 @@
       "mediana_precio_m2": 12019,
       "mediana_costo_total": 727500,
       "n_publicaciones": 28,
+      "n_usd": 4,
+      "n_ars": 24,
+      "pct_usd": 14.3,
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 575000,
-      "mediana_precio_3amb": 650000
+      "mediana_precio_3amb": 650000,
+      "pct_expensas": 23.6
     },
     {
       "barrio": "La Boca",
@@ -3105,9 +3920,13 @@
       "mediana_precio_m2": 13000,
       "mediana_costo_total": 660000,
       "n_publicaciones": 25,
+      "n_usd": 5,
+      "n_ars": 20,
+      "pct_usd": 20,
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 597500
+      "mediana_precio_3amb": 597500,
+      "pct_expensas": 26.7
     },
     {
       "barrio": "La Boca",
@@ -3116,9 +3935,13 @@
       "mediana_precio_m2": 13095,
       "mediana_costo_total": 655000,
       "n_publicaciones": 37,
+      "n_usd": 3,
+      "n_ars": 34,
+      "pct_usd": 8.1,
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 585000,
-      "mediana_precio_3amb": 682500
+      "mediana_precio_3amb": 682500,
+      "pct_expensas": 25
     },
     {
       "barrio": "La Boca",
@@ -3127,9 +3950,13 @@
       "mediana_precio_m2": 13907,
       "mediana_costo_total": 741000,
       "n_publicaciones": 36,
+      "n_usd": 5,
+      "n_ars": 31,
+      "pct_usd": 13.9,
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 630000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 26.7
     },
     {
       "barrio": "La Boca",
@@ -3138,9 +3965,13 @@
       "mediana_precio_m2": 13814,
       "mediana_costo_total": 620000,
       "n_publicaciones": 41,
+      "n_usd": 4,
+      "n_ars": 37,
+      "pct_usd": 9.8,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 705000
+      "mediana_precio_3amb": 705000,
+      "pct_expensas": 26.7
     },
     {
       "barrio": "La Boca",
@@ -3149,9 +3980,13 @@
       "mediana_precio_m2": 14315,
       "mediana_costo_total": 748500,
       "n_publicaciones": 38,
+      "n_usd": 6,
+      "n_ars": 32,
+      "pct_usd": 15.8,
       "mediana_precio_1amb": 475000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 665000
+      "mediana_precio_3amb": 665000,
+      "pct_expensas": 25.5
     },
     {
       "barrio": "La Boca",
@@ -3160,9 +3995,13 @@
       "mediana_precio_m2": 16216,
       "mediana_costo_total": 770243,
       "n_publicaciones": 33,
+      "n_usd": 10,
+      "n_ars": 23,
+      "pct_usd": 30.3,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 660121,
-      "mediana_precio_3amb": 790000
+      "mediana_precio_3amb": 790000,
+      "pct_expensas": 24.6
     },
     {
       "barrio": "La Boca",
@@ -3171,9 +4010,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 889000,
       "n_publicaciones": 47,
+      "n_usd": 9,
+      "n_ars": 38,
+      "pct_usd": 19.1,
       "mediana_precio_1amb": 525000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 843203
+      "mediana_precio_3amb": 843203,
+      "pct_expensas": 20
     },
     {
       "barrio": "Liniers",
@@ -3182,9 +4025,13 @@
       "mediana_precio_m2": 11905,
       "mediana_costo_total": 580000,
       "n_publicaciones": 37,
+      "n_usd": 0,
+      "n_ars": 37,
+      "pct_usd": 0,
       "mediana_precio_1amb": 420000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 17.9
     },
     {
       "barrio": "Liniers",
@@ -3193,9 +4040,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 603500,
       "n_publicaciones": 48,
+      "n_usd": 0,
+      "n_ars": 48,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 685000
+      "mediana_precio_3amb": 685000,
+      "pct_expensas": 16.3
     },
     {
       "barrio": "Liniers",
@@ -3204,9 +4055,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 618000,
       "n_publicaciones": 63,
+      "n_usd": 0,
+      "n_ars": 63,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 780000
+      "mediana_precio_3amb": 780000,
+      "pct_expensas": 18.2
     },
     {
       "barrio": "Liniers",
@@ -3215,9 +4070,13 @@
       "mediana_precio_m2": 12633,
       "mediana_costo_total": 640850,
       "n_publicaciones": 62,
+      "n_usd": 0,
+      "n_ars": 62,
+      "pct_usd": 0,
       "mediana_precio_1amb": 430000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 745000
+      "mediana_precio_3amb": 745000,
+      "pct_expensas": 18.5
     },
     {
       "barrio": "Liniers",
@@ -3226,9 +4085,13 @@
       "mediana_precio_m2": 12894,
       "mediana_costo_total": 655000,
       "n_publicaciones": 78,
+      "n_usd": 1,
+      "n_ars": 77,
+      "pct_usd": 1.3,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 580000,
-      "mediana_precio_3amb": 760000
+      "mediana_precio_3amb": 760000,
+      "pct_expensas": 20.3
     },
     {
       "barrio": "Liniers",
@@ -3237,9 +4100,13 @@
       "mediana_precio_m2": 13019,
       "mediana_costo_total": 640000,
       "n_publicaciones": 63,
+      "n_usd": 1,
+      "n_ars": 62,
+      "pct_usd": 1.6,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 565000,
-      "mediana_precio_3amb": 725000
+      "mediana_precio_3amb": 725000,
+      "pct_expensas": 18.6
     },
     {
       "barrio": "Liniers",
@@ -3248,9 +4115,13 @@
       "mediana_precio_m2": 13136,
       "mediana_costo_total": 650000,
       "n_publicaciones": 62,
+      "n_usd": 1,
+      "n_ars": 61,
+      "pct_usd": 1.6,
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 725000
+      "mediana_precio_3amb": 725000,
+      "pct_expensas": 18.2
     },
     {
       "barrio": "Liniers",
@@ -3259,9 +4130,13 @@
       "mediana_precio_m2": 13732,
       "mediana_costo_total": 650000,
       "n_publicaciones": 64,
+      "n_usd": 0,
+      "n_ars": 64,
+      "pct_usd": 0,
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 740000
+      "mediana_precio_3amb": 740000,
+      "pct_expensas": 18.1
     },
     {
       "barrio": "Liniers",
@@ -3270,9 +4145,13 @@
       "mediana_precio_m2": 14634,
       "mediana_costo_total": 700000,
       "n_publicaciones": 63,
+      "n_usd": 0,
+      "n_ars": 63,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 875000
+      "mediana_precio_3amb": 875000,
+      "pct_expensas": 18.8
     },
     {
       "barrio": "Mataderos",
@@ -3281,9 +4160,13 @@
       "mediana_precio_m2": 11702,
       "mediana_costo_total": 620000,
       "n_publicaciones": 25,
+      "n_usd": 0,
+      "n_ars": 25,
+      "pct_usd": 0,
       "mediana_precio_1amb": 410000,
       "mediana_precio_2amb": 570000,
-      "mediana_precio_3amb": 730000
+      "mediana_precio_3amb": 730000,
+      "pct_expensas": 20.5
     },
     {
       "barrio": "Mataderos",
@@ -3292,9 +4175,13 @@
       "mediana_precio_m2": 12037,
       "mediana_costo_total": 730000,
       "n_publicaciones": 27,
+      "n_usd": 0,
+      "n_ars": 27,
+      "pct_usd": 0,
       "mediana_precio_1amb": 405000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 775000
+      "mediana_precio_3amb": 775000,
+      "pct_expensas": 13.8
     },
     {
       "barrio": "Mataderos",
@@ -3303,9 +4190,13 @@
       "mediana_precio_m2": 12889,
       "mediana_costo_total": 740000,
       "n_publicaciones": 35,
+      "n_usd": 0,
+      "n_ars": 35,
+      "pct_usd": 0,
       "mediana_precio_1amb": 440000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 890000
+      "mediana_precio_3amb": 890000,
+      "pct_expensas": 16.8
     },
     {
       "barrio": "Mataderos",
@@ -3314,9 +4205,13 @@
       "mediana_precio_m2": 13284,
       "mediana_costo_total": 665000,
       "n_publicaciones": 38,
+      "n_usd": 0,
+      "n_ars": 38,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 725000
+      "mediana_precio_3amb": 725000,
+      "pct_expensas": 15.6
     },
     {
       "barrio": "Mataderos",
@@ -3325,9 +4220,13 @@
       "mediana_precio_m2": 14875,
       "mediana_costo_total": 731000,
       "n_publicaciones": 28,
+      "n_usd": 1,
+      "n_ars": 27,
+      "pct_usd": 3.6,
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 14.3
     },
     {
       "barrio": "Mataderos",
@@ -3336,9 +4235,13 @@
       "mediana_precio_m2": 14000,
       "mediana_costo_total": 747500,
       "n_publicaciones": 28,
+      "n_usd": 0,
+      "n_ars": 28,
+      "pct_usd": 0,
       "mediana_precio_1amb": 555000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 780000
+      "mediana_precio_3amb": 780000,
+      "pct_expensas": 13.9
     },
     {
       "barrio": "Mataderos",
@@ -3347,9 +4250,13 @@
       "mediana_precio_m2": 13750,
       "mediana_costo_total": 745000,
       "n_publicaciones": 23,
+      "n_usd": 0,
+      "n_ars": 23,
+      "pct_usd": 0,
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 625000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 14.7
     },
     {
       "barrio": "Mataderos",
@@ -3358,9 +4265,13 @@
       "mediana_precio_m2": 14294,
       "mediana_costo_total": 747500,
       "n_publicaciones": 32,
+      "n_usd": 0,
+      "n_ars": 32,
+      "pct_usd": 0,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 740000
+      "mediana_precio_3amb": 740000,
+      "pct_expensas": 15.3
     },
     {
       "barrio": "Mataderos",
@@ -3369,9 +4280,13 @@
       "mediana_precio_m2": 14286,
       "mediana_costo_total": 800000,
       "n_publicaciones": 43,
+      "n_usd": 0,
+      "n_ars": 43,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 980000
+      "mediana_precio_3amb": 980000,
+      "pct_expensas": 15.6
     },
     {
       "barrio": "Monserrat",
@@ -3380,9 +4295,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 680000,
       "n_publicaciones": 162,
+      "n_usd": 23,
+      "n_ars": 139,
+      "pct_usd": 14.2,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 580000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 21.1
     },
     {
       "barrio": "Monserrat",
@@ -3391,9 +4310,13 @@
       "mediana_precio_m2": 13158,
       "mediana_costo_total": 672000,
       "n_publicaciones": 173,
+      "n_usd": 29,
+      "n_ars": 144,
+      "pct_usd": 16.8,
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 881936
+      "mediana_precio_3amb": 881936,
+      "pct_expensas": 21.8
     },
     {
       "barrio": "Monserrat",
@@ -3402,9 +4325,13 @@
       "mediana_precio_m2": 13734,
       "mediana_costo_total": 680000,
       "n_publicaciones": 172,
+      "n_usd": 35,
+      "n_ars": 137,
+      "pct_usd": 20.3,
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 22.7
     },
     {
       "barrio": "Monserrat",
@@ -3413,9 +4340,13 @@
       "mediana_precio_m2": 13158,
       "mediana_costo_total": 742864,
       "n_publicaciones": 164,
+      "n_usd": 29,
+      "n_ars": 135,
+      "pct_usd": 17.7,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 530000,
-      "mediana_precio_3amb": 740000
+      "mediana_precio_3amb": 740000,
+      "pct_expensas": 22.8
     },
     {
       "barrio": "Monserrat",
@@ -3424,9 +4355,13 @@
       "mediana_precio_m2": 13659,
       "mediana_costo_total": 790000,
       "n_publicaciones": 171,
+      "n_usd": 32,
+      "n_ars": 139,
+      "pct_usd": 18.7,
       "mediana_precio_1amb": 525000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 721959
+      "mediana_precio_3amb": 721959,
+      "pct_expensas": 21.6
     },
     {
       "barrio": "Monserrat",
@@ -3435,9 +4370,13 @@
       "mediana_precio_m2": 13889,
       "mediana_costo_total": 770000,
       "n_publicaciones": 183,
+      "n_usd": 23,
+      "n_ars": 160,
+      "pct_usd": 12.6,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 22.2
     },
     {
       "barrio": "Monserrat",
@@ -3446,9 +4385,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 777600,
       "n_publicaciones": 165,
+      "n_usd": 29,
+      "n_ars": 136,
+      "pct_usd": 17.6,
       "mediana_precio_1amb": 563863,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 22.4
     },
     {
       "barrio": "Monserrat",
@@ -3457,9 +4400,13 @@
       "mediana_precio_m2": 15263,
       "mediana_costo_total": 780000,
       "n_publicaciones": 171,
+      "n_usd": 27,
+      "n_ars": 144,
+      "pct_usd": 15.8,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 620000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 22.7
     },
     {
       "barrio": "Monserrat",
@@ -3468,9 +4415,13 @@
       "mediana_precio_m2": 16250,
       "mediana_costo_total": 800000,
       "n_publicaciones": 197,
+      "n_usd": 53,
+      "n_ars": 144,
+      "pct_usd": 26.9,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 925000
+      "mediana_precio_3amb": 925000,
+      "pct_expensas": 23.6
     },
     {
       "barrio": "Monte Castro",
@@ -3479,9 +4430,13 @@
       "mediana_precio_m2": 11681,
       "mediana_costo_total": 655000,
       "n_publicaciones": 40,
+      "n_usd": 0,
+      "n_ars": 40,
+      "pct_usd": 0,
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 570000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 17.9
     },
     {
       "barrio": "Monte Castro",
@@ -3490,9 +4445,13 @@
       "mediana_precio_m2": 12245,
       "mediana_costo_total": 661200,
       "n_publicaciones": 39,
+      "n_usd": 0,
+      "n_ars": 39,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 740000
+      "mediana_precio_3amb": 740000,
+      "pct_expensas": 18
     },
     {
       "barrio": "Monte Castro",
@@ -3501,9 +4460,13 @@
       "mediana_precio_m2": 12857,
       "mediana_costo_total": 700000,
       "n_publicaciones": 53,
+      "n_usd": 0,
+      "n_ars": 53,
+      "pct_usd": 0,
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 725000
+      "mediana_precio_3amb": 725000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Monte Castro",
@@ -3512,9 +4475,13 @@
       "mediana_precio_m2": 12637,
       "mediana_costo_total": 654250,
       "n_publicaciones": 52,
+      "n_usd": 0,
+      "n_ars": 52,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 625000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Monte Castro",
@@ -3523,9 +4490,13 @@
       "mediana_precio_m2": 13636,
       "mediana_costo_total": 700000,
       "n_publicaciones": 43,
+      "n_usd": 0,
+      "n_ars": 43,
+      "pct_usd": 0,
       "mediana_precio_1amb": 460000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 21.8
     },
     {
       "barrio": "Monte Castro",
@@ -3534,9 +4505,13 @@
       "mediana_precio_m2": 13077,
       "mediana_costo_total": 800000,
       "n_publicaciones": 37,
+      "n_usd": 1,
+      "n_ars": 36,
+      "pct_usd": 2.7,
       "mediana_precio_1amb": 455000,
       "mediana_precio_2amb": 690000,
-      "mediana_precio_3amb": 825000
+      "mediana_precio_3amb": 825000,
+      "pct_expensas": 19.3
     },
     {
       "barrio": "Monte Castro",
@@ -3545,9 +4520,13 @@
       "mediana_precio_m2": 14048,
       "mediana_costo_total": 820000,
       "n_publicaciones": 35,
+      "n_usd": 1,
+      "n_ars": 34,
+      "pct_usd": 2.9,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 18.8
     },
     {
       "barrio": "Monte Castro",
@@ -3556,9 +4535,13 @@
       "mediana_precio_m2": 14650,
       "mediana_costo_total": 842500,
       "n_publicaciones": 38,
+      "n_usd": 1,
+      "n_ars": 37,
+      "pct_usd": 2.6,
       "mediana_precio_1amb": 510000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 21.1
     },
     {
       "barrio": "Monte Castro",
@@ -3567,9 +4550,13 @@
       "mediana_precio_m2": 15152,
       "mediana_costo_total": 720000,
       "n_publicaciones": 59,
+      "n_usd": 1,
+      "n_ars": 58,
+      "pct_usd": 1.7,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Nueva Pompeya",
@@ -3578,9 +4565,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 420000,
       "n_publicaciones": 5,
+      "n_usd": 0,
+      "n_ars": 5,
+      "pct_usd": 0,
       "mediana_precio_1amb": 320000,
       "mediana_precio_2amb": 350000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Nueva Pompeya",
@@ -3589,9 +4580,13 @@
       "mediana_precio_m2": 12931,
       "mediana_costo_total": 560000,
       "n_publicaciones": 7,
+      "n_usd": 0,
+      "n_ars": 7,
+      "pct_usd": 0,
       "mediana_precio_1amb": 305000,
       "mediana_precio_2amb": null,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 23.6
     },
     {
       "barrio": "Nueva Pompeya",
@@ -3600,9 +4595,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 495000,
       "n_publicaciones": 6,
+      "n_usd": 0,
+      "n_ars": 6,
+      "pct_usd": 0,
       "mediana_precio_1amb": 260000,
       "mediana_precio_2amb": 450000,
-      "mediana_precio_3amb": 500000
+      "mediana_precio_3amb": 500000,
+      "pct_expensas": 16.8
     },
     {
       "barrio": "Nueva Pompeya",
@@ -3611,9 +4610,13 @@
       "mediana_precio_m2": 14375,
       "mediana_costo_total": 580000,
       "n_publicaciones": 5,
+      "n_usd": 0,
+      "n_ars": 5,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 525000,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 16
     },
     {
       "barrio": "Nueva Pompeya",
@@ -3622,9 +4625,13 @@
       "mediana_precio_m2": 13043,
       "mediana_costo_total": 580000,
       "n_publicaciones": 9,
+      "n_usd": 0,
+      "n_ars": 9,
+      "pct_usd": 0,
       "mediana_precio_1amb": 365000,
       "mediana_precio_2amb": 510000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 17.7
     },
     {
       "barrio": "Nueva Pompeya",
@@ -3633,9 +4640,13 @@
       "mediana_precio_m2": 13043,
       "mediana_costo_total": 706000,
       "n_publicaciones": 5,
+      "n_usd": 0,
+      "n_ars": 5,
+      "pct_usd": 0,
       "mediana_precio_1amb": 280000,
       "mediana_precio_2amb": 560000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 26.1
     },
     {
       "barrio": "Nueva Pompeya",
@@ -3644,9 +4655,13 @@
       "mediana_precio_m2": 15541,
       "mediana_costo_total": 597500,
       "n_publicaciones": 6,
+      "n_usd": 0,
+      "n_ars": 6,
+      "pct_usd": 0,
       "mediana_precio_1amb": 280000,
       "mediana_precio_2amb": 450000,
-      "mediana_precio_3amb": 645000
+      "mediana_precio_3amb": 645000,
+      "pct_expensas": 22
     },
     {
       "barrio": "Nueva Pompeya",
@@ -3655,9 +4670,13 @@
       "mediana_precio_m2": 14865,
       "mediana_costo_total": 672000,
       "n_publicaciones": 9,
+      "n_usd": 0,
+      "n_ars": 9,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 21.8
     },
     {
       "barrio": "Nueva Pompeya",
@@ -3666,9 +4685,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 900000,
       "n_publicaciones": 7,
+      "n_usd": 0,
+      "n_ars": 7,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 875000
+      "mediana_precio_3amb": 875000,
+      "pct_expensas": 16.9
     },
     {
       "barrio": "Nuñez",
@@ -3677,9 +4700,13 @@
       "mediana_precio_m2": 16260,
       "mediana_costo_total": 950000,
       "n_publicaciones": 321,
+      "n_usd": 89,
+      "n_ars": 232,
+      "pct_usd": 27.7,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 770000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 20.4
     },
     {
       "barrio": "Nuñez",
@@ -3688,9 +4715,13 @@
       "mediana_precio_m2": 16438,
       "mediana_costo_total": 960000,
       "n_publicaciones": 332,
+      "n_usd": 97,
+      "n_ars": 235,
+      "pct_usd": 29.2,
       "mediana_precio_1amb": 585000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1400000
+      "mediana_precio_3amb": 1400000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Nuñez",
@@ -3699,9 +4730,13 @@
       "mediana_precio_m2": 17143,
       "mediana_costo_total": 1014000,
       "n_publicaciones": 371,
+      "n_usd": 114,
+      "n_ars": 257,
+      "pct_usd": 30.7,
       "mediana_precio_1amb": 635000,
       "mediana_precio_2amb": 800000,
-      "mediana_precio_3amb": 1400000
+      "mediana_precio_3amb": 1400000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Nuñez",
@@ -3710,9 +4745,13 @@
       "mediana_precio_m2": 17769,
       "mediana_costo_total": 1055985,
       "n_publicaciones": 348,
+      "n_usd": 118,
+      "n_ars": 230,
+      "pct_usd": 33.9,
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 850000,
-      "mediana_precio_3amb": 1500000
+      "mediana_precio_3amb": 1500000,
+      "pct_expensas": 20.7
     },
     {
       "barrio": "Nuñez",
@@ -3721,9 +4760,13 @@
       "mediana_precio_m2": 18226,
       "mediana_costo_total": 1063812,
       "n_publicaciones": 372,
+      "n_usd": 131,
+      "n_ars": 241,
+      "pct_usd": 35.2,
       "mediana_precio_1amb": 651527,
       "mediana_precio_2amb": 850000,
-      "mediana_precio_3amb": 1447838
+      "mediana_precio_3amb": 1447838,
+      "pct_expensas": 20
     },
     {
       "barrio": "Nuñez",
@@ -3732,9 +4775,13 @@
       "mediana_precio_m2": 18182,
       "mediana_costo_total": 1110000,
       "n_publicaciones": 339,
+      "n_usd": 122,
+      "n_ars": 217,
+      "pct_usd": 36,
       "mediana_precio_1amb": 680000,
       "mediana_precio_2amb": 850000,
-      "mediana_precio_3amb": 1475000
+      "mediana_precio_3amb": 1475000,
+      "pct_expensas": 21.2
     },
     {
       "barrio": "Nuñez",
@@ -3743,9 +4790,13 @@
       "mediana_precio_m2": 18795,
       "mediana_costo_total": 1158621,
       "n_publicaciones": 292,
+      "n_usd": 126,
+      "n_ars": 166,
+      "pct_usd": 43.2,
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 950000,
-      "mediana_precio_3amb": 1409657
+      "mediana_precio_3amb": 1409657,
+      "pct_expensas": 21.6
     },
     {
       "barrio": "Nuñez",
@@ -3754,9 +4805,13 @@
       "mediana_precio_m2": 20000,
       "mediana_costo_total": 1270000,
       "n_publicaciones": 293,
+      "n_usd": 118,
+      "n_ars": 175,
+      "pct_usd": 40.3,
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 1000000,
-      "mediana_precio_3amb": 1600000
+      "mediana_precio_3amb": 1600000,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "Nuñez",
@@ -3765,9 +4820,13 @@
       "mediana_precio_m2": 20208,
       "mediana_costo_total": 1295000,
       "n_publicaciones": 383,
+      "n_usd": 166,
+      "n_ars": 217,
+      "pct_usd": 43.3,
       "mediana_precio_1amb": 750000,
       "mediana_precio_2amb": 1000000,
-      "mediana_precio_3amb": 1605790
+      "mediana_precio_3amb": 1605790,
+      "pct_expensas": 21.7
     },
     {
       "barrio": "Palermo",
@@ -3776,9 +4835,13 @@
       "mediana_precio_m2": 16667,
       "mediana_costo_total": 992722,
       "n_publicaciones": 2442,
+      "n_usd": 940,
+      "n_ars": 1502,
+      "pct_usd": 38.5,
       "mediana_precio_1amb": 598292,
       "mediana_precio_2amb": 780000,
-      "mediana_precio_3amb": 1300000
+      "mediana_precio_3amb": 1300000,
+      "pct_expensas": 20.9
     },
     {
       "barrio": "Palermo",
@@ -3787,9 +4850,13 @@
       "mediana_precio_m2": 17178,
       "mediana_costo_total": 1010000,
       "n_publicaciones": 2410,
+      "n_usd": 925,
+      "n_ars": 1485,
+      "pct_usd": 38.4,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 790000,
-      "mediana_precio_3amb": 1329903
+      "mediana_precio_3amb": 1329903,
+      "pct_expensas": 21
     },
     {
       "barrio": "Palermo",
@@ -3798,9 +4865,13 @@
       "mediana_precio_m2": 17708,
       "mediana_costo_total": 1045000,
       "n_publicaciones": 2228,
+      "n_usd": 889,
+      "n_ars": 1339,
+      "pct_usd": 39.9,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 850000,
-      "mediana_precio_3amb": 1300000
+      "mediana_precio_3amb": 1300000,
+      "pct_expensas": 20.9
     },
     {
       "barrio": "Palermo",
@@ -3809,9 +4880,13 @@
       "mediana_precio_m2": 17857,
       "mediana_costo_total": 1055571,
       "n_publicaciones": 2096,
+      "n_usd": 830,
+      "n_ars": 1266,
+      "pct_usd": 39.6,
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 850000,
-      "mediana_precio_3amb": 1400000
+      "mediana_precio_3amb": 1400000,
+      "pct_expensas": 21.3
     },
     {
       "barrio": "Palermo",
@@ -3820,9 +4895,13 @@
       "mediana_precio_m2": 18492,
       "mediana_costo_total": 1076095,
       "n_publicaciones": 2084,
+      "n_usd": 814,
+      "n_ars": 1270,
+      "pct_usd": 39.1,
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 820000,
-      "mediana_precio_3amb": 1433359
+      "mediana_precio_3amb": 1433359,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "Palermo",
@@ -3831,9 +4910,13 @@
       "mediana_precio_m2": 18966,
       "mediana_costo_total": 1102068,
       "n_publicaciones": 2009,
+      "n_usd": 823,
+      "n_ars": 1186,
+      "pct_usd": 41,
       "mediana_precio_1amb": 680000,
       "mediana_precio_2amb": 850000,
-      "mediana_precio_3amb": 1449335
+      "mediana_precio_3amb": 1449335,
+      "pct_expensas": 21.2
     },
     {
       "barrio": "Palermo",
@@ -3842,9 +4925,13 @@
       "mediana_precio_m2": 19796,
       "mediana_costo_total": 1168621,
       "n_publicaciones": 1790,
+      "n_usd": 794,
+      "n_ars": 996,
+      "pct_usd": 44.4,
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 900000,
-      "mediana_precio_3amb": 1600000
+      "mediana_precio_3amb": 1600000,
+      "pct_expensas": 21.3
     },
     {
       "barrio": "Palermo",
@@ -3853,9 +4940,13 @@
       "mediana_precio_m2": 20000,
       "mediana_costo_total": 1240000,
       "n_publicaciones": 1829,
+      "n_usd": 795,
+      "n_ars": 1034,
+      "pct_usd": 43.5,
       "mediana_precio_1amb": 700000,
       "mediana_precio_2amb": 900000,
-      "mediana_precio_3amb": 1535973
+      "mediana_precio_3amb": 1535973,
+      "pct_expensas": 21.3
     },
     {
       "barrio": "Palermo",
@@ -3864,9 +4955,13 @@
       "mediana_precio_m2": 21373,
       "mediana_costo_total": 1267071,
       "n_publicaciones": 2309,
+      "n_usd": 1122,
+      "n_ars": 1187,
+      "pct_usd": 48.6,
       "mediana_precio_1amb": 767986,
       "mediana_precio_2amb": 1000000,
-      "mediana_precio_3amb": 1675606
+      "mediana_precio_3amb": 1675606,
+      "pct_expensas": 20.8
     },
     {
       "barrio": "Parque Avellaneda",
@@ -3875,9 +4970,13 @@
       "mediana_precio_m2": 12002,
       "mediana_costo_total": 576850,
       "n_publicaciones": 12,
+      "n_usd": 0,
+      "n_ars": 12,
+      "pct_usd": 0,
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 635000
+      "mediana_precio_3amb": 635000,
+      "pct_expensas": 15.6
     },
     {
       "barrio": "Parque Avellaneda",
@@ -3886,9 +4985,13 @@
       "mediana_precio_m2": 11962,
       "mediana_costo_total": 730500,
       "n_publicaciones": 20,
+      "n_usd": 0,
+      "n_ars": 20,
+      "pct_usd": 0,
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 590000,
-      "mediana_precio_3amb": 650000
+      "mediana_precio_3amb": 650000,
+      "pct_expensas": 16.6
     },
     {
       "barrio": "Parque Avellaneda",
@@ -3897,9 +5000,13 @@
       "mediana_precio_m2": 12005,
       "mediana_costo_total": 690000,
       "n_publicaciones": 16,
+      "n_usd": 0,
+      "n_ars": 16,
+      "pct_usd": 0,
       "mediana_precio_1amb": 505000,
       "mediana_precio_2amb": 580000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 16.3
     },
     {
       "barrio": "Parque Avellaneda",
@@ -3908,9 +5015,13 @@
       "mediana_precio_m2": 12979,
       "mediana_costo_total": 653000,
       "n_publicaciones": 18,
+      "n_usd": 0,
+      "n_ars": 18,
+      "pct_usd": 0,
       "mediana_precio_1amb": 460000,
       "mediana_precio_2amb": 570000,
-      "mediana_precio_3amb": 825000
+      "mediana_precio_3amb": 825000,
+      "pct_expensas": 16.2
     },
     {
       "barrio": "Parque Avellaneda",
@@ -3919,9 +5030,13 @@
       "mediana_precio_m2": 12681,
       "mediana_costo_total": 775000,
       "n_publicaciones": 22,
+      "n_usd": 0,
+      "n_ars": 22,
+      "pct_usd": 0,
       "mediana_precio_1amb": 465000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 20.6
     },
     {
       "barrio": "Parque Avellaneda",
@@ -3930,9 +5045,13 @@
       "mediana_precio_m2": 13467,
       "mediana_costo_total": 762500,
       "n_publicaciones": 22,
+      "n_usd": 0,
+      "n_ars": 22,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 18
     },
     {
       "barrio": "Parque Avellaneda",
@@ -3941,9 +5060,13 @@
       "mediana_precio_m2": 13875,
       "mediana_costo_total": 777500,
       "n_publicaciones": 14,
+      "n_usd": 0,
+      "n_ars": 14,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 620000,
-      "mediana_precio_3amb": 725000
+      "mediana_precio_3amb": 725000,
+      "pct_expensas": 23.9
     },
     {
       "barrio": "Parque Avellaneda",
@@ -3952,9 +5075,13 @@
       "mediana_precio_m2": 13875,
       "mediana_costo_total": 790000,
       "n_publicaciones": 14,
+      "n_usd": 0,
+      "n_ars": 14,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 580000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 21
     },
     {
       "barrio": "Parque Avellaneda",
@@ -3963,9 +5090,13 @@
       "mediana_precio_m2": 13750,
       "mediana_costo_total": 740000,
       "n_publicaciones": 26,
+      "n_usd": 0,
+      "n_ars": 26,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 660000,
-      "mediana_precio_3amb": 780000
+      "mediana_precio_3amb": 780000,
+      "pct_expensas": 20.4
     },
     {
       "barrio": "Parque Chacabuco",
@@ -3974,9 +5105,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 734500,
       "n_publicaciones": 70,
+      "n_usd": 1,
+      "n_ars": 69,
+      "pct_usd": 1.4,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 21.1
     },
     {
       "barrio": "Parque Chacabuco",
@@ -3985,9 +5120,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 750000,
       "n_publicaciones": 73,
+      "n_usd": 0,
+      "n_ars": 73,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 565000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 21.2
     },
     {
       "barrio": "Parque Chacabuco",
@@ -3996,9 +5135,13 @@
       "mediana_precio_m2": 12679,
       "mediana_costo_total": 728710,
       "n_publicaciones": 104,
+      "n_usd": 3,
+      "n_ars": 101,
+      "pct_usd": 2.9,
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 770000
+      "mediana_precio_3amb": 770000,
+      "pct_expensas": 23
     },
     {
       "barrio": "Parque Chacabuco",
@@ -4007,9 +5150,13 @@
       "mediana_precio_m2": 13079,
       "mediana_costo_total": 750375,
       "n_publicaciones": 90,
+      "n_usd": 3,
+      "n_ars": 87,
+      "pct_usd": 3.3,
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 810000
+      "mediana_precio_3amb": 810000,
+      "pct_expensas": 24.7
     },
     {
       "barrio": "Parque Chacabuco",
@@ -4018,9 +5165,13 @@
       "mediana_precio_m2": 13667,
       "mediana_costo_total": 752000,
       "n_publicaciones": 79,
+      "n_usd": 1,
+      "n_ars": 78,
+      "pct_usd": 1.3,
       "mediana_precio_1amb": 495000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 795000
+      "mediana_precio_3amb": 795000,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "Parque Chacabuco",
@@ -4029,9 +5180,13 @@
       "mediana_precio_m2": 14444,
       "mediana_costo_total": 783150,
       "n_publicaciones": 77,
+      "n_usd": 3,
+      "n_ars": 74,
+      "pct_usd": 3.9,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 685000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22.4
     },
     {
       "barrio": "Parque Chacabuco",
@@ -4040,9 +5195,13 @@
       "mediana_precio_m2": 15111,
       "mediana_costo_total": 820000,
       "n_publicaciones": 81,
+      "n_usd": 6,
+      "n_ars": 75,
+      "pct_usd": 7.4,
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22.1
     },
     {
       "barrio": "Parque Chacabuco",
@@ -4051,9 +5210,13 @@
       "mediana_precio_m2": 15116,
       "mediana_costo_total": 870000,
       "n_publicaciones": 81,
+      "n_usd": 7,
+      "n_ars": 74,
+      "pct_usd": 8.6,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 722500,
-      "mediana_precio_3amb": 995000
+      "mediana_precio_3amb": 995000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Parque Chacabuco",
@@ -4062,9 +5225,13 @@
       "mediana_precio_m2": 15385,
       "mediana_costo_total": 780000,
       "n_publicaciones": 72,
+      "n_usd": 2,
+      "n_ars": 70,
+      "pct_usd": 2.8,
       "mediana_precio_1amb": 565000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 21.7
     },
     {
       "barrio": "Parque Chas",
@@ -4073,9 +5240,13 @@
       "mediana_precio_m2": 14688,
       "mediana_costo_total": 660000,
       "n_publicaciones": 15,
+      "n_usd": 0,
+      "n_ars": 15,
+      "pct_usd": 0,
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 680000,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 16.3
     },
     {
       "barrio": "Parque Chas",
@@ -4084,9 +5255,13 @@
       "mediana_precio_m2": 14962,
       "mediana_costo_total": 645500,
       "n_publicaciones": 18,
+      "n_usd": 0,
+      "n_ars": 18,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 630000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 21.1
     },
     {
       "barrio": "Parque Chas",
@@ -4095,9 +5270,13 @@
       "mediana_precio_m2": 15244,
       "mediana_costo_total": 666500,
       "n_publicaciones": 20,
+      "n_usd": 0,
+      "n_ars": 20,
+      "pct_usd": 0,
       "mediana_precio_1amb": 535000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 17.4
     },
     {
       "barrio": "Parque Chas",
@@ -4106,9 +5285,13 @@
       "mediana_precio_m2": 14929,
       "mediana_costo_total": 697500,
       "n_publicaciones": 32,
+      "n_usd": 0,
+      "n_ars": 32,
+      "pct_usd": 0,
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 725000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 18.8
     },
     {
       "barrio": "Parque Chas",
@@ -4117,9 +5300,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 710000,
       "n_publicaciones": 31,
+      "n_usd": 0,
+      "n_ars": 31,
+      "pct_usd": 0,
       "mediana_precio_1amb": 570000,
       "mediana_precio_2amb": 715000,
-      "mediana_precio_3amb": 1050000
+      "mediana_precio_3amb": 1050000,
+      "pct_expensas": 19.4
     },
     {
       "barrio": "Parque Chas",
@@ -4128,9 +5315,13 @@
       "mediana_precio_m2": 15976,
       "mediana_costo_total": 730000,
       "n_publicaciones": 30,
+      "n_usd": 2,
+      "n_ars": 28,
+      "pct_usd": 6.7,
       "mediana_precio_1amb": 510000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Parque Chas",
@@ -4139,9 +5330,13 @@
       "mediana_precio_m2": 15789,
       "mediana_costo_total": 760000,
       "n_publicaciones": 25,
+      "n_usd": 3,
+      "n_ars": 22,
+      "pct_usd": 12,
       "mediana_precio_1amb": 556931,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 21.3
     },
     {
       "barrio": "Parque Chas",
@@ -4150,9 +5345,13 @@
       "mediana_precio_m2": 16847,
       "mediana_costo_total": 780000,
       "n_publicaciones": 40,
+      "n_usd": 0,
+      "n_ars": 40,
+      "pct_usd": 0,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 740000,
-      "mediana_precio_3amb": 1050000
+      "mediana_precio_3amb": 1050000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Parque Chas",
@@ -4161,9 +5360,13 @@
       "mediana_precio_m2": 16981,
       "mediana_costo_total": 800000,
       "n_publicaciones": 43,
+      "n_usd": 3,
+      "n_ars": 40,
+      "pct_usd": 7,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 740000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 21.4
     },
     {
       "barrio": "Parque Patricios",
@@ -4172,9 +5375,13 @@
       "mediana_precio_m2": 11842,
       "mediana_costo_total": 687600,
       "n_publicaciones": 51,
+      "n_usd": 0,
+      "n_ars": 51,
+      "pct_usd": 0,
       "mediana_precio_1amb": 430000,
       "mediana_precio_2amb": 575000,
-      "mediana_precio_3amb": 600000
+      "mediana_precio_3amb": 600000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Parque Patricios",
@@ -4183,9 +5390,13 @@
       "mediana_precio_m2": 12055,
       "mediana_costo_total": 707000,
       "n_publicaciones": 52,
+      "n_usd": 0,
+      "n_ars": 52,
+      "pct_usd": 0,
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 590000,
-      "mediana_precio_3amb": 650000
+      "mediana_precio_3amb": 650000,
+      "pct_expensas": 18.7
     },
     {
       "barrio": "Parque Patricios",
@@ -4194,9 +5405,13 @@
       "mediana_precio_m2": 12000,
       "mediana_costo_total": 745000,
       "n_publicaciones": 55,
+      "n_usd": 4,
+      "n_ars": 51,
+      "pct_usd": 7.3,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 580000,
-      "mediana_precio_3amb": 650000
+      "mediana_precio_3amb": 650000,
+      "pct_expensas": 21
     },
     {
       "barrio": "Parque Patricios",
@@ -4205,9 +5420,13 @@
       "mediana_precio_m2": 12785,
       "mediana_costo_total": 734000,
       "n_publicaciones": 46,
+      "n_usd": 3,
+      "n_ars": 43,
+      "pct_usd": 6.5,
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 571047,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Parque Patricios",
@@ -4216,9 +5435,13 @@
       "mediana_precio_m2": 13165,
       "mediana_costo_total": 707500,
       "n_publicaciones": 50,
+      "n_usd": 1,
+      "n_ars": 49,
+      "pct_usd": 2,
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 18.2
     },
     {
       "barrio": "Parque Patricios",
@@ -4227,9 +5450,13 @@
       "mediana_precio_m2": 13235,
       "mediana_costo_total": 764000,
       "n_publicaciones": 53,
+      "n_usd": 0,
+      "n_ars": 53,
+      "pct_usd": 0,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 620000,
-      "mediana_precio_3amb": 775000
+      "mediana_precio_3amb": 775000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Parque Patricios",
@@ -4238,9 +5465,13 @@
       "mediana_precio_m2": 14286,
       "mediana_costo_total": 711500,
       "n_publicaciones": 42,
+      "n_usd": 1,
+      "n_ars": 41,
+      "pct_usd": 2.4,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 20.2
     },
     {
       "barrio": "Parque Patricios",
@@ -4249,9 +5480,13 @@
       "mediana_precio_m2": 14365,
       "mediana_costo_total": 728000,
       "n_publicaciones": 44,
+      "n_usd": 2,
+      "n_ars": 42,
+      "pct_usd": 4.5,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 825000
+      "mediana_precio_3amb": 825000,
+      "pct_expensas": 20.1
     },
     {
       "barrio": "Parque Patricios",
@@ -4260,9 +5495,13 @@
       "mediana_precio_m2": 16265,
       "mediana_costo_total": 750000,
       "n_publicaciones": 54,
+      "n_usd": 1,
+      "n_ars": 53,
+      "pct_usd": 1.9,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Paternal",
@@ -4271,9 +5510,13 @@
       "mediana_precio_m2": 13333,
       "mediana_costo_total": 645000,
       "n_publicaciones": 55,
+      "n_usd": 1,
+      "n_ars": 54,
+      "pct_usd": 1.8,
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 525000,
-      "mediana_precio_3amb": 755000
+      "mediana_precio_3amb": 755000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Paternal",
@@ -4282,9 +5525,13 @@
       "mediana_precio_m2": 12745,
       "mediana_costo_total": 720000,
       "n_publicaciones": 49,
+      "n_usd": 1,
+      "n_ars": 48,
+      "pct_usd": 2,
       "mediana_precio_1amb": 499500,
       "mediana_precio_2amb": 570000,
-      "mediana_precio_3amb": 780000
+      "mediana_precio_3amb": 780000,
+      "pct_expensas": 18
     },
     {
       "barrio": "Paternal",
@@ -4293,9 +5540,13 @@
       "mediana_precio_m2": 13183,
       "mediana_costo_total": 725000,
       "n_publicaciones": 66,
+      "n_usd": 1,
+      "n_ars": 65,
+      "pct_usd": 1.5,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 575000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 19.5
     },
     {
       "barrio": "Paternal",
@@ -4304,9 +5555,13 @@
       "mediana_precio_m2": 13714,
       "mediana_costo_total": 720000,
       "n_publicaciones": 55,
+      "n_usd": 1,
+      "n_ars": 54,
+      "pct_usd": 1.8,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 620000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 19
     },
     {
       "barrio": "Paternal",
@@ -4315,9 +5570,13 @@
       "mediana_precio_m2": 14202,
       "mediana_costo_total": 720763,
       "n_publicaciones": 66,
+      "n_usd": 3,
+      "n_ars": 63,
+      "pct_usd": 4.5,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 790000
+      "mediana_precio_3amb": 790000,
+      "pct_expensas": 21
     },
     {
       "barrio": "Paternal",
@@ -4326,9 +5585,13 @@
       "mediana_precio_m2": 13944,
       "mediana_costo_total": 663000,
       "n_publicaciones": 50,
+      "n_usd": 2,
+      "n_ars": 48,
+      "pct_usd": 4,
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 580000,
-      "mediana_precio_3amb": 780000
+      "mediana_precio_3amb": 780000,
+      "pct_expensas": 20.6
     },
     {
       "barrio": "Paternal",
@@ -4337,9 +5600,13 @@
       "mediana_precio_m2": 14065,
       "mediana_costo_total": 770000,
       "n_publicaciones": 62,
+      "n_usd": 5,
+      "n_ars": 57,
+      "pct_usd": 8.1,
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22.8
     },
     {
       "barrio": "Paternal",
@@ -4348,9 +5615,13 @@
       "mediana_precio_m2": 15116,
       "mediana_costo_total": 770000,
       "n_publicaciones": 65,
+      "n_usd": 2,
+      "n_ars": 63,
+      "pct_usd": 3.1,
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 22.3
     },
     {
       "barrio": "Paternal",
@@ -4359,9 +5630,13 @@
       "mediana_precio_m2": 15339,
       "mediana_costo_total": 740000,
       "n_publicaciones": 50,
+      "n_usd": 2,
+      "n_ars": 48,
+      "pct_usd": 4,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22
     },
     {
       "barrio": "Puerto Madero",
@@ -4370,9 +5645,13 @@
       "mediana_precio_m2": 30501,
       "mediana_costo_total": 4023844,
       "n_publicaciones": 365,
+      "n_usd": 353,
+      "n_ars": 12,
+      "pct_usd": 96.7,
       "mediana_precio_1amb": 1462491,
       "mediana_precio_2amb": 2260214,
-      "mediana_precio_3amb": 4121566
+      "mediana_precio_3amb": 4121566,
+      "pct_expensas": 22
     },
     {
       "barrio": "Puerto Madero",
@@ -4381,9 +5660,13 @@
       "mediana_precio_m2": 33088,
       "mediana_costo_total": 4299744,
       "n_publicaciones": 413,
+      "n_usd": 399,
+      "n_ars": 14,
+      "pct_usd": 96.6,
       "mediana_precio_1amb": 1399898,
       "mediana_precio_2amb": 2659806,
-      "mediana_precio_3amb": 4619662
+      "mediana_precio_3amb": 4619662,
+      "pct_expensas": 20.5
     },
     {
       "barrio": "Puerto Madero",
@@ -4392,9 +5675,13 @@
       "mediana_precio_m2": 32732,
       "mediana_costo_total": 4193652,
       "n_publicaciones": 427,
+      "n_usd": 415,
+      "n_ars": 12,
+      "pct_usd": 97.2,
       "mediana_precio_1amb": 1317461,
       "mediana_precio_2amb": 2720843,
-      "mediana_precio_3amb": 4546672
+      "mediana_precio_3amb": 4546672,
+      "pct_expensas": 20.9
     },
     {
       "barrio": "Puerto Madero",
@@ -4403,9 +5690,13 @@
       "mediana_precio_m2": 33311,
       "mediana_costo_total": 4169044,
       "n_publicaciones": 409,
+      "n_usd": 396,
+      "n_ars": 13,
+      "pct_usd": 96.8,
       "mediana_precio_1amb": 1399065,
       "mediana_precio_2amb": 2605402,
-      "mediana_precio_3amb": 4282853
+      "mediana_precio_3amb": 4282853,
+      "pct_expensas": 21
     },
     {
       "barrio": "Puerto Madero",
@@ -4414,9 +5705,13 @@
       "mediana_precio_m2": 34201,
       "mediana_costo_total": 3869594,
       "n_publicaciones": 433,
+      "n_usd": 418,
+      "n_ars": 15,
+      "pct_usd": 96.5,
       "mediana_precio_1amb": 1447838,
       "mediana_precio_2amb": 2316540,
-      "mediana_precio_3amb": 4343513
+      "mediana_precio_3amb": 4343513,
+      "pct_expensas": 20.2
     },
     {
       "barrio": "Puerto Madero",
@@ -4425,9 +5720,13 @@
       "mediana_precio_m2": 34508,
       "mediana_costo_total": 3738536,
       "n_publicaciones": 497,
+      "n_usd": 484,
+      "n_ars": 13,
+      "pct_usd": 97.4,
       "mediana_precio_1amb": 1376868,
       "mediana_precio_2amb": 2608802,
-      "mediana_precio_3amb": 4348004
+      "mediana_precio_3amb": 4348004,
+      "pct_expensas": 19.7
     },
     {
       "barrio": "Puerto Madero",
@@ -4436,9 +5735,13 @@
       "mediana_precio_m2": 33675,
       "mediana_costo_total": 3957246,
       "n_publicaciones": 474,
+      "n_usd": 465,
+      "n_ars": 9,
+      "pct_usd": 98.1,
       "mediana_precio_1amb": 1409657,
       "mediana_precio_2amb": 2537383,
-      "mediana_precio_3amb": 4228971
+      "mediana_precio_3amb": 4228971,
+      "pct_expensas": 21.3
     },
     {
       "barrio": "Puerto Madero",
@@ -4447,9 +5750,13 @@
       "mediana_precio_m2": 33357,
       "mediana_costo_total": 3751213,
       "n_publicaciones": 488,
+      "n_usd": 474,
+      "n_ars": 14,
+      "pct_usd": 97.1,
       "mediana_precio_1amb": 1396339,
       "mediana_precio_2amb": 2234142,
-      "mediana_precio_3amb": 4189016
+      "mediana_precio_3amb": 4189016,
+      "pct_expensas": 20.8
     },
     {
       "barrio": "Puerto Madero",
@@ -4458,9 +5765,13 @@
       "mediana_precio_m2": 35440,
       "mediana_costo_total": 3411579,
       "n_publicaciones": 719,
+      "n_usd": 702,
+      "n_ars": 17,
+      "pct_usd": 97.6,
       "mediana_precio_1amb": 1535973,
       "mediana_precio_2amb": 2653044,
-      "mediana_precio_3amb": 4468284
+      "mediana_precio_3amb": 4468284,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "Recoleta",
@@ -4469,9 +5780,13 @@
       "mediana_precio_m2": 14583,
       "mediana_costo_total": 912722,
       "n_publicaciones": 1551,
+      "n_usd": 487,
+      "n_ars": 1064,
+      "pct_usd": 31.4,
       "mediana_precio_1amb": 462500,
       "mediana_precio_2amb": 624883,
-      "mediana_precio_3amb": 1063630
+      "mediana_precio_3amb": 1063630,
+      "pct_expensas": 22.7
     },
     {
       "barrio": "Recoleta",
@@ -4480,9 +5795,13 @@
       "mediana_precio_m2": 14999,
       "mediana_costo_total": 899949,
       "n_publicaciones": 1623,
+      "n_usd": 492,
+      "n_ars": 1131,
+      "pct_usd": 30.3,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 620000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 22.7
     },
     {
       "barrio": "Recoleta",
@@ -4491,9 +5810,13 @@
       "mediana_precio_m2": 15556,
       "mediana_costo_total": 940000,
       "n_publicaciones": 1659,
+      "n_usd": 541,
+      "n_ars": 1118,
+      "pct_usd": 32.6,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 22.6
     },
     {
       "barrio": "Recoleta",
@@ -4502,9 +5825,13 @@
       "mediana_precio_m2": 15714,
       "mediana_costo_total": 960000,
       "n_publicaciones": 1591,
+      "n_usd": 530,
+      "n_ars": 1061,
+      "pct_usd": 33.3,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 22.8
     },
     {
       "barrio": "Recoleta",
@@ -4513,9 +5840,13 @@
       "mediana_precio_m2": 16153,
       "mediana_costo_total": 1019351,
       "n_publicaciones": 1482,
+      "n_usd": 498,
+      "n_ars": 984,
+      "pct_usd": 33.6,
       "mediana_precio_1amb": 540000,
       "mediana_precio_2amb": 690000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 23
     },
     {
       "barrio": "Recoleta",
@@ -4524,9 +5855,13 @@
       "mediana_precio_m2": 17044,
       "mediana_costo_total": 1057300,
       "n_publicaciones": 1500,
+      "n_usd": 544,
+      "n_ars": 956,
+      "pct_usd": 36.3,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1231934
+      "mediana_precio_3amb": 1231934,
+      "pct_expensas": 23
     },
     {
       "barrio": "Recoleta",
@@ -4535,9 +5870,13 @@
       "mediana_precio_m2": 17567,
       "mediana_costo_total": 1073000,
       "n_publicaciones": 1358,
+      "n_usd": 515,
+      "n_ars": 843,
+      "pct_usd": 37.9,
       "mediana_precio_1amb": 563863,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1300000
+      "mediana_precio_3amb": 1300000,
+      "pct_expensas": 23.1
     },
     {
       "barrio": "Recoleta",
@@ -4546,9 +5885,13 @@
       "mediana_precio_m2": 17775,
       "mediana_costo_total": 1123000,
       "n_publicaciones": 1330,
+      "n_usd": 494,
+      "n_ars": 836,
+      "pct_usd": 37.1,
       "mediana_precio_1amb": 580000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1396339
+      "mediana_precio_3amb": 1396339,
+      "pct_expensas": 23.4
     },
     {
       "barrio": "Recoleta",
@@ -4557,9 +5900,13 @@
       "mediana_precio_m2": 18718,
       "mediana_costo_total": 1186888,
       "n_publicaciones": 1429,
+      "n_usd": 591,
+      "n_ars": 838,
+      "pct_usd": 41.4,
       "mediana_precio_1amb": 620000,
       "mediana_precio_2amb": 790000,
-      "mediana_precio_3amb": 1450000
+      "mediana_precio_3amb": 1450000,
+      "pct_expensas": 22.7
     },
     {
       "barrio": "Retiro",
@@ -4568,9 +5915,13 @@
       "mediana_precio_m2": 14062,
       "mediana_costo_total": 897961,
       "n_publicaciones": 264,
+      "n_usd": 102,
+      "n_ars": 162,
+      "pct_usd": 38.6,
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 560000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 25.1
     },
     {
       "barrio": "Retiro",
@@ -4579,9 +5930,13 @@
       "mediana_precio_m2": 15200,
       "mediana_costo_total": 996443,
       "n_publicaciones": 290,
+      "n_usd": 126,
+      "n_ars": 164,
+      "pct_usd": 43.4,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 639977,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 25
     },
     {
       "barrio": "Retiro",
@@ -4590,9 +5945,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 1070000,
       "n_publicaciones": 290,
+      "n_usd": 133,
+      "n_ars": 157,
+      "pct_usd": 45.9,
       "mediana_precio_1amb": 570000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1145618
+      "mediana_precio_3amb": 1145618,
+      "pct_expensas": 24.5
     },
     {
       "barrio": "Retiro",
@@ -4601,9 +5960,13 @@
       "mediana_precio_m2": 15516,
       "mediana_costo_total": 1110000,
       "n_publicaciones": 272,
+      "n_usd": 130,
+      "n_ars": 142,
+      "pct_usd": 47.8,
       "mediana_precio_1amb": 585524,
       "mediana_precio_2amb": 636214,
-      "mediana_precio_3amb": 1075357
+      "mediana_precio_3amb": 1075357,
+      "pct_expensas": 25.3
     },
     {
       "barrio": "Retiro",
@@ -4612,9 +5975,13 @@
       "mediana_precio_m2": 16087,
       "mediana_costo_total": 1140000,
       "n_publicaciones": 259,
+      "n_usd": 125,
+      "n_ars": 134,
+      "pct_usd": 48.3,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 26.8
     },
     {
       "barrio": "Retiro",
@@ -4623,9 +5990,13 @@
       "mediana_precio_m2": 16408,
       "mediana_costo_total": 1124667,
       "n_publicaciones": 243,
+      "n_usd": 112,
+      "n_ars": 131,
+      "pct_usd": 46.1,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 25.9
     },
     {
       "barrio": "Retiro",
@@ -4634,9 +6005,13 @@
       "mediana_precio_m2": 16667,
       "mediana_costo_total": 1220000,
       "n_publicaciones": 239,
+      "n_usd": 116,
+      "n_ars": 123,
+      "pct_usd": 48.5,
       "mediana_precio_1amb": 634346,
       "mediana_precio_2amb": 702414,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 25
     },
     {
       "barrio": "Retiro",
@@ -4645,9 +6020,13 @@
       "mediana_precio_m2": 16667,
       "mediana_costo_total": 1223627,
       "n_publicaciones": 220,
+      "n_usd": 100,
+      "n_ars": 120,
+      "pct_usd": 45.5,
       "mediana_precio_1amb": 628352,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1180000
+      "mediana_precio_3amb": 1180000,
+      "pct_expensas": 25
     },
     {
       "barrio": "Retiro",
@@ -4656,9 +6035,13 @@
       "mediana_precio_m2": 17731,
       "mediana_costo_total": 1157447,
       "n_publicaciones": 281,
+      "n_usd": 137,
+      "n_ars": 144,
+      "pct_usd": 48.8,
       "mediana_precio_1amb": 674085,
       "mediana_precio_2amb": 778993,
-      "mediana_precio_3amb": 1280000
+      "mediana_precio_3amb": 1280000,
+      "pct_expensas": 25
     },
     {
       "barrio": "Saavedra",
@@ -4667,9 +6050,13 @@
       "mediana_precio_m2": 14444,
       "mediana_costo_total": 843000,
       "n_publicaciones": 78,
+      "n_usd": 8,
+      "n_ars": 70,
+      "pct_usd": 10.3,
       "mediana_precio_1amb": 575000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1025000
+      "mediana_precio_3amb": 1025000,
+      "pct_expensas": 17.1
     },
     {
       "barrio": "Saavedra",
@@ -4678,9 +6065,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 870000,
       "n_publicaciones": 105,
+      "n_usd": 9,
+      "n_ars": 96,
+      "pct_usd": 8.6,
       "mediana_precio_1amb": 595000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 975000
+      "mediana_precio_3amb": 975000,
+      "pct_expensas": 17
     },
     {
       "barrio": "Saavedra",
@@ -4689,9 +6080,13 @@
       "mediana_precio_m2": 15691,
       "mediana_costo_total": 928708,
       "n_publicaciones": 130,
+      "n_usd": 16,
+      "n_ars": 114,
+      "pct_usd": 12.3,
       "mediana_precio_1amb": 625000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 16.6
     },
     {
       "barrio": "Saavedra",
@@ -4700,9 +6095,13 @@
       "mediana_precio_m2": 16216,
       "mediana_costo_total": 868708,
       "n_publicaciones": 128,
+      "n_usd": 13,
+      "n_ars": 115,
+      "pct_usd": 10.2,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 715000,
-      "mediana_precio_3amb": 1000000
+      "mediana_precio_3amb": 1000000,
+      "pct_expensas": 17.3
     },
     {
       "barrio": "Saavedra",
@@ -4711,9 +6110,13 @@
       "mediana_precio_m2": 15625,
       "mediana_costo_total": 890000,
       "n_publicaciones": 116,
+      "n_usd": 16,
+      "n_ars": 100,
+      "pct_usd": 13.8,
       "mediana_precio_1amb": 612500,
       "mediana_precio_2amb": 740000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 17.2
     },
     {
       "barrio": "Saavedra",
@@ -4722,9 +6125,13 @@
       "mediana_precio_m2": 16364,
       "mediana_costo_total": 900000,
       "n_publicaciones": 105,
+      "n_usd": 11,
+      "n_ars": 94,
+      "pct_usd": 10.5,
       "mediana_precio_1amb": 676100,
       "mediana_precio_2amb": 800000,
-      "mediana_precio_3amb": 1000000
+      "mediana_precio_3amb": 1000000,
+      "pct_expensas": 16.9
     },
     {
       "barrio": "Saavedra",
@@ -4733,9 +6140,13 @@
       "mediana_precio_m2": 17000,
       "mediana_costo_total": 915000,
       "n_publicaciones": 93,
+      "n_usd": 11,
+      "n_ars": 82,
+      "pct_usd": 11.8,
       "mediana_precio_1amb": 665000,
       "mediana_precio_2amb": 825000,
-      "mediana_precio_3amb": 975000
+      "mediana_precio_3amb": 975000,
+      "pct_expensas": 18.6
     },
     {
       "barrio": "Saavedra",
@@ -4744,9 +6155,13 @@
       "mediana_precio_m2": 17324,
       "mediana_costo_total": 924085,
       "n_publicaciones": 94,
+      "n_usd": 13,
+      "n_ars": 81,
+      "pct_usd": 13.8,
       "mediana_precio_1amb": 655000,
       "mediana_precio_2amb": 875000,
-      "mediana_precio_3amb": 1150000
+      "mediana_precio_3amb": 1150000,
+      "pct_expensas": 19.5
     },
     {
       "barrio": "Saavedra",
@@ -4755,9 +6170,13 @@
       "mediana_precio_m2": 17426,
       "mediana_costo_total": 884938,
       "n_publicaciones": 120,
+      "n_usd": 17,
+      "n_ars": 103,
+      "pct_usd": 14.2,
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 850000,
-      "mediana_precio_3amb": 1363261
+      "mediana_precio_3amb": 1363261,
+      "pct_expensas": 18.8
     },
     {
       "barrio": "San Cristobal",
@@ -4766,9 +6185,13 @@
       "mediana_precio_m2": 12153,
       "mediana_costo_total": 595000,
       "n_publicaciones": 144,
+      "n_usd": 1,
+      "n_ars": 143,
+      "pct_usd": 0.7,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 720000
+      "mediana_precio_3amb": 720000,
+      "pct_expensas": 22.2
     },
     {
       "barrio": "San Cristobal",
@@ -4777,9 +6200,13 @@
       "mediana_precio_m2": 12180,
       "mediana_costo_total": 620000,
       "n_publicaciones": 144,
+      "n_usd": 6,
+      "n_ars": 138,
+      "pct_usd": 4.2,
       "mediana_precio_1amb": 455000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 24
     },
     {
       "barrio": "San Cristobal",
@@ -4788,9 +6215,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 661500,
       "n_publicaciones": 146,
+      "n_usd": 4,
+      "n_ars": 142,
+      "pct_usd": 2.7,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 24.3
     },
     {
       "barrio": "San Cristobal",
@@ -4799,9 +6230,13 @@
       "mediana_precio_m2": 12638,
       "mediana_costo_total": 647500,
       "n_publicaciones": 150,
+      "n_usd": 8,
+      "n_ars": 142,
+      "pct_usd": 5.3,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 24.3
     },
     {
       "barrio": "San Cristobal",
@@ -4810,9 +6245,13 @@
       "mediana_precio_m2": 12857,
       "mediana_costo_total": 720000,
       "n_publicaciones": 147,
+      "n_usd": 4,
+      "n_ars": 143,
+      "pct_usd": 2.7,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 22.7
     },
     {
       "barrio": "San Cristobal",
@@ -4821,9 +6260,13 @@
       "mediana_precio_m2": 13141,
       "mediana_costo_total": 731000,
       "n_publicaciones": 142,
+      "n_usd": 10,
+      "n_ars": 132,
+      "pct_usd": 7,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 780000
+      "mediana_precio_3amb": 780000,
+      "pct_expensas": 22.8
     },
     {
       "barrio": "San Cristobal",
@@ -4832,9 +6275,13 @@
       "mediana_precio_m2": 13693,
       "mediana_costo_total": 734500,
       "n_publicaciones": 102,
+      "n_usd": 6,
+      "n_ars": 96,
+      "pct_usd": 5.9,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 780000
+      "mediana_precio_3amb": 780000,
+      "pct_expensas": 24
     },
     {
       "barrio": "San Cristobal",
@@ -4843,9 +6290,13 @@
       "mediana_precio_m2": 14836,
       "mediana_costo_total": 764000,
       "n_publicaciones": 126,
+      "n_usd": 8,
+      "n_ars": 118,
+      "pct_usd": 6.3,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 792500
+      "mediana_precio_3amb": 792500,
+      "pct_expensas": 23.6
     },
     {
       "barrio": "San Cristobal",
@@ -4854,9 +6305,13 @@
       "mediana_precio_m2": 15446,
       "mediana_costo_total": 766000,
       "n_publicaciones": 148,
+      "n_usd": 10,
+      "n_ars": 138,
+      "pct_usd": 6.8,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 845000
+      "mediana_precio_3amb": 845000,
+      "pct_expensas": 22.8
     },
     {
       "barrio": "San Nicolas",
@@ -4865,9 +6320,13 @@
       "mediana_precio_m2": 12162,
       "mediana_costo_total": 645259,
       "n_publicaciones": 359,
+      "n_usd": 47,
+      "n_ars": 312,
+      "pct_usd": 13.1,
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 670000
+      "mediana_precio_3amb": 670000,
+      "pct_expensas": 25.5
     },
     {
       "barrio": "San Nicolas",
@@ -4876,9 +6335,13 @@
       "mediana_precio_m2": 12845,
       "mediana_costo_total": 690000,
       "n_publicaciones": 374,
+      "n_usd": 64,
+      "n_ars": 310,
+      "pct_usd": 17.1,
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 531961,
-      "mediana_precio_3amb": 695000
+      "mediana_precio_3amb": 695000,
+      "pct_expensas": 25
     },
     {
       "barrio": "San Nicolas",
@@ -4887,9 +6350,13 @@
       "mediana_precio_m2": 13333,
       "mediana_costo_total": 700000,
       "n_publicaciones": 368,
+      "n_usd": 62,
+      "n_ars": 306,
+      "pct_usd": 16.8,
       "mediana_precio_1amb": 417500,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 733006
+      "mediana_precio_3amb": 733006,
+      "pct_expensas": 24.2
     },
     {
       "barrio": "San Nicolas",
@@ -4898,9 +6365,13 @@
       "mediana_precio_m2": 13333,
       "mediana_costo_total": 702500,
       "n_publicaciones": 358,
+      "n_usd": 54,
+      "n_ars": 304,
+      "pct_usd": 15.1,
       "mediana_precio_1amb": 440000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 25
     },
     {
       "barrio": "San Nicolas",
@@ -4909,9 +6380,13 @@
       "mediana_precio_m2": 13636,
       "mediana_costo_total": 730000,
       "n_publicaciones": 334,
+      "n_usd": 50,
+      "n_ars": 284,
+      "pct_usd": 15,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 736959
+      "mediana_precio_3amb": 736959,
+      "pct_expensas": 27
     },
     {
       "barrio": "San Nicolas",
@@ -4920,9 +6395,13 @@
       "mediana_precio_m2": 13889,
       "mediana_costo_total": 730000,
       "n_publicaciones": 313,
+      "n_usd": 56,
+      "n_ars": 257,
+      "pct_usd": 17.9,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 26.7
     },
     {
       "barrio": "San Nicolas",
@@ -4931,9 +6410,13 @@
       "mediana_precio_m2": 14286,
       "mediana_costo_total": 770000,
       "n_publicaciones": 299,
+      "n_usd": 57,
+      "n_ars": 242,
+      "pct_usd": 19.1,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 26.6
     },
     {
       "barrio": "San Nicolas",
@@ -4942,9 +6425,13 @@
       "mediana_precio_m2": 14423,
       "mediana_costo_total": 786000,
       "n_publicaciones": 305,
+      "n_usd": 47,
+      "n_ars": 258,
+      "pct_usd": 15.4,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 870000
+      "mediana_precio_3amb": 870000,
+      "pct_expensas": 25.7
     },
     {
       "barrio": "San Nicolas",
@@ -4953,9 +6440,13 @@
       "mediana_precio_m2": 15789,
       "mediana_costo_total": 800000,
       "n_publicaciones": 351,
+      "n_usd": 69,
+      "n_ars": 282,
+      "pct_usd": 19.7,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 25
     },
     {
       "barrio": "San Telmo",
@@ -4964,9 +6455,13 @@
       "mediana_precio_m2": 13333,
       "mediana_costo_total": 718146,
       "n_publicaciones": 200,
+      "n_usd": 53,
+      "n_ars": 147,
+      "pct_usd": 26.5,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 560000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 20.6
     },
     {
       "barrio": "San Telmo",
@@ -4975,9 +6470,13 @@
       "mediana_precio_m2": 13379,
       "mediana_costo_total": 741977,
       "n_publicaciones": 198,
+      "n_usd": 55,
+      "n_ars": 143,
+      "pct_usd": 27.8,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 22.5
     },
     {
       "barrio": "San Telmo",
@@ -4986,9 +6485,13 @@
       "mediana_precio_m2": 13604,
       "mediana_costo_total": 750000,
       "n_publicaciones": 172,
+      "n_usd": 43,
+      "n_ars": 129,
+      "pct_usd": 25,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 23.8
     },
     {
       "barrio": "San Telmo",
@@ -4997,9 +6500,13 @@
       "mediana_precio_m2": 13158,
       "mediana_costo_total": 786000,
       "n_publicaciones": 164,
+      "n_usd": 37,
+      "n_ars": 127,
+      "pct_usd": 22.6,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22.1
     },
     {
       "barrio": "San Telmo",
@@ -5008,9 +6515,13 @@
       "mediana_precio_m2": 13828,
       "mediana_costo_total": 808919,
       "n_publicaciones": 175,
+      "n_usd": 43,
+      "n_ars": 132,
+      "pct_usd": 24.6,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 835000
+      "mediana_precio_3amb": 835000,
+      "pct_expensas": 22.2
     },
     {
       "barrio": "San Telmo",
@@ -5019,9 +6530,13 @@
       "mediana_precio_m2": 14500,
       "mediana_costo_total": 854667,
       "n_publicaciones": 177,
+      "n_usd": 52,
+      "n_ars": 125,
+      "pct_usd": 29.4,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 810000
+      "mediana_precio_3amb": 810000,
+      "pct_expensas": 22.7
     },
     {
       "barrio": "San Telmo",
@@ -5030,9 +6545,13 @@
       "mediana_precio_m2": 15517,
       "mediana_costo_total": 877656,
       "n_publicaciones": 154,
+      "n_usd": 44,
+      "n_ars": 110,
+      "pct_usd": 28.6,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 690732,
-      "mediana_precio_3amb": 825000
+      "mediana_precio_3amb": 825000,
+      "pct_expensas": 21.8
     },
     {
       "barrio": "San Telmo",
@@ -5041,9 +6560,13 @@
       "mediana_precio_m2": 15240,
       "mediana_costo_total": 847585,
       "n_publicaciones": 164,
+      "n_usd": 45,
+      "n_ars": 119,
+      "pct_usd": 27.4,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 698169,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "San Telmo",
@@ -5052,9 +6575,13 @@
       "mediana_precio_m2": 17026,
       "mediana_costo_total": 895635,
       "n_publicaciones": 224,
+      "n_usd": 79,
+      "n_ars": 145,
+      "pct_usd": 35.3,
       "mediana_precio_1amb": 593231,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 22.1
     },
     {
       "barrio": "Velez Sarsfield",
@@ -5063,9 +6590,13 @@
       "mediana_precio_m2": 12198,
       "mediana_costo_total": 701500,
       "n_publicaciones": 8,
+      "n_usd": 0,
+      "n_ars": 8,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 525000,
-      "mediana_precio_3amb": 650000
+      "mediana_precio_3amb": 650000,
+      "pct_expensas": 16.9
     },
     {
       "barrio": "Velez Sarsfield",
@@ -5074,9 +6605,13 @@
       "mediana_precio_m2": 11250,
       "mediana_costo_total": 737180,
       "n_publicaciones": 5,
+      "n_usd": 0,
+      "n_ars": 5,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 520000,
-      "mediana_precio_3amb": 650000
+      "mediana_precio_3amb": 650000,
+      "pct_expensas": 18.9
     },
     {
       "barrio": "Velez Sarsfield",
@@ -5085,9 +6620,13 @@
       "mediana_precio_m2": 13095,
       "mediana_costo_total": 735280,
       "n_publicaciones": 9,
+      "n_usd": 0,
+      "n_ars": 9,
+      "pct_usd": 0,
       "mediana_precio_1amb": 460000,
       "mediana_precio_2amb": 590000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 20.5
     },
     {
       "barrio": "Velez Sarsfield",
@@ -5096,9 +6635,13 @@
       "mediana_precio_m2": 12798,
       "mediana_costo_total": 680000,
       "n_publicaciones": 12,
+      "n_usd": 0,
+      "n_ars": 12,
+      "pct_usd": 0,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 587500,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 16.8
     },
     {
       "barrio": "Velez Sarsfield",
@@ -5107,9 +6650,13 @@
       "mediana_precio_m2": 13031,
       "mediana_costo_total": 652500,
       "n_publicaciones": 18,
+      "n_usd": 1,
+      "n_ars": 17,
+      "pct_usd": 5.6,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 619500,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 17
     },
     {
       "barrio": "Velez Sarsfield",
@@ -5118,9 +6665,13 @@
       "mediana_precio_m2": 13333,
       "mediana_costo_total": 630000,
       "n_publicaciones": 21,
+      "n_usd": 1,
+      "n_ars": 20,
+      "pct_usd": 4.8,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 575000,
-      "mediana_precio_3amb": 650000
+      "mediana_precio_3amb": 650000,
+      "pct_expensas": 18
     },
     {
       "barrio": "Velez Sarsfield",
@@ -5129,9 +6680,13 @@
       "mediana_precio_m2": 13423,
       "mediana_costo_total": 649000,
       "n_publicaciones": 20,
+      "n_usd": 0,
+      "n_ars": 20,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 22.3
     },
     {
       "barrio": "Velez Sarsfield",
@@ -5140,9 +6695,13 @@
       "mediana_precio_m2": 14645,
       "mediana_costo_total": 731000,
       "n_publicaciones": 18,
+      "n_usd": 0,
+      "n_ars": 18,
+      "pct_usd": 0,
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 825000
+      "mediana_precio_3amb": 825000,
+      "pct_expensas": 17.2
     },
     {
       "barrio": "Velez Sarsfield",
@@ -5151,9 +6710,13 @@
       "mediana_precio_m2": 15588,
       "mediana_costo_total": 770000,
       "n_publicaciones": 15,
+      "n_usd": 0,
+      "n_ars": 15,
+      "pct_usd": 0,
       "mediana_precio_1amb": 575000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 19.8
     },
     {
       "barrio": "Versalles",
@@ -5162,9 +6725,13 @@
       "mediana_precio_m2": 12766,
       "mediana_costo_total": 810000,
       "n_publicaciones": 9,
+      "n_usd": 0,
+      "n_ars": 9,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 625000
+      "mediana_precio_3amb": 625000,
+      "pct_expensas": 18.3
     },
     {
       "barrio": "Versalles",
@@ -5173,9 +6740,13 @@
       "mediana_precio_m2": 12767,
       "mediana_costo_total": 839500,
       "n_publicaciones": 4,
+      "n_usd": 0,
+      "n_ars": 4,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 665000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 24.1
     },
     {
       "barrio": "Versalles",
@@ -5184,9 +6755,13 @@
       "mediana_precio_m2": 12807,
       "mediana_costo_total": 933000,
       "n_publicaciones": 5,
+      "n_usd": 0,
+      "n_ars": 5,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": null,
-      "mediana_precio_3amb": 705000
+      "mediana_precio_3amb": 705000,
+      "pct_expensas": 26.4
     },
     {
       "barrio": "Versalles",
@@ -5195,9 +6770,13 @@
       "mediana_precio_m2": 13158,
       "mediana_costo_total": 951000,
       "n_publicaciones": 5,
+      "n_usd": 0,
+      "n_ars": 5,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": null,
-      "mediana_precio_3amb": 725000
+      "mediana_precio_3amb": 725000,
+      "pct_expensas": 26.4
     },
     {
       "barrio": "Versalles",
@@ -5206,9 +6785,13 @@
       "mediana_precio_m2": 13158,
       "mediana_costo_total": 893000,
       "n_publicaciones": 9,
+      "n_usd": 0,
+      "n_ars": 9,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 21.5
     },
     {
       "barrio": "Versalles",
@@ -5217,9 +6800,13 @@
       "mediana_precio_m2": 13158,
       "mediana_costo_total": 950000,
       "n_publicaciones": 5,
+      "n_usd": 0,
+      "n_ars": 5,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 625000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 18.8
     },
     {
       "barrio": "Versalles",
@@ -5228,9 +6815,13 @@
       "mediana_precio_m2": 14545,
       "mediana_costo_total": 893000,
       "n_publicaciones": 9,
+      "n_usd": 0,
+      "n_ars": 9,
+      "pct_usd": 0,
       "mediana_precio_1amb": 380000,
       "mediana_precio_2amb": 660000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 22
     },
     {
       "barrio": "Versalles",
@@ -5239,9 +6830,13 @@
       "mediana_precio_m2": 15200,
       "mediana_costo_total": 785000,
       "n_publicaciones": 13,
+      "n_usd": 0,
+      "n_ars": 13,
+      "pct_usd": 0,
       "mediana_precio_1amb": 380000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 20.8
     },
     {
       "barrio": "Villa Crespo",
@@ -5250,9 +6845,13 @@
       "mediana_precio_m2": 14049,
       "mediana_costo_total": 750000,
       "n_publicaciones": 326,
+      "n_usd": 30,
+      "n_ars": 296,
+      "pct_usd": 9.2,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Crespo",
@@ -5261,9 +6860,13 @@
       "mediana_precio_m2": 14474,
       "mediana_costo_total": 760000,
       "n_publicaciones": 313,
+      "n_usd": 39,
+      "n_ars": 274,
+      "pct_usd": 12.5,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 640000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 20.2
     },
     {
       "barrio": "Villa Crespo",
@@ -5272,9 +6875,13 @@
       "mediana_precio_m2": 15217,
       "mediana_costo_total": 775000,
       "n_publicaciones": 319,
+      "n_usd": 38,
+      "n_ars": 281,
+      "pct_usd": 11.9,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 860000
+      "mediana_precio_3amb": 860000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Crespo",
@@ -5283,9 +6890,13 @@
       "mediana_precio_m2": 15217,
       "mediana_costo_total": 805000,
       "n_publicaciones": 341,
+      "n_usd": 37,
+      "n_ars": 304,
+      "pct_usd": 10.9,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Crespo",
@@ -5294,9 +6905,13 @@
       "mediana_precio_m2": 15488,
       "mediana_costo_total": 810000,
       "n_publicaciones": 350,
+      "n_usd": 45,
+      "n_ars": 305,
+      "pct_usd": 12.9,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 685000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 20.2
     },
     {
       "barrio": "Villa Crespo",
@@ -5305,9 +6920,13 @@
       "mediana_precio_m2": 15979,
       "mediana_costo_total": 830000,
       "n_publicaciones": 320,
+      "n_usd": 37,
+      "n_ars": 283,
+      "pct_usd": 11.6,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 680000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Crespo",
@@ -5316,9 +6935,13 @@
       "mediana_precio_m2": 16480,
       "mediana_costo_total": 847000,
       "n_publicaciones": 260,
+      "n_usd": 45,
+      "n_ars": 215,
+      "pct_usd": 17.3,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1000000
+      "mediana_precio_3amb": 1000000,
+      "pct_expensas": 19
     },
     {
       "barrio": "Villa Crespo",
@@ -5327,9 +6950,13 @@
       "mediana_precio_m2": 16667,
       "mediana_costo_total": 835000,
       "n_publicaciones": 271,
+      "n_usd": 34,
+      "n_ars": 237,
+      "pct_usd": 12.5,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1050000
+      "mediana_precio_3amb": 1050000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Crespo",
@@ -5338,9 +6965,13 @@
       "mediana_precio_m2": 17499,
       "mediana_costo_total": 900000,
       "n_publicaciones": 316,
+      "n_usd": 46,
+      "n_ars": 270,
+      "pct_usd": 14.6,
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 800000,
-      "mediana_precio_3amb": 1183535
+      "mediana_precio_3amb": 1183535,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Del Parque",
@@ -5349,9 +6980,13 @@
       "mediana_precio_m2": 13000,
       "mediana_costo_total": 676000,
       "n_publicaciones": 137,
+      "n_usd": 3,
+      "n_ars": 134,
+      "pct_usd": 2.2,
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 18.4
     },
     {
       "barrio": "Villa Del Parque",
@@ -5360,9 +6995,13 @@
       "mediana_precio_m2": 13333,
       "mediana_costo_total": 699000,
       "n_publicaciones": 165,
+      "n_usd": 2,
+      "n_ars": 163,
+      "pct_usd": 1.2,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 575000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 18.6
     },
     {
       "barrio": "Villa Del Parque",
@@ -5371,9 +7010,13 @@
       "mediana_precio_m2": 13404,
       "mediana_costo_total": 699000,
       "n_publicaciones": 189,
+      "n_usd": 4,
+      "n_ars": 185,
+      "pct_usd": 2.1,
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 19.4
     },
     {
       "barrio": "Villa Del Parque",
@@ -5382,9 +7025,13 @@
       "mediana_precio_m2": 14062,
       "mediana_costo_total": 710000,
       "n_publicaciones": 179,
+      "n_usd": 6,
+      "n_ars": 173,
+      "pct_usd": 3.4,
       "mediana_precio_1amb": 497500,
       "mediana_precio_2amb": 640000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Del Parque",
@@ -5393,9 +7040,13 @@
       "mediana_precio_m2": 14149,
       "mediana_costo_total": 705000,
       "n_publicaciones": 176,
+      "n_usd": 1,
+      "n_ars": 175,
+      "pct_usd": 0.6,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 19.8
     },
     {
       "barrio": "Villa Del Parque",
@@ -5404,9 +7055,13 @@
       "mediana_precio_m2": 14130,
       "mediana_costo_total": 720000,
       "n_publicaciones": 196,
+      "n_usd": 7,
+      "n_ars": 189,
+      "pct_usd": 3.6,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 625000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Del Parque",
@@ -5415,9 +7070,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 768000,
       "n_publicaciones": 163,
+      "n_usd": 7,
+      "n_ars": 156,
+      "pct_usd": 4.3,
       "mediana_precio_1amb": 545000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 19.1
     },
     {
       "barrio": "Villa Del Parque",
@@ -5426,9 +7085,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 804000,
       "n_publicaciones": 173,
+      "n_usd": 6,
+      "n_ars": 167,
+      "pct_usd": 3.5,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Del Parque",
@@ -5437,9 +7100,13 @@
       "mediana_precio_m2": 15430,
       "mediana_costo_total": 789838,
       "n_publicaciones": 168,
+      "n_usd": 10,
+      "n_ars": 158,
+      "pct_usd": 6,
       "mediana_precio_1amb": 565000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 20.5
     },
     {
       "barrio": "Villa Devoto",
@@ -5448,9 +7115,13 @@
       "mediana_precio_m2": 13636,
       "mediana_costo_total": 827000,
       "n_publicaciones": 137,
+      "n_usd": 17,
+      "n_ars": 120,
+      "pct_usd": 12.4,
       "mediana_precio_1amb": 495000,
       "mediana_precio_2amb": 627500,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 18.2
     },
     {
       "barrio": "Villa Devoto",
@@ -5459,9 +7130,13 @@
       "mediana_precio_m2": 14167,
       "mediana_costo_total": 830000,
       "n_publicaciones": 153,
+      "n_usd": 24,
+      "n_ars": 129,
+      "pct_usd": 15.7,
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 630000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 18.3
     },
     {
       "barrio": "Villa Devoto",
@@ -5470,9 +7145,13 @@
       "mediana_precio_m2": 14317,
       "mediana_costo_total": 809500,
       "n_publicaciones": 190,
+      "n_usd": 21,
+      "n_ars": 169,
+      "pct_usd": 11.1,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 875000
+      "mediana_precio_3amb": 875000,
+      "pct_expensas": 18.7
     },
     {
       "barrio": "Villa Devoto",
@@ -5481,9 +7160,13 @@
       "mediana_precio_m2": 14583,
       "mediana_costo_total": 807500,
       "n_publicaciones": 172,
+      "n_usd": 24,
+      "n_ars": 148,
+      "pct_usd": 14,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1000000
+      "mediana_precio_3amb": 1000000,
+      "pct_expensas": 18.8
     },
     {
       "barrio": "Villa Devoto",
@@ -5492,9 +7175,13 @@
       "mediana_precio_m2": 14667,
       "mediana_costo_total": 790000,
       "n_publicaciones": 171,
+      "n_usd": 16,
+      "n_ars": 155,
+      "pct_usd": 9.4,
       "mediana_precio_1amb": 540000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 925000
+      "mediana_precio_3amb": 925000,
+      "pct_expensas": 18
     },
     {
       "barrio": "Villa Devoto",
@@ -5503,9 +7190,13 @@
       "mediana_precio_m2": 15476,
       "mediana_costo_total": 825000,
       "n_publicaciones": 179,
+      "n_usd": 21,
+      "n_ars": 158,
+      "pct_usd": 11.7,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 680000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 18.8
     },
     {
       "barrio": "Villa Devoto",
@@ -5514,9 +7205,13 @@
       "mediana_precio_m2": 15707,
       "mediana_costo_total": 850000,
       "n_publicaciones": 154,
+      "n_usd": 18,
+      "n_ars": 136,
+      "pct_usd": 11.7,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 18.2
     },
     {
       "barrio": "Villa Devoto",
@@ -5525,9 +7220,13 @@
       "mediana_precio_m2": 16000,
       "mediana_costo_total": 880000,
       "n_publicaciones": 165,
+      "n_usd": 19,
+      "n_ars": 146,
+      "pct_usd": 11.5,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 18.6
     },
     {
       "barrio": "Villa Devoto",
@@ -5536,9 +7235,13 @@
       "mediana_precio_m2": 16667,
       "mediana_costo_total": 950000,
       "n_publicaciones": 193,
+      "n_usd": 28,
+      "n_ars": 165,
+      "pct_usd": 14.5,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 17.5
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -5547,9 +7250,13 @@
       "mediana_precio_m2": 12857,
       "mediana_costo_total": 683000,
       "n_publicaciones": 23,
+      "n_usd": 1,
+      "n_ars": 22,
+      "pct_usd": 4.3,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 565000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 20.7
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -5558,9 +7265,13 @@
       "mediana_precio_m2": 13406,
       "mediana_costo_total": 682000,
       "n_publicaciones": 28,
+      "n_usd": 1,
+      "n_ars": 27,
+      "pct_usd": 3.6,
       "mediana_precio_1amb": 485000,
       "mediana_precio_2amb": 580000,
-      "mediana_precio_3amb": 775000
+      "mediana_precio_3amb": 775000,
+      "pct_expensas": 23.2
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -5569,9 +7280,13 @@
       "mediana_precio_m2": 14246,
       "mediana_costo_total": 679000,
       "n_publicaciones": 28,
+      "n_usd": 1,
+      "n_ars": 27,
+      "pct_usd": 3.6,
       "mediana_precio_1amb": 524500,
       "mediana_precio_2amb": 615000,
-      "mediana_precio_3amb": 775000
+      "mediana_precio_3amb": 775000,
+      "pct_expensas": 23.5
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -5580,9 +7295,13 @@
       "mediana_precio_m2": 13333,
       "mediana_costo_total": 719000,
       "n_publicaciones": 27,
+      "n_usd": 0,
+      "n_ars": 27,
+      "pct_usd": 0,
       "mediana_precio_1amb": 505000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 725000
+      "mediana_precio_3amb": 725000,
+      "pct_expensas": 25.7
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -5591,9 +7310,13 @@
       "mediana_precio_m2": 12740,
       "mediana_costo_total": 752500,
       "n_publicaciones": 36,
+      "n_usd": 0,
+      "n_ars": 36,
+      "pct_usd": 0,
       "mediana_precio_1amb": 510000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 22.8
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -5602,9 +7325,13 @@
       "mediana_precio_m2": 13091,
       "mediana_costo_total": 714000,
       "n_publicaciones": 24,
+      "n_usd": 0,
+      "n_ars": 24,
+      "pct_usd": 0,
       "mediana_precio_1amb": 505000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 660000
+      "mediana_precio_3amb": 660000,
+      "pct_expensas": 25.2
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -5613,9 +7340,13 @@
       "mediana_precio_m2": 13462,
       "mediana_costo_total": 685000,
       "n_publicaciones": 19,
+      "n_usd": 0,
+      "n_ars": 19,
+      "pct_usd": 0,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 620000
+      "mediana_precio_3amb": 620000,
+      "pct_expensas": 23.3
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -5624,9 +7355,13 @@
       "mediana_precio_m2": 13774,
       "mediana_costo_total": 702500,
       "n_publicaciones": 22,
+      "n_usd": 1,
+      "n_ars": 21,
+      "pct_usd": 4.5,
       "mediana_precio_1amb": 540000,
       "mediana_precio_2amb": 615000,
-      "mediana_precio_3amb": 690000
+      "mediana_precio_3amb": 690000,
+      "pct_expensas": 24.4
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -5635,9 +7370,13 @@
       "mediana_precio_m2": 14722,
       "mediana_costo_total": 802000,
       "n_publicaciones": 21,
+      "n_usd": 0,
+      "n_ars": 21,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 665000,
-      "mediana_precio_3amb": 707500
+      "mediana_precio_3amb": 707500,
+      "pct_expensas": 24
     },
     {
       "barrio": "Villa Lugano",
@@ -5646,9 +7385,13 @@
       "mediana_precio_m2": 9802,
       "mediana_costo_total": 610000,
       "n_publicaciones": 16,
+      "n_usd": 0,
+      "n_ars": 16,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 450000,
-      "mediana_precio_3amb": 550000
+      "mediana_precio_3amb": 550000,
+      "pct_expensas": 16
     },
     {
       "barrio": "Villa Lugano",
@@ -5657,9 +7400,13 @@
       "mediana_precio_m2": 11429,
       "mediana_costo_total": 600000,
       "n_publicaciones": 15,
+      "n_usd": 0,
+      "n_ars": 15,
+      "pct_usd": 0,
       "mediana_precio_1amb": 460000,
       "mediana_precio_2amb": 575000,
-      "mediana_precio_3amb": 530000
+      "mediana_precio_3amb": 530000,
+      "pct_expensas": 16
     },
     {
       "barrio": "Villa Lugano",
@@ -5668,9 +7415,13 @@
       "mediana_precio_m2": 12989,
       "mediana_costo_total": 660000,
       "n_publicaciones": 12,
+      "n_usd": 0,
+      "n_ars": 12,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 16.1
     },
     {
       "barrio": "Villa Lugano",
@@ -5679,9 +7430,13 @@
       "mediana_precio_m2": 11765,
       "mediana_costo_total": 630000,
       "n_publicaciones": 19,
+      "n_usd": 0,
+      "n_ars": 19,
+      "pct_usd": 0,
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 600000
+      "mediana_precio_3amb": 600000,
+      "pct_expensas": 13.3
     },
     {
       "barrio": "Villa Lugano",
@@ -5690,9 +7445,13 @@
       "mediana_precio_m2": 12952,
       "mediana_costo_total": 702500,
       "n_publicaciones": 12,
+      "n_usd": 0,
+      "n_ars": 12,
+      "pct_usd": 0,
       "mediana_precio_1amb": 400000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 600000
+      "mediana_precio_3amb": 600000,
+      "pct_expensas": 12.3
     },
     {
       "barrio": "Villa Lugano",
@@ -5701,9 +7460,13 @@
       "mediana_precio_m2": 11588,
       "mediana_costo_total": 650000,
       "n_publicaciones": 18,
+      "n_usd": 0,
+      "n_ars": 18,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 550000,
-      "mediana_precio_3amb": 550000
+      "mediana_precio_3amb": 550000,
+      "pct_expensas": 15.4
     },
     {
       "barrio": "Villa Lugano",
@@ -5712,9 +7475,13 @@
       "mediana_precio_m2": 12250,
       "mediana_costo_total": 697500,
       "n_publicaciones": 20,
+      "n_usd": 0,
+      "n_ars": 20,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 620000
+      "mediana_precio_3amb": 620000,
+      "pct_expensas": 15.7
     },
     {
       "barrio": "Villa Lugano",
@@ -5723,9 +7490,13 @@
       "mediana_precio_m2": 13636,
       "mediana_costo_total": 730000,
       "n_publicaciones": 27,
+      "n_usd": 0,
+      "n_ars": 27,
+      "pct_usd": 0,
       "mediana_precio_1amb": 435000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 610000
+      "mediana_precio_3amb": 610000,
+      "pct_expensas": 15.3
     },
     {
       "barrio": "Villa Lugano",
@@ -5734,9 +7505,13 @@
       "mediana_precio_m2": 14286,
       "mediana_costo_total": 720000,
       "n_publicaciones": 42,
+      "n_usd": 1,
+      "n_ars": 41,
+      "pct_usd": 2.4,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 600000
+      "mediana_precio_3amb": 600000,
+      "pct_expensas": 17.1
     },
     {
       "barrio": "Villa Luro",
@@ -5745,9 +7520,13 @@
       "mediana_precio_m2": 12000,
       "mediana_costo_total": 664000,
       "n_publicaciones": 57,
+      "n_usd": 0,
+      "n_ars": 57,
+      "pct_usd": 0,
       "mediana_precio_1amb": 410000,
       "mediana_precio_2amb": 540000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 17.9
     },
     {
       "barrio": "Villa Luro",
@@ -5756,9 +7535,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 790000,
       "n_publicaciones": 55,
+      "n_usd": 2,
+      "n_ars": 53,
+      "pct_usd": 3.6,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 635000,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 17.9
     },
     {
       "barrio": "Villa Luro",
@@ -5767,9 +7550,13 @@
       "mediana_precio_m2": 13204,
       "mediana_costo_total": 798000,
       "n_publicaciones": 66,
+      "n_usd": 3,
+      "n_ars": 63,
+      "pct_usd": 4.5,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 18.9
     },
     {
       "barrio": "Villa Luro",
@@ -5778,9 +7565,13 @@
       "mediana_precio_m2": 13281,
       "mediana_costo_total": 820000,
       "n_publicaciones": 61,
+      "n_usd": 5,
+      "n_ars": 56,
+      "pct_usd": 8.2,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 16.7
     },
     {
       "barrio": "Villa Luro",
@@ -5789,9 +7580,13 @@
       "mediana_precio_m2": 13201,
       "mediana_costo_total": 760000,
       "n_publicaciones": 64,
+      "n_usd": 4,
+      "n_ars": 60,
+      "pct_usd": 6.2,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 810000
+      "mediana_precio_3amb": 810000,
+      "pct_expensas": 16.6
     },
     {
       "barrio": "Villa Luro",
@@ -5800,9 +7595,13 @@
       "mediana_precio_m2": 12793,
       "mediana_costo_total": 695000,
       "n_publicaciones": 66,
+      "n_usd": 2,
+      "n_ars": 64,
+      "pct_usd": 3,
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 595000,
-      "mediana_precio_3amb": 820000
+      "mediana_precio_3amb": 820000,
+      "pct_expensas": 17.9
     },
     {
       "barrio": "Villa Luro",
@@ -5811,9 +7610,13 @@
       "mediana_precio_m2": 14182,
       "mediana_costo_total": 770000,
       "n_publicaciones": 63,
+      "n_usd": 3,
+      "n_ars": 60,
+      "pct_usd": 4.8,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 820000
+      "mediana_precio_3amb": 820000,
+      "pct_expensas": 17.9
     },
     {
       "barrio": "Villa Luro",
@@ -5822,9 +7625,13 @@
       "mediana_precio_m2": 14419,
       "mediana_costo_total": 837500,
       "n_publicaciones": 64,
+      "n_usd": 6,
+      "n_ars": 58,
+      "pct_usd": 9.4,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 825000
+      "mediana_precio_3amb": 825000,
+      "pct_expensas": 16.8
     },
     {
       "barrio": "Villa Luro",
@@ -5833,9 +7640,13 @@
       "mediana_precio_m2": 15476,
       "mediana_costo_total": 810000,
       "n_publicaciones": 87,
+      "n_usd": 9,
+      "n_ars": 78,
+      "pct_usd": 10.3,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 980000
+      "mediana_precio_3amb": 980000,
+      "pct_expensas": 18.6
     },
     {
       "barrio": "Villa Ortuzar",
@@ -5844,9 +7655,13 @@
       "mediana_precio_m2": 13488,
       "mediana_costo_total": 762500,
       "n_publicaciones": 48,
+      "n_usd": 6,
+      "n_ars": 42,
+      "pct_usd": 12.5,
       "mediana_precio_1amb": 470000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1229822
+      "mediana_precio_3amb": 1229822,
+      "pct_expensas": 18.8
     },
     {
       "barrio": "Villa Ortuzar",
@@ -5855,9 +7670,13 @@
       "mediana_precio_m2": 13710,
       "mediana_costo_total": 810000,
       "n_publicaciones": 43,
+      "n_usd": 2,
+      "n_ars": 41,
+      "pct_usd": 4.7,
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 20.6
     },
     {
       "barrio": "Villa Ortuzar",
@@ -5866,9 +7685,13 @@
       "mediana_precio_m2": 13500,
       "mediana_costo_total": 810000,
       "n_publicaciones": 35,
+      "n_usd": 5,
+      "n_ars": 30,
+      "pct_usd": 14.3,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1108610
+      "mediana_precio_3amb": 1108610,
+      "pct_expensas": 20.7
     },
     {
       "barrio": "Villa Ortuzar",
@@ -5877,9 +7700,13 @@
       "mediana_precio_m2": 14118,
       "mediana_costo_total": 840000,
       "n_publicaciones": 44,
+      "n_usd": 7,
+      "n_ars": 37,
+      "pct_usd": 15.9,
       "mediana_precio_1amb": 490000,
       "mediana_precio_2amb": 780000,
-      "mediana_precio_3amb": 1470880
+      "mediana_precio_3amb": 1470880,
+      "pct_expensas": 22
     },
     {
       "barrio": "Villa Ortuzar",
@@ -5888,9 +7715,13 @@
       "mediana_precio_m2": 14478,
       "mediana_costo_total": 810000,
       "n_publicaciones": 35,
+      "n_usd": 4,
+      "n_ars": 31,
+      "pct_usd": 11.4,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 24.7
     },
     {
       "barrio": "Villa Ortuzar",
@@ -5899,9 +7730,13 @@
       "mediana_precio_m2": 15649,
       "mediana_costo_total": 837334,
       "n_publicaciones": 46,
+      "n_usd": 4,
+      "n_ars": 42,
+      "pct_usd": 8.7,
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 712500,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 18.2
     },
     {
       "barrio": "Villa Ortuzar",
@@ -5910,9 +7745,13 @@
       "mediana_precio_m2": 15890,
       "mediana_costo_total": 756500,
       "n_publicaciones": 40,
+      "n_usd": 2,
+      "n_ars": 38,
+      "pct_usd": 5,
       "mediana_precio_1amb": 530000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1000000
+      "mediana_precio_3amb": 1000000,
+      "pct_expensas": 20.5
     },
     {
       "barrio": "Villa Ortuzar",
@@ -5921,9 +7760,13 @@
       "mediana_precio_m2": 16250,
       "mediana_costo_total": 762000,
       "n_publicaciones": 47,
+      "n_usd": 3,
+      "n_ars": 44,
+      "pct_usd": 6.4,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 19.3
     },
     {
       "barrio": "Villa Ortuzar",
@@ -5932,9 +7775,13 @@
       "mediana_precio_m2": 16497,
       "mediana_costo_total": 775000,
       "n_publicaciones": 42,
+      "n_usd": 2,
+      "n_ars": 40,
+      "pct_usd": 4.8,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 680000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 18.7
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -5943,9 +7790,13 @@
       "mediana_precio_m2": 12942,
       "mediana_costo_total": 685500,
       "n_publicaciones": 68,
+      "n_usd": 0,
+      "n_ars": 68,
+      "pct_usd": 0,
       "mediana_precio_1amb": 465000,
       "mediana_precio_2amb": 595000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 19
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -5954,9 +7805,13 @@
       "mediana_precio_m2": 13095,
       "mediana_costo_total": 660000,
       "n_publicaciones": 87,
+      "n_usd": 2,
+      "n_ars": 85,
+      "pct_usd": 2.3,
       "mediana_precio_1amb": 475000,
       "mediana_precio_2amb": 590000,
-      "mediana_precio_3amb": 825000
+      "mediana_precio_3amb": 825000,
+      "pct_expensas": 19.8
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -5965,9 +7820,13 @@
       "mediana_precio_m2": 13333,
       "mediana_costo_total": 727000,
       "n_publicaciones": 86,
+      "n_usd": 0,
+      "n_ars": 86,
+      "pct_usd": 0,
       "mediana_precio_1amb": 497500,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 875000
+      "mediana_precio_3amb": 875000,
+      "pct_expensas": 19.9
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -5976,9 +7835,13 @@
       "mediana_precio_m2": 13636,
       "mediana_costo_total": 730000,
       "n_publicaciones": 83,
+      "n_usd": 2,
+      "n_ars": 81,
+      "pct_usd": 2.4,
       "mediana_precio_1amb": 515000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -5987,9 +7850,13 @@
       "mediana_precio_m2": 13885,
       "mediana_costo_total": 747500,
       "n_publicaciones": 70,
+      "n_usd": 3,
+      "n_ars": 67,
+      "pct_usd": 4.3,
       "mediana_precio_1amb": 520000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 1000000
+      "mediana_precio_3amb": 1000000,
+      "pct_expensas": 20.6
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -5998,9 +7865,13 @@
       "mediana_precio_m2": 14286,
       "mediana_costo_total": 735000,
       "n_publicaciones": 62,
+      "n_usd": 3,
+      "n_ars": 59,
+      "pct_usd": 4.8,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 20.1
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -6009,9 +7880,13 @@
       "mediana_precio_m2": 15714,
       "mediana_costo_total": 759914,
       "n_publicaciones": 64,
+      "n_usd": 3,
+      "n_ars": 61,
+      "pct_usd": 4.7,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1050000
+      "mediana_precio_3amb": 1050000,
+      "pct_expensas": 20.6
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -6020,9 +7895,13 @@
       "mediana_precio_m2": 16168,
       "mediana_costo_total": 819500,
       "n_publicaciones": 70,
+      "n_usd": 2,
+      "n_ars": 68,
+      "pct_usd": 2.9,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 940000
+      "mediana_precio_3amb": 940000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -6031,9 +7910,13 @@
       "mediana_precio_m2": 16279,
       "mediana_costo_total": 848000,
       "n_publicaciones": 71,
+      "n_usd": 5,
+      "n_ars": 66,
+      "pct_usd": 7,
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1000000
+      "mediana_precio_3amb": 1000000,
+      "pct_expensas": 18.9
     },
     {
       "barrio": "Villa Real",
@@ -6042,9 +7925,13 @@
       "mediana_precio_m2": 12222,
       "mediana_costo_total": 580000,
       "n_publicaciones": 3,
+      "n_usd": 0,
+      "n_ars": 3,
+      "pct_usd": 0,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 430000,
-      "mediana_precio_3amb": 720000
+      "mediana_precio_3amb": 720000,
+      "pct_expensas": 5.5
     },
     {
       "barrio": "Villa Real",
@@ -6053,9 +7940,13 @@
       "mediana_precio_m2": 12258,
       "mediana_costo_total": 495000,
       "n_publicaciones": 1,
+      "n_usd": 0,
+      "n_ars": 1,
+      "pct_usd": 0,
       "mediana_precio_1amb": 380000,
       "mediana_precio_2amb": null,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 30.3
     },
     {
       "barrio": "Villa Real",
@@ -6064,9 +7955,13 @@
       "mediana_precio_m2": 16667,
       "mediana_costo_total": 696000,
       "n_publicaciones": 1,
+      "n_usd": 0,
+      "n_ars": 1,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 16
     },
     {
       "barrio": "Villa Real",
@@ -6075,9 +7970,13 @@
       "mediana_precio_m2": 9524,
       "mediana_costo_total": 525000,
       "n_publicaciones": 1,
+      "n_usd": 0,
+      "n_ars": 1,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 400000,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 31.2
     },
     {
       "barrio": "Villa Real",
@@ -6086,9 +7985,13 @@
       "mediana_precio_m2": 13194,
       "mediana_costo_total": 1175000,
       "n_publicaciones": 3,
+      "n_usd": 0,
+      "n_ars": 3,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": null,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 12.3
     },
     {
       "barrio": "Villa Real",
@@ -6097,9 +8000,13 @@
       "mediana_precio_m2": 12361,
       "mediana_costo_total": 1054000,
       "n_publicaciones": 5,
+      "n_usd": 0,
+      "n_ars": 5,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 450000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 17.1
     },
     {
       "barrio": "Villa Real",
@@ -6108,9 +8015,13 @@
       "mediana_precio_m2": 13115,
       "mediana_costo_total": 1075000,
       "n_publicaciones": 3,
+      "n_usd": 0,
+      "n_ars": 3,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": null,
-      "mediana_precio_3amb": 800000
+      "mediana_precio_3amb": 800000,
+      "pct_expensas": 19.2
     },
     {
       "barrio": "Villa Real",
@@ -6119,9 +8030,13 @@
       "mediana_precio_m2": 14545,
       "mediana_costo_total": 932467,
       "n_publicaciones": 7,
+      "n_usd": 0,
+      "n_ars": 7,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 775000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 30.4
     },
     {
       "barrio": "Villa Real",
@@ -6130,9 +8045,13 @@
       "mediana_precio_m2": 12500,
       "mediana_costo_total": 780000,
       "n_publicaciones": 7,
+      "n_usd": 0,
+      "n_ars": 7,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 500000,
-      "mediana_precio_3amb": 1050000
+      "mediana_precio_3amb": 1050000,
+      "pct_expensas": 20
     },
     {
       "barrio": "Villa Riachuelo",
@@ -6141,9 +8060,13 @@
       "mediana_precio_m2": 15208,
       "mediana_costo_total": 760000,
       "n_publicaciones": 1,
+      "n_usd": 0,
+      "n_ars": 1,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 730000,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 4.1
     },
     {
       "barrio": "Villa Riachuelo",
@@ -6152,9 +8075,13 @@
       "mediana_precio_m2": 14167,
       "mediana_costo_total": 756950,
       "n_publicaciones": 2,
+      "n_usd": 0,
+      "n_ars": 2,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 650000
+      "mediana_precio_3amb": 650000,
+      "pct_expensas": 12.1
     },
     {
       "barrio": "Villa Riachuelo",
@@ -6163,9 +8090,13 @@
       "mediana_precio_m2": 13415,
       "mediana_costo_total": 800000,
       "n_publicaciones": 3,
+      "n_usd": 0,
+      "n_ars": 3,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 675000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 7.8
     },
     {
       "barrio": "Villa Santa Rita",
@@ -6174,9 +8105,13 @@
       "mediana_precio_m2": 12857,
       "mediana_costo_total": 639000,
       "n_publicaciones": 35,
+      "n_usd": 0,
+      "n_ars": 35,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 600000,
-      "mediana_precio_3amb": 700000
+      "mediana_precio_3amb": 700000,
+      "pct_expensas": 20.8
     },
     {
       "barrio": "Villa Santa Rita",
@@ -6185,9 +8120,13 @@
       "mediana_precio_m2": 12656,
       "mediana_costo_total": 590400,
       "n_publicaciones": 28,
+      "n_usd": 0,
+      "n_ars": 28,
+      "pct_usd": 0,
       "mediana_precio_1amb": 415000,
       "mediana_precio_2amb": 580000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 21.2
     },
     {
       "barrio": "Villa Santa Rita",
@@ -6196,9 +8135,13 @@
       "mediana_precio_m2": 12915,
       "mediana_costo_total": 635000,
       "n_publicaciones": 36,
+      "n_usd": 0,
+      "n_ars": 36,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 560000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 23.1
     },
     {
       "barrio": "Villa Santa Rita",
@@ -6207,9 +8150,13 @@
       "mediana_precio_m2": 13243,
       "mediana_costo_total": 655000,
       "n_publicaciones": 42,
+      "n_usd": 0,
+      "n_ars": 42,
+      "pct_usd": 0,
       "mediana_precio_1amb": 480000,
       "mediana_precio_2amb": 595000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 22.9
     },
     {
       "barrio": "Villa Santa Rita",
@@ -6218,9 +8165,13 @@
       "mediana_precio_m2": 14130,
       "mediana_costo_total": 705000,
       "n_publicaciones": 49,
+      "n_usd": 0,
+      "n_ars": 49,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": 672500,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 23.6
     },
     {
       "barrio": "Villa Santa Rita",
@@ -6229,9 +8180,13 @@
       "mediana_precio_m2": 13889,
       "mediana_costo_total": 729750,
       "n_publicaciones": 48,
+      "n_usd": 2,
+      "n_ars": 46,
+      "pct_usd": 4.2,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 690000,
-      "mediana_precio_3amb": 765000
+      "mediana_precio_3amb": 765000,
+      "pct_expensas": 19.9
     },
     {
       "barrio": "Villa Santa Rita",
@@ -6240,9 +8195,13 @@
       "mediana_precio_m2": 15314,
       "mediana_costo_total": 740000,
       "n_publicaciones": 42,
+      "n_usd": 2,
+      "n_ars": 40,
+      "pct_usd": 4.8,
       "mediana_precio_1amb": 525000,
       "mediana_precio_2amb": 645000,
-      "mediana_precio_3amb": 900000
+      "mediana_precio_3amb": 900000,
+      "pct_expensas": 19.7
     },
     {
       "barrio": "Villa Santa Rita",
@@ -6251,9 +8210,13 @@
       "mediana_precio_m2": 14510,
       "mediana_costo_total": 785000,
       "n_publicaciones": 44,
+      "n_usd": 2,
+      "n_ars": 42,
+      "pct_usd": 4.5,
       "mediana_precio_1amb": 565000,
       "mediana_precio_2amb": 680000,
-      "mediana_precio_3amb": 830000
+      "mediana_precio_3amb": 830000,
+      "pct_expensas": 21.7
     },
     {
       "barrio": "Villa Santa Rita",
@@ -6262,9 +8225,13 @@
       "mediana_precio_m2": 16000,
       "mediana_costo_total": 800000,
       "n_publicaciones": 37,
+      "n_usd": 2,
+      "n_ars": 35,
+      "pct_usd": 5.4,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 680000,
-      "mediana_precio_3amb": 750000
+      "mediana_precio_3amb": 750000,
+      "pct_expensas": 18.8
     },
     {
       "barrio": "Villa Soldati",
@@ -6273,9 +8240,13 @@
       "mediana_precio_m2": 7500,
       "mediana_costo_total": 680000,
       "n_publicaciones": 1,
+      "n_usd": 0,
+      "n_ars": 1,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": null,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 13.3
     },
     {
       "barrio": "Villa Soldati",
@@ -6284,9 +8255,13 @@
       "mediana_precio_m2": 12857,
       "mediana_costo_total": 500000,
       "n_publicaciones": 2,
+      "n_usd": 0,
+      "n_ars": 2,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": null,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 11.1
     },
     {
       "barrio": "Villa Soldati",
@@ -6295,9 +8270,13 @@
       "mediana_precio_m2": 12857,
       "mediana_costo_total": 500000,
       "n_publicaciones": 2,
+      "n_usd": 0,
+      "n_ars": 2,
+      "pct_usd": 0,
       "mediana_precio_1amb": 450000,
       "mediana_precio_2amb": null,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 11.1
     },
     {
       "barrio": "Villa Soldati",
@@ -6306,9 +8285,13 @@
       "mediana_precio_m2": 13158,
       "mediana_costo_total": 570000,
       "n_publicaciones": 1,
+      "n_usd": 0,
+      "n_ars": 1,
+      "pct_usd": 0,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": null,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 14
     },
     {
       "barrio": "Villa Soldati",
@@ -6317,9 +8300,13 @@
       "mediana_precio_m2": 14894,
       "mediana_costo_total": 763400,
       "n_publicaciones": 1,
+      "n_usd": 0,
+      "n_ars": 1,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": null
+      "mediana_precio_3amb": null,
+      "pct_expensas": 9.1
     },
     {
       "barrio": "Villa Soldati",
@@ -6328,9 +8315,13 @@
       "mediana_precio_m2": 15947,
       "mediana_costo_total": 806700,
       "n_publicaciones": 2,
+      "n_usd": 0,
+      "n_ars": 2,
+      "pct_usd": 0,
       "mediana_precio_1amb": null,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 9.1
     },
     {
       "barrio": "Villa Urquiza",
@@ -6339,9 +8330,13 @@
       "mediana_precio_m2": 14130,
       "mediana_costo_total": 772000,
       "n_publicaciones": 423,
+      "n_usd": 23,
+      "n_ars": 400,
+      "pct_usd": 5.4,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 850000
+      "mediana_precio_3amb": 850000,
+      "pct_expensas": 21.8
     },
     {
       "barrio": "Villa Urquiza",
@@ -6350,9 +8345,13 @@
       "mediana_precio_m2": 14286,
       "mediana_costo_total": 770000,
       "n_publicaciones": 427,
+      "n_usd": 31,
+      "n_ars": 396,
+      "pct_usd": 7.3,
       "mediana_precio_1amb": 500000,
       "mediana_precio_2amb": 650000,
-      "mediana_precio_3amb": 950000
+      "mediana_precio_3amb": 950000,
+      "pct_expensas": 21.4
     },
     {
       "barrio": "Villa Urquiza",
@@ -6361,9 +8360,13 @@
       "mediana_precio_m2": 15000,
       "mediana_costo_total": 802700,
       "n_publicaciones": 419,
+      "n_usd": 30,
+      "n_ars": 389,
+      "pct_usd": 7.2,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1000000
+      "mediana_precio_3amb": 1000000,
+      "pct_expensas": 21
     },
     {
       "barrio": "Villa Urquiza",
@@ -6372,9 +8375,13 @@
       "mediana_precio_m2": 15385,
       "mediana_costo_total": 834000,
       "n_publicaciones": 447,
+      "n_usd": 31,
+      "n_ars": 416,
+      "pct_usd": 6.9,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 700000,
-      "mediana_precio_3amb": 1100000
+      "mediana_precio_3amb": 1100000,
+      "pct_expensas": 21.2
     },
     {
       "barrio": "Villa Urquiza",
@@ -6383,9 +8390,13 @@
       "mediana_precio_m2": 15541,
       "mediana_costo_total": 843000,
       "n_publicaciones": 475,
+      "n_usd": 56,
+      "n_ars": 419,
+      "pct_usd": 11.8,
       "mediana_precio_1amb": 540000,
       "mediana_precio_2amb": 723919,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 20.4
     },
     {
       "barrio": "Villa Urquiza",
@@ -6394,9 +8405,13 @@
       "mediana_precio_m2": 16154,
       "mediana_costo_total": 852117,
       "n_publicaciones": 439,
+      "n_usd": 47,
+      "n_ars": 392,
+      "pct_usd": 10.7,
       "mediana_precio_1amb": 550000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1231934
+      "mediana_precio_3amb": 1231934,
+      "pct_expensas": 20.7
     },
     {
       "barrio": "Villa Urquiza",
@@ -6405,9 +8420,13 @@
       "mediana_precio_m2": 16667,
       "mediana_costo_total": 900000,
       "n_publicaciones": 334,
+      "n_usd": 39,
+      "n_ars": 295,
+      "pct_usd": 11.7,
       "mediana_precio_1amb": 600000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 20.6
     },
     {
       "barrio": "Villa Urquiza",
@@ -6416,9 +8435,13 @@
       "mediana_precio_m2": 16667,
       "mediana_costo_total": 930000,
       "n_publicaciones": 384,
+      "n_usd": 44,
+      "n_ars": 340,
+      "pct_usd": 11.5,
       "mediana_precio_1amb": 635000,
       "mediana_precio_2amb": 750000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 20.2
     },
     {
       "barrio": "Villa Urquiza",
@@ -6427,15 +8450,18 @@
       "mediana_precio_m2": 17477,
       "mediana_costo_total": 918000,
       "n_publicaciones": 466,
+      "n_usd": 61,
+      "n_ars": 405,
+      "pct_usd": 13.1,
       "mediana_precio_1amb": 650000,
       "mediana_precio_2amb": 790000,
-      "mediana_precio_3amb": 1200000
+      "mediana_precio_3amb": 1200000,
+      "pct_expensas": 20.7
     }
   ],
   "etoi": {
     "fuente": "ETOI 254 - 4to trimestre 2025",
-    "nota": "Ingresos laborales medianos de jóvenes 18-35. Esfuerzo calculado con alquileres Q4 2025 (oct-dic), mismo período que la ETOI.",
-    "periodos_etoi": ["2025-10", "2025-11", "2025-12"],
+    "nota": "Ingresos laborales medianos de jóvenes 18-35. Esfuerzo calculado con alquileres Q4 2025.",
     "caba_total": 1000000,
     "zonas": [
       {
@@ -6455,8 +8481,7 @@
       }
     ]
   }
-}
-;
+};
 window.GEO_DATA={
 "type": "FeatureCollection",
 "name": "barrios",
@@ -6511,5 +8536,4 @@ window.GEO_DATA={
 { "type": "Feature", "properties": { "id": 47, "objeto": "BARRIO", "nombre": "Villa Soldati", "comuna": 8, "perimetro_": 12449.69, "area_metro": 8690078.77 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -58.434434695354661, -34.653111405353044 ], [ -58.433083953700724, -34.654098738104679 ], [ -58.432118999402, -34.654803992496362 ], [ -58.431993861809367, -34.654894806764396 ], [ -58.431390074333216, -34.655332891703516 ], [ -58.431289563166672, -34.655425823696049 ], [ -58.430935655184491, -34.655622925437491 ], [ -58.430812671945603, -34.65569062859646 ], [ -58.430701973582586, -34.655788817135551 ], [ -58.429838891483996, -34.656435420950281 ], [ -58.429634862133575, -34.656588273450041 ], [ -58.429485164108343, -34.656703302930865 ], [ -58.429155036484367, -34.656941531414418 ], [ -58.428907267926895, -34.657120326486961 ], [ -58.428796104072291, -34.65719987370332 ], [ -58.428666866746056, -34.657292372608204 ], [ -58.427970892234754, -34.657793021007599 ], [ -58.427830315321145, -34.657894107104909 ], [ -58.427765725268671, -34.657939895443093 ], [ -58.427281987250538, -34.658282822570186 ], [ -58.427138765175073, -34.658387146760965 ], [ -58.426879357215952, -34.658575983328099 ], [ -58.426747118428032, -34.658672242681327 ], [ -58.426442605083082, -34.659070885929729 ], [ -58.426354551224833, -34.659179347112378 ], [ -58.425719579571002, -34.659961444796949 ], [ -58.425308421418165, -34.660467958731523 ], [ -58.425094435965022, -34.66073156867597 ], [ -58.425030222887962, -34.660810671898226 ], [ -58.424943498074107, -34.660917545959123 ], [ -58.424686821886269, -34.661224157299671 ], [ -58.424215748059709, -34.661825175018478 ], [ -58.424196590985552, -34.661849616103247 ], [ -58.424193740892221, -34.661853252391396 ], [ -58.42415429583729, -34.661903577350081 ], [ -58.424126927840099, -34.661938493776589 ], [ -58.424123586602306, -34.661942756424658 ], [ -58.424042708514044, -34.662045942218505 ], [ -58.424085023872188, -34.662072121156143 ], [ -58.424130114798544, -34.662095472336254 ], [ -58.424171532800521, -34.66212308059665 ], [ -58.424173071322286, -34.662124383757501 ], [ -58.424196571757165, -34.662144289121002 ], [ -58.42420869333003, -34.662154556343133 ], [ -58.424216127005245, -34.66216820431864 ], [ -58.424236659737367, -34.66219968644333 ], [ -58.424260918859211, -34.662229303832433 ], [ -58.424288659056643, -34.662256755333281 ], [ -58.424303015428805, -34.662273418040826 ], [ -58.424342619548703, -34.662314633394793 ], [ -58.424385866418696, -34.662353267349744 ], [ -58.424386784646941, -34.662353972547855 ], [ -58.42443251286636, -34.662389099879526 ], [ -58.424510451720636, -34.662438381519145 ], [ -58.424541272795473, -34.662456563809371 ], [ -58.424609414161012, -34.662498827473442 ], [ -58.424797590697558, -34.662615538913016 ], [ -58.424828074735665, -34.662636229656435 ], [ -58.424860211278549, -34.662655134312452 ], [ -58.424948199530881, -34.662703649031478 ], [ -58.424996317315404, -34.662726918812517 ], [ -58.425035474759618, -34.66274430133813 ], [ -58.425089576571935, -34.662771817714258 ], [ -58.425095081207552, -34.662774617425463 ], [ -58.425151898788116, -34.662808392234254 ], [ -58.425205633033436, -34.66284545170361 ], [ -58.42540606638547, -34.662998840016321 ], [ -58.425772722010102, -34.663275133752123 ], [ -58.425772826646892, -34.663275340207917 ], [ -58.425818863787363, -34.66336577781037 ], [ -58.426066990054316, -34.663609123562445 ], [ -58.426208371887547, -34.66373080151574 ], [ -58.426208581294162, -34.663730923270208 ], [ -58.426335342136014, -34.663804774867124 ], [ -58.42633617848481, -34.663805685547743 ], [ -58.426609424647289, -34.664102981043264 ], [ -58.426610085643375, -34.6641032480604 ], [ -58.426727749586362, -34.664150716659705 ], [ -58.426728549877531, -34.664151773355648 ], [ -58.426848911129383, -34.664310547302698 ], [ -58.426947014299358, -34.66439405192979 ], [ -58.427396831932789, -34.664876816057919 ], [ -58.42787312211955, -34.665455646128947 ], [ -58.428181795452808, -34.665892188618727 ], [ -58.428182466428346, -34.665892120304633 ], [ -58.428267059547181, -34.665883458630184 ], [ -58.428268299356759, -34.665884940007381 ], [ -58.428382070875642, -34.666020898455045 ], [ -58.428411759897799, -34.666056377540116 ], [ -58.428444431204689, -34.666092956292367 ], [ -58.428523416696542, -34.66618138849276 ], [ -58.428526101418782, -34.66618439456807 ], [ -58.42858790702968, -34.66625825048996 ], [ -58.428607226280405, -34.666281173501915 ], [ -58.428607351680931, -34.666281321369262 ], [ -58.42860739093652, -34.666281368253877 ], [ -58.428645697977764, -34.666326819355398 ], [ -58.428758129876044, -34.66646021885304 ], [ -58.428779044682045, -34.666526767950927 ], [ -58.428983861517921, -34.666836874715059 ], [ -58.429128109484886, -34.667032483876724 ], [ -58.429129841381574, -34.667033915805099 ], [ -58.429246419540732, -34.667130302202324 ], [ -58.430085117429435, -34.66804108627408 ], [ -58.430096818554148, -34.668054342926489 ], [ -58.430116249192139, -34.66807635259245 ], [ -58.430669950649232, -34.668741753300218 ], [ -58.43073846997958, -34.66884015264813 ], [ -58.431477842437403, -34.669695962862733 ], [ -58.432326410567079, -34.670669380947444 ], [ -58.432464256650078, -34.670838486511634 ], [ -58.432628682039052, -34.671040195461337 ], [ -58.43263297987594, -34.671045467999129 ], [ -58.432667015797755, -34.671087220939484 ], [ -58.43267925172492, -34.671102232520859 ], [ -58.432903026026267, -34.67137674679185 ], [ -58.433087161034635, -34.671602634079818 ], [ -58.433124541070725, -34.671648489141027 ], [ -58.433219113530747, -34.671764504376611 ], [ -58.433355556160457, -34.671908316746773 ], [ -58.433442246509962, -34.671999689778723 ], [ -58.43344769206572, -34.672005428597949 ], [ -58.433512299335916, -34.672073525324336 ], [ -58.433514721647327, -34.672076077812747 ], [ -58.433622181180198, -34.672205402515118 ], [ -58.433668040610485, -34.672259745358865 ], [ -58.433684967717788, -34.672279803177844 ], [ -58.433720040151712, -34.672321362264277 ], [ -58.43372008159384, -34.672321412753391 ], [ -58.433906438633713, -34.672542242389675 ], [ -58.434075480012289, -34.672742552356574 ], [ -58.434094391129534, -34.672764961474265 ], [ -58.434544955326345, -34.67329886288389 ], [ -58.434566938977305, -34.673324911649324 ], [ -58.434650447965055, -34.673423864823796 ], [ -58.434651723984409, -34.673425408340172 ], [ -58.43516387813299, -34.674045584233809 ], [ -58.43519500365489, -34.674083274016731 ], [ -58.435243462633174, -34.674141953541103 ], [ -58.435666960280322, -34.674654764048263 ], [ -58.435689704631834, -34.674682305515155 ], [ -58.43590439704672, -34.674942272298154 ], [ -58.436226693809218, -34.675327918463523 ], [ -58.436298620257851, -34.675413980428061 ], [ -58.436818901788918, -34.67603651447083 ], [ -58.436819699081845, -34.676037468337 ], [ -58.437279119527311, -34.676587171133136 ], [ -58.43733638363144, -34.676655687878473 ], [ -58.438467515716276, -34.678009061262244 ], [ -58.438625496627111, -34.678198077728553 ], [ -58.439298344228675, -34.679003092549145 ], [ -58.439532312974542, -34.679279894907374 ], [ -58.439615325579027, -34.679378105332638 ], [ -58.439690790166765, -34.679467384864431 ], [ -58.439746922949354, -34.67953379272852 ], [ -58.439781495360236, -34.679574693699138 ], [ -58.439784560444615, -34.679578395482444 ], [ -58.440489851399292, -34.680350037782738 ], [ -58.440949143273727, -34.680984491371092 ], [ -58.44095426682884, -34.680990678690058 ], [ -58.441943131665653, -34.682184568401794 ], [ -58.44194844735776, -34.682190986472456 ], [ -58.442052250238802, -34.682316308744142 ], [ -58.442058324088229, -34.682323641873403 ], [ -58.443835540157735, -34.68438698873311 ], [ -58.44410542509187, -34.684700313713115 ], [ -58.444169862799413, -34.684775123734497 ], [ -58.444240504997609, -34.684865511954598 ], [ -58.444295869683479, -34.684929788415914 ], [ -58.4443940304918, -34.684852486154853 ], [ -58.444511894378948, -34.684759676293204 ], [ -58.448626176980859, -34.681519621279556 ], [ -58.449783619058444, -34.680608047905928 ], [ -58.449935375935773, -34.680498979548574 ], [ -58.450133586192102, -34.680432522095714 ], [ -58.450319169662308, -34.68042620418327 ], [ -58.45066487780371, -34.680749569235886 ], [ -58.450789599044576, -34.68082958137628 ], [ -58.45088331959635, -34.680856918118181 ], [ -58.450966017344591, -34.680861480439766 ], [ -58.451048719546833, -34.680843271275194 ], [ -58.451098342164777, -34.680815949093656 ], [ -58.45115348240045, -34.680761301183956 ], [ -58.451165047668667, -34.680746294753249 ], [ -58.451169346173401, -34.680728550916278 ], [ -58.451184618570316, -34.68066550598467 ], [ -58.451188850465407, -34.68064803887318 ], [ -58.451182247966102, -34.68063214364615 ], [ -58.451164376617989, -34.680589117546219 ], [ -58.451142129083756, -34.68053555892687 ], [ -58.451125284923243, -34.680519875407349 ], [ -58.451107584323879, -34.68050339405157 ], [ -58.450824541520738, -34.680239847964216 ], [ -58.45079052707186, -34.680202005968269 ], [ -58.450641461934751, -34.680036166193375 ], [ -58.450712487638569, -34.679941173889013 ], [ -58.450776097025589, -34.679836179629504 ], [ -58.450937724775152, -34.679699427802611 ], [ -58.450940045946005, -34.679697463864287 ], [ -58.451478691907717, -34.679273924600494 ], [ -58.452930313448192, -34.678132645359376 ], [ -58.453085388882094, -34.678011883821007 ], [ -58.454465257792393, -34.676937279032941 ], [ -58.455051533062111, -34.676480690511092 ], [ -58.457727193538211, -34.67438006091097 ], [ -58.458516450157973, -34.673852238710552 ], [ -58.45900362119658, -34.673753842549893 ], [ -58.459226951096653, -34.673726244489103 ], [ -58.459404847557252, -34.673650588525177 ], [ -58.459405277448212, -34.673650405552372 ], [ -58.459457344320228, -34.673607028578175 ], [ -58.459545935019484, -34.673533225565386 ], [ -58.459546525310884, -34.67353273341287 ], [ -58.459636885558098, -34.673384777569126 ], [ -58.459665192327975, -34.673232947356198 ], [ -58.459765958067038, -34.672943723392891 ], [ -58.459807447424758, -34.672851374065822 ], [ -58.459809518453554, -34.672846752587674 ], [ -58.459823223142124, -34.672823883264648 ], [ -58.459865098775147, -34.672754007021034 ], [ -58.459932099962977, -34.672666614326126 ], [ -58.460029702484967, -34.672564715098368 ], [ -58.461227220843384, -34.671535586019452 ], [ -58.461258068592961, -34.671508993088118 ], [ -58.461433806448575, -34.671357492010223 ], [ -58.461825060019592, -34.671024455427499 ], [ -58.461848094385651, -34.671002726268505 ], [ -58.462079491338251, -34.67078445010371 ], [ -58.462257400800517, -34.67061662687702 ], [ -58.46228654925951, -34.670580503939469 ], [ -58.462470331478244, -34.670352746462356 ], [ -58.462556981084944, -34.670219828410737 ], [ -58.462654572293566, -34.670088797008425 ], [ -58.462807957499301, -34.669882478925416 ], [ -58.462894436885044, -34.669766749650194 ], [ -58.463226655346304, -34.669386627514442 ], [ -58.463648299391338, -34.669152970187717 ], [ -58.464151390481511, -34.669031559207923 ], [ -58.464768356961883, -34.668877465032395 ], [ -58.465234748962615, -34.668485721882909 ], [ -58.465238054645852, -34.668483144692686 ], [ -58.467940208741574, -34.666376688153058 ], [ -58.468561023109871, -34.665885841961071 ], [ -58.469130418550932, -34.66547381546949 ], [ -58.469734503833656, -34.665001388906113 ], [ -58.47016199571469, -34.66466713884526 ], [ -58.47036563660766, -34.66443685138065 ], [ -58.470411469242613, -34.664368199814319 ], [ -58.470440110771221, -34.664275877233614 ], [ -58.470455849567486, -34.664208618287645 ], [ -58.470460659810577, -34.6641227791565 ], [ -58.470461635418346, -34.66411359820848 ], [ -58.470393721836608, -34.663768610706768 ], [ -58.470194097664283, -34.663607718135374 ], [ -58.469934428733552, -34.663593807513976 ], [ -58.469641281155688, -34.663651952534245 ], [ -58.469373799329766, -34.663823871920272 ], [ -58.46923841364044, -34.663874920198026 ], [ -58.469129873058854, -34.6638382244073 ], [ -58.468888423334505, -34.663822889157821 ], [ -58.468702691029968, -34.663784532491896 ], [ -58.468451949404091, -34.663654099871032 ], [ -58.467848301038089, -34.663132350860899 ], [ -58.467776743456376, -34.663072707005497 ], [ -58.467666167065616, -34.662980539723591 ], [ -58.467323598368388, -34.662695000958969 ], [ -58.46732061128133, -34.662692414903198 ], [ -58.4668292009151, -34.662267431832703 ], [ -58.466826763703835, -34.662265317187817 ], [ -58.466480682025157, -34.661964330406391 ], [ -58.466409683807989, -34.661902581823924 ], [ -58.466032758667325, -34.661574759461423 ], [ -58.465918103777689, -34.661475441553428 ], [ -58.465875927970579, -34.661438908169472 ], [ -58.465559551686852, -34.661164852332618 ], [ -58.465456999630561, -34.661076017197075 ], [ -58.465456683258928, -34.661075688186784 ], [ -58.465433654679543, -34.661051562262578 ], [ -58.464936963250501, -34.66053123264588 ], [ -58.464603640286903, -34.660213191844214 ], [ -58.464430164857973, -34.660047667910746 ], [ -58.464430140858063, -34.660047649882699 ], [ -58.464061129216091, -34.659758711838499 ], [ -58.462040798974357, -34.658231219834747 ], [ -58.461934261570853, -34.658150669250659 ], [ -58.461687509628511, -34.657959776532941 ], [ -58.461643868007478, -34.657926014393482 ], [ -58.461643733833021, -34.657925910729077 ], [ -58.461580331534229, -34.657876860317536 ], [ -58.461283055216896, -34.657616732955262 ], [ -58.460709813066025, -34.657115120422844 ], [ -58.460401946309197, -34.656804789104761 ], [ -58.460401851408456, -34.65680469355263 ], [ -58.460398347714644, -34.656801161730911 ], [ -58.460369707343347, -34.656772291457209 ], [ -58.460346465415256, -34.6567488631458 ], [ -58.460295539503214, -34.656706280004009 ], [ -58.459671680037204, -34.656184623723782 ], [ -58.459251484700637, -34.65581088329094 ], [ -58.459200534967628, -34.655765566596664 ], [ -58.458926155412072, -34.655579948669818 ], [ -58.458583835281338, -34.65530454124432 ], [ -58.458337558035254, -34.655106401516996 ], [ -58.458335672088985, -34.655104772584629 ], [ -58.458017817570344, -34.654830218181615 ], [ -58.457614377771563, -34.65448173308372 ], [ -58.457113181033279, -34.654048803516808 ], [ -58.456995415837568, -34.653929571002287 ], [ -58.45554668940725, -34.652716702736299 ], [ -58.455475869481752, -34.652657415777917 ], [ -58.455333143589613, -34.652537916813657 ], [ -58.455324764771483, -34.652530900555661 ], [ -58.455324730959504, -34.652530872609582 ], [ -58.455297240899796, -34.652506474922205 ], [ -58.455250541430019, -34.652465016689426 ], [ -58.455250386550532, -34.652464878762785 ], [ -58.45506211015045, -34.652297754724096 ], [ -58.45500562652596, -34.652234266962346 ], [ -58.454942307774061, -34.65216309775073 ], [ -58.45492384139235, -34.652123596490888 ], [ -58.454860856472685, -34.651988865801627 ], [ -58.454817015864087, -34.651835518589778 ], [ -58.454798581615201, -34.651771043614993 ], [ -58.454765123318886, -34.651489911638784 ], [ -58.454752888002297, -34.651426329487798 ], [ -58.454733458492662, -34.651325366058046 ], [ -58.454700221734122, -34.651152651732275 ], [ -58.454636599513989, -34.650821517879137 ], [ -58.453821407836287, -34.650901457810377 ], [ -58.453338991211353, -34.650947334727412 ], [ -58.452857305978029, -34.65099310974113 ], [ -58.451975163997211, -34.651076935603207 ], [ -58.451973155869716, -34.651076997614297 ], [ -58.451537467408642, -34.651090374826957 ], [ -58.451034824456876, -34.651105805302443 ], [ -58.45103435214849, -34.651105819677568 ], [ -58.449132673544668, -34.651164181190246 ], [ -58.448828769348751, -34.651173504893293 ], [ -58.447667355817103, -34.651124169519349 ], [ -58.444951431976591, -34.651008756133024 ], [ -58.444620975930334, -34.650946452446661 ], [ -58.444406969822005, -34.651064096483729 ], [ -58.443522308870776, -34.651165646619326 ], [ -58.443324770199574, -34.651188290411675 ], [ -58.443296186698596, -34.651341315315669 ], [ -58.44326693551038, -34.651430958920663 ], [ -58.443253514832321, -34.651466005525336 ], [ -58.443243826963531, -34.651491307547026 ], [ -58.44320554479723, -34.651573062269989 ], [ -58.443157973185798, -34.65165587190382 ], [ -58.443112535589613, -34.651722977423326 ], [ -58.443060964163756, -34.651786702503365 ], [ -58.443006239117864, -34.651846270612701 ], [ -58.442952455552827, -34.651896051292837 ], [ -58.442909240378619, -34.65193322743157 ], [ -58.442903951214703, -34.651937418125478 ], [ -58.442902341990553, -34.651938694259563 ], [ -58.442823750711035, -34.65200095983073 ], [ -58.442789294599486, -34.652028708598948 ], [ -58.442784799658234, -34.652032328825698 ], [ -58.442748914302776, -34.652061229349876 ], [ -58.442653017600982, -34.652135925104808 ], [ -58.441632419176123, -34.6529308308859 ], [ -58.441534055852209, -34.653007433606 ], [ -58.440554773589199, -34.653770248233592 ], [ -58.440404408936878, -34.653887373252111 ], [ -58.439487069739869, -34.654601850589813 ], [ -58.438846660703945, -34.655100599857612 ], [ -58.438419075774718, -34.655489952242796 ], [ -58.438085766064333, -34.655741845259449 ], [ -58.438006518175087, -34.65580173412598 ], [ -58.437733597508334, -34.655590678657276 ], [ -58.437587705817798, -34.65547785675777 ], [ -58.437311963119292, -34.655264616146901 ], [ -58.437098949020168, -34.655099884380341 ], [ -58.436022335230156, -34.654369080842827 ], [ -58.435062185656768, -34.653608478656331 ], [ -58.434434695354661, -34.653111405353044 ] ] ] } },
 { "type": "Feature", "properties": { "id": 48, "objeto": "BARRIO", "nombre": "Villa Urquiza", "comuna": 12, "perimetro_": 10021.46, "area_metro": 5449058.92 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -58.472988668166487, -34.56643597938784 ], [ -58.473368640419011, -34.566661983371738 ], [ -58.472783274753347, -34.567353593606946 ], [ -58.471961602741025, -34.568324590973113 ], [ -58.471176599068436, -34.569252198216823 ], [ -58.470416264146053, -34.570150643985947 ], [ -58.469585938798154, -34.571131695260064 ], [ -58.468840893512407, -34.572012031308233 ], [ -58.468081615458928, -34.572909123463177 ], [ -58.468287909717056, -34.573026793731167 ], [ -58.469134122526441, -34.573509300609992 ], [ -58.46992584768698, -34.573960754021854 ], [ -58.470865230521639, -34.574496408049235 ], [ -58.471806067266868, -34.575032836234257 ], [ -58.471958560769281, -34.575119798714788 ], [ -58.472742574696518, -34.575572073509136 ], [ -58.472886811299873, -34.575655303556552 ], [ -58.473547201842024, -34.576033003307082 ], [ -58.473684797791861, -34.576107922715984 ], [ -58.473734525307378, -34.57613504689089 ], [ -58.473829120695513, -34.576186644505015 ], [ -58.474619029551647, -34.576636370945373 ], [ -58.47485088596202, -34.576768394600784 ], [ -58.474978798894504, -34.576841201416698 ], [ -58.475006876708484, -34.576857183712463 ], [ -58.475594314798833, -34.577190512908352 ], [ -58.477150250323106, -34.578073391080167 ], [ -58.477333152930029, -34.578177175668976 ], [ -58.477773042325914, -34.578427199617025 ], [ -58.478198543877944, -34.578669054105653 ], [ -58.478655127722924, -34.57892858015046 ], [ -58.478987903717254, -34.579125161285333 ], [ -58.479232463116297, -34.57926963893923 ], [ -58.480183202462136, -34.579820014385291 ], [ -58.480310060061754, -34.579893421480151 ], [ -58.480483371581776, -34.579993708727351 ], [ -58.480993447578506, -34.580288993292683 ], [ -58.48112892959729, -34.580367918608978 ], [ -58.482145264855284, -34.580959749054081 ], [ -58.483013184720207, -34.581465114106891 ], [ -58.483133767803658, -34.581535237170279 ], [ -58.484120496490902, -34.582108745207975 ], [ -58.484746415427985, -34.582472516891876 ], [ -58.485094974596102, -34.582675063943782 ], [ -58.485823862309921, -34.583098671661162 ], [ -58.485959182206628, -34.583177099429307 ], [ -58.487032558901284, -34.583798808295604 ], [ -58.488103055200888, -34.584418817167219 ], [ -58.488792967971889, -34.584818330673862 ], [ -58.489505047868406, -34.584205140723881 ], [ -58.489831758978795, -34.583923867064136 ], [ -58.490263681014319, -34.583552005866039 ], [ -58.490436909192567, -34.583402809597246 ], [ -58.490518968026144, -34.583332085357441 ], [ -58.491041795542543, -34.58288118485487 ], [ -58.49175086323082, -34.58226960215962 ], [ -58.491938896309222, -34.582107442291118 ], [ -58.492404763456747, -34.581705141439365 ], [ -58.492542745250603, -34.581593135227656 ], [ -58.493244739434886, -34.581023587897569 ], [ -58.493452699019599, -34.58088501287672 ], [ -58.493618181202848, -34.580774687908793 ], [ -58.494328260657142, -34.580233724576168 ], [ -58.494459686416455, -34.580133549046096 ], [ -58.495285005840472, -34.579504731947658 ], [ -58.495415663418086, -34.579405258690016 ], [ -58.495545042905533, -34.57930451912577 ], [ -58.49556297633913, -34.579290812719186 ], [ -58.495814974231045, -34.579098205865996 ], [ -58.495906539910294, -34.57902822000073 ], [ -58.496360893064036, -34.578670907898307 ], [ -58.49702266933209, -34.578150576322081 ], [ -58.497217158369359, -34.577998547472504 ], [ -58.497859092697162, -34.577496808725172 ], [ -58.498034002417796, -34.577360559051748 ], [ -58.498844877664645, -34.576728975977517 ], [ -58.49965591056143, -34.576097175572556 ], [ -58.499825708310006, -34.575964938874435 ], [ -58.500149810965816, -34.575713146193756 ], [ -58.500691367466693, -34.575292480671635 ], [ -58.501327645739956, -34.574798260225982 ], [ -58.50147462798612, -34.574684902374436 ], [ -58.501734465034623, -34.574484323821807 ], [ -58.502282390645462, -34.574061536212263 ], [ -58.502945629740097, -34.573549692868113 ], [ -58.502993461989561, -34.573518408646706 ], [ -58.50394698279851, -34.572948788211704 ], [ -58.504194745846043, -34.572805674323654 ], [ -58.505125875158626, -34.572267672357377 ], [ -58.505338654284451, -34.572145836372513 ], [ -58.505544794911309, -34.572027804529355 ], [ -58.505858738323859, -34.571855577991613 ], [ -58.5064846875309, -34.571512184145277 ], [ -58.506673802929186, -34.571405987630861 ], [ -58.506788362619488, -34.571341579600897 ], [ -58.506872874859411, -34.571289576808518 ], [ -58.507120538055233, -34.5711370902577 ], [ -58.507634600750379, -34.570846617297555 ], [ -58.507878949455716, -34.570708215194315 ], [ -58.507979122680922, -34.570651558154552 ], [ -58.509039281539508, -34.569997727553861 ], [ -58.508816822372438, -34.569509534818003 ], [ -58.508603499481069, -34.569392640511531 ], [ -58.508416901682793, -34.569300929936553 ], [ -58.507315607945934, -34.568759647406772 ], [ -58.506261822766859, -34.568241702265546 ], [ -58.505207454414247, -34.567723396621822 ], [ -58.505070955066714, -34.567656329447303 ], [ -58.504656347629627, -34.567452733641986 ], [ -58.504240124747561, -34.567248362636704 ], [ -58.504100218849509, -34.567175450658922 ], [ -58.504093587553953, -34.567171998605815 ], [ -58.503956224817593, -34.56710049634583 ], [ -58.503331046033949, -34.566794077052677 ], [ -58.50271106421976, -34.566490187676756 ], [ -58.502559497829253, -34.566416503360955 ], [ -58.501997425312624, -34.566143085189466 ], [ -58.501876342789139, -34.566084248582214 ], [ -58.501436974657757, -34.565872129313846 ], [ -58.50086154175667, -34.565594343543502 ], [ -58.500234344070229, -34.565291500215864 ], [ -58.499711881857017, -34.56504165253925 ], [ -58.499138843225296, -34.56476329450031 ], [ -58.49905190953077, -34.564721418028142 ], [ -58.497990226732142, -34.564209600730955 ], [ -58.49785969878377, -34.564146678433751 ], [ -58.496822042131654, -34.563646675360232 ], [ -58.496592324151571, -34.563536383625568 ], [ -58.495416581593027, -34.562971827834048 ], [ -58.494288108039761, -34.562429924094218 ], [ -58.494128893214572, -34.562353413334534 ], [ -58.492883114439095, -34.561758075032778 ], [ -58.49192955052844, -34.561302306836488 ], [ -58.491833492099524, -34.56144233193703 ], [ -58.490990726098573, -34.562651285156306 ], [ -58.490517688202679, -34.562424274046542 ], [ -58.490400111077825, -34.562367890640665 ], [ -58.490042865592969, -34.562196275323402 ], [ -58.489276360918467, -34.561828122719753 ], [ -58.489085991554759, -34.561738653969954 ], [ -58.488309184197924, -34.561373557788393 ], [ -58.488291742636378, -34.561365360166526 ], [ -58.48827399805743, -34.561356791215758 ], [ -58.488130663011887, -34.561287574542547 ], [ -58.487319562435239, -34.560896108623098 ], [ -58.487174149177079, -34.560827755699833 ], [ -58.486388349764269, -34.560458246419799 ], [ -58.486254682918698, -34.560394541544269 ], [ -58.4853007460732, -34.55993991862465 ], [ -58.485165637019563, -34.559875575500996 ], [ -58.485017673837, -34.55980503719401 ], [ -58.484988680768069, -34.559791117983281 ], [ -58.484349883288644, -34.559484442145248 ], [ -58.483700485518312, -34.559172714917622 ], [ -58.483559505311746, -34.559104990631823 ], [ -58.481157601935323, -34.562500249948123 ], [ -58.480976593137171, -34.562643170660309 ], [ -58.480225376421103, -34.563236310351385 ], [ -58.480374298193546, -34.563316837606351 ], [ -58.480068048284053, -34.563507799778158 ], [ -58.479910071025806, -34.563605076427656 ], [ -58.479721531280013, -34.563696512127997 ], [ -58.479541415048196, -34.563770904020764 ], [ -58.479054855891029, -34.563932591088331 ], [ -58.479311882279696, -34.5640663637881 ], [ -58.479118249041619, -34.564238857406593 ], [ -58.478148110936047, -34.565103363695115 ], [ -58.477177527842933, -34.565968214662348 ], [ -58.476356052070599, -34.56670015170576 ], [ -58.476190241013988, -34.566849608862448 ], [ -58.475123717077153, -34.566219140385748 ], [ -58.474665787126753, -34.566735110469509 ], [ -58.474662739751636, -34.566738364004706 ], [ -58.474594601383885, -34.566811106505 ], [ -58.473607464232146, -34.566566566277068 ], [ -58.4735335391387, -34.566552105487702 ], [ -58.472988668166487, -34.56643597938784 ] ] ] } }
 ]
-}
-;
+};
