@@ -834,18 +834,28 @@
   let tipChart      = null;
   let m2Chart       = null;
   let evolChart     = null;
-  let compChart     = null;
-  let compEvolChart = null;
-  let curVar        = 'mediana_precio_ars';
-  let curPeriodo    = null;
-  let compA         = null;
-  let compB         = null;
-  let serieLookup   = {};
-  let serieByPeriodo = {};
+  let compChart        = null;
+  let compEvolChart    = null;
+  let airbnbEvolChart  = null;
+  let curVar           = 'mediana_precio_ars';
+  let curPeriodo       = null;
+  let compA            = null;
+  let compB            = null;
+  let serieLookup      = {};
+  let serieByPeriodo   = {};
+  let serieAirbnbLookup = {};
+
+  const AIRBNB_PERIODO_ORDER = { feb_26: 0, mar_26: 1, abr_26: 2, may_26: 3 };
+  function fmtAirbnbPeriodo(p) {
+    const map = { feb_26: 'Feb 26', mar_26: 'Mar 26', abr_26: 'Abr 26', may_26: 'May 26' };
+    return map[p] || p;
+  }
 
   const SERIE_VARS = new Set(['mediana_precio_ars', 'mediana_precio_m2', 'mediana_costo_total', 'n_publicaciones', 'pct_usd', 'pct_expensas_alquiler']);
-  // Variables without monthly data — show "no varía por período" note
-  const NO_PERIOD_VARS = new Set(['n_airbnb', 'ratio_airbnb_zonaprop', 'esfuerzo_alquiler_pct']);
+  // Variables sin datos mensuales — solo esfuerzo_alquiler_pct es completamente estática
+  const NO_PERIOD_VARS  = new Set(['esfuerzo_alquiler_pct']);
+  // Variables Airbnb: dinámicas pero con nota de período aproximado
+  const AIRBNB_NOTE_VARS = new Set(['n_airbnb', 'ratio_airbnb_zonaprop']);
 
   // ─────────────────────────────────────────────
   //  FORMATTERS
@@ -909,6 +919,19 @@
           serieLookup[key].sort((a, b) => a.periodo.localeCompare(b.periodo));
         }
       }
+
+      if (dash.serie_airbnb) {
+        for (const row of dash.serie_airbnb) {
+          const key = norm(row.barrio);
+          if (!serieAirbnbLookup[key]) serieAirbnbLookup[key] = [];
+          serieAirbnbLookup[key].push(row);
+        }
+        for (const key of Object.keys(serieAirbnbLookup)) {
+          serieAirbnbLookup[key].sort((a, b) =>
+            (AIRBNB_PERIODO_ORDER[a.periodo] ?? 99) - (AIRBNB_PERIODO_ORDER[b.periodo] ?? 99)
+          );
+        }
+      }
       curPeriodo = dash.kpis.ultimo_periodo;
 
       const up = dash.kpis.ultimo_periodo;
@@ -942,13 +965,13 @@
       { label: 'Precio mediano m²',        value: fmtARS(k.mediana_precio_m2_caba),        sub: 'ARS / m²' },
       { label: 'Publicaciones totales',    value: fmtNum(k.total_publicaciones),            sub: 'en ZonaProp' },
       { label: 'Listados Airbnb',          value: fmtNum(k.total_airbnb),                  sub: 'activos' },
-      { label: 'Barrio más caro',          value: k.barrio_mas_caro,                       sub: 'precio mediano' },
+      { label: 'Expensas medianas',        value: fmtARS(k.mediana_expensas_caba),         sub: 'ARS / mes', color: '#F5A64D' },
       { label: 'Sobreprecio monoambiente', value: avgRatio ? avgRatio.toFixed(2) + 'x' : 'N/D', sub: 'precio m² · 1 amb vs 3 amb' },
     ];
     document.getElementById('kpiStrip').innerHTML = cards.map(c => `
       <div class="kpi-card">
         <div class="kpi-label">${c.label}</div>
-        <div class="kpi-value${c.accent ? ' kpi-accent' : ''}">${c.value}</div>
+        <div class="kpi-value${c.accent ? ' kpi-accent' : ''}"${c.color ? ` style="color:${c.color}"` : ''}>${c.value}</div>
         <div class="kpi-sub">${c.sub}</div>
       </div>`).join('');
   }
@@ -1018,7 +1041,17 @@
     const valKey       = (usePeriodo && cfg.serieKey) ? cfg.serieKey : curVar;
 
     const note = document.getElementById('periodoNote');
-    if (note) note.style.display = NO_PERIOD_VARS.has(curVar) ? 'block' : 'none';
+    if (note) {
+      if (NO_PERIOD_VARS.has(curVar)) {
+        note.style.display = 'block';
+        note.textContent = 'Este indicador no varía por período';
+      } else if (AIRBNB_NOTE_VARS.has(curVar)) {
+        note.style.display = 'block';
+        note.textContent = 'Datos Airbnb corresponden al período más cercano disponible.';
+      } else {
+        note.style.display = 'none';
+      }
+    }
 
     geoLayer = L.geoJSON(geoData, {
       style: f => {
@@ -1173,7 +1206,7 @@
       </div>
 
       <!-- EVOLUCIÓN TEMPORAL -->
-      <div class="section-label">Evolución mensual de precios</div>
+      <div class="section-label">Evolución mensual de alquileres</div>
       <div class="chart-wrap-tall"><canvas id="evolChart"></canvas></div>
 
       <!-- PRECIO POR AMBIENTES -->
@@ -1207,15 +1240,6 @@
       ${esfuerzoBar(esfuerzo1, '1 ambiente')}
       <div class="etoi-source">Fuente: ETOI 254 · 4to trimestre 2025. Ingreso laboral mediano de jóvenes 18–35 por zona.</div>
 
-      <!-- AIRBNB -->
-      <div class="section-label">Airbnb</div>
-      <div class="stat-grid stat-grid-3">
-        <div class="stat-box"><div class="stat-label">Listados Airbnb</div><div class="stat-value">${fmtNum(b.n_airbnb)}</div></div>
-        <div class="stat-box"><div class="stat-label">Precio noche mediana</div><div class="stat-value">USD ${fmtNum(b.mediana_precio_noche_usd)}</div></div>
-        <div class="stat-box"><div class="stat-label">Ratio Airbnb / ZP</div><div class="stat-value">${fmtPct(b.ratio_airbnb_zonaprop)}</div></div>
-      </div>
-      <div style="font-size:10px;color:var(--muted);font-style:italic;margin-top:5px;margin-bottom:2px">Datos correspondientes a feb–abr 2026. No disponibles por período mensual.</div>
-
       <!-- AMENITIES ZONAPROP -->
       <div class="section-label">Amenities · Zonaprop</div>
       <div class="stat-grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:10px">
@@ -1229,10 +1253,21 @@
         <div class="stat-box"><div class="stat-label">SUM</div><div class="stat-value">${b.pct_sum != null ? fmtPct(b.pct_sum,1) : '—'}</div></div>
       </div>
 
+      <!-- AIRBNB -->
+      <div class="section-label">Airbnb</div>
+      <div class="stat-grid stat-grid-3">
+        <div class="stat-box"><div class="stat-label">Listados Airbnb</div><div class="stat-value">${fmtNum(b.n_airbnb)}</div></div>
+        <div class="stat-box"><div class="stat-label">Precio noche mediana</div><div class="stat-value">USD ${fmtNum(b.mediana_precio_noche_usd)}</div></div>
+        <div class="stat-box"><div class="stat-label">Ratio Airbnb / ZP</div><div class="stat-value">${fmtPct(b.ratio_airbnb_zonaprop)}</div></div>
+      </div>
+      <div id="airbnbEvolWrap" style="margin-top:8px;margin-bottom:4px">
+        <div class="chart-wrap"><canvas id="airbnbEvolChart"></canvas></div>
+      </div>
+
       <!-- AMENITIES AIRBNB -->
       <div class="section-label">Amenities · Airbnb</div>
       <div class="stat-grid stat-grid-3" style="margin-bottom:4px">
-        <div class="stat-box"><div class="stat-label">Pileta / Pool</div><div class="stat-value">${b.pct_pool_airbnb != null ? fmtPct(b.pct_pool_airbnb,1) : '—'}</div></div>
+        <div class="stat-box"><div class="stat-label">Pileta</div><div class="stat-value">${b.pct_pool_airbnb != null ? fmtPct(b.pct_pool_airbnb,1) : '—'}</div></div>
         <div class="stat-box"><div class="stat-label">Gimnasio</div><div class="stat-value">${b.pct_gym_airbnb != null ? fmtPct(b.pct_gym_airbnb,1) : '—'}</div></div>
         <div class="stat-box"><div class="stat-label">Estacionamiento</div><div class="stat-value">${b.pct_parking_airbnb != null ? fmtPct(b.pct_parking_airbnb,1) : '—'}</div></div>
       </div>
@@ -1458,6 +1493,71 @@
           }
         }
       });
+    }
+
+    // ── CHART EVOLUCIÓN AIRBNB POR BARRIO ──
+    if (airbnbEvolChart) { airbnbEvolChart.destroy(); airbnbEvolChart = null; }
+    const serieAirbnb = serieAirbnbLookup[norm(b.barrio)] || [];
+    const airbnbWrap  = document.getElementById('airbnbEvolWrap');
+    if (serieAirbnb.length > 0) {
+      airbnbWrap.innerHTML = '<div class="chart-wrap"><canvas id="airbnbEvolChart"></canvas></div>';
+      airbnbEvolChart = new Chart(document.getElementById('airbnbEvolChart').getContext('2d'), {
+        type: 'line',
+        data: {
+          labels:   serieAirbnb.map(r => fmtAirbnbPeriodo(r.periodo)),
+          datasets: [{
+            label: 'Listados Airbnb',
+            data:  serieAirbnb.map(r => r.n_airbnb),
+            borderColor: '#3A9B8C',
+            backgroundColor: '#3A9B8C22',
+            borderWidth: 2.5,
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            pointBackgroundColor: '#3A9B8C',
+            pointBorderColor: '#fff',
+            pointBorderWidth: 1.5,
+            tension: 0.3,
+            fill: true,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: '#fff',
+              borderColor: '#E0E0E0',
+              borderWidth: 1,
+              titleColor: '#1C1C1C',
+              bodyColor: '#1C1C1C',
+              titleFont: { family: 'Inter', size: 12, weight: '700' },
+              bodyFont: { family: 'DM Sans', size: 12 },
+              padding: 10,
+              callbacks: { label: ctx => '  Listados: ' + fmtNum(ctx.raw) }
+            }
+          },
+          scales: {
+            x: {
+              grid: { color: '#EEEEEE' },
+              border: { display: false },
+              ticks: { font: { family: 'DM Sans', size: 10 }, color: '#6B6B6B' }
+            },
+            y: {
+              grid: { color: '#EEEEEE' },
+              border: { display: false },
+              beginAtZero: false,
+              ticks: {
+                font: { family: 'DM Sans', size: 10 },
+                color: '#3A9B8C',
+                callback: v => fmtNum(v)
+              }
+            }
+          }
+        }
+      });
+    } else {
+      airbnbWrap.innerHTML = '<div style="font-size:12px;color:var(--muted);font-style:italic;padding:8px 0 4px">Sin datos disponibles</div>';
     }
   }
 
