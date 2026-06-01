@@ -40,64 +40,28 @@
       --shadow:  0 2px 14px rgba(0,0,0,0.07);
     }
 
-    html { height: 100%; }
+    html, body { height: 100%; overflow: hidden; }
+
+    @media (max-height: 699px) {
+      html, body { overflow: auto; }
+    }
 
     body {
       font-family: 'DM Sans', sans-serif;
       background: var(--bg);
       color: var(--text);
-      min-height: 100%;
       display: flex;
       flex-direction: column;
-      overflow-y: auto;
     }
 
-    /* ── HEADER ── */
-    header {
-      flex-shrink: 0;
-      background: var(--dark);
-      padding: 28px 24px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .header-logo {
-      margin-bottom: 12px;
-      filter: brightness(0) invert(1);
-      opacity: 0.9;
-    }
-
-    header h1 {
-      font-family: 'Inter', sans-serif;
-      font-size: 1.95rem;
-      font-weight: 800;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: #FFFFFF;
-      line-height: 1.2;
-      margin-bottom: 6px;
-    }
-
-    .header-subtitle {
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 300;
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.55);
-      margin-bottom: 22px;
-      letter-spacing: 0.02em;
-    }
-
-    /* tabs inside header */
+    /* ── TAB BAR (standalone, no header) ── */
     .tab-bar {
       flex-shrink: 0;
       display: flex;
       gap: 0;
-      align-self: center;
-      border-top: 1px solid rgba(255,255,255,0.12);
-      margin-top: 0;
-      padding: 0 4px;
+      padding: 0 24px;
+      background: #F4F4F4;
+      border-bottom: 1px solid var(--border);
     }
 
     .tab-btn {
@@ -107,17 +71,17 @@
       padding: 10px 22px;
       border: none;
       background: transparent;
-      color: rgba(255,255,255,0.6);
+      color: var(--negro);
       cursor: pointer;
       transition: background .15s, color .15s;
       outline: none;
       border-radius: 0;
     }
 
-    .tab-btn:hover { color: #fff; background: #4DC4A8; }
+    .tab-btn:hover { color: #fff; background: var(--verde-medio); }
 
     .tab-btn.active {
-      background: var(--accent);
+      background: var(--verde-oscuro);
       color: #fff;
       font-weight: 600;
     }
@@ -176,8 +140,8 @@
 
     /* ── MAIN LAYOUT ── */
     .main-layout {
-      flex: none;
-      height: calc(100vh - 230px);
+      flex: 1;
+      min-height: 0;
       display: grid;
       grid-template-columns: 43% 57%;
       gap: 14px;
@@ -613,13 +577,27 @@
       font-size: 13px;
     }
 
+    /* ── EXPLORER VIEW ── */
+    #view-explorer {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
     /* ── COMPARADOR VIEW ── */
     #view-comparador {
       padding: 14px 24px 28px;
     }
 
+    #view-comparador {
+      flex: 1;
+      min-height: 0;
+      overflow-y: auto;
+    }
+
     #view-comparador .panel {
-      max-height: calc(100vh - 230px);
+      max-height: 100%;
       overflow-y: auto;
     }
 
@@ -645,20 +623,11 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img class="header-logo"
-         src="https://www.iciudad.org.ar/wp-content/uploads/2026/03/logo-final-blanco-y-negro-varias-versiones-vector-04-1.png"
-         height="32" alt="iCiudad">
-    <h1>Mercado de Alquileres en CABA</h1>
-    <div class="header-subtitle">Análisis territorial &nbsp;·&nbsp; <span id="headerPeriodo">Cargando&hellip;</span></div>
-
-    <!-- TAB BAR integrado al header -->
-    <div class="tab-bar">
-      <button class="tab-btn active" id="tabExplorer" onclick="switchTab('explorer')">Explorador de barrios</button>
-      <button class="tab-btn" id="tabComparador" onclick="switchTab('comparador')">Comparador</button>
-    </div>
-  </header>
+  <!-- TAB BAR -->
+  <div class="tab-bar">
+    <button class="tab-btn active" id="tabExplorer" onclick="switchTab('explorer')">Explorador de barrios</button>
+    <button class="tab-btn" id="tabComparador" onclick="switchTab('comparador')">Comparador</button>
+  </div>
 
   <!-- KPI STRIP -->
   <div class="kpi-strip" id="kpiStrip"></div>
