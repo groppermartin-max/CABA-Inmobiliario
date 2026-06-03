@@ -820,7 +820,21 @@
     return map[p] || p;
   }
 
+  // Map alquiler período → Airbnb período más cercano
+  function airbnbPeriodoForAlquiler(periodo) {
+    if (!periodo) return 'feb_26';
+    const [yr, mo] = periodo.split('-').map(Number);
+    if (yr < 2026 || (yr === 2026 && mo <= 2)) return 'feb_26';
+    if (yr === 2026 && mo === 3) return 'mar_26';
+    if (yr === 2026 && mo === 4) return 'abr_26';
+    return 'may_26';
+  }
+
+  // Lookup por barrio+periodo Airbnb: serieAirbnbByPeriodo[periodo][normBarrio] = row
+  let serieAirbnbByPeriodo = {};
+
   const SERIE_VARS = new Set(['mediana_precio_ars', 'mediana_precio_m2', 'mediana_costo_total', 'n_publicaciones', 'pct_usd', 'pct_expensas_alquiler']);
+  const AIRBNB_VARS = new Set(['n_airbnb', 'ratio_airbnb_zonaprop']);
   // Variables sin datos mensuales — solo esfuerzo_alquiler_pct es completamente estática
   const NO_PERIOD_VARS  = new Set(['esfuerzo_alquiler_pct']);
   // Variables Airbnb: dinámicas pero con nota de período aproximado
@@ -894,6 +908,8 @@
           const key = norm(row.barrio);
           if (!serieAirbnbLookup[key]) serieAirbnbLookup[key] = [];
           serieAirbnbLookup[key].push(row);
+          if (!serieAirbnbByPeriodo[row.periodo]) serieAirbnbByPeriodo[row.periodo] = {};
+          serieAirbnbByPeriodo[row.periodo][key] = row;
         }
         for (const key of Object.keys(serieAirbnbLookup)) {
           serieAirbnbLookup[key].sort((a, b) =>
@@ -975,7 +991,23 @@
     });
   }
 
+  function getAirbnbRow(normName) {
+    const ap = airbnbPeriodoForAlquiler(curPeriodo);
+    const periodoData = serieAirbnbByPeriodo[ap] || {};
+    const row = periodoData[normName];
+    if (!row) return null;
+    // For ratio_airbnb_zonaprop, calculate dynamically
+    if (curVar === 'ratio_airbnb_zonaprop') {
+      const periodBarrio = (serieByPeriodo[curPeriodo] || {})[normName];
+      const nPub = periodBarrio ? periodBarrio.n_publicaciones : (lookup[normName] || {}).n_publicaciones;
+      const ratio = nPub ? (row.n_airbnb / nPub * 100) : null;
+      return { ...row, ratio_airbnb_zonaprop: ratio };
+    }
+    return row;
+  }
+
   function getPeriodRow(normName) {
+    if (AIRBNB_VARS.has(curVar)) return getAirbnbRow(normName);
     if (SERIE_VARS.has(curVar) && curPeriodo && serieByPeriodo[curPeriodo]) {
       return serieByPeriodo[curPeriodo][normName] || null;
     }
@@ -985,6 +1017,20 @@
   function varRange(key) {
     const cfg = VAR_CONFIG[key];
     const serieKey = cfg && cfg.serieKey ? cfg.serieKey : key;
+    if (AIRBNB_VARS.has(key)) {
+      const ap = airbnbPeriodoForAlquiler(curPeriodo);
+      const periodoData = serieAirbnbByPeriodo[ap] || {};
+      const vals = Object.values(periodoData).map(r => {
+        if (key === 'ratio_airbnb_zonaprop') {
+          const normN = norm(r.barrio);
+          const periodBarrio = (serieByPeriodo[curPeriodo] || {})[normN];
+          const nPub = periodBarrio ? periodBarrio.n_publicaciones : (lookup[normN] || {}).n_publicaciones;
+          return nPub ? (r.n_airbnb / nPub * 100) : null;
+        }
+        return r[key];
+      }).filter(v => v != null);
+      if (vals.length > 0) return [Math.min(...vals), Math.max(...vals)];
+    }
     if (SERIE_VARS.has(key) && curPeriodo && serieByPeriodo[curPeriodo]) {
       const vals = Object.values(serieByPeriodo[curPeriodo]).map(r => r[serieKey]).filter(v => v != null);
       if (vals.length > 0) return [Math.min(...vals), Math.max(...vals)];
@@ -1006,17 +1052,20 @@
     const mn          = scale ? scale.min : rawMn;
     const mx          = scale ? scale.max : rawMx;
     const usePeriodo   = SERIE_VARS.has(curVar);
-    const periodoLabel = usePeriodo && curPeriodo ? ' (' + fmtPeriodo(curPeriodo) + ')' : '';
-    const valKey       = (usePeriodo && cfg.serieKey) ? cfg.serieKey : curVar;
+    const useAirbnb    = AIRBNB_VARS.has(curVar);
+    const airbnbPer    = useAirbnb ? airbnbPeriodoForAlquiler(curPeriodo) : null;
+    const periodoLabel = usePeriodo && curPeriodo ? ' (' + fmtPeriodo(curPeriodo) + ')' :
+                         useAirbnb && airbnbPer   ? ' (' + fmtAirbnbPeriodo(airbnbPer) + ')' : '';
+    const valKey       = useAirbnb ? curVar : (usePeriodo && cfg.serieKey) ? cfg.serieKey : curVar;
 
     const note = document.getElementById('periodoNote');
     if (note) {
       if (NO_PERIOD_VARS.has(curVar)) {
         note.style.display = 'block';
         note.textContent = 'Este indicador no varía por período';
-      } else if (AIRBNB_NOTE_VARS.has(curVar)) {
+      } else if (useAirbnb) {
         note.style.display = 'block';
-        note.textContent = 'Datos Airbnb corresponden al período más cercano disponible.';
+        note.textContent = 'Datos Airbnb: período ' + fmtAirbnbPeriodo(airbnbPer) + ' (más cercano al seleccionado).';
       } else {
         note.style.display = 'none';
       }
