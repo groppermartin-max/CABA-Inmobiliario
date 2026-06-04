@@ -646,7 +646,7 @@
             <select id="mapVarSelect">
               <option value="mediana_precio_ars">Precio mediano</option>
               <option value="mediana_precio_m2">Precio / m²</option>
-              <option value="n_publicaciones">Publicaciones</option>
+              <option value="n_publicaciones">Publicaciones Zonaprop</option>
               <option value="n_airbnb">Cantidad Airbnb</option>
               <option value="ratio_airbnb_zonaprop">Ratio Airbnb / Zonaprop</option>
               <option value="ratio_m2_chico_vs_grande">Sobreprecio m² chico vs grande</option>
@@ -768,7 +768,7 @@
   const VAR_CONFIG = {
     mediana_precio_ars:       { label: 'Precio mediano',          color: C.accent,  fmt: fmtARS },
     mediana_precio_m2:        { label: 'Precio / m²',             color: C.accent,  fmt: fmtARS },
-    n_publicaciones:          { label: 'Publicaciones',           color: C.accent2, fmt: fmtNum },
+    n_publicaciones:          { label: 'Publicaciones Zonaprop',  color: C.accent2, fmt: fmtNum },
     n_airbnb:                 { label: 'Airbnb',                  color: C.accent,  fmt: fmtNum },
     ratio_airbnb_zonaprop:    { label: 'Ratio Airbnb / Zonaprop', color: C.accent2, fmt: v => (+v).toFixed(1)+'%' },
     ratio_m2_chico_vs_grande: { label: 'Sobreprecio m² chico',    color: C.accent2, fmt: v => (+v).toFixed(2)+'x' },
@@ -814,20 +814,19 @@
   let serieByPeriodo   = {};
   let serieAirbnbLookup = {};
 
-  const AIRBNB_PERIODO_ORDER = { feb_26: 0, mar_26: 1, abr_26: 2, may_26: 3 };
+  const AIRBNB_PERIODO_ORDER = { 'Febrero 2026': 0, 'Marzo 2026': 1, 'Abril 2026': 2, 'Mayo 2026': 3 };
   function fmtAirbnbPeriodo(p) {
-    const map = { feb_26: 'Feb 26', mar_26: 'Mar 26', abr_26: 'Abr 26', may_26: 'May 26' };
-    return map[p] || p;
+    return p || '';
   }
 
   // Map alquiler período → Airbnb período más cercano
   function airbnbPeriodoForAlquiler(periodo) {
-    if (!periodo) return 'feb_26';
+    if (!periodo) return 'Febrero 2026';
     const [yr, mo] = periodo.split('-').map(Number);
-    if (yr < 2026 || (yr === 2026 && mo <= 2)) return 'feb_26';
-    if (yr === 2026 && mo === 3) return 'mar_26';
-    if (yr === 2026 && mo === 4) return 'abr_26';
-    return 'may_26';
+    if (yr < 2026 || (yr === 2026 && mo <= 2)) return 'Febrero 2026';
+    if (yr === 2026 && mo === 3) return 'Marzo 2026';
+    if (yr === 2026 && mo === 4) return 'Abril 2026';
+    return 'Mayo 2026';
   }
 
   // Lookup por barrio+periodo Airbnb: serieAirbnbByPeriodo[periodo][normBarrio] = row
@@ -1216,7 +1215,7 @@
         <div class="stat-box"><div class="stat-label">Costo total mediano</div><div class="stat-value">${fmtARS(b.mediana_costo_total)}</div></div>
         <div class="stat-box"><div class="stat-label">Expensas / Alquiler</div><div class="stat-value">${b.pct_expensas_alquiler != null ? fmtPct(b.pct_expensas_alquiler, 1) : '—'}</div></div>
         <div class="stat-box">
-          <div class="stat-label">Publicaciones</div>
+          <div class="stat-label">Publicaciones Zonaprop</div>
           <div class="stat-value">${fmtNum(b.n_publicaciones)}</div>
           <div style="font-size:10px;color:var(--muted);margin-top:3px">En pesos: ${b.n_ars != null ? fmtNum(b.n_ars) : '—'}</div>
           <div style="font-size:10px;color:${(+(b.pct_usd||0)) > 30 ? '#F0A500' : 'var(--muted)'};margin-top:1px">En dólares: ${b.n_usd != null ? fmtNum(b.n_usd) : '—'}</div>
@@ -1617,7 +1616,7 @@
     { key: 'mediana_costo_total',      label: 'Costo total mediano',      fmt: fmtARS,                                  mode: 'lower' },
     { key: 'esfuerzo_alquiler_pct',    label: 'Esfuerzo alquiler',        fmt: v => fmtPct(v, 1),                       mode: 'lower' },
     { key: 'esfuerzo_1amb_pct',        label: 'Esfuerzo 1 ambiente',      fmt: v => fmtPct(v, 1),                       mode: 'lower' },
-    { key: 'n_publicaciones',          label: 'Publicaciones',            fmt: fmtNum,                                  mode: 'higher' },
+    { key: 'n_publicaciones',          label: 'Publicaciones Zonaprop',   fmt: fmtNum,                                  mode: 'higher' },
     { key: 'n_airbnb',                 label: 'Airbnb listados',          fmt: fmtNum,                                  mode: 'neutral' },
     { key: 'ratio_airbnb_zonaprop',    label: 'Ratio Airbnb / Zonaprop',  fmt: v => fmtPct(v, 1),                       mode: 'neutral' },
     { key: 'ratio_m2_chico_vs_grande', label: 'Sobreprecio m² chico',     fmt: v => v != null ? (+v).toFixed(2)+'x' : 'N/D', mode: 'lower' },
