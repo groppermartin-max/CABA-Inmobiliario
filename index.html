@@ -814,20 +814,19 @@
   let serieByPeriodo   = {};
   let serieAirbnbLookup = {};
 
-  const AIRBNB_PERIODO_ORDER = { '2026-02': 0, '2026-03': 1, '2026-04': 2, '2026-05': 3 };
+  const AIRBNB_PERIODO_ORDER = { 'Febrero 2026': 0, 'Marzo 2026': 1, 'Abril 2026': 2, 'Mayo 2026': 3 };
   function fmtAirbnbPeriodo(p) {
-    // Convierte "2026-04" → "Abril 2026"
-    return fmtPeriodoFull(p);
+    return p || '';
   }
 
-  // Map alquiler período → Airbnb período más cercano (clave YYYY-MM del JSON)
+  // Map alquiler período → Airbnb período más cercano
   function airbnbPeriodoForAlquiler(periodo) {
-    if (!periodo) return '2026-02';
+    if (!periodo) return 'Febrero 2026';
     const [yr, mo] = periodo.split('-').map(Number);
-    if (yr < 2026 || (yr === 2026 && mo <= 2)) return '2026-02';
-    if (yr === 2026 && mo === 3) return '2026-03';
-    if (yr === 2026 && mo === 4) return '2026-04';
-    return '2026-05';
+    if (yr < 2026 || (yr === 2026 && mo <= 2)) return 'Febrero 2026';
+    if (yr === 2026 && mo === 3) return 'Marzo 2026';
+    if (yr === 2026 && mo === 4) return 'Abril 2026';
+    return 'Mayo 2026';
   }
 
   // Lookup por barrio+periodo Airbnb: serieAirbnbByPeriodo[periodo][normBarrio] = row
