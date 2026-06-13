@@ -13,7 +13,7 @@
     "ultimo_periodo": "2026-06",
     "ultimo_periodo_airbnb": "Mayo 2026",
     "periodos_disponibles": ["2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06"],
-    "periodos_airbnb": ["46174", "Abril 2026", "Febrero 2026", "Marzo 2026", "Mayo 2026"]
+    "periodos_airbnb": ["Febrero 2026", "Marzo 2026", "Abril 2026", "Mayo 2026"]
   },
   "barrios": [
     {

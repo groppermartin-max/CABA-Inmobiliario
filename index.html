@@ -920,7 +920,10 @@
 
       const up = dash.kpis.ultimo_periodo;
       const headerEl = document.getElementById('headerPeriodo');
-      if (headerEl && up) headerEl.textContent = 'Abril 2026';
+      if (headerEl && up) {
+        const [yr, mo] = up.split('-').map(Number);
+        headerEl.textContent = MONTH_FULL[mo - 1] + ' ' + yr;
+      }
 
       buildKPIs();
       buildMap();
