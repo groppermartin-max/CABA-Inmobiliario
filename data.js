@@ -5,15 +5,15 @@
     "mediana_expensas_caba": 190000,
     "pct_expensas_caba": 21.7,
     "total_publicaciones": 12511,
-    "total_airbnb": 3947,
+    "total_airbnb": 3841,
     "mediana_precio_airbnb_usd": 59,
     "barrio_mas_caro": "Puerto Madero",
     "barrio_mas_airbnb": "Palermo",
     "barrio_mayor_ratio_airbnb": "Constitucion",
     "ultimo_periodo": "2026-06",
-    "ultimo_periodo_airbnb": "Mayo 2026",
+    "ultimo_periodo_airbnb": "Junio 2026",
     "periodos_disponibles": ["2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06"],
-    "periodos_airbnb": ["Febrero 2026", "Marzo 2026", "Abril 2026", "Mayo 2026"]
+    "periodos_airbnb": ["Febrero 2026", "Marzo 2026", "Abril 2026", "Mayo 2026", "Junio 2026"]
   },
   "barrios": [
     {
@@ -44,13 +44,13 @@
       "pct_cochera": 0,
       "pct_sum": 4.5,
       "ratio_m2_chico_vs_grande": 1.12,
-      "n_airbnb": 17,
-      "mediana_precio_noche_usd": 49,
+      "n_airbnb": 12,
+      "mediana_precio_noche_usd": 62,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 5.9,
-      "pct_pool_airbnb": 5.9,
-      "pct_parking_airbnb": 11.8,
-      "ratio_airbnb_zonaprop": 77.3,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 54.5,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -88,13 +88,13 @@
       "pct_cochera": 7.4,
       "pct_sum": 19.9,
       "ratio_m2_chico_vs_grande": 1.09,
-      "n_airbnb": 214,
-      "mediana_precio_noche_usd": 57,
+      "n_airbnb": 211,
+      "mediana_precio_noche_usd": 59,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 14,
-      "pct_pool_airbnb": 32.2,
-      "pct_parking_airbnb": 15.9,
-      "ratio_airbnb_zonaprop": 40.6,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 40,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -132,13 +132,13 @@
       "pct_cochera": 2.7,
       "pct_sum": 5.9,
       "ratio_m2_chico_vs_grande": 1.2,
-      "n_airbnb": 135,
+      "n_airbnb": 160,
       "mediana_precio_noche_usd": 52,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 13.3,
-      "pct_pool_airbnb": 18.5,
-      "pct_parking_airbnb": 5.2,
-      "ratio_airbnb_zonaprop": 26.4,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 31.3,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -176,13 +176,13 @@
       "pct_cochera": 12.5,
       "pct_sum": 19.5,
       "ratio_m2_chico_vs_grande": 1.14,
-      "n_airbnb": 106,
-      "mediana_precio_noche_usd": 68,
+      "n_airbnb": 99,
+      "mediana_precio_noche_usd": 63,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 30.2,
-      "pct_pool_airbnb": 46.2,
-      "pct_parking_airbnb": 20.8,
-      "ratio_airbnb_zonaprop": 82.8,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 77.3,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
@@ -220,13 +220,13 @@
       "pct_cochera": 26.5,
       "pct_sum": 18.2,
       "ratio_m2_chico_vs_grande": 1.02,
-      "n_airbnb": 224,
-      "mediana_precio_noche_usd": 65,
+      "n_airbnb": 232,
+      "mediana_precio_noche_usd": 67,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 12.9,
-      "pct_pool_airbnb": 35.3,
-      "pct_parking_airbnb": 8.9,
-      "ratio_airbnb_zonaprop": 21.2,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 22,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -264,13 +264,13 @@
       "pct_cochera": 6.7,
       "pct_sum": 14.9,
       "ratio_m2_chico_vs_grande": 1.07,
-      "n_airbnb": 38,
-      "mediana_precio_noche_usd": 57,
+      "n_airbnb": 28,
+      "mediana_precio_noche_usd": 56,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 5.3,
-      "pct_pool_airbnb": 7.9,
-      "pct_parking_airbnb": 7.9,
-      "ratio_airbnb_zonaprop": 28.4,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 20.9,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -308,13 +308,13 @@
       "pct_cochera": 13.6,
       "pct_sum": 16.8,
       "ratio_m2_chico_vs_grande": 1.08,
-      "n_airbnb": 141,
-      "mediana_precio_noche_usd": 61,
+      "n_airbnb": 118,
+      "mediana_precio_noche_usd": 65,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 5,
-      "pct_pool_airbnb": 18.4,
-      "pct_parking_airbnb": 5,
-      "ratio_airbnb_zonaprop": 14.9,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 12.5,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -352,13 +352,13 @@
       "pct_cochera": 6.7,
       "pct_sum": 23.3,
       "ratio_m2_chico_vs_grande": 1.29,
-      "n_airbnb": 68,
-      "mediana_precio_noche_usd": 57,
+      "n_airbnb": 56,
+      "mediana_precio_noche_usd": 55,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 42.6,
-      "pct_pool_airbnb": 52.9,
-      "pct_parking_airbnb": 17.6,
-      "ratio_airbnb_zonaprop": 75.6,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 62.2,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -396,13 +396,13 @@
       "pct_cochera": 16.7,
       "pct_sum": 23.8,
       "ratio_m2_chico_vs_grande": 0.92,
-      "n_airbnb": 41,
-      "mediana_precio_noche_usd": 63,
+      "n_airbnb": 34,
+      "mediana_precio_noche_usd": 72,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 12.2,
-      "pct_pool_airbnb": 36.6,
-      "pct_parking_airbnb": 9.8,
-      "ratio_airbnb_zonaprop": 48.8,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 40.5,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -440,13 +440,13 @@
       "pct_cochera": 15.5,
       "pct_sum": 20.8,
       "ratio_m2_chico_vs_grande": 0.98,
-      "n_airbnb": 77,
+      "n_airbnb": 61,
       "mediana_precio_noche_usd": 60,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 20.8,
-      "pct_pool_airbnb": 39,
-      "pct_parking_airbnb": 9.1,
-      "ratio_airbnb_zonaprop": 37.2,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 29.5,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -484,13 +484,13 @@
       "pct_cochera": 3.9,
       "pct_sum": 10.5,
       "ratio_m2_chico_vs_grande": 1.08,
-      "n_airbnb": 125,
-      "mediana_precio_noche_usd": 55,
+      "n_airbnb": 128,
+      "mediana_precio_noche_usd": 54,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 28.8,
-      "pct_pool_airbnb": 35.2,
-      "pct_parking_airbnb": 7.2,
-      "ratio_airbnb_zonaprop": 164.5,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 168.4,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -528,13 +528,13 @@
       "pct_cochera": 11.3,
       "pct_sum": 14.4,
       "ratio_m2_chico_vs_grande": 1.08,
-      "n_airbnb": 56,
-      "mediana_precio_noche_usd": 58,
+      "n_airbnb": 57,
+      "mediana_precio_noche_usd": 56,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 1.8,
-      "pct_pool_airbnb": 14.3,
-      "pct_parking_airbnb": 1.8,
-      "ratio_airbnb_zonaprop": 15.5,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 15.7,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -572,13 +572,13 @@
       "pct_cochera": 5.6,
       "pct_sum": 7.4,
       "ratio_m2_chico_vs_grande": 1.11,
-      "n_airbnb": 16,
-      "mediana_precio_noche_usd": 129,
+      "n_airbnb": 14,
+      "mediana_precio_noche_usd": 125,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 6.2,
+      "pct_gym_airbnb": 0,
       "pct_pool_airbnb": 0,
-      "pct_parking_airbnb": 6.2,
-      "ratio_airbnb_zonaprop": 14.8,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 13,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -616,13 +616,13 @@
       "pct_cochera": 11.1,
       "pct_sum": 4.4,
       "ratio_m2_chico_vs_grande": 1.12,
-      "n_airbnb": 52,
-      "mediana_precio_noche_usd": 62,
+      "n_airbnb": 53,
+      "mediana_precio_noche_usd": 75,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 32.7,
-      "pct_pool_airbnb": 40.4,
-      "pct_parking_airbnb": 11.5,
-      "ratio_airbnb_zonaprop": 115.6,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 117.8,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
@@ -660,13 +660,13 @@
       "pct_cochera": 2.6,
       "pct_sum": 0,
       "ratio_m2_chico_vs_grande": 1.17,
-      "n_airbnb": 15,
-      "mediana_precio_noche_usd": 55,
+      "n_airbnb": 14,
+      "mediana_precio_noche_usd": 53,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
-      "pct_pool_airbnb": 6.7,
+      "pct_pool_airbnb": 0,
       "pct_parking_airbnb": 0,
-      "ratio_airbnb_zonaprop": 19.2,
+      "ratio_airbnb_zonaprop": 17.9,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
@@ -704,13 +704,13 @@
       "pct_cochera": 8.5,
       "pct_sum": 5.1,
       "ratio_m2_chico_vs_grande": 1.2,
-      "n_airbnb": 8,
-      "mediana_precio_noche_usd": 53,
+      "n_airbnb": 7,
+      "mediana_precio_noche_usd": 51,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
       "pct_pool_airbnb": 0,
       "pct_parking_airbnb": 0,
-      "ratio_airbnb_zonaprop": 13.6,
+      "ratio_airbnb_zonaprop": 11.9,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
@@ -748,13 +748,13 @@
       "pct_cochera": 5.5,
       "pct_sum": 14.3,
       "ratio_m2_chico_vs_grande": 1.32,
-      "n_airbnb": 217,
-      "mediana_precio_noche_usd": 53,
+      "n_airbnb": 239,
+      "mediana_precio_noche_usd": 56,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 27.2,
-      "pct_pool_airbnb": 46.1,
-      "pct_parking_airbnb": 9.2,
-      "ratio_airbnb_zonaprop": 100,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 110.1,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -792,13 +792,13 @@
       "pct_cochera": 9.5,
       "pct_sum": 11.1,
       "ratio_m2_chico_vs_grande": 0.87,
-      "n_airbnb": 8,
-      "mediana_precio_noche_usd": 60,
+      "n_airbnb": 7,
+      "mediana_precio_noche_usd": 67,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
       "pct_pool_airbnb": 0,
       "pct_parking_airbnb": 0,
-      "ratio_airbnb_zonaprop": 12.7,
+      "ratio_airbnb_zonaprop": 11.1,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -836,13 +836,13 @@
       "pct_cochera": 0,
       "pct_sum": 0,
       "ratio_m2_chico_vs_grande": 0.89,
-      "n_airbnb": 5,
-      "mediana_precio_noche_usd": 51,
+      "n_airbnb": 4,
+      "mediana_precio_noche_usd": 50,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
       "pct_pool_airbnb": 0,
       "pct_parking_airbnb": 0,
-      "ratio_airbnb_zonaprop": 29.4,
+      "ratio_airbnb_zonaprop": 23.5,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
@@ -880,13 +880,13 @@
       "pct_cochera": 21.4,
       "pct_sum": 28.6,
       "ratio_m2_chico_vs_grande": 0.95,
-      "n_airbnb": null,
-      "mediana_precio_noche_usd": null,
+      "n_airbnb": 131,
+      "mediana_precio_noche_usd": 65,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": null,
-      "pct_pool_airbnb": null,
-      "pct_parking_airbnb": null,
-      "ratio_airbnb_zonaprop": null,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 30.5,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -924,13 +924,13 @@
       "pct_cochera": 19,
       "pct_sum": 19.3,
       "ratio_m2_chico_vs_grande": 0.91,
-      "n_airbnb": 520,
-      "mediana_precio_noche_usd": 59,
+      "n_airbnb": 589,
+      "mediana_precio_noche_usd": 58,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 17.1,
-      "pct_pool_airbnb": 38.8,
-      "pct_parking_airbnb": 11.3,
-      "ratio_airbnb_zonaprop": 23.2,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 26.3,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -968,13 +968,13 @@
       "pct_cochera": 14.8,
       "pct_sum": 3.7,
       "ratio_m2_chico_vs_grande": 0.93,
-      "n_airbnb": 10,
-      "mediana_precio_noche_usd": 54,
+      "n_airbnb": 8,
+      "mediana_precio_noche_usd": 57,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
-      "pct_pool_airbnb": 30,
+      "pct_pool_airbnb": 0,
       "pct_parking_airbnb": 0,
-      "ratio_airbnb_zonaprop": 37,
+      "ratio_airbnb_zonaprop": 29.6,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
@@ -1012,13 +1012,13 @@
       "pct_cochera": 7.8,
       "pct_sum": 20.8,
       "ratio_m2_chico_vs_grande": 0.94,
-      "n_airbnb": 23,
-      "mediana_precio_noche_usd": 61,
+      "n_airbnb": 18,
+      "mediana_precio_noche_usd": 67,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 30.4,
-      "pct_pool_airbnb": 47.8,
-      "pct_parking_airbnb": 8.7,
-      "ratio_airbnb_zonaprop": 29.9,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 23.4,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -1056,13 +1056,13 @@
       "pct_cochera": 6.1,
       "pct_sum": 18.2,
       "ratio_m2_chico_vs_grande": 0.91,
-      "n_airbnb": 19,
-      "mediana_precio_noche_usd": 55,
+      "n_airbnb": 17,
+      "mediana_precio_noche_usd": 51,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
-      "pct_pool_airbnb": 5.3,
-      "pct_parking_airbnb": 5.3,
-      "ratio_airbnb_zonaprop": 57.6,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 51.5,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -1100,13 +1100,13 @@
       "pct_cochera": 3.4,
       "pct_sum": 13.8,
       "ratio_m2_chico_vs_grande": 1.17,
-      "n_airbnb": 22,
-      "mediana_precio_noche_usd": 47,
+      "n_airbnb": 16,
+      "mediana_precio_noche_usd": 46,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 22.7,
-      "pct_pool_airbnb": 22.7,
-      "pct_parking_airbnb": 4.5,
-      "ratio_airbnb_zonaprop": 37.9,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 27.6,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -1144,13 +1144,13 @@
       "pct_cochera": 6.3,
       "pct_sum": 20.6,
       "ratio_m2_chico_vs_grande": 1.17,
-      "n_airbnb": 16,
-      "mediana_precio_noche_usd": 47,
+      "n_airbnb": 15,
+      "mediana_precio_noche_usd": 56,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 6.2,
-      "pct_pool_airbnb": 31.2,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
       "pct_parking_airbnb": 0,
-      "ratio_airbnb_zonaprop": 25.4,
+      "ratio_airbnb_zonaprop": 23.8,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -1188,13 +1188,13 @@
       "pct_cochera": 64.2,
       "pct_sum": 44.9,
       "ratio_m2_chico_vs_grande": 1.13,
-      "n_airbnb": 148,
-      "mediana_precio_noche_usd": 114,
+      "n_airbnb": 111,
+      "mediana_precio_noche_usd": 113,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 77,
-      "pct_pool_airbnb": 82.4,
-      "pct_parking_airbnb": 37.2,
-      "ratio_airbnb_zonaprop": 29.4,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 22.1,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -1232,13 +1232,13 @@
       "pct_cochera": 14.1,
       "pct_sum": 5.1,
       "ratio_m2_chico_vs_grande": 1.09,
-      "n_airbnb": 220,
-      "mediana_precio_noche_usd": 56,
+      "n_airbnb": 257,
+      "mediana_precio_noche_usd": 58,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 18.6,
-      "pct_pool_airbnb": 23.2,
-      "pct_parking_airbnb": 12.7,
-      "ratio_airbnb_zonaprop": 14.6,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 17.1,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -1276,13 +1276,13 @@
       "pct_cochera": 21.1,
       "pct_sum": 4.1,
       "ratio_m2_chico_vs_grande": 1.29,
-      "n_airbnb": 115,
-      "mediana_precio_noche_usd": 52,
+      "n_airbnb": 123,
+      "mediana_precio_noche_usd": 55,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 13.9,
-      "pct_pool_airbnb": 14.8,
-      "pct_parking_airbnb": 13,
-      "ratio_airbnb_zonaprop": 43.2,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 46.2,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -1320,13 +1320,13 @@
       "pct_cochera": 17.8,
       "pct_sum": 18.6,
       "ratio_m2_chico_vs_grande": 1.03,
-      "n_airbnb": 62,
+      "n_airbnb": 53,
       "mediana_precio_noche_usd": 69,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 1.6,
-      "pct_pool_airbnb": 14.5,
-      "pct_parking_airbnb": 6.5,
-      "ratio_airbnb_zonaprop": 52.5,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 44.9,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -1364,13 +1364,13 @@
       "pct_cochera": 5.8,
       "pct_sum": 17.5,
       "ratio_m2_chico_vs_grande": 1.13,
-      "n_airbnb": 57,
+      "n_airbnb": 54,
       "mediana_precio_noche_usd": 57,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 17.5,
-      "pct_pool_airbnb": 21.1,
-      "pct_parking_airbnb": 5.3,
-      "ratio_airbnb_zonaprop": 33.3,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 31.6,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -1408,13 +1408,13 @@
       "pct_cochera": 2.7,
       "pct_sum": 0.5,
       "ratio_m2_chico_vs_grande": 1.24,
-      "n_airbnb": 239,
+      "n_airbnb": 226,
       "mediana_precio_noche_usd": 50,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 2.1,
-      "pct_pool_airbnb": 12.6,
-      "pct_parking_airbnb": 13,
-      "ratio_airbnb_zonaprop": 64.6,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 61.1,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -1452,13 +1452,13 @@
       "pct_cochera": 8,
       "pct_sum": 15.4,
       "ratio_m2_chico_vs_grande": 1.28,
-      "n_airbnb": 259,
+      "n_airbnb": 253,
       "mediana_precio_noche_usd": 61,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 30.5,
-      "pct_pool_airbnb": 40.2,
-      "pct_parking_airbnb": 13.1,
-      "ratio_airbnb_zonaprop": 137.8,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 134.6,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -1496,13 +1496,13 @@
       "pct_cochera": 0,
       "pct_sum": 6.5,
       "ratio_m2_chico_vs_grande": 1.15,
-      "n_airbnb": 6,
-      "mediana_precio_noche_usd": 64,
+      "n_airbnb": 8,
+      "mediana_precio_noche_usd": 55,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
       "pct_pool_airbnb": 0,
       "pct_parking_airbnb": 0,
-      "ratio_airbnb_zonaprop": 19.4,
+      "ratio_airbnb_zonaprop": 25.8,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -1541,10 +1541,10 @@
       "pct_sum": 9.1,
       "ratio_m2_chico_vs_grande": null,
       "n_airbnb": 2,
-      "mediana_precio_noche_usd": 62,
+      "mediana_precio_noche_usd": 61,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
-      "pct_pool_airbnb": 100,
+      "pct_pool_airbnb": 0,
       "pct_parking_airbnb": 0,
       "ratio_airbnb_zonaprop": 18.2,
       "zona_etoi": 2,
@@ -1584,13 +1584,13 @@
       "pct_cochera": 9.1,
       "pct_sum": 18.8,
       "ratio_m2_chico_vs_grande": 1.08,
-      "n_airbnb": 132,
-      "mediana_precio_noche_usd": 58,
+      "n_airbnb": 138,
+      "mediana_precio_noche_usd": 55,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 20.5,
-      "pct_pool_airbnb": 41.7,
-      "pct_parking_airbnb": 4.5,
-      "ratio_airbnb_zonaprop": 34.4,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 35.9,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -1628,13 +1628,13 @@
       "pct_cochera": 6.7,
       "pct_sum": 16.7,
       "ratio_m2_chico_vs_grande": 1.1,
-      "n_airbnb": 49,
-      "mediana_precio_noche_usd": 57,
+      "n_airbnb": 45,
+      "mediana_precio_noche_usd": 62,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 8.2,
-      "pct_pool_airbnb": 10.2,
-      "pct_parking_airbnb": 4.1,
-      "ratio_airbnb_zonaprop": 27.2,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 25,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -1672,13 +1672,13 @@
       "pct_cochera": 18.1,
       "pct_sum": 9.6,
       "ratio_m2_chico_vs_grande": 1.02,
-      "n_airbnb": 59,
-      "mediana_precio_noche_usd": 80,
+      "n_airbnb": 49,
+      "mediana_precio_noche_usd": 87,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 10.2,
-      "pct_pool_airbnb": 25.4,
-      "pct_parking_airbnb": 6.8,
-      "ratio_airbnb_zonaprop": 33.3,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 27.7,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -1716,13 +1716,13 @@
       "pct_cochera": 6.1,
       "pct_sum": 16.3,
       "ratio_m2_chico_vs_grande": 1.15,
-      "n_airbnb": 15,
-      "mediana_precio_noche_usd": 55,
+      "n_airbnb": 14,
+      "mediana_precio_noche_usd": 46,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
       "pct_pool_airbnb": 0,
-      "pct_parking_airbnb": 6.7,
-      "ratio_airbnb_zonaprop": 30.6,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 28.6,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -1804,13 +1804,13 @@
       "pct_cochera": 9.3,
       "pct_sum": 4.7,
       "ratio_m2_chico_vs_grande": 1.15,
-      "n_airbnb": 18,
-      "mediana_precio_noche_usd": 65,
+      "n_airbnb": 16,
+      "mediana_precio_noche_usd": 53,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
-      "pct_pool_airbnb": 5.6,
+      "pct_pool_airbnb": 0,
       "pct_parking_airbnb": 0,
-      "ratio_airbnb_zonaprop": 20.9,
+      "ratio_airbnb_zonaprop": 18.6,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -1848,13 +1848,13 @@
       "pct_cochera": 13.8,
       "pct_sum": 29.3,
       "ratio_m2_chico_vs_grande": 0.93,
-      "n_airbnb": 38,
-      "mediana_precio_noche_usd": 63,
+      "n_airbnb": 24,
+      "mediana_precio_noche_usd": 73,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 2.6,
-      "pct_pool_airbnb": 18.4,
-      "pct_parking_airbnb": 10.5,
-      "ratio_airbnb_zonaprop": 65.5,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 41.4,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -1892,13 +1892,13 @@
       "pct_cochera": 2.7,
       "pct_sum": 8.1,
       "ratio_m2_chico_vs_grande": 1.06,
-      "n_airbnb": 18,
+      "n_airbnb": 11,
       "mediana_precio_noche_usd": 56,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 16.7,
+      "pct_gym_airbnb": 0,
       "pct_pool_airbnb": 0,
-      "pct_parking_airbnb": 5.6,
-      "ratio_airbnb_zonaprop": 16.2,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 9.9,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -1936,13 +1936,13 @@
       "pct_cochera": 0,
       "pct_sum": 0,
       "ratio_m2_chico_vs_grande": null,
-      "n_airbnb": 2,
-      "mediana_precio_noche_usd": 43,
+      "n_airbnb": 1,
+      "mediana_precio_noche_usd": 70,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
       "pct_pool_airbnb": 0,
-      "pct_parking_airbnb": 50,
-      "ratio_airbnb_zonaprop": 25,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 12.5,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -1981,11 +1981,11 @@
       "pct_sum": 0,
       "ratio_m2_chico_vs_grande": 1.38,
       "n_airbnb": 1,
-      "mediana_precio_noche_usd": 75,
+      "mediana_precio_noche_usd": 73,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
       "pct_pool_airbnb": 0,
-      "pct_parking_airbnb": 100,
+      "pct_parking_airbnb": 0,
       "ratio_airbnb_zonaprop": 33.3,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
@@ -2024,13 +2024,13 @@
       "pct_cochera": 7.4,
       "pct_sum": 11.8,
       "ratio_m2_chico_vs_grande": 1.3,
-      "n_airbnb": 12,
-      "mediana_precio_noche_usd": 53,
+      "n_airbnb": 8,
+      "mediana_precio_noche_usd": 50,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
       "pct_pool_airbnb": 0,
-      "pct_parking_airbnb": 25,
-      "ratio_airbnb_zonaprop": 17.6,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 11.8,
       "zona_etoi": 2,
       "zona_nombre": "Centro",
       "ingreso_mediano_zona": 1000000,
@@ -2068,13 +2068,13 @@
       "pct_cochera": 0,
       "pct_sum": 0,
       "ratio_m2_chico_vs_grande": null,
-      "n_airbnb": 1,
-      "mediana_precio_noche_usd": 69,
+      "n_airbnb": null,
+      "mediana_precio_noche_usd": null,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 0,
-      "pct_pool_airbnb": 0,
-      "pct_parking_airbnb": 0,
-      "ratio_airbnb_zonaprop": 50,
+      "pct_gym_airbnb": null,
+      "pct_pool_airbnb": null,
+      "pct_parking_airbnb": null,
+      "ratio_airbnb_zonaprop": null,
       "zona_etoi": 3,
       "zona_nombre": "Sur",
       "ingreso_mediano_zona": 800000,
@@ -2112,13 +2112,13 @@
       "pct_cochera": 15.7,
       "pct_sum": 23.1,
       "ratio_m2_chico_vs_grande": 0.92,
-      "n_airbnb": 134,
-      "mediana_precio_noche_usd": 64,
+      "n_airbnb": 102,
+      "mediana_precio_noche_usd": 70,
       "pct_guest_favorite": null,
-      "pct_gym_airbnb": 17.2,
-      "pct_pool_airbnb": 34.3,
-      "pct_parking_airbnb": 14.9,
-      "ratio_airbnb_zonaprop": 26.2,
+      "pct_gym_airbnb": 0,
+      "pct_pool_airbnb": 0,
+      "pct_parking_airbnb": 0,
+      "ratio_airbnb_zonaprop": 20,
       "zona_etoi": 1,
       "zona_nombre": "Norte",
       "ingreso_mediano_zona": 1300000,
@@ -2156,56 +2156,12 @@
       "pct_cochera": null,
       "pct_sum": null,
       "ratio_m2_chico_vs_grande": null,
-      "n_airbnb": 22,
-      "mediana_precio_noche_usd": 65,
+      "n_airbnb": 15,
+      "mediana_precio_noche_usd": 62,
       "pct_guest_favorite": null,
       "pct_gym_airbnb": 0,
       "pct_pool_airbnb": 0,
       "pct_parking_airbnb": 0,
-      "ratio_airbnb_zonaprop": null,
-      "zona_etoi": null,
-      "zona_nombre": null,
-      "ingreso_mediano_zona": null,
-      "mediana_costo_q4": null,
-      "mediana_precio_1amb_q4": null,
-      "mediana_expensas_q4": null,
-      "esfuerzo_alquiler_pct": null,
-      "esfuerzo_1amb_pct": null
-    },
-    {
-      "barrio": "NuÃƒÂ±ez",
-      "mediana_precio_ars": null,
-      "mediana_precio_m2": null,
-      "mediana_expensas": null,
-      "mediana_costo_total": null,
-      "pct_expensas_alquiler": null,
-      "n_publicaciones": null,
-      "pct_usd": null,
-      "n_usd": null,
-      "n_ars": null,
-      "mediana_precio_usd": null,
-      "mediana_precio_ars_solo": null,
-      "mediana_precio_1amb": null,
-      "mediana_m2_1amb": null,
-      "n_1amb": null,
-      "mediana_precio_2amb": null,
-      "mediana_m2_2amb": null,
-      "n_2amb": null,
-      "mediana_precio_3amb": null,
-      "mediana_m2_3amb": null,
-      "n_3amb": null,
-      "n_4amb_mas": null,
-      "pct_pileta": null,
-      "pct_gimnasio": null,
-      "pct_cochera": null,
-      "pct_sum": null,
-      "ratio_m2_chico_vs_grande": null,
-      "n_airbnb": 163,
-      "mediana_precio_noche_usd": 66,
-      "pct_guest_favorite": null,
-      "pct_gym_airbnb": 20.2,
-      "pct_pool_airbnb": 38.7,
-      "pct_parking_airbnb": 12.3,
       "ratio_airbnb_zonaprop": null,
       "zona_etoi": null,
       "zona_nombre": null,
@@ -10510,12 +10466,6 @@
   "serie_airbnb": [
     {
       "barrio": "Agronomia",
-      "periodo": "46174",
-      "n_airbnb": 12,
-      "mediana_precio_noche_usd": 62
-    },
-    {
-      "barrio": "Agronomia",
       "periodo": "Abril 2026",
       "n_airbnb": 54,
       "mediana_precio_noche_usd": 296
@@ -10525,6 +10475,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 20,
       "mediana_precio_noche_usd": 348
+    },
+    {
+      "barrio": "Agronomia",
+      "periodo": "Junio 2026",
+      "n_airbnb": 12,
+      "mediana_precio_noche_usd": 62
     },
     {
       "barrio": "Agronomia",
@@ -10540,12 +10496,6 @@
     },
     {
       "barrio": "Almagro",
-      "periodo": "46174",
-      "n_airbnb": 211,
-      "mediana_precio_noche_usd": 59
-    },
-    {
-      "barrio": "Almagro",
       "periodo": "Abril 2026",
       "n_airbnb": 220,
       "mediana_precio_noche_usd": 290
@@ -10555,6 +10505,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 140,
       "mediana_precio_noche_usd": 368
+    },
+    {
+      "barrio": "Almagro",
+      "periodo": "Junio 2026",
+      "n_airbnb": 211,
+      "mediana_precio_noche_usd": 59
     },
     {
       "barrio": "Almagro",
@@ -10570,12 +10526,6 @@
     },
     {
       "barrio": "Balvanera",
-      "periodo": "46174",
-      "n_airbnb": 160,
-      "mediana_precio_noche_usd": 52
-    },
-    {
-      "barrio": "Balvanera",
       "periodo": "Abril 2026",
       "n_airbnb": 282,
       "mediana_precio_noche_usd": 525
@@ -10585,6 +10535,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 153,
       "mediana_precio_noche_usd": 542
+    },
+    {
+      "barrio": "Balvanera",
+      "periodo": "Junio 2026",
+      "n_airbnb": 160,
+      "mediana_precio_noche_usd": 52
     },
     {
       "barrio": "Balvanera",
@@ -10600,12 +10556,6 @@
     },
     {
       "barrio": "Barracas",
-      "periodo": "46174",
-      "n_airbnb": 99,
-      "mediana_precio_noche_usd": 63
-    },
-    {
-      "barrio": "Barracas",
       "periodo": "Abril 2026",
       "n_airbnb": 160,
       "mediana_precio_noche_usd": 348
@@ -10615,6 +10565,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 82,
       "mediana_precio_noche_usd": 360
+    },
+    {
+      "barrio": "Barracas",
+      "periodo": "Junio 2026",
+      "n_airbnb": 99,
+      "mediana_precio_noche_usd": 63
     },
     {
       "barrio": "Barracas",
@@ -10630,12 +10586,6 @@
     },
     {
       "barrio": "Belgrano",
-      "periodo": "46174",
-      "n_airbnb": 232,
-      "mediana_precio_noche_usd": 67
-    },
-    {
-      "barrio": "Belgrano",
       "periodo": "Abril 2026",
       "n_airbnb": 202,
       "mediana_precio_noche_usd": 547
@@ -10645,6 +10595,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 94,
       "mediana_precio_noche_usd": 936
+    },
+    {
+      "barrio": "Belgrano",
+      "periodo": "Junio 2026",
+      "n_airbnb": 232,
+      "mediana_precio_noche_usd": 67
     },
     {
       "barrio": "Belgrano",
@@ -10660,12 +10616,6 @@
     },
     {
       "barrio": "Boedo",
-      "periodo": "46174",
-      "n_airbnb": 28,
-      "mediana_precio_noche_usd": 56
-    },
-    {
-      "barrio": "Boedo",
       "periodo": "Abril 2026",
       "n_airbnb": 122,
       "mediana_precio_noche_usd": 259
@@ -10675,6 +10625,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 48,
       "mediana_precio_noche_usd": 272
+    },
+    {
+      "barrio": "Boedo",
+      "periodo": "Junio 2026",
+      "n_airbnb": 28,
+      "mediana_precio_noche_usd": 56
     },
     {
       "barrio": "Boedo",
@@ -10690,12 +10646,6 @@
     },
     {
       "barrio": "Caballito",
-      "periodo": "46174",
-      "n_airbnb": 118,
-      "mediana_precio_noche_usd": 65
-    },
-    {
-      "barrio": "Caballito",
       "periodo": "Abril 2026",
       "n_airbnb": 138,
       "mediana_precio_noche_usd": 319
@@ -10705,6 +10655,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 64,
       "mediana_precio_noche_usd": 312
+    },
+    {
+      "barrio": "Caballito",
+      "periodo": "Junio 2026",
+      "n_airbnb": 118,
+      "mediana_precio_noche_usd": 65
     },
     {
       "barrio": "Caballito",
@@ -10720,12 +10676,6 @@
     },
     {
       "barrio": "Chacarita",
-      "periodo": "46174",
-      "n_airbnb": 56,
-      "mediana_precio_noche_usd": 55
-    },
-    {
-      "barrio": "Chacarita",
       "periodo": "Abril 2026",
       "n_airbnb": 140,
       "mediana_precio_noche_usd": 292
@@ -10735,6 +10685,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 91,
       "mediana_precio_noche_usd": 370
+    },
+    {
+      "barrio": "Chacarita",
+      "periodo": "Junio 2026",
+      "n_airbnb": 56,
+      "mediana_precio_noche_usd": 55
     },
     {
       "barrio": "Chacarita",
@@ -10750,12 +10706,6 @@
     },
     {
       "barrio": "Coghlan",
-      "periodo": "46174",
-      "n_airbnb": 34,
-      "mediana_precio_noche_usd": 72
-    },
-    {
-      "barrio": "Coghlan",
       "periodo": "Abril 2026",
       "n_airbnb": 82,
       "mediana_precio_noche_usd": 314
@@ -10765,6 +10715,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 33,
       "mediana_precio_noche_usd": 295
+    },
+    {
+      "barrio": "Coghlan",
+      "periodo": "Junio 2026",
+      "n_airbnb": 34,
+      "mediana_precio_noche_usd": 72
     },
     {
       "barrio": "Coghlan",
@@ -10780,12 +10736,6 @@
     },
     {
       "barrio": "Colegiales",
-      "periodo": "46174",
-      "n_airbnb": 61,
-      "mediana_precio_noche_usd": 60
-    },
-    {
-      "barrio": "Colegiales",
       "periodo": "Abril 2026",
       "n_airbnb": 292,
       "mediana_precio_noche_usd": 651
@@ -10795,6 +10745,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 154,
       "mediana_precio_noche_usd": 685
+    },
+    {
+      "barrio": "Colegiales",
+      "periodo": "Junio 2026",
+      "n_airbnb": 61,
+      "mediana_precio_noche_usd": 60
     },
     {
       "barrio": "Colegiales",
@@ -10810,12 +10766,6 @@
     },
     {
       "barrio": "Constitucion",
-      "periodo": "46174",
-      "n_airbnb": 128,
-      "mediana_precio_noche_usd": 54
-    },
-    {
-      "barrio": "Constitucion",
       "periodo": "Abril 2026",
       "n_airbnb": 200,
       "mediana_precio_noche_usd": 288
@@ -10825,6 +10775,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 108,
       "mediana_precio_noche_usd": 302
+    },
+    {
+      "barrio": "Constitucion",
+      "periodo": "Junio 2026",
+      "n_airbnb": 128,
+      "mediana_precio_noche_usd": 54
     },
     {
       "barrio": "Constitucion",
@@ -10840,7 +10796,7 @@
     },
     {
       "barrio": "FUERA_DE_CABA",
-      "periodo": "46174",
+      "periodo": "Junio 2026",
       "n_airbnb": 15,
       "mediana_precio_noche_usd": 62
     },
@@ -10849,12 +10805,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 22,
       "mediana_precio_noche_usd": 65
-    },
-    {
-      "barrio": "Flores",
-      "periodo": "46174",
-      "n_airbnb": 57,
-      "mediana_precio_noche_usd": 56
     },
     {
       "barrio": "Flores",
@@ -10870,6 +10820,12 @@
     },
     {
       "barrio": "Flores",
+      "periodo": "Junio 2026",
+      "n_airbnb": 57,
+      "mediana_precio_noche_usd": 56
+    },
+    {
+      "barrio": "Flores",
       "periodo": "Marzo 2026",
       "n_airbnb": 62,
       "mediana_precio_noche_usd": 269
@@ -10879,12 +10835,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 56,
       "mediana_precio_noche_usd": 58
-    },
-    {
-      "barrio": "Floresta",
-      "periodo": "46174",
-      "n_airbnb": 14,
-      "mediana_precio_noche_usd": 125
     },
     {
       "barrio": "Floresta",
@@ -10900,6 +10850,12 @@
     },
     {
       "barrio": "Floresta",
+      "periodo": "Junio 2026",
+      "n_airbnb": 14,
+      "mediana_precio_noche_usd": 125
+    },
+    {
+      "barrio": "Floresta",
       "periodo": "Marzo 2026",
       "n_airbnb": 40,
       "mediana_precio_noche_usd": 474
@@ -10909,12 +10865,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 16,
       "mediana_precio_noche_usd": 129
-    },
-    {
-      "barrio": "La Boca",
-      "periodo": "46174",
-      "n_airbnb": 53,
-      "mediana_precio_noche_usd": 75
     },
     {
       "barrio": "La Boca",
@@ -10930,6 +10880,12 @@
     },
     {
       "barrio": "La Boca",
+      "periodo": "Junio 2026",
+      "n_airbnb": 53,
+      "mediana_precio_noche_usd": 75
+    },
+    {
+      "barrio": "La Boca",
       "periodo": "Marzo 2026",
       "n_airbnb": 100,
       "mediana_precio_noche_usd": 356
@@ -10939,12 +10895,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 52,
       "mediana_precio_noche_usd": 62
-    },
-    {
-      "barrio": "Liniers",
-      "periodo": "46174",
-      "n_airbnb": 14,
-      "mediana_precio_noche_usd": 53
     },
     {
       "barrio": "Liniers",
@@ -10960,6 +10910,12 @@
     },
     {
       "barrio": "Liniers",
+      "periodo": "Junio 2026",
+      "n_airbnb": 14,
+      "mediana_precio_noche_usd": 53
+    },
+    {
+      "barrio": "Liniers",
       "periodo": "Marzo 2026",
       "n_airbnb": 26,
       "mediana_precio_noche_usd": 293
@@ -10969,12 +10925,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 15,
       "mediana_precio_noche_usd": 55
-    },
-    {
-      "barrio": "Mataderos",
-      "periodo": "46174",
-      "n_airbnb": 7,
-      "mediana_precio_noche_usd": 51
     },
     {
       "barrio": "Mataderos",
@@ -10990,6 +10940,12 @@
     },
     {
       "barrio": "Mataderos",
+      "periodo": "Junio 2026",
+      "n_airbnb": 7,
+      "mediana_precio_noche_usd": 51
+    },
+    {
+      "barrio": "Mataderos",
       "periodo": "Marzo 2026",
       "n_airbnb": 12,
       "mediana_precio_noche_usd": 272
@@ -10999,12 +10955,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 8,
       "mediana_precio_noche_usd": 53
-    },
-    {
-      "barrio": "Monserrat",
-      "periodo": "46174",
-      "n_airbnb": 239,
-      "mediana_precio_noche_usd": 56
     },
     {
       "barrio": "Monserrat",
@@ -11020,6 +10970,12 @@
     },
     {
       "barrio": "Monserrat",
+      "periodo": "Junio 2026",
+      "n_airbnb": 239,
+      "mediana_precio_noche_usd": 56
+    },
+    {
+      "barrio": "Monserrat",
       "periodo": "Marzo 2026",
       "n_airbnb": 284,
       "mediana_precio_noche_usd": 546
@@ -11029,12 +10985,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 217,
       "mediana_precio_noche_usd": 53
-    },
-    {
-      "barrio": "Monte Castro",
-      "periodo": "46174",
-      "n_airbnb": 7,
-      "mediana_precio_noche_usd": 67
     },
     {
       "barrio": "Monte Castro",
@@ -11050,6 +11000,12 @@
     },
     {
       "barrio": "Monte Castro",
+      "periodo": "Junio 2026",
+      "n_airbnb": 7,
+      "mediana_precio_noche_usd": 67
+    },
+    {
+      "barrio": "Monte Castro",
       "periodo": "Marzo 2026",
       "n_airbnb": 14,
       "mediana_precio_noche_usd": 371
@@ -11062,12 +11018,6 @@
     },
     {
       "barrio": "Nueva Pompeya",
-      "periodo": "46174",
-      "n_airbnb": 4,
-      "mediana_precio_noche_usd": 50
-    },
-    {
-      "barrio": "Nueva Pompeya",
       "periodo": "Abril 2026",
       "n_airbnb": 8,
       "mediana_precio_noche_usd": 287
@@ -11077,6 +11027,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 5,
       "mediana_precio_noche_usd": 271
+    },
+    {
+      "barrio": "Nueva Pompeya",
+      "periodo": "Junio 2026",
+      "n_airbnb": 4,
+      "mediana_precio_noche_usd": 50
     },
     {
       "barrio": "Nueva Pompeya",
@@ -11098,12 +11054,6 @@
     },
     {
       "barrio": "NuÃ±ez",
-      "periodo": "46174",
-      "n_airbnb": 131,
-      "mediana_precio_noche_usd": 65
-    },
-    {
-      "barrio": "NuÃ±ez",
       "periodo": "Abril 2026",
       "n_airbnb": 160,
       "mediana_precio_noche_usd": 352
@@ -11116,15 +11066,15 @@
     },
     {
       "barrio": "NuÃ±ez",
+      "periodo": "Junio 2026",
+      "n_airbnb": 131,
+      "mediana_precio_noche_usd": 65
+    },
+    {
+      "barrio": "NuÃ±ez",
       "periodo": "Marzo 2026",
       "n_airbnb": 164,
       "mediana_precio_noche_usd": 428
-    },
-    {
-      "barrio": "Palermo",
-      "periodo": "46174",
-      "n_airbnb": 589,
-      "mediana_precio_noche_usd": 58
     },
     {
       "barrio": "Palermo",
@@ -11140,6 +11090,12 @@
     },
     {
       "barrio": "Palermo",
+      "periodo": "Junio 2026",
+      "n_airbnb": 589,
+      "mediana_precio_noche_usd": 58
+    },
+    {
+      "barrio": "Palermo",
       "periodo": "Marzo 2026",
       "n_airbnb": 376,
       "mediana_precio_noche_usd": 862
@@ -11152,12 +11108,6 @@
     },
     {
       "barrio": "Parque Avellaneda",
-      "periodo": "46174",
-      "n_airbnb": 8,
-      "mediana_precio_noche_usd": 57
-    },
-    {
-      "barrio": "Parque Avellaneda",
       "periodo": "Abril 2026",
       "n_airbnb": 20,
       "mediana_precio_noche_usd": 306
@@ -11167,6 +11117,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 12,
       "mediana_precio_noche_usd": 343
+    },
+    {
+      "barrio": "Parque Avellaneda",
+      "periodo": "Junio 2026",
+      "n_airbnb": 8,
+      "mediana_precio_noche_usd": 57
     },
     {
       "barrio": "Parque Avellaneda",
@@ -11182,12 +11138,6 @@
     },
     {
       "barrio": "Parque Chacabuco",
-      "periodo": "46174",
-      "n_airbnb": 18,
-      "mediana_precio_noche_usd": 67
-    },
-    {
-      "barrio": "Parque Chacabuco",
       "periodo": "Abril 2026",
       "n_airbnb": 56,
       "mediana_precio_noche_usd": 274
@@ -11197,6 +11147,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 24,
       "mediana_precio_noche_usd": 304
+    },
+    {
+      "barrio": "Parque Chacabuco",
+      "periodo": "Junio 2026",
+      "n_airbnb": 18,
+      "mediana_precio_noche_usd": 67
     },
     {
       "barrio": "Parque Chacabuco",
@@ -11212,12 +11168,6 @@
     },
     {
       "barrio": "Parque Chas",
-      "periodo": "46174",
-      "n_airbnb": 17,
-      "mediana_precio_noche_usd": 51
-    },
-    {
-      "barrio": "Parque Chas",
       "periodo": "Abril 2026",
       "n_airbnb": 40,
       "mediana_precio_noche_usd": 274
@@ -11227,6 +11177,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 24,
       "mediana_precio_noche_usd": 274
+    },
+    {
+      "barrio": "Parque Chas",
+      "periodo": "Junio 2026",
+      "n_airbnb": 17,
+      "mediana_precio_noche_usd": 51
     },
     {
       "barrio": "Parque Chas",
@@ -11242,12 +11198,6 @@
     },
     {
       "barrio": "Parque Patricios",
-      "periodo": "46174",
-      "n_airbnb": 16,
-      "mediana_precio_noche_usd": 46
-    },
-    {
-      "barrio": "Parque Patricios",
       "periodo": "Abril 2026",
       "n_airbnb": 70,
       "mediana_precio_noche_usd": 252
@@ -11257,6 +11207,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 29,
       "mediana_precio_noche_usd": 286
+    },
+    {
+      "barrio": "Parque Patricios",
+      "periodo": "Junio 2026",
+      "n_airbnb": 16,
+      "mediana_precio_noche_usd": 46
     },
     {
       "barrio": "Parque Patricios",
@@ -11272,12 +11228,6 @@
     },
     {
       "barrio": "Paternal",
-      "periodo": "46174",
-      "n_airbnb": 15,
-      "mediana_precio_noche_usd": 56
-    },
-    {
-      "barrio": "Paternal",
       "periodo": "Abril 2026",
       "n_airbnb": 62,
       "mediana_precio_noche_usd": 239
@@ -11287,6 +11237,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 20,
       "mediana_precio_noche_usd": 244
+    },
+    {
+      "barrio": "Paternal",
+      "periodo": "Junio 2026",
+      "n_airbnb": 15,
+      "mediana_precio_noche_usd": 56
     },
     {
       "barrio": "Paternal",
@@ -11302,12 +11258,6 @@
     },
     {
       "barrio": "Puerto Madero",
-      "periodo": "46174",
-      "n_airbnb": 111,
-      "mediana_precio_noche_usd": 113
-    },
-    {
-      "barrio": "Puerto Madero",
       "periodo": "Abril 2026",
       "n_airbnb": 256,
       "mediana_precio_noche_usd": 810
@@ -11317,6 +11267,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 134,
       "mediana_precio_noche_usd": 857
+    },
+    {
+      "barrio": "Puerto Madero",
+      "periodo": "Junio 2026",
+      "n_airbnb": 111,
+      "mediana_precio_noche_usd": 113
     },
     {
       "barrio": "Puerto Madero",
@@ -11332,12 +11288,6 @@
     },
     {
       "barrio": "Recoleta",
-      "periodo": "46174",
-      "n_airbnb": 257,
-      "mediana_precio_noche_usd": 58
-    },
-    {
-      "barrio": "Recoleta",
       "periodo": "Abril 2026",
       "n_airbnb": 324,
       "mediana_precio_noche_usd": 780
@@ -11347,6 +11297,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 158,
       "mediana_precio_noche_usd": 885
+    },
+    {
+      "barrio": "Recoleta",
+      "periodo": "Junio 2026",
+      "n_airbnb": 257,
+      "mediana_precio_noche_usd": 58
     },
     {
       "barrio": "Recoleta",
@@ -11362,12 +11318,6 @@
     },
     {
       "barrio": "Retiro",
-      "periodo": "46174",
-      "n_airbnb": 123,
-      "mediana_precio_noche_usd": 55
-    },
-    {
-      "barrio": "Retiro",
       "periodo": "Abril 2026",
       "n_airbnb": 240,
       "mediana_precio_noche_usd": 519
@@ -11377,6 +11327,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 153,
       "mediana_precio_noche_usd": 552
+    },
+    {
+      "barrio": "Retiro",
+      "periodo": "Junio 2026",
+      "n_airbnb": 123,
+      "mediana_precio_noche_usd": 55
     },
     {
       "barrio": "Retiro",
@@ -11392,12 +11348,6 @@
     },
     {
       "barrio": "Saavedra",
-      "periodo": "46174",
-      "n_airbnb": 53,
-      "mediana_precio_noche_usd": 69
-    },
-    {
-      "barrio": "Saavedra",
       "periodo": "Abril 2026",
       "n_airbnb": 74,
       "mediana_precio_noche_usd": 371
@@ -11407,6 +11357,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 35,
       "mediana_precio_noche_usd": 362
+    },
+    {
+      "barrio": "Saavedra",
+      "periodo": "Junio 2026",
+      "n_airbnb": 53,
+      "mediana_precio_noche_usd": 69
     },
     {
       "barrio": "Saavedra",
@@ -11422,12 +11378,6 @@
     },
     {
       "barrio": "San Cristobal",
-      "periodo": "46174",
-      "n_airbnb": 54,
-      "mediana_precio_noche_usd": 57
-    },
-    {
-      "barrio": "San Cristobal",
       "periodo": "Abril 2026",
       "n_airbnb": 122,
       "mediana_precio_noche_usd": 272
@@ -11437,6 +11387,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 56,
       "mediana_precio_noche_usd": 274
+    },
+    {
+      "barrio": "San Cristobal",
+      "periodo": "Junio 2026",
+      "n_airbnb": 54,
+      "mediana_precio_noche_usd": 57
     },
     {
       "barrio": "San Cristobal",
@@ -11452,12 +11408,6 @@
     },
     {
       "barrio": "San Nicolas",
-      "periodo": "46174",
-      "n_airbnb": 226,
-      "mediana_precio_noche_usd": 50
-    },
-    {
-      "barrio": "San Nicolas",
       "periodo": "Abril 2026",
       "n_airbnb": 352,
       "mediana_precio_noche_usd": 578
@@ -11467,6 +11417,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 172,
       "mediana_precio_noche_usd": 608
+    },
+    {
+      "barrio": "San Nicolas",
+      "periodo": "Junio 2026",
+      "n_airbnb": 226,
+      "mediana_precio_noche_usd": 50
     },
     {
       "barrio": "San Nicolas",
@@ -11482,12 +11438,6 @@
     },
     {
       "barrio": "San Telmo",
-      "periodo": "46174",
-      "n_airbnb": 253,
-      "mediana_precio_noche_usd": 61
-    },
-    {
-      "barrio": "San Telmo",
       "periodo": "Abril 2026",
       "n_airbnb": 156,
       "mediana_precio_noche_usd": 370
@@ -11497,6 +11447,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 93,
       "mediana_precio_noche_usd": 540
+    },
+    {
+      "barrio": "San Telmo",
+      "periodo": "Junio 2026",
+      "n_airbnb": 253,
+      "mediana_precio_noche_usd": 61
     },
     {
       "barrio": "San Telmo",
@@ -11512,12 +11468,6 @@
     },
     {
       "barrio": "Velez Sarsfield",
-      "periodo": "46174",
-      "n_airbnb": 8,
-      "mediana_precio_noche_usd": 55
-    },
-    {
-      "barrio": "Velez Sarsfield",
       "periodo": "Abril 2026",
       "n_airbnb": 18,
       "mediana_precio_noche_usd": 269
@@ -11527,6 +11477,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 6,
       "mediana_precio_noche_usd": 306
+    },
+    {
+      "barrio": "Velez Sarsfield",
+      "periodo": "Junio 2026",
+      "n_airbnb": 8,
+      "mediana_precio_noche_usd": 55
     },
     {
       "barrio": "Velez Sarsfield",
@@ -11542,12 +11498,6 @@
     },
     {
       "barrio": "Versalles",
-      "periodo": "46174",
-      "n_airbnb": 2,
-      "mediana_precio_noche_usd": 61
-    },
-    {
-      "barrio": "Versalles",
       "periodo": "Abril 2026",
       "n_airbnb": 4,
       "mediana_precio_noche_usd": 300
@@ -11560,6 +11510,12 @@
     },
     {
       "barrio": "Versalles",
+      "periodo": "Junio 2026",
+      "n_airbnb": 2,
+      "mediana_precio_noche_usd": 61
+    },
+    {
+      "barrio": "Versalles",
       "periodo": "Marzo 2026",
       "n_airbnb": 4,
       "mediana_precio_noche_usd": 300
@@ -11569,12 +11525,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 2,
       "mediana_precio_noche_usd": 62
-    },
-    {
-      "barrio": "Villa Crespo",
-      "periodo": "46174",
-      "n_airbnb": 138,
-      "mediana_precio_noche_usd": 55
     },
     {
       "barrio": "Villa Crespo",
@@ -11590,6 +11540,12 @@
     },
     {
       "barrio": "Villa Crespo",
+      "periodo": "Junio 2026",
+      "n_airbnb": 138,
+      "mediana_precio_noche_usd": 55
+    },
+    {
+      "barrio": "Villa Crespo",
       "periodo": "Marzo 2026",
       "n_airbnb": 150,
       "mediana_precio_noche_usd": 513
@@ -11599,12 +11555,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 132,
       "mediana_precio_noche_usd": 58
-    },
-    {
-      "barrio": "Villa Del Parque",
-      "periodo": "46174",
-      "n_airbnb": 45,
-      "mediana_precio_noche_usd": 62
     },
     {
       "barrio": "Villa Del Parque",
@@ -11620,6 +11570,12 @@
     },
     {
       "barrio": "Villa Del Parque",
+      "periodo": "Junio 2026",
+      "n_airbnb": 45,
+      "mediana_precio_noche_usd": 62
+    },
+    {
+      "barrio": "Villa Del Parque",
       "periodo": "Marzo 2026",
       "n_airbnb": 56,
       "mediana_precio_noche_usd": 284
@@ -11629,12 +11585,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 49,
       "mediana_precio_noche_usd": 57
-    },
-    {
-      "barrio": "Villa Devoto",
-      "periodo": "46174",
-      "n_airbnb": 49,
-      "mediana_precio_noche_usd": 87
     },
     {
       "barrio": "Villa Devoto",
@@ -11650,6 +11600,12 @@
     },
     {
       "barrio": "Villa Devoto",
+      "periodo": "Junio 2026",
+      "n_airbnb": 49,
+      "mediana_precio_noche_usd": 87
+    },
+    {
+      "barrio": "Villa Devoto",
       "periodo": "Marzo 2026",
       "n_airbnb": 98,
       "mediana_precio_noche_usd": 567
@@ -11659,12 +11615,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 59,
       "mediana_precio_noche_usd": 80
-    },
-    {
-      "barrio": "Villa Gral. Mitre",
-      "periodo": "46174",
-      "n_airbnb": 14,
-      "mediana_precio_noche_usd": 46
     },
     {
       "barrio": "Villa Gral. Mitre",
@@ -11680,6 +11630,12 @@
     },
     {
       "barrio": "Villa Gral. Mitre",
+      "periodo": "Junio 2026",
+      "n_airbnb": 14,
+      "mediana_precio_noche_usd": 46
+    },
+    {
+      "barrio": "Villa Gral. Mitre",
       "periodo": "Marzo 2026",
       "n_airbnb": 26,
       "mediana_precio_noche_usd": 269
@@ -11689,12 +11645,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 15,
       "mediana_precio_noche_usd": 55
-    },
-    {
-      "barrio": "Villa Lugano",
-      "periodo": "46174",
-      "n_airbnb": 2,
-      "mediana_precio_noche_usd": 205
     },
     {
       "barrio": "Villa Lugano",
@@ -11710,6 +11660,12 @@
     },
     {
       "barrio": "Villa Lugano",
+      "periodo": "Junio 2026",
+      "n_airbnb": 2,
+      "mediana_precio_noche_usd": 205
+    },
+    {
+      "barrio": "Villa Lugano",
       "periodo": "Marzo 2026",
       "n_airbnb": 4,
       "mediana_precio_noche_usd": 266
@@ -11719,12 +11675,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 2,
       "mediana_precio_noche_usd": 205
-    },
-    {
-      "barrio": "Villa Luro",
-      "periodo": "46174",
-      "n_airbnb": 16,
-      "mediana_precio_noche_usd": 53
     },
     {
       "barrio": "Villa Luro",
@@ -11740,6 +11690,12 @@
     },
     {
       "barrio": "Villa Luro",
+      "periodo": "Junio 2026",
+      "n_airbnb": 16,
+      "mediana_precio_noche_usd": 53
+    },
+    {
+      "barrio": "Villa Luro",
       "periodo": "Marzo 2026",
       "n_airbnb": 24,
       "mediana_precio_noche_usd": 309
@@ -11749,12 +11705,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 18,
       "mediana_precio_noche_usd": 65
-    },
-    {
-      "barrio": "Villa Ortuzar",
-      "periodo": "46174",
-      "n_airbnb": 24,
-      "mediana_precio_noche_usd": 73
     },
     {
       "barrio": "Villa Ortuzar",
@@ -11770,6 +11720,12 @@
     },
     {
       "barrio": "Villa Ortuzar",
+      "periodo": "Junio 2026",
+      "n_airbnb": 24,
+      "mediana_precio_noche_usd": 73
+    },
+    {
+      "barrio": "Villa Ortuzar",
       "periodo": "Marzo 2026",
       "n_airbnb": 76,
       "mediana_precio_noche_usd": 313
@@ -11779,12 +11735,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 38,
       "mediana_precio_noche_usd": 63
-    },
-    {
-      "barrio": "Villa Pueyrredon",
-      "periodo": "46174",
-      "n_airbnb": 11,
-      "mediana_precio_noche_usd": 56
     },
     {
       "barrio": "Villa Pueyrredon",
@@ -11800,6 +11750,12 @@
     },
     {
       "barrio": "Villa Pueyrredon",
+      "periodo": "Junio 2026",
+      "n_airbnb": 11,
+      "mediana_precio_noche_usd": 56
+    },
+    {
+      "barrio": "Villa Pueyrredon",
       "periodo": "Marzo 2026",
       "n_airbnb": 28,
       "mediana_precio_noche_usd": 288
@@ -11809,12 +11765,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 18,
       "mediana_precio_noche_usd": 56
-    },
-    {
-      "barrio": "Villa Real",
-      "periodo": "46174",
-      "n_airbnb": 1,
-      "mediana_precio_noche_usd": 70
     },
     {
       "barrio": "Villa Real",
@@ -11830,6 +11780,12 @@
     },
     {
       "barrio": "Villa Real",
+      "periodo": "Junio 2026",
+      "n_airbnb": 1,
+      "mediana_precio_noche_usd": 70
+    },
+    {
+      "barrio": "Villa Real",
       "periodo": "Marzo 2026",
       "n_airbnb": 2,
       "mediana_precio_noche_usd": 167
@@ -11839,12 +11795,6 @@
       "periodo": "Mayo 2026",
       "n_airbnb": 2,
       "mediana_precio_noche_usd": 43
-    },
-    {
-      "barrio": "Villa Riachuelo",
-      "periodo": "46174",
-      "n_airbnb": 1,
-      "mediana_precio_noche_usd": 73
     },
     {
       "barrio": "Villa Riachuelo",
@@ -11860,6 +11810,12 @@
     },
     {
       "barrio": "Villa Riachuelo",
+      "periodo": "Junio 2026",
+      "n_airbnb": 1,
+      "mediana_precio_noche_usd": 73
+    },
+    {
+      "barrio": "Villa Riachuelo",
       "periodo": "Marzo 2026",
       "n_airbnb": 2,
       "mediana_precio_noche_usd": 362
@@ -11872,12 +11828,6 @@
     },
     {
       "barrio": "Villa Santa Rita",
-      "periodo": "46174",
-      "n_airbnb": 8,
-      "mediana_precio_noche_usd": 50
-    },
-    {
-      "barrio": "Villa Santa Rita",
       "periodo": "Abril 2026",
       "n_airbnb": 14,
       "mediana_precio_noche_usd": 252
@@ -11887,6 +11837,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 7,
       "mediana_precio_noche_usd": 286
+    },
+    {
+      "barrio": "Villa Santa Rita",
+      "periodo": "Junio 2026",
+      "n_airbnb": 8,
+      "mediana_precio_noche_usd": 50
     },
     {
       "barrio": "Villa Santa Rita",
@@ -11914,12 +11870,6 @@
     },
     {
       "barrio": "Villa Urquiza",
-      "periodo": "46174",
-      "n_airbnb": 102,
-      "mediana_precio_noche_usd": 70
-    },
-    {
-      "barrio": "Villa Urquiza",
       "periodo": "Abril 2026",
       "n_airbnb": 106,
       "mediana_precio_noche_usd": 287
@@ -11929,6 +11879,12 @@
       "periodo": "Febrero 2026",
       "n_airbnb": 60,
       "mediana_precio_noche_usd": 280
+    },
+    {
+      "barrio": "Villa Urquiza",
+      "periodo": "Junio 2026",
+      "n_airbnb": 102,
+      "mediana_precio_noche_usd": 70
     },
     {
       "barrio": "Villa Urquiza",
