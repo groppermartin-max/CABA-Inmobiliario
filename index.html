@@ -814,19 +814,42 @@
   let serieByPeriodo   = {};
   let serieAirbnbLookup = {};
 
-  const AIRBNB_PERIODO_ORDER = { 'Febrero 2026': 0, 'Marzo 2026': 1, 'Abril 2026': 2, 'Mayo 2026': 3 };
+  let AIRBNB_PERIODO_ORDER = {};
   function fmtAirbnbPeriodo(p) {
     return p || '';
   }
 
-  // Map alquiler período → Airbnb período más cercano
+  // Convierte "Junio 2026" -> {yr:2026, mo:6}
+  function parseAirbnbPeriodo(p) {
+    if (!p) return null;
+    const parts = String(p).trim().split(/\s+/);
+    if (parts.length !== 2) return null;
+    const mo = MONTH_FULL.indexOf(parts[0]) + 1;
+    const yr = +parts[1];
+    if (!mo || !yr) return null;
+    return { yr, mo };
+  }
+
+  // Map alquiler período → Airbnb período más cercano (≤ período de alquiler).
+  // Lee dinámicamente de dash.kpis.periodos_airbnb.
   function airbnbPeriodoForAlquiler(periodo) {
-    if (!periodo) return 'Febrero 2026';
+    const list = (dash && dash.kpis && dash.kpis.periodos_airbnb) || [];
+    if (list.length === 0) return null;
+    const ordered = list.slice().sort((a, b) => {
+      const pa = parseAirbnbPeriodo(a), pb = parseAirbnbPeriodo(b);
+      if (!pa || !pb) return 0;
+      return (pa.yr - pb.yr) || (pa.mo - pb.mo);
+    });
+    if (!periodo) return ordered[0];
     const [yr, mo] = periodo.split('-').map(Number);
-    if (yr < 2026 || (yr === 2026 && mo <= 2)) return 'Febrero 2026';
-    if (yr === 2026 && mo === 3) return 'Marzo 2026';
-    if (yr === 2026 && mo === 4) return 'Abril 2026';
-    return 'Mayo 2026';
+    let best = ordered[0];
+    for (const p of ordered) {
+      const parsed = parseAirbnbPeriodo(p);
+      if (!parsed) continue;
+      if (parsed.yr < yr || (parsed.yr === yr && parsed.mo <= mo)) best = p;
+      else break;
+    }
+    return best;
   }
 
   // Lookup por barrio+periodo Airbnb: serieAirbnbByPeriodo[periodo][normBarrio] = row
@@ -901,6 +924,15 @@
           serieLookup[key].sort((a, b) => a.periodo.localeCompare(b.periodo));
         }
       }
+
+      // Reconstruir AIRBNB_PERIODO_ORDER dinámicamente desde kpis.periodos_airbnb
+      const airbnbPeriods = (dash.kpis.periodos_airbnb || []).slice().sort((a, b) => {
+        const pa = parseAirbnbPeriodo(a), pb = parseAirbnbPeriodo(b);
+        if (!pa || !pb) return 0;
+        return (pa.yr - pb.yr) || (pa.mo - pb.mo);
+      });
+      AIRBNB_PERIODO_ORDER = {};
+      airbnbPeriods.forEach((p, i) => { AIRBNB_PERIODO_ORDER[p] = i; });
 
       if (dash.serie_airbnb) {
         for (const row of dash.serie_airbnb) {
